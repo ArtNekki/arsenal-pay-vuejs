@@ -17,7 +17,11 @@
 			>
 		</li>
 		<li class="main-nav__item">
-			<Link href="https://arsenalpay.ru/quickstart.html" size="sm" color="black">Платежи без сайта</Link>
+			<router-link to="/quickstart" custom v-slot="{ href, navigate, isActive }">
+				<Link :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+					Платежи без сайта
+				</Link>
+			</router-link>
 		</li>
 		<li class="main-nav__item main-nav__item_type_login">
 			<Link href="https://arsenalpay.ru/dashboard/login" type="login" size="sm" color="black">Войти</Link>

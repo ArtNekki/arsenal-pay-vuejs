@@ -1,6 +1,7 @@
 <template>
 	<a
-		:to="href"
+		:href="href"
+		:active="isActive"
 		class="link"
 		:class="{
 			['link_size_' + size]: size,
@@ -18,6 +19,7 @@ import { Options, Vue } from "vue-class-component";
 @Options({
 	props: {
 		href: String,
+		isActive: Boolean,
 		type: String,
 		size: String,
 		color: String,
