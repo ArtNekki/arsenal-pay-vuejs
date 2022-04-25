@@ -32,6 +32,7 @@
     </ul>
   </div>
   <btn type="nekki" class="btn">Button</btn>
+  <p class="text_size_lg">Hello</p>
 </template>
 
 <script lang="ts">

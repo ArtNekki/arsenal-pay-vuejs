@@ -19,5 +19,15 @@ export default class Btn extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .btn {}
+  .btn {
+
+     width: 40px;
+     height: 40px;
+     background: var(--color-bg-blue);
+     border-radius: var(--border-radius-md);
+
+    @include media-breakpoint-up(md) {
+      background: red;
+    }
+  }
 </style>

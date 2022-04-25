@@ -1,0 +1,26 @@
+
+
+//utils
+@import 'global/utils/functions';
+@import 'global/utils/utils';
+@import 'global/utils/breakpoints';
+
+//settings
+@import 'settings';
+
+//mixins
+@import 'global/utils/mixins';
+
+//utils
+@import "utils";
+
+//libs
+
+//@import "../../../node_modules/swiper/swiper";
+
+// @import 'global/typography';
+@import 'global/fonts';
+
+
+// components
+@import 'components/text';
