@@ -11,8 +11,8 @@ module.exports = defineConfig({
           @import "@/assets/scss/global/_fonts.scss";
           @import "@/assets/scss/_settings.scss";
           @import "@/assets/scss/components/_index.scss";
-        `
-      }
-    }
-  }
+        `,
+      },
+    },
+  },
 });
