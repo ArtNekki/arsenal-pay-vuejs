@@ -7,9 +7,11 @@
 			<Link href="https://arsenalpay.ru/tariffs.html" size="sm" color="black">Тарифы</Link>
 		</li>
 		<li class="main-nav__item">
-			<Link href="https://arsenalpay.ru/priem-platezhej-v-instagram.html" size="sm" color="black"
-				>Платежи в Instagram*</Link
-			>
+			<router-link to="/priem-platezhej-v-instagram" custom v-slot="{ href, navigate, isActive }">
+				<Link :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+					Платежи в Instagram*
+				</Link>
+			</router-link>
 		</li>
 		<li class="main-nav__item">
 			<Link href="https://arsenalpay.ru/priem-platezhej-na-sajte.html" size="sm" color="black"

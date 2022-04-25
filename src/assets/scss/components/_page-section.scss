@@ -1,0 +1,124 @@
+.page-section {
+  --skew-angle: 5deg;
+  --container-cut: 15px;
+
+  position: relative;
+  background: var(--color-bg-white);
+
+  @include media-breakpoint-only(xxl) {
+    --container-cut: 30px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: inherit;
+    transform: skewY(var(--skew-angle));
+    z-index: 1;
+  }
+
+  &::before {
+    top: -90px;
+  }
+
+  &::after {
+    top: unset;
+    bottom: 0;
+    height: 120px;
+  }
+
+  &_skew_inverse {
+    &::before,
+    &::after {
+      --inverse-angle: calc(-1 * var(--skew-angle));
+
+      transform: skewY(var(--inverse-angle));
+    }
+  }
+
+  &_skew_inverse-top {
+    &::before {
+      --inverse-angle: calc(-1 * var(--skew-angle));
+
+      transform: skewY(var(--inverse-angle));
+    }
+  }
+
+  &_skew_inverse-bottom {
+    &::after {
+      --inverse-angle: calc(-1 * var(--skew-angle));
+
+      transform: skewY(var(--inverse-angle));
+    }
+  }
+
+  &_skew_no {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  &_skew_no-top {
+    &::before {
+      display: none;
+    }
+  }
+
+  &_skew_no-bottom {
+    &::after {
+      display: none;
+    }
+  }
+
+  &__container {
+    @include container();
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+
+    .page-section_type_cut & {
+      @include media-breakpoint-up(xl) {
+        padding-right: calc(var(--container-padding-x) - var(--container-cut));
+      }
+    }
+  }
+
+  &__title {
+    .page-section_type_cut & {
+      @include media-breakpoint-up(xl) {
+        margin-left: calc(-1 * var(--container-cut));
+      }
+    }
+  }
+
+  &__text {
+    .page-section_type_cut & {
+      @include media-breakpoint-up(xl) {
+        margin-left: calc(-1 * var(--container-cut));
+      }
+    }
+  }
+
+  &__btn {
+    .page-section_type_cut & {
+      @include media-breakpoint-up(xl) {
+        margin-left: calc(-1 * var(--container-cut));
+      }
+    }
+  }
+
+  //icon's shift
+  &_type_cut &__container > .icon {
+    @include media-breakpoint-up(xl) {
+      margin-left: calc(-1 * var(--container-cut));
+    }
+  }
+}
