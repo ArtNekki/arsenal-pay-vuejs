@@ -1,5 +1,5 @@
 <template>
-	<div class="btn">
+	<div class="page-header">
 		<slot></slot>
 	</div>
 </template>
@@ -12,27 +12,15 @@ import { Options, Vue } from "vue-class-component";
 		type: String,
 	},
 })
-export default class Icon extends Vue {
+export default class PageHeader extends Vue {
 	msg!: string;
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.icon {
-	&_size_sm {
-		width: 45px;
-		height: 36px;
-	}
-
-	&_size_md {
-		width: 48px;
-		height: 38px;
-	}
-
-	&_size_lg {
-		width: 120px;
-		height: 120px;
-	}
+.page-header {
+	background: red;
+	height: 70px;
 }
 </style>
