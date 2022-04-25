@@ -31,14 +31,19 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
   </div>
+  <btn type="nekki" class="btn">Button</btn>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
+import Btn from './btn.vue'; // @ is an alias to /src
 
 @Options({
   props: {
     msg: String,
+  },
+  components: {
+    Btn,
   },
 })
 export default class HelloWorld extends Vue {

@@ -1,0 +1,47 @@
+
+//color-bg
+:root {
+  --color-bg-white: #ffffff;
+  --color-bg-purple-light: #f4ebff;
+  --color-bg-pink: #ffdbf1;
+  --color-bg-pink-light: #fff0f7;
+  --color-bg-blue: #4682ff;
+  --color-bg-blue-light: #edf3ff;
+  --color-bg-green: #45ba6e;
+  --color-bg-green-light: #edfcf1;
+}
+
+//color-icon
+:root {
+  --color-icon-black: #000000;
+  --color-icon-blue: #0a79fa;
+  --color-icon-blue-light: #4fc7ed;
+  --color-icon-pink: #f20c92;
+  --color-icon-purple: #af53ff;
+  --color-icon-green: #50bd5c;
+}
+
+//color-text
+:root {
+  --color-text-primary: #000000;
+  --color-text-inverse: #ffffff;
+  --color-text-blue: #0a79fa;
+  --color-text-pink: #eb0081;
+}
+
+//border-radius
+:root {
+  --border-radius-xs: 18px;
+  --border-radius-sm: 20px;
+  --border-radius-md: 22px;
+  --border-radius-lg: 40px;
+  --border-radius-xl: 44px;
+  --border-radius-half: 99rem;
+}
+
+//effects
+:root {
+  --box-shadow-sm:-2px 25px 33px 1px rgba(0, 0, 0, 0.08), 0 1px 7px 0 rgba(0, 0, 0, 0.09);
+  --box-shadow-md: -2px 25px 33px 1px rgba(0, 0, 0, 0.12), 0 1px 7px 0 rgba(0, 0, 0, 0.14);
+  --box-shadow-lg: -2px 25px 33px 1px rgba(0, 0, 0, 0.12), 0 6px 15px 0 rgba(0, 0, 0, 0.18);
+}
