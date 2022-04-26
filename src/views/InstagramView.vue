@@ -1,5 +1,5 @@
 <template>
-	<section class="page-section page-section_order_one page-section_type_cut page-section_skew_no-top">
+	<section class="page-section page-section_order_1 page-section_type_cut page-section_skew_no-top">
 		<div class="page-section__container">
 			<div class="page-section__alert page-section__alert--top">
 				<!--				{{{ alert text="Теперь приём платежей доступен и самозанятым" }}}-->
@@ -40,9 +40,7 @@
 		</div>
 	</section>
 
-	<section
-		class="page-section page-section--instagram-mock page-section--cut page-section--inverse page-section--bg-pink-lighten page-section--no-pay"
-	>
+	<section class="page-section page-section_order_2 page-section_type_cut">
 		<div class="page-section__container">
 			<div class="widget-box widget-box--instagram">
 				<div class="widget-box__content">
@@ -72,7 +70,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section--social-inst page-section--no-skew-top">
+	<section class="page-section page-section_order_3">
 		<div class="page-section__container">
 			<h2 class="page-section__title">
 				Вам не&nbsp;нужен свой&nbsp;сайт, <br class="br br--show-xs" />чтобы&nbsp;принимать платежи.
@@ -123,9 +121,7 @@
 		</div>
 	</section>
 
-	<section
-		class="page-section page-section--inverse-top page-section--dashboard page-section--bg-blue-darken page-section--cut"
-	>
+	<section class="page-section page-section_order_4 page-section_type_cut">
 		<div class="page-section__container">
 			<!--			{{{ icon name="kassa" width="122" height="120" mods="blue" }}}-->
 			<h2 class="page-section__title">
@@ -185,7 +181,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section--web-kassa page-section--bg-pink-lighten">
+	<section class="page-section page-section_order_5">
 		<div class="page-section__container">
 			<span class="page-section__label">Бесплатные чеки по всем заказам</span>
 			<h2 class="page-section__title">Web-касса ArsenalPay</h2>
@@ -202,14 +198,16 @@
 			</p>
 		</div>
 	</section>
-	<section class="page-section page-section--easy-instagram">
+
+	<section class="page-section page-section_order_6">
 		<div class="page-section__container">
 			<span class="page-section__label">Бесплатно</span>
 			<h2 class="page-section__title">Удобные платёжные функции</h2>
 			<div class="content-box content-box--quick-start content-box--shadow-md">content-box</div>
 		</div>
 	</section>
-	<section class="page-section page-section--no-skew page-section--instagram-solid">
+
+	<section class="page-section page-section_order_7 page-section_skew_no">
 		<div class="page-section__container">
 			<span class="page-section__label">Бесплатно</span>
 			<h2 class="page-section__title">
@@ -218,7 +216,8 @@
 			widget-box--buttons
 		</div>
 	</section>
-	<section class="page-section page-section--no-skew-top page-section--instagram-solid">
+
+	<section class="page-section page-section_order_8 page-section_skew_no">
 		<div class="page-section__container">
 			<span class="page-section__label">Бесплатно</span>
 			<h2 class="page-section__title">
@@ -235,7 +234,8 @@
 			<div class="page-section__content">widget-box--multilink</div>
 		</div>
 	</section>
-	<section class="page-section page-section--email-marketing page-section--no-skew-top page-section--instagram-solid">
+
+	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div class="page-section__container">
 			<span class="page-section__label">Бесплатно</span>
 			<h2 class="page-section__title">Автоматическая email <br class="br br--show-sm br--hide-md" />рассылка</h2>
@@ -251,7 +251,8 @@
 			mediabox--email
 		</div>
 	</section>
-	<section class="page-section page-section--no-subscribe-instagram page-section--bg-green">
+
+	<section class="page-section page-section_order_10">
 		<div class="page-section__container">
 			<!--			{{{ icon name="rub-big" width="120" height="120" mods="green" }}}-->
 			<h2 class="page-section__title">Никакой абонентской платы</h2>
@@ -275,7 +276,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section--payments page-section--bg-green-middle">
+	<section class="page-section page-section_order_11">
 		<div class="page-section__container">
 			<h2 class="page-section__title">
 				Платежи перечисляются <br class="br br--show-sm" />на&nbsp;ваш расчётный счёт ежедневно
@@ -312,7 +313,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section--no-skew-bottom page-section--instagram-reviews">
+	<section class="page-section page-section_order_12 page-section_skew-no-bottom">
 		<div class="page-section__container">
 			<h2 class="page-section__title">Отзывы наших клиентов</h2>
 			<p class="text text--md-size-lg">
@@ -325,19 +326,19 @@
 			<!--			{{> reviews-slider-instagram }}-->
 		</div>
 	</section>
-	<article id="kassa" class="modal modal--new-check" data-close>
-		<div class="modal__body">
-			<button type="button" class="modal__close" data-close>
-				<!--				{{{ icon name="cross" width="12" height="12" }}}-->
-			</button>
-			<!--			{{{ img name="new-check" mods="new-check" breakpoints='{"md": true}'}}}-->
-		</div>
-	</article>
+	<!--	<article id="kassa" class="modal modal&#45;&#45;new-check" data-close>-->
+	<!--		<div class="modal__body">-->
+	<!--			<button type="button" class="modal__close" data-close>-->
+	<!--				&lt;!&ndash;				{{{ icon name="cross" width="12" height="12" }}}&ndash;&gt;-->
+	<!--			</button>-->
+	<!--			&lt;!&ndash;			{{{ img name="new-check" mods="new-check" breakpoints='{"md": true}'}}}&ndash;&gt;-->
+	<!--		</div>-->
+	<!--	</article>-->
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.page-section_order_one {
+.page-section_order_1 {
 	bottom: -20px;
 	//z-index: 10;
 	background-color: var(--color-bg-purple);
@@ -362,6 +363,228 @@
 		@include media-breakpoint-up(lg) {
 			padding-top: 105px;
 			padding-bottom: 40px;
+		}
+	}
+}
+
+.page-section_order_2 {
+	background-color: var(--color-bg-pink-light);
+
+	.page-section__container {
+		padding-top: 96px;
+		padding-bottom: 130px;
+
+		@include media-breakpoint-up(sm) {
+			padding-top: 160px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 199px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 80px;
+			padding-bottom: 130px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-top: 60px;
+			padding-bottom: 170px;
+		}
+	}
+}
+
+.page-section_order_3 {
+	.page-section__container {
+		padding-top: 39px;
+		padding-bottom: 205px;
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 206px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 78px;
+			padding-bottom: 235px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 182px;
+		}
+	}
+}
+
+.page-section_order_4 {
+	background-color: var(--color-bg-blue-light);
+
+	.page-section__container & {
+		padding-top: 40px;
+		padding-bottom: 180px;
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 200px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 39px;
+			padding-bottom: 205px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 64px;
+			padding-bottom: 90px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			padding-bottom: 68px;
+		}
+	}
+}
+
+.page-section_order_5 {
+	background-color: var(--color-bg-pink-light);
+
+	.page-section__container & {
+		margin-top: -13px;
+		padding-top: 0;
+		padding-bottom: 177px;
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 190px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 52px;
+			padding-bottom: 227px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-top: -41px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-top: -70px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			margin-top: -77px;
+		}
+	}
+}
+
+.page-section_order_6 {
+	.page-section__container {
+		padding-top: 36px;
+		padding-bottom: 60px;
+
+		@include media-breakpoint-up(sm) {
+			padding-top: 39px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 80px;
+			padding-bottom: 160px;
+		}
+	}
+}
+
+.page-section_order_7,
+.page-section_order_8 {
+	.page-section__container & {
+		padding-top: 0;
+		padding-bottom: 96px;
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 120px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 105px;
+		}
+	}
+}
+
+.page-section_order_9 {
+	.page-section__container & {
+		padding-top: 0;
+		padding-bottom: 185px;
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 132px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 218px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-top: -19px;
+			padding-bottom: 188px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-top: -7px;
+		}
+	}
+}
+
+.page-section_order_10 {
+	background-color: var(--color-bg-green-light);
+
+	.page-section__container {
+		padding-top: 10px;
+		padding-bottom: 197px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 36px;
+			padding-bottom: 300px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 45px;
+			padding-bottom: 258px;
+		}
+	}
+}
+
+.page-section_order_11 {
+	background-color: var(--color-bg-green-light);
+
+	.page-section__container & {
+		margin-top: -30px;
+		padding-top: 0;
+		padding-bottom: 182px;
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 157px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 40px;
+			padding-bottom: 212px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 190px;
+		}
+	}
+}
+
+.page-section_order_12 {
+	.page-section__container & {
+		padding-top: 30px;
+		padding-bottom: 37px;
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 57px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 48px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-top: 69px;
 		}
 	}
 }
