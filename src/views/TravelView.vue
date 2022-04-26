@@ -259,7 +259,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section--subscription-free">
+	<section class="page-section page-section_order_7">
 		<div class="page-section__container">
 			<h2 class="page-section__title">Никакой абонентской платы</h2>
 			<p class="text text--md-size-lg">
@@ -299,13 +299,15 @@
 			</div>
 		</div>
 	</section>
-	<section class="page-section page-section--travel-reviews">
+
+	<section class="page-section page-section_order_8">
 		<div class="page-section__container">
 			<h2 class="page-section__title">Отзывы наших клиентов</h2>
 			<!--			{{> travel-reviews-slider }}-->
 		</div>
 	</section>
-	<section class="page-section page-section--no-skew page-section--under-slider page-section--over-footer">
+
+	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div class="page-section__container">
 			<h2 class="page-section__title">Вопросы и ответы</h2>
 			<div class="content-box content-box--faq">
@@ -346,118 +348,164 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-	.page-section_order_1 {
-		background-color: var(--color-bg-green-light);
+.page-section_order_1 {
+	background-color: var(--color-bg-green-light);
 
-		.page-section__container {
-			padding-top: 128px;
-			padding-bottom: 247px;
+	.page-section__container {
+		padding-top: 128px;
+		padding-bottom: 247px;
 
-			@include media-breakpoint-up(md) {
-				padding-top: 167px;
-			}
+		@include media-breakpoint-up(md) {
+			padding-top: 167px;
 		}
 	}
+}
 
-	.page-section_order_2 {
-		background-color: var(--color-bg-blue-light);
+.page-section_order_2 {
+	background-color: var(--color-bg-blue-light);
 
-		.page-section__container {
+	.page-section__container {
+		padding-top: 61px;
+		padding-bottom: 167px;
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 146px;
+		}
+	}
+}
+
+.page-section_order_3 {
+	background-color: var(--color-bg-pink-light);
+
+	.page-section__container {
+		padding-top: 61px;
+		padding-bottom: 245px;
+
+		@include media-breakpoint-up(md) {
 			padding-top: 61px;
-			padding-bottom: 167px;
-
-			@include media-breakpoint-up(md) {
-				padding-bottom: 146px;
-			}
 		}
 	}
+}
 
-	.page-section_order_3 {
-		background-color: var(--color-bg-pink-light);
+.page-section_order_4 {
+	.page-section__container {
+		padding-top: 48px;
+		padding-bottom: 235px;
+		overflow: hidden;
 
-		.page-section__container {
+		@include media-breakpoint-up(md) {
+			padding-top: 69px;
+			padding-bottom: 308px;
+		}
+	}
+}
+
+.page-section_order_5 {
+	background-color: var(--color-bg-purple-light);
+
+	.page-section__container {
+		padding-top: 55px;
+		padding-bottom: 257px;
+
+		@include media-breakpoint-up(md) {
 			padding-top: 61px;
-			padding-bottom: 245px;
+		}
+	}
+}
 
-			@include media-breakpoint-up(md) {
-				padding-top: 61px;
-			}
+.page-section_order_6 {
+	background-color: var(--color-bg-green-light);
+
+	.page-section__container {
+		padding-top: 59px;
+		padding-bottom: 242px;
+
+		@include media-breakpoint-up(sm) {
+			padding-top: 62px;
+			padding-bottom: 217px;
 		}
 	}
 
-	.page-section_order_4 {
-		.page-section__container {
-			padding-top: 48px;
-			padding-bottom: 235px;
-			overflow: hidden;
+	page-section__content {
+		margin-top: 43px;
 
-			@include media-breakpoint-up(md) {
-				padding-top: 69px;
-				padding-bottom: 308px;
-			}
+		@include media-breakpoint-up(sm) {
+			margin-top: 47px;
 		}
-	}
 
-	.page-section_order_5 {
-		background-color: var(--color-bg-purple-light);
-
-		.page-section__container {
-			padding-top: 55px;
-			padding-bottom: 257px;
-
-			@include media-breakpoint-up(md) {
-				padding-top: 61px;
-			}
+		@include media-breakpoint-up(md) {
+			margin-top: 35px;
 		}
-	}
 
-	.page-section_order_6 {
-		background-color: var(--color-bg-green-light);
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 20px;
+			max-width: 820px;
+		}
 
-		.page-section__container {
-			padding-top: 59px;
-			padding-bottom: 242px;
+		@include media-breakpoint-up(xl) {
+			grid-column-gap: 60px;
+			max-width: 900px;
+		}
+
+		.text + & {
+			margin-top: 20px;
 
 			@include media-breakpoint-up(sm) {
-				padding-top: 62px;
-				padding-bottom: 217px;
-			}
-		}
-
-		page-section__content {
-			margin-top: 43px;
-
-			@include media-breakpoint-up(sm) {
-				margin-top: 47px;
+				margin-top: 45px;
 			}
 
 			@include media-breakpoint-up(md) {
-				margin-top: 35px;
-			}
-
-			@include media-breakpoint-up(lg) {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				grid-column-gap: 20px;
-				max-width: 820px;
-			}
-
-			@include media-breakpoint-up(xl) {
-				grid-column-gap: 60px;
-				max-width: 900px;
-			}
-
-			.text + & {
-				margin-top: 20px;
-
-				@include media-breakpoint-up(sm) {
-					margin-top: 45px;
-				}
-
-				@include media-breakpoint-up(md) {
-					margin-top: 50px;
-				}
+				margin-top: 50px;
 			}
 		}
 	}
+}
+
+.page-section_order_7 {
+	.page-section__container {
+		padding-top: 50px;
+		padding-bottom: 135px;
+
+		@include media-breakpoint-up(sm) {
+			padding-bottom: 145px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 73px;
+			padding-bottom: 155px;
+		}
+	}
+}
+
+.page-section_order_8 {
+	.page-section__container {
+		margin-top: -15px;
+		padding-top: 0;
+
+		@include media-breakpoint-up(sm) {
+			padding-top: 21px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-top: 10px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-top: -46px;
+		}
+	}
+}
+
+.page-section_order_9 {
+	margin-top: -70px;
+	padding-top: 0;
+	padding-bottom: 95px;
+
+	@include media-breakpoint-up(md) {
+		margin-top: -128px;
+		padding-bottom: 80px;
+	}
+}
 </style>
