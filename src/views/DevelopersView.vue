@@ -1,5 +1,397 @@
 <template>
-	<div class="about">
-		<h1>This is an about page</h1>
-	</div>
+	<section
+		class="page-section page-section_order_1 page-section_type_cut page-section_skew_no-top page-section_skew_inverse"
+	>
+		<div class="page-section__container">
+			<div class="page-section__alert page-section__alert--top">
+				<!--				{{{ alert text="Теперь приём платежей доступен и самозанятым" }}}-->
+			</div>
+			<h1 class="page-section__title">Разработчикам</h1>
+			<div class="page-section__text">
+				<p class="text text--mgb-36 text--mgb-sm-32 text--mgb-md-36 text--ls-36 text--md-size-lg">
+					Готовые CMS плагины, виджет оплаты для интернет-магазинов и&nbsp;лендингов.
+				</p>
+			</div>
+			<a href="https://arsenalpay.ru/dashboard/registration-type" class="page-section__btn">Подключить</a>
+			<div class="widget-box widget-box--dev">
+				<div class="widget-box__widget">
+					<!--					{{{ img className="developers-page" name="widget" breakpoints='{"sm": true}'}}}-->
+				</div>
+				<div class="widget-box__content">
+					<!--					{{{ info-box title="Виджет оплаты"  text='Встраивается в&nbsp;любое место на&nbsp;сайте. <br class="br br&#45;&#45;show-xs">Адаптирован под любые устройства.<br class="br br&#45;&#45;show-xs">-->
+					<!--					Цвет виджета <a href="https://arsenalpay.ru/customization/" class="link link&#45;&#45;in-text">настраивается</a> под цвет вашего сайта.' mods="align-left-lg, mgb-60" titleMods="lh-35-md" textMods="lh-md-26" }}}-->
+					<!--					{{{ info-box title="Безопасность"  text='Безопасная обработка данных карт <br class="br br&#45;&#45;show-sm">по&nbsp; стандарту PCI DSS 3.2 level 1.'  icon='{"name": "security", "color": "pink"}' mods="align-left-lg, icon-size-lg" titleMods="lh-35-md" textMods="lh-md-26" }}}-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section_order_2 page-section_skew_inverse">
+		<div class="page-section__container">
+			<div class="widget-details">
+				<!--				{{{ info-box title="Все способы оплаты в&nbsp;одном виджете"  text='Банковские карты:<br class="br br&#45;&#45;show-xs br&#45;&#45;hide-md"> Visa, MasterCard, Мир, Apple Pay.-->
+				<br class="br br--show-xs" />Оплата с баланса мобильного телефона.<br
+					class="br br--show-xs"
+				/>Электронные кошельки.' icon='{"name": "number-1", "color": "purple"}' mods="align-left-lg"
+				titleMods="lh-35-md" textMods="lh-md-26" }}}
+				<div class="widget-details__item widget-details__item--tab">
+					<!--					{{{ img name="widget-tabs" breakpoints='{"sm": true}'}}}-->
+				</div>
+				<!--				{{{ info-box title="Настройка дополнительных полей" text='Комментарии клиента, email для чека, ФИО, адрес и&nbsp;др.<br class="br br&#45;&#45;show-md br&#45;&#45;hide-lg">-->
+				Настройка плейсхолдеров и&nbsp;масок для полей.' icon='{"name": "number-2", "color": "purple"}'
+				mods="align-left-lg" titleMods="lh-35-md" textMods="lh-md-26" }}}
+				<div class="widget-details__item widget-details__item--fields">
+					<!--					{{{ img name="widget-fields" breakpoints='{"sm": true}'}}}-->
+				</div>
+				<!--				{{{ info-box title="Удобный ввод" text='Проверка вводимых данных. <br class="br br&#45;&#45;show-xs">Подсказки при неверном вводе.-->
+				<br class="br br--show-xs" />Браузерное автозаполнение. <br class="br br--show-xs" />Перевод курсора
+				на&nbsp;следующее поле. <br class="br br--show-xs" />Определение платёжной системы.
+				<br class="br br--show-xs" />Определение операторов сотовой связи.' icon='{"name": "number-3", "color":
+				"purple"}' mods="align-left-lg" titleMods="lh-35-md" textMods="lh-md-26" link='{"text": "Посмотреть
+				виджет", "dataModal": "widgetModal", "color": "purple"}'}}}
+				<div class="widget-details__item widget-details__item--card">
+					<!--					{{{ img name="widget-card" breakpoints='{"sm": true}'}}}-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section_order_3 page-section_skew_inverse">
+		<div id="testirovanie-oplaty-i-kassy" class="page-section__container">
+			<!--			{{{ icon name="test" width="116" height="116" mods="green" }}}-->
+			<h2 class="page-section__title">Тестирование оплаты и&nbsp;кассы</h2>
+			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+				Все параметры для тестирования виджета доступны <br class="br br--show-md" />после регистрации
+				в&nbsp;личном кабинете.
+			</p>
+			<div class="content-box content-box--shadow-xs">
+				<!--				{{{ info-box title="Устанавливайте виджет сразу"  text='Вы&nbsp;можете установить виджет на&nbsp;свой сайт, настроить его, <br class="br br&#45;&#45;show-md">совершать-->
+				<!--				тестовые платежи и&nbsp;проверять статус платежей <br class="br br&#45;&#45;show-md br&#45;&#45;hide-lg">в&nbsp;личном кабинете.' icon='{"name": "check", "color": "green"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title="Тестируйте фискальные чеки" text='В&nbsp;тестовом режиме онлайн чеки формируются на&nbsp;базе тестовой кассы.<br class="br br&#45;&#45;show-lg">-->
+				<!--				Тестовые чеки в&nbsp;ФНС не&nbsp;отправляются.' icon='{"name": "check", "color": "green"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title="Деньги с&nbsp;карты не&nbsp;списываются" text='Для тестирования оплаты используйте любую действующую карту.<br class="br br&#45;&#45;show-lg">-->
+				<!--				В&nbsp;тестовом режиме деньги с&nbsp;карты не&nbsp;списываются.' icon='{"name": "check", "color": "green"}' }}}-->
+				<div class="content-box__link">
+					<a
+						href="https://arsenalpay.ru/documentation/index.html#testirovanie"
+						class="link link--more"
+						target="_blank"
+						><span>Подробнее</span></a
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section_order_4 page-section_skew_inverse page-section_skew_no-bottom">
+		<div id="integratsiya-vidzheta" class="page-section__container">
+			<!--			{{{ icon name="settings" width="126" height="92" mods="blue" }}}-->
+			<h2 class="page-section__title">Интеграция виджета</h2>
+			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+				Посмотрите
+				<a
+					href="https://arsenalpay.ru/documentation/index.html#scenarii-integracii"
+					class="link link--in-text"
+					target="_blank"
+					>сценарии интеграции</a
+				>
+				для интернет-магазинов и&nbsp;лендингов.
+			</p>
+			<div class="content-box content-box--shadow-xs">
+				<!--				{{{ info-box title="Встроенный виджет" text='Встроенный виджет будет открываться в&nbsp;любом месте на&nbsp;вашем сайте.<br class="br br&#45;&#45;show-lg">-->
+				<!--				Просто вставьте код виджета на&nbsp;страницу сайта, туда где происходит оплата.' icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title="Виджет на&nbsp;отдельной странице" text="Виджет будет открываться на&nbsp;отдельной странице, для этого просто-->
+				<!--				вставьте ссылку на&nbsp;виджет в&nbsp;том месте сайта, где у&nbsp;вас происходит переход к&nbsp;оплате." icon='{"name": "check", "color": "blue"}' }}}-->
+				<div class="content-box__link">
+					<a
+						href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
+						class="link link--more"
+						target="_blank"
+					>
+						<span>Подробнее</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section_order_5 page-section_skew_no">
+		<div id="gotovye-cms-plaginy" class="page-section__container">
+			<!--			{{{ icon name="cms" width="116" height="116" mods="cyan" }}}-->
+			<h2 class="page-section__title">Готовые CMS плагины</h2>
+			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+				Скачайте и&nbsp;установите готовый модуль под вашу платформу.<br class="br br--show-md" />
+				Если&nbsp;для вашей платформы нет модуля, напишите нам и&nbsp;мы&nbsp;его сделаем.
+			</p>
+			<div class="content-box content-box--shadow-xs content-box--links-box content-box--pdb-54">
+				<h3 class="content-box__title">Все настройки в&nbsp;личном кабинете</h3>
+				<p class="content-box__text">
+					Настройте модуль, используя данные, полученные при регистрации
+					<br class="br br--show-lg" />в&nbsp;личном кабинете. Касса для CMS
+					<br class="br br--show-sm br--hide-md" />
+					модулей уже настроена.
+				</p>
+				<div class="row row--cms">
+					<div style="width: 100%">
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-ecwid", "width": "140", "height": "60"}' links='[{"text": "Market", "href": "https://www.ecwid.com/apps/paymentgateways/arsenalpay"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/Ecwid_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-tilda", "width": "164", "height": "60"}' href="https://arsenalpay.ru/instructions/Tilda_instruction.pdf" class="links-box links-box&#45;&#45;link"  mods="link"}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-in-sales", "width": "96", "height": "60"}' href="https://arsenalpay.ru/instructions/InSales_instruction.pdf" class="links-box links-box&#45;&#45;link" mods="link"}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-joomla", "width": "152", "height": "60"}' links='[{"text": "Market", "href": "https://extensions.joomla.org/extension/e-commerce/payment-gateway/arsenalpay-for-joomshopping/"}, {"text": "GitHub", "href": "https://github.com/ArsenalPay/Joomshopping-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/Joomshopping_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-netcat", "width": "132", "height": "60"}' links='[{"text": "GitHub", "href": "https://github.com/ArsenalPay/Netcat-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/NetCat_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-webasyst", "width": "145", "height": "60"}' links='[{"text": "Market 7", "href": "https://www.webasyst.ru/store/plugin/payment/arsenalpay/"}, {"text": "GitHub 7", "href": "https://github.com/ArsenalPay/Webasyst-Shop-Script-7"}, {"text": "GitHub 4", "href": "https://github.com/ArsenalPay/WebAsyst-Shop-Script-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/WebAsyst_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-umi-cms", "width": "125", "height": "60"}' links='[{"text": "GitHub", "href": "https://github.com/ArsenalPay/UMI-ArsenalPay-CMS"}, {"text": "Инструкция <br />Mcommerce PDF", "href": "https://arsenalpay.ru/instructions/UMI_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+					</div>
+					<div style="width: 100%">
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-bitrix", "width": "190", "height": "60"}' links='[{"text": "Market", "href": "http://marketplace.1c-bitrix.ru/solutions/arsenalmedia.arsenalpay/?sphrase_id=4149924"}, {"text": "GitHub", "href": "https://github.com/ArsenalPay/Bitrix-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/Bitrix_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-woocommerce", "width": "170", "height": "60"}' links='[{"text": "Market", "href": "https://wordpress.org/plugins/arsenalpay-for-woocommerce/"}, {"text": "GitHub", "href": "https://github.com/ArsenalPay/WooCommerce-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/WooCommerce_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-opencart", "width": "166", "height": "60"}' links='[{"text": "Market 1.5", "href": "https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=20804&filter_search=arsenalpay"}, {"text": "Market 2.0-2.1", "href": "https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=25756&filter_search=arsenalpay"}, {"text": "Market 2.3", "href": "https://www.opencart.com/index.php?route=marketplace/extension/info&member-token=OzkRUPxd9xfAQs38vLXHFgZyRSlQ6aI4&extension_id=29794"}, {"text": "Github 1.5", "href": "https://github.com/ArsenalPay/OpenCart1.5.x-ArsenalPay-CMS"}, {"text": "Github 2.0-2.1", "href": "https://github.com/ArsenalPay/OpenCart2.x-ArsenalPay-CMS"}, {"text": "Github 2.3", "href": "https://github.com/ArsenalPay/OpenCart2.3.x-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/OpenCart_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-prestashop", "width": "180", "height": "60"}' links='[{"text": "GitHub", "href": "https://github.com/ArsenalPay/Prestashop-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/PrestaShop_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-siberian", "width": "140", "height": "60"}' links='[{"text": "GitHub", "href": "https://github.com/ArsenalPay/Siberian-ArsenalPay-CMS"}, {"text": "Инструкция <br />Mcommerce PDF", "href": "https://arsenalpay.ru/instructions/Siberian_Mcommerce_%D0%A1%D0%9C%D0%A1_instruction.pdf"}, {"text": "Инструкция <br class=\"br br&#45;&#45;show-xs br&#45;&#45;hide-sm\" />Subscription PDF", "href": "https://arsenalpay.ru/instructions/Siberian_Subscription_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+						<!--						{{{ links-box name="cms" logo='{"name": "logo-virtuemart", "width": "140", "height": "60"}' links='[{"text": "Market 2.6 & 3", "href": "https://extensions.joomla.org/extension/e-commerce/payment-gateway/arsenalpay-for-virtuemart/"}, {"text": "GitHub 2.6 & 3", "href": "https://github.com/ArsenalPay/VirtueMart-ArsenalPay-CMS"}, {"text": "GitHub 1.1x", "href": "https://github.com/ArsenalPay/VirtueMart1.1.x-ArsenalPay-CMS"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/VirtueMart_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section_order_6 page-section_skew_no">
+		<div id="http-uvedomleniya" class="page-section__container">
+			<!--			{{{ icon name="http" width="116" height="116" mods="purple" }}}-->
+			<h2 class="page-section__title">HTTP-уведомления</h2>
+			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+				Обновляйте статус заказа на&nbsp;своем сайте. <br class="br br--show-md" />Передавайте данные
+				из&nbsp;корзины для чека.
+			</p>
+			<div class="content-box content-box--shadow-xs">
+				<!--				{{{ info-box title="Все настройки в&nbsp;личном кабинете" text='Секретный ключ для проверки HTTP-уведомлений вы получаете<br class="br br&#45;&#45;show-md">-->
+				<!--				при регистрации в&nbsp;личном кабинете.' icon='{"name": "check", "color": "purple"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title="Для всех событий доступны HTTP-уведомления" text="Проверка заказа, успешная оплата, возврат платежа, изменение подписки." icon='{"name": "check", "color": "purple"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title='В&nbsp;CMS модулях обработка уведомлений <br class="br br&#45;&#45;show-sm br&#45;&#45;hide-md">уже настроена' text="Чек по&nbsp;умолчанию формируется из&nbsp;товарных позиций корзины." icon='{"name": "check", "color": "purple"}' }}}-->
+				<div class="content-box__link">
+					<a
+						href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
+						class="link link--more"
+						target="_blank"
+					>
+						<span>Подробнее</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section page-section_order_7 page-section_skew_no">
+		<div id="email-uvedomleniya" class="page-section__container">
+			<!--			{{{ icon name="email" width="116" height="116" mods="green" }}}-->
+			<h2 class="page-section__title">Email-уведомления</h2>
+			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+				Email-уведомления удобно применять на&nbsp;лендингах <br class="br br--show-md" />или на&nbsp;сайтах без
+				интернет-магазина.
+			</p>
+			<div class="content-box content-box--shadow-xs">
+				<!--				{{{ info-box title='Можно получать <br class="br br&#45;&#45;show-xs br&#45;&#45;hide-sm">информацию об&nbsp;оплате по&nbsp;email' text='Вы&nbsp;будете получать информацию о&nbsp;платеже и&nbsp;дополнительные данные,<br class="br br&#45;&#45;show-lg">-->
+				<!--				которые клиент укажет в&nbsp;платёжной форме.' icon='{"name": "check", "color": "green"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title='Вы&nbsp;сможете сразу узнавать кто, сколько и&nbsp;за&nbsp;что <br class="br br&#45;&#45;show-md br&#45;&#45;hide-lg">вам заплатил.' text="Никаких доработок и&nbsp;настроек на&nbsp;сайте не&nbsp;требуется." icon='{"name": "check", "color": "green"}' }}}-->
+				<div class="content-box__link">
+					<a
+						href="https://arsenalpay.ru/documentation/index.html#email-uvedomleniya"
+						class="link link--more"
+						target="_blank"
+					>
+						<span>Подробнее</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section_order_8 page-section_skew_no-top page-section_skew_inverse">
+		<div id="nastrojki-kassy" class="page-section__container">
+			<!--			{{{ icon name="kassa" width="122" height="120" mods="blue" }}}-->
+			<h2 class="page-section__title">Настройки кассы</h2>
+			<!--			<p class="text text&#45;&#45;mgb-36 text&#45;&#45;mgb-md-36 text&#45;&#45;md-size-lg">-->
+			<!--				Фискальный чек отправляется на&nbsp;email покупателя и&nbsp;в&nbsp ФНС через ОФД.<br class="br br&#45;&#45;show-lg"/>-->
+			<!--				Все чеки сохраняются в&nbsp;личном кабинете.-->
+			<!--			</p>-->
+			<div class="content-box content-box--shadow-xs">
+				<!--				{{{ info-box title="Для готовых CMS плагинов касса уже настроена" text='Чек будет приходить клиентам на&nbsp;email со&nbsp;всеми товарными позициями.<br class="br br&#45;&#45;show-lg">-->
+				<!--				Если вам не&nbsp;нужны товарные позиции в&nbsp;чеке, можно сделать чек с&nbsp;общей суммой.' icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title="Для лендингов касса уже настроена" text='Самая простая интеграция. Подходит для любого сайта без интернет-магазина.-->
+				<!--				Клиентам приходит чек с&nbsp;общей суммой заказа, без товарных позиций. <br class="br br&#45;&#45;show-lg">На&nbsp;ваш email отправляются данные об&nbsp;оплате заказа-->
+				<!--				и&nbsp;информация о&nbsp;клиенте.' icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
+				<!--				{{{ info-box title='Для интернет-магазинов вы&nbsp;решаете <br class="br br&#45;&#45;show-sm br&#45;&#45;hide-md">как настроить кассу' text="Вы&nbsp;можете настроить передачу товарных позиций в&nbsp;чек,-->
+				<!--				просто добавьте <a href='https://arsenalpay.ru/documentation/index.html#http-uvedomleniya' class='link link&#45;&#45;in-text' target='_blank'>структуру ofd</a> в&nbsp;функцию check.-->
+				<!--				Если вам не&nbsp;нужны товарные позиции в&nbsp;чеке, мы&nbsp;настроим для вас чек с&nbsp;общей суммой." icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section_order_9 page-section_skew_no">
+		<div id="arsenalpay-api" class="page-section__container">
+			<!--			{{{ icon name="api" width="116" height="116" mods="purple" }}}-->
+			<h2 class="page-section__title">ArsenalPay API</h2>
+			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+				Воспользуйтесь API для гибкой интеграции платежей на&nbsp;своем сайте.
+				<br class="br br--show-xl" />Параметры&nbsp;авторизации для доступа к&nbsp;API вы&nbsp;получаете<br
+					class="br br--show-md"
+				/>
+				при регистрации в&nbsp;личном кабинете.
+				<a href="https://arsenalpay.ru/api/doc/" class="link link--in-text" target="_blank"
+					>Протестируйте наше API.</a
+				>
+			</p>
+			<div class="content-box content-box--shadow-xs">
+				<!--				{{{ icon name="settings&#45;&#45;medium" width="74" height="62" mods="purple" }}}-->
+				<h3 class="content-box__title">Основные функции API</h3>
+				<!--				{{{ check-list items='["Статус платежа", "Подтверждение холда", "Отмена платежа","Возврат платежа", "Изменение подписки", "Просмотр чека"]' mods="api" }}}-->
+				<div class="content-box__link">
+					<a
+						href="https://arsenalpay.ru/documentation/index.html#api"
+						class="link link--more"
+						target="_blank"
+					>
+						<span>Все функции</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--	<article id="widgetModal" class="modal" data-close>-->
+	<!--		<div class="modal__body">-->
+	<!--			<button type="button" class="modal__close" data-close>-->
+	<!--				{{{ icon name="cross" width="12" height="12" }}}-->
+	<!--			</button>-->
+	<!--			<h1 class="modal__title">Виджет оплаты</h1>-->
+	<!--			<p class="modal__text">Вы можете встроить виджет оплаты в любое место на сайте и реализовать любую логику появления виджета. Например, отображать виджет на странице корзины, или показывать его во всплывающем окне вашего сайта. </p>-->
+	<!--			<iframe class="iframe iframe&#45;&#45;widget" data-src="https://arsenalpay.ru/widget.html?widget=6022&destination=ArsenalPay-test&amount=1000" height="398"></iframe>-->
+	<!--		</div>-->
+	<!--	</article>-->
 </template>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+.page-section_order_1 {
+	background-color: var(--color-bg-purple-light);
+
+	.page-section__container {
+		padding-top: 52px;
+		padding-bottom: 200px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 52px;
+			padding-bottom: 240px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 62px;
+			padding-bottom: 210px;
+		}
+	}
+}
+
+.page-section_order_2 {
+	.page-section__container {
+		padding-top: 40px;
+		padding-bottom: 220px; //165
+
+		@include media-breakpoint-up(sm) {
+			padding-top: 50px;
+			padding-bottom: 159px;
+		}
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 228px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 105px;
+			padding-bottom: 232px;
+			overflow: hidden;
+		}
+	}
+}
+
+.page-section_order_3 {
+	background-color: var(--color-bg-green-light);
+
+	.page-section__container {
+		padding-top: 40px;
+		padding-bottom: 230px;
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 54px;
+			padding-bottom: 200px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-top: 47px;
+			padding-bottom: 265px;
+		}
+	}
+}
+
+.page-section_order_4 {
+	background-color: var(--color-bg-blue-light);
+
+	.page-section__container {
+		padding-top: 30px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 110px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 140px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-top: 75px;
+		}
+	}
+}
+
+.page-section_order_5,
+.page-section_order_6,
+.page-section_order_7 {
+	background-color: var(--color-bg-blue-light);
+
+	.page-section__container {
+		padding-top: 0;
+		padding-bottom: 120px;
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 160px;
+		}
+	}
+}
+
+.page-section_order_8 {
+	background-color: var(--color-bg-blue-light);
+
+	.page-section__container {
+		padding-bottom: 240px;
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 278px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 280px;
+		}
+	}
+}
+
+.page-section_order_9 {
+	background-color: var(--color-bg-purple-light);
+
+	.page-section__container {
+		padding-top: 8px;
+		padding-bottom: 120px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 50px;
+			padding-bottom: 160px;
+		}
+	}
+}
+</style>
