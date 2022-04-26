@@ -3,7 +3,9 @@
 		<div class="page-section__container page-section__container--contacts">
 			<h1 class="page-section__title">Контакты</h1>
 			<div class="page-section__text page-section__text--contacts">
-				<p class="text text--mgb-34 text--mgb-sm-32 text--mgb-md-36 text--ls-26 text--md-size-lg">Свяжитесь с нами, мы найдём ответ на ваш вопрос.</p>
+				<p class="text text--mgb-34 text--mgb-sm-32 text--mgb-md-36 text--ls-26 text--md-size-lg">
+					Свяжитесь с нами, мы найдём ответ на ваш вопрос.
+				</p>
 			</div>
 
 			<!--			<div class="content-box content-box&#45;&#45;shadow-xs content-box&#45;&#45;contacts content-box&#45;&#45;contacts-row">-->
