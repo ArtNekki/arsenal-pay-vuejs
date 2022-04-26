@@ -1,5 +1,5 @@
 <template>
-	<section class="page-sectionpage-section_order_1  page-section_skew_inverse page-section_skew_no-top">
+	<section class="page-sectionpage-section_order_1 page-section_skew_inverse page-section_skew_no-top">
 		<div class="page-section__container">
 			<!--    <div class="page-section__alert page-section__alert&#45;&#45;top">-->
 			<!--      {{{ alert text="Теперь приём платежей доступен и самозанятым" }}}-->
