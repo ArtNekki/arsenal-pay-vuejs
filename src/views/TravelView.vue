@@ -346,6 +346,16 @@
 	<!--	</article>-->
 </template>
 
+<script lang="ts">
+import { useMeta } from "vue-meta";
+
+export default {
+	setup() {
+		useMeta({ title: "Some Page" });
+	},
+};
+</script>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .page-section_order_1 {

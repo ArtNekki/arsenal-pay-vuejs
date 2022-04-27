@@ -1,10 +1,15 @@
 <template>
+	<metainfo>
+		<template v-slot:title="{ content }">{{ content ? `${content} | SITE_NAME` : `SITE_NAME` }}</template>
+	</metainfo>
 	<PageHeader />
 	<router-view />
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+import { Options, Vue, setup } from "vue-class-component";
+import { useMeta } from "vue-meta";
+
 import PageHeader from "./components/PageHeader.vue";
 
 @Options({
@@ -12,7 +17,14 @@ import PageHeader from "./components/PageHeader.vue";
 		PageHeader,
 	},
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+	meta = setup(() =>
+		useMeta({
+			title: "Hello",
+			htmlAttrs: { lang: "en", amp: true },
+		})
+	);
+}
 </script>
 
 <style lang="scss">
