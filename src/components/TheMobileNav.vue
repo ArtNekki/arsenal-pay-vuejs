@@ -99,7 +99,7 @@ import BaseLink from "@/components/base/BaseLink.vue";
 	},
 })
 export default class TheMobileNav extends Vue {
-	menuOpened = true;
+	menuOpened = false;
 
 	mounted() {
 		console.log(`the component is now mounted.`, this.menuOpened);

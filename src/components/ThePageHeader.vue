@@ -2,6 +2,7 @@
 	<header class="page-header">
 		<nav class="page-header__container">
 			<a href="https://arsenalpay.ru/" class="page-header__logo">
+				<SvgSprite symbol="main-logo" size="0 0 75 42" />
 				<!--      <img src="{{root}}assets/img/svg/main-logo.svg"  alt="Логотип">-->
 			</a>
 			<TheMainNav />
