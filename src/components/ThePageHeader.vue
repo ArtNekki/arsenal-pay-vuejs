@@ -2,8 +2,7 @@
 	<header class="page-header">
 		<nav class="page-header__container">
 			<a href="https://arsenalpay.ru/" class="page-header__logo">
-				<SvgSprite symbol="main-logo" size="0 0 75 42" />
-				<!--      <img src="{{root}}assets/img/svg/main-logo.svg"  alt="Логотип">-->
+				<BaseIcon name="header-logo" width="75" height="42" color="pink" />
 			</a>
 			<TheMainNav />
 			<button type="button" class="page-header__burger" data-open-mobile>
@@ -16,10 +15,12 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import TheMainNav from "@/components/TheMainNav.vue";
+import BaseIcon from "@/components/base/BaseIcon.vue";
 
 @Options({
 	components: {
 		TheMainNav,
+		BaseIcon,
 	},
 })
 export default class ThePageHeader extends Vue {}
@@ -35,9 +36,9 @@ export default class ThePageHeader extends Vue {}
 	z-index: 100;
 	padding-top: 10px;
 
-	@include media-breakpoint-up(lg) {
-		padding-top: 20px;
-	}
+	//@include media-breakpoint-up(lg) {
+	//	padding-top: 20px;
+	//}
 
 	&__container {
 		@include container();

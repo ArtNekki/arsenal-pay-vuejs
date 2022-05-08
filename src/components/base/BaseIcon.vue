@@ -1,38 +1,57 @@
 <template>
-	<div class="btn">
-		<slot></slot>
-	</div>
+	<svg
+		class="icon"
+		:class="{
+			['icon_color_' + color]: color && !currentColor,
+		}"
+		:width="width + 'px'"
+		:height="height + 'px'"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<use :xlink:href="iconPath" xmlns:xlink="http://www.w3.org/1999/xlink" />
+	</svg>
 </template>
 
-<script lang="ts">
+<script>
 import { Options, Vue } from "vue-class-component";
 
 @Options({
 	props: {
-		type: String,
+		name: String,
+		width: String,
+		height: String,
+		color: String,
+		currentColor: Boolean,
 	},
 })
 export default class BaseIcon extends Vue {
-	msg!: string;
+	get iconPath() {
+		let icon = require(`@/assets/icons/${this.name}.svg`);
+		if (Object.prototype.hasOwnProperty.call(icon, "default")) {
+			icon = icon.default;
+		}
+
+		return icon.url;
+	}
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .icon {
-	&_size_sm {
-		width: 45px;
-		height: 36px;
+	&_color_purple {
+		color: var(--color-bg-purple);
 	}
 
-	&_size_md {
-		width: 48px;
-		height: 38px;
+	&_color_pink {
+		color: var(--color-bg-pink);
 	}
 
-	&_size_lg {
-		width: 120px;
-		height: 120px;
+	&_color_blue {
+		color: var(--color-bg-blue);
+	}
+
+	&_color_green {
+		color: var(--color-bg-green);
 	}
 }
 </style>
