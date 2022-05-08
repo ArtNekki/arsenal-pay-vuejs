@@ -69,7 +69,7 @@ export default class ThePageHeader extends Vue {}
 	&__burger {
 		--line-width: 28px;
 		--line-height: 1px;
-		--line-color: rgba(#000000, 0.8);
+		--line-color: var(--color-bg-black-lighten);
 
 		@include btn-default();
 
@@ -89,7 +89,7 @@ export default class ThePageHeader extends Vue {}
 			display: block;
 			width: var(--line-width);
 			height: var(--line-height);
-			background-color: rgba(#000000, 0.8);
+			background-color: var(--color-bg-black-lighten);
 
 			&::before,
 			&::after {
@@ -98,7 +98,7 @@ export default class ThePageHeader extends Vue {}
 				left: 0;
 				width: var(--line-width);
 				height: var(--line-height);
-				background-color: rgba(#000000, 0.8);
+				background-color: var(--color-bg-black-lighten);
 			}
 
 			&::before {
