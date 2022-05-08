@@ -351,7 +351,11 @@ import { useMeta } from "vue-meta";
 
 export default {
 	setup() {
-		useMeta({ title: "Some Page" });
+		useMeta({
+			title: "Travel page",
+			description: "travel page",
+			"twitter:title": "Nekki",
+		});
 	},
 };
 </script>

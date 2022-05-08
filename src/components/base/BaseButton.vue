@@ -12,7 +12,7 @@ import { Options, Vue } from "vue-class-component";
 		type: String,
 	},
 })
-export default class Btn extends Vue {
+export default class BaseButton extends Vue {
 	msg!: string;
 }
 </script>

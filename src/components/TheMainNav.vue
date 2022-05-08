@@ -1,46 +1,46 @@
 <template>
 	<ul class="main-nav">
 		<li class="main-nav__item">
-			<Link href="https://arsenalpay.ru/cashbox.html" size="sm" color="black">Онлайн касса</Link>
+			<BaseLink href="https://arsenalpay.ru/cashbox.html" size="sm" color="black">Онлайн касса</BaseLink>
 		</li>
 		<li class="main-nav__item">
-			<Link href="https://arsenalpay.ru/tariffs.html" size="sm" color="black">Тарифы</Link>
+			<BaseLink href="https://arsenalpay.ru/tariffs.html" size="sm" color="black">Тарифы</BaseLink>
 		</li>
 		<li class="main-nav__item">
 			<router-link to="/priem-platezhej-v-instagram" custom v-slot="{ href, navigate, isActive }">
-				<Link :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+				<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
 					Платежи в Instagram*
-				</Link>
+				</BaseLink>
 			</router-link>
 		</li>
 		<li class="main-nav__item">
-			<Link href="https://arsenalpay.ru/priem-platezhej-na-sajte.html" size="sm" color="black"
-				>Платежи на сайте</Link
+			<BaseLink href="https://arsenalpay.ru/priem-platezhej-na-sajte.html" size="sm" color="black"
+				>Платежи на сайте</BaseLink
 			>
 		</li>
 		<li class="main-nav__item">
 			<router-link to="/quickstart" custom v-slot="{ href, navigate, isActive }">
-				<Link :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+				<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
 					Платежи без сайта
-				</Link>
+				</BaseLink>
 			</router-link>
 		</li>
 		<li class="main-nav__item main-nav__item_type_login">
-			<Link href="https://arsenalpay.ru/dashboard/login" type="login" size="sm" color="black">Войти</Link>
+			<BaseLink href="https://arsenalpay.ru/dashboard/login" type="login" size="sm" color="black">Войти</BaseLink>
 		</li>
 	</ul>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import Link from "@/components/Link.vue";
+import BaseLink from "@/components/base/BaseLink.vue";
 
 @Options({
 	components: {
-		Link,
+		BaseLink,
 	},
 })
-export default class MainNav extends Vue {}
+export default class TheMainNav extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

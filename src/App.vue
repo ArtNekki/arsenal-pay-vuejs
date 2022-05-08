@@ -1,20 +1,25 @@
 <template>
 	<metainfo>
-		<template v-slot:title="{ content }">{{ content ? `${content} | SITE_NAME` : `SITE_NAME` }}</template>
+		<template v-slot:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
+		<template v-slot:description="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
+		<template v-slot:twitter:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
 	</metainfo>
-	<PageHeader />
+	<ThePageHeader />
 	<router-view />
+	<ThePageFooter />
 </template>
 
 <script lang="ts">
 import { Options, Vue, setup } from "vue-class-component";
 import { useMeta } from "vue-meta";
 
-import PageHeader from "./components/PageHeader.vue";
+import ThePageHeader from "./components/ThePageHeader.vue";
+import ThePageFooter from "@/components/ThePageFooter.vue";
 
 @Options({
 	components: {
-		PageHeader,
+		ThePageHeader,
+		ThePageFooter,
 	},
 })
 export default class App extends Vue {

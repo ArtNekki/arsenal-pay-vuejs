@@ -4,7 +4,7 @@
 			<a href="https://arsenalpay.ru/" class="page-header__logo">
 				<!--      <img src="{{root}}assets/img/svg/main-logo.svg"  alt="Логотип">-->
 			</a>
-			<MainNav />
+			<TheMainNav />
 			<button type="button" class="page-header__burger" data-open-mobile>
 				<span></span>
 			</button>
@@ -14,14 +14,14 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import MainNav from "./MainNav.vue";
+import TheMainNav from "@/components/TheMainNav.vue";
 
 @Options({
 	components: {
-		MainNav,
+		TheMainNav,
 	},
 })
-export default class PageHeader extends Vue {}
+export default class ThePageHeader extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

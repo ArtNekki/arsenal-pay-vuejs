@@ -2,6 +2,7 @@
 	<a
 		:href="href"
 		:active="isActive"
+		:target="blank ? '_blank' : ''"
 		class="link"
 		:class="{
 			['link_size_' + size]: size,
@@ -20,12 +21,13 @@ import { Options, Vue } from "vue-class-component";
 	props: {
 		href: String,
 		isActive: Boolean,
+		blank: Boolean,
 		type: String,
 		size: String,
 		color: String,
 	},
 })
-export default class Link extends Vue {}
+export default class BaseLink extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

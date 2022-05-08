@@ -24,7 +24,8 @@
 
 @mixin hover($parent: null, $touch: false) {
   $selectors: "#{&}";
-  $isPseudo: str-index($selectors, "::before") or str-index($selectors, "::after");
+  $isPseudo: str-index($selectors, "::before") or
+    str-index($selectors, "::after");
   $isChecked: str-index($selectors, "> input:checked");
   $touchMod: null;
 
@@ -36,11 +37,15 @@
     #{$touchMod} & {
       $selector: &;
       $splitSelector: str-split("#{$selector}", ">");
-      $selector: str-replace(nth($splitSelector, 1), $parent, "#{$parent}:hover");
+      $selector: str-replace(
+        nth($splitSelector, 1),
+        $parent,
+        "#{$parent}:hover"
+      );
       $selector: "#{$selector} > #{nth($splitSelector, 2)}";
 
       @at-root #{$selector} {
-         @content;
+        @content;
       }
     }
   } @else if ($parent) {
@@ -54,14 +59,19 @@
       $selector: &;
 
       @each $mod in $mods {
-        $selector: selector-replace($selector, map-get($mod, "original"), map-get($mod, "new"));
+        $selector: selector-replace(
+          $selector,
+          map-get($mod, "original"),
+          map-get($mod, "new")
+        );
       }
 
       @at-root #{$selector} {
-         @content;
+        @content;
       }
     }
-  } @else { //not $parent and not $isPseudo
+  } @else {
+    //not $parent and not $isPseudo
     #{$touchMod} &:hover {
       @content;
     }
@@ -70,20 +80,25 @@
 
 @mixin active($parent: null, $class: false) {
   $selectors: "#{&}";
-  $isPseudo: str-index($selectors, "::before") or str-index($selectors, "::after");
+  $isPseudo: str-index($selectors, "::before") or
+    str-index($selectors, "::after");
   $isChecked: str-index($selectors, "> input:checked");
 
   @if ($parent and $isChecked) {
     #{$touchMod} & {
       $selector: &;
       $splitSelector: str-split("#{$selector}", ">");
-      $selector: str-replace(nth($splitSelector, 1), $parent, "#{$parent}:hover");
+      $selector: str-replace(
+        nth($splitSelector, 1),
+        $parent,
+        "#{$parent}:hover"
+      );
       $selector: "#{$selector} > #{nth($splitSelector, 2)}";
 
       @at-root #{$selector} {
         @debug $selector;
 
-         @content;
+        @content;
       }
     }
   } @else if $parent {
@@ -98,18 +113,21 @@
       $selector: &;
 
       @each $mod in $mods {
-        $selector: selector-replace($selector, map-get($mod, "original"), map-get($mod, "new"));
+        $selector: selector-replace(
+          $selector,
+          map-get($mod, "original"),
+          map-get($mod, "new")
+        );
       }
 
       @at-root #{$selector} {
-         @content;
+        @content;
       }
     }
-
-  } @else { //not $parent and not $isPseudo
+  } @else {
+    //not $parent and not $isPseudo
     &:active,
-    &--active
-    {
+    &--active {
       @content;
     }
   }
@@ -117,7 +135,8 @@
 
 @mixin focus($parent: null, $onlyTouch: false) {
   $selectors: "#{&}";
-  $isPseudo: str-index($selectors, "::before") or str-index($selectors, "::after");
+  $isPseudo: str-index($selectors, "::before") or
+    str-index($selectors, "::after");
   $isChecked: str-index($selectors, "> input:checked");
   $touchMod: null;
 
@@ -129,13 +148,17 @@
     #{$touchMod} & {
       $selector: &;
       $splitSelector: str-split("#{$selector}", ">");
-      $selector: str-replace(nth($splitSelector, 1), $parent, "#{$parent}:hover");
+      $selector: str-replace(
+        nth($splitSelector, 1),
+        $parent,
+        "#{$parent}:hover"
+      );
       $selector: "#{$selector} > #{nth($splitSelector, 2)}";
 
       @at-root #{$selector} {
         @debug $selector;
 
-         @content;
+        @content;
       }
     }
   } @else if $parent {
@@ -149,14 +172,19 @@
       $selector: &;
 
       @each $mod in $mods {
-        $selector: selector-replace($selector, map-get($mod, "original"), map-get($mod, "new"));
+        $selector: selector-replace(
+          $selector,
+          map-get($mod, "original"),
+          map-get($mod, "new")
+        );
       }
 
       @at-root #{$selector} {
-         @content;
+        @content;
       }
     }
-  } @else { //not $parent and not $isPseudo
+  } @else {
+    //not $parent and not $isPseudo
     #{$touchMod} &:focus {
       @content;
     }
@@ -179,7 +207,6 @@
   }
 
   @include media-breakpoint-up(md) {
-
   }
 
   @include media-breakpoint-up(lg) {
@@ -241,7 +268,6 @@
   //border-bottom: 1px solid var(--blue-dark-color);
 
   @-moz-document url-prefix() {
-
     &::before {
       bottom: -5px;
     }
@@ -292,7 +318,7 @@
   border: 1px solid var(--blue-dark-color);
   border-radius: 40px;
   box-sizing: border-box;
-  transition: background-color, color .3s;
+  transition: background-color, color 0.3s;
   user-select: none;
 
   &:focus {
@@ -304,7 +330,6 @@
     color: var(--white-color);
   }
 }
-
 
 @mixin label {
   display: block;

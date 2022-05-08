@@ -12,18 +12,27 @@ import { Options, Vue } from "vue-class-component";
 		type: String,
 	},
 })
-export default class Chips extends Vue {
+export default class BaseIcon extends Vue {
 	msg!: string;
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.chips {
-	margin-bottom: 12px;
+.icon {
+	&_size_sm {
+		width: 45px;
+		height: 36px;
+	}
 
-	@include media-breakpoint-up(md) {
-		margin-bottom: 16px;
+	&_size_md {
+		width: 48px;
+		height: 38px;
+	}
+
+	&_size_lg {
+		width: 120px;
+		height: 120px;
 	}
 }
 </style>
