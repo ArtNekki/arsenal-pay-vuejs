@@ -5,6 +5,7 @@
 		<template v-slot:twitter:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
 	</metainfo>
 	<ThePageHeader />
+	<TheMobileNav />
 	<router-view />
 	<ThePageFooter />
 </template>
@@ -15,14 +16,18 @@ import { useMeta } from "vue-meta";
 
 import ThePageHeader from "./components/ThePageHeader.vue";
 import ThePageFooter from "@/components/ThePageFooter.vue";
+import TheMobileNav from "./components/TheMobileNav.vue";
 
 @Options({
 	components: {
 		ThePageHeader,
 		ThePageFooter,
+		TheMobileNav,
 	},
 })
 export default class App extends Vue {
+	mobileMenuOpened = false;
+
 	meta = setup(() =>
 		useMeta({
 			title: "Hello",
