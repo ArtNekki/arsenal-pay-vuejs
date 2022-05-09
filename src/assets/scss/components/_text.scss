@@ -1,7 +1,9 @@
 .text {
+  position: relative;
   margin: 0;
   font-style: normal;
   font-weight: normal;
+  z-index: var(--layer-2);
 
   &_section_title {
     margin-bottom: 16px;

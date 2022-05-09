@@ -19,7 +19,7 @@
     height: 300px;
     background: inherit;
     transform: skewY(var(--skew-angle));
-    z-index: 1;
+    z-index: var(--layer-1);
   }
 
   &::before {
@@ -82,7 +82,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 600px;
 
     .page-section_type_cut & {
       @include media-breakpoint-up(xl) {
@@ -112,6 +111,35 @@
       @include media-breakpoint-up(xl) {
         margin-left: calc(-1 * var(--container-cut));
       }
+    }
+  }
+
+  &__alert-top {
+    margin: 14px 0 26px 0;
+    z-index: var(--layer-2);
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 24px;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-top: 52px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 43px;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-left: -6px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: -20px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      margin-left: -35px;
     }
   }
 

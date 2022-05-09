@@ -78,6 +78,16 @@
   --transition-time: 0.3s;
 }
 
+// z-index
+:root {
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+  --layer-4: 4;
+  --layer-5: 5;
+  --layer-6: 6;
+}
+
 //font
 :root {
   --font-family: Montserrat, "Open Sans", FranklinGothic, "Helvetica Neue",

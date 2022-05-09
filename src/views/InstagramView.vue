@@ -1,17 +1,17 @@
 <template>
-	<section class="page-section page-section_order_1 page-section_type_cut page-section_skew_no-top">
+	<section class="page-section page-section_order_1 page-section_type_cut">
 		<div class="page-section__container">
-			<div class="page-section__alert page-section__alert--top">
-				<!--				{{{ alert text="Теперь приём платежей доступен и самозанятым" }}}-->
+			<div class="page-section__alert page-section__alert-top">
+				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
-			<h1 class="page-section__title">Приём платежей в&nbsp;Instagram*</h1>
-			<div class="page-section__text">
-				<p class="text text--mgb-36 text--mgb-sm-32 text--mgb-md-36 text--ls-36 text--md-size-lg">
+			<div class="page-section__shift">
+				<h1 class="text text_section_title">Приём платежей в&nbsp;Instagram*</h1>
+				<p class="text text_section_lvl-1">
 					Без сайта. Без покупки онлайн кассы.<br class="br br--show-sm br--hide-md" />
 					Без потери клиентов.<br class="br br--show-xs" />Visa, MasterCard, Мир, Apple Pay.
 				</p>
+				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
 			</div>
-			<a href="https://arsenalpay.ru/dashboard/quickstart?step=1" class="page-section__btn">Подключить</a>
 			<div class="widget-box widget-box--instagram">
 				<div class="widget-box__widget">
 					<!--					{{{ img className="widget-box&#45;&#45;instagram-img" name="widget-instagram" breakpoints='{"xs": "true", "xl": true}'}}}-->
@@ -341,12 +341,16 @@ import { Options, Vue } from "vue-class-component";
 import TheReviewsSlider from "@/components/TheReviewsSlider.vue";
 import { SwiperSlide } from "swiper/vue";
 import BaseReviewCard from "@/components/base/BaseReviewCard.vue";
+import BaseNotice from "@/components/base/BaseNotice.vue";
+import BaseButton from "@/components/base/BaseButton.vue";
 
 @Options({
 	components: {
 		TheReviewsSlider,
 		SwiperSlide,
 		BaseReviewCard,
+		BaseNotice,
+		BaseButton,
 	},
 })
 export default class InstagramView extends Vue {
@@ -403,6 +407,11 @@ export default class InstagramView extends Vue {
 
 	@include media-breakpoint-up(sm) {
 		bottom: -40px;
+	}
+
+	&::before {
+		top: -90px;
+		transform: unset;
 	}
 
 	.page-section__container {
