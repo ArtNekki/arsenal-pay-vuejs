@@ -36,7 +36,7 @@ export default class BaseNotice extends Vue {}
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	border-radius: 22px;
+	border-radius: var(--border-radius-md);
 
 	@include media-breakpoint-up(sm) {
 		padding: 0 16px 0 0;

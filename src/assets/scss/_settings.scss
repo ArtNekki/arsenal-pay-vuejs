@@ -69,6 +69,11 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.09);
 }
 
+// transitions
+:root {
+  --transition-time: 0.3s;
+}
+
 //font
 :root {
   --font-family: Montserrat, "Open Sans", FranklinGothic, "Helvetica Neue",

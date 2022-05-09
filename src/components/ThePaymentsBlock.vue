@@ -9,7 +9,8 @@
 			<p class="text text--mgb-36 text--md-size-lg">
 				Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.
 			</p>
-			<a href="" class="page-section__btn" style="margin-bottom: 0">Подключиться</a>
+			<BaseButton> Подключиться </BaseButton>
+			<!--			<a href="" class="page-section__btn" style="margin-bottom: 0">Подключиться</a>-->
 			<!--			<a href="{{ footerLink }}" class="page-section__btn" style="margin-bottom: 0">Подключиться</a>-->
 		</div>
 	</section>
@@ -18,10 +19,12 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import BaseNotice from "./base/BaseNotice.vue";
+import BaseButton from "@/components/base/BaseButton.vue";
 
 @Options({
 	components: {
 		BaseNotice,
+		BaseButton,
 	},
 })
 export default class ThePaymentsBlock extends Vue {}
