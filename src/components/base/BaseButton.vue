@@ -19,7 +19,7 @@ export default class BaseButton extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.btn {
+.button {
 	width: 40px;
 	height: 40px;
 	background: var(--color-bg-blue);

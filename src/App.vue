@@ -52,11 +52,11 @@ body {
 	//scroll-behavior: smooth;
 }
 
-img {
-	width: 100%;
-	height: auto;
-	display: block;
-}
+//img {
+//	width: 100%;
+//	height: auto;
+//	display: block;
+//}
 
 //media query + scrollbar fix in safari
 @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {

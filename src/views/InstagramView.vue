@@ -323,7 +323,7 @@
 				><br class="br br--show-xs" />Посмотрите
 				<a href="https://arsenalpay.ru/pay/" class="link link--in-text">страницы оплаты</a> клиентов.
 			</p>
-			<!--			{{> reviews-slider-instagram }}-->
+			<TheReviewsSlider :reviews="reviews" />
 		</div>
 	</section>
 	<!--	<article id="kassa" class="modal modal&#45;&#45;new-check" data-close>-->
@@ -335,6 +335,61 @@
 	<!--		</div>-->
 	<!--	</article>-->
 </template>
+
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import TheReviewsSlider from "@/components/TheReviewsSlider.vue";
+import { SwiperSlide } from "swiper/vue";
+import BaseReviewCard from "@/components/base/BaseReviewCard.vue";
+
+@Options({
+	components: {
+		TheReviewsSlider,
+		SwiperSlide,
+		BaseReviewCard,
+	},
+})
+export default class InstagramView extends Vue {
+	reviews = [
+		{
+			src: "logo-olgkosmetolog",
+			name: "@olgkosmetolog",
+			title: "<span style='display: inline-block;margin-right: 11px;'>👩</span>Косметолог Ольга Петрунина<br /><span style='display: inline-block;margin-right: 11px;'>🏆</span>Косметолог года 2018",
+			text:
+				"Мои подписчики со&nbsp;всего мира смогли купить чек лист с&nbsp;обзором средств по&nbsp;домашнему уходу с&nbsp;помощью\n" +
+				"ArsenalPay. Нам очень быстро настроили email рассылку, все работало автоматически, подписчики получали чек листы после оплаты.\n" +
+				"С&nbsp;кассой тоже отлично получилось, спасибо моему бухгалтеру за&nbsp;совет подключиться к&nbsp;вам.",
+			link: {
+				href: "https://arsenalpay.ru/pay/olgkosmetolog",
+				text: "Страница оплаты",
+			},
+		},
+		{
+			src: "logo-olgkosmetolog",
+			name: "@olgkosmetolog",
+			title: "asd",
+			text:
+				"Мои подписчики со&nbsp;всего мира смогли купить чек лист с&nbsp;обзором средств по&nbsp;домашнему уходу с&nbsp;помощью\n" +
+				"ArsenalPay. Нам очень быстро настроили email рассылку, все работало автоматически, подписчики получали чек листы после оплаты.\n" +
+				"С&nbsp;кассой тоже отлично получилось, спасибо моему бухгалтеру за&nbsp;совет подключиться к&nbsp;вам.",
+			link: {
+				href: "https://arsenalpay.ru/pay/olgkosmetolog",
+				text: "Страница оплаты",
+			},
+		},
+		{
+			src: "asd",
+			name: "sdsdasdasd",
+			title: "asd",
+			text: "asdasda",
+			link: {
+				href: "https://arsenalpay.ru/pay/olgkosmetolog",
+				text: "Страница оплаты",
+			},
+		},
+	];
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
