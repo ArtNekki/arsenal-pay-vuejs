@@ -9,7 +9,7 @@
 			<p class="text text--mgb-36 text--md-size-lg">
 				Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.
 			</p>
-			<BaseButton> Подключиться </BaseButton>
+			<BaseButton>Подключиться</BaseButton>
 			<!--			<a href="" class="page-section__btn" style="margin-bottom: 0">Подключиться</a>-->
 			<!--			<a href="{{ footerLink }}" class="page-section__btn" style="margin-bottom: 0">Подключиться</a>-->
 		</div>

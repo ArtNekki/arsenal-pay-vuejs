@@ -5,6 +5,7 @@
   --color-bg-white: #ffffff;
   --color-bg-purple: #f4ebff;
   --color-bg-purple-light: #f4ebff;
+  --color-bg-purple-dark: #af53ff;
   --color-bg-pink: #ffdbf1;
   --color-bg-pink-light: #fff0f7;
   --color-bg-blue: #4682ff;
@@ -31,6 +32,7 @@
   --color-text-inverse: #ffffff;
   --color-text-blue: #0a79fa;
   --color-text-pink: #eb0081;
+  --color-text-purple: #af53ff;
 }
 
 //color-stroke
@@ -49,6 +51,7 @@
 
 //border-radius
 :root {
+  --border-radius-2xs: 12px;
   --border-radius-xs: 18px;
   --border-radius-sm: 20px;
   --border-radius-md: 22px;

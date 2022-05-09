@@ -9,6 +9,7 @@
 	<router-view />
 	<ThePaymentsBlock />
 	<ThePageFooter />
+	<TheCookie />
 </template>
 
 <script lang="ts">
@@ -19,6 +20,7 @@ import ThePageHeader from "./components/ThePageHeader.vue";
 import ThePageFooter from "@/components/ThePageFooter.vue";
 import TheMobileNav from "./components/TheMobileNav.vue";
 import ThePaymentsBlock from "./components/ThePaymentsBlock.vue";
+import TheCookie from "./components/TheCookie.vue";
 
 @Options({
 	components: {
@@ -26,6 +28,7 @@ import ThePaymentsBlock from "./components/ThePaymentsBlock.vue";
 		ThePageFooter,
 		TheMobileNav,
 		ThePaymentsBlock,
+		TheCookie,
 	},
 })
 export default class App extends Vue {
