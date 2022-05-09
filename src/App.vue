@@ -7,6 +7,7 @@
 	<ThePageHeader />
 	<TheMobileNav />
 	<router-view />
+	<ThePaymentsBlock />
 	<ThePageFooter />
 </template>
 
@@ -17,12 +18,14 @@ import { useMeta } from "vue-meta";
 import ThePageHeader from "./components/ThePageHeader.vue";
 import ThePageFooter from "@/components/ThePageFooter.vue";
 import TheMobileNav from "./components/TheMobileNav.vue";
+import ThePaymentsBlock from "./components/ThePaymentsBlock.vue";
 
 @Options({
 	components: {
 		ThePageHeader,
 		ThePageFooter,
 		TheMobileNav,
+		ThePaymentsBlock,
 	},
 })
 export default class App extends Vue {

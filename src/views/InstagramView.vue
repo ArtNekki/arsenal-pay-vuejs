@@ -313,7 +313,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_12 page-section_skew-no-bottom">
+	<section class="page-section page-section_order_12 page-section_skew_no-bottom">
 		<div class="page-section__container">
 			<h2 class="page-section__title">Отзывы наших клиентов</h2>
 			<p class="text text--md-size-lg">
