@@ -3,9 +3,10 @@
 		class="icon"
 		:class="{
 			['icon_color_' + color]: color && !currentColor,
+			['icon_size_' + size]: size,
 		}"
-		:width="width + 'px'"
-		:height="height + 'px'"
+		:width="width"
+		:height="height"
 		xmlns="http://www.w3.org/2000/svg"
 	>
 		<use :xlink:href="iconPath" xmlns:xlink="http://www.w3.org/1999/xlink" />
@@ -20,6 +21,7 @@ import { Options, Vue } from "vue-class-component";
 		name: String,
 		width: String,
 		height: String,
+		size: String,
 		color: String,
 		currentColor: Boolean,
 	},
@@ -52,6 +54,12 @@ export default class BaseIcon extends Vue {
 
 	&_color_green {
 		color: var(--color-bg-green);
+	}
+
+	&_size_lg {
+		margin-bottom: 26px;
+		width: 112px;
+		height: 112px;
 	}
 }
 </style>

@@ -28,7 +28,8 @@
 
 //color-text
 :root {
-  --color-text-primary: rgba(0, 0, 0, 1);
+  --color-text-primary: #333333;
+  --color-text-secondary: rgba(0, 0, 0, 1);
   --color-text-inverse: #ffffff;
   --color-text-blue: #0a79fa;
   --color-text-pink: #eb0081;
@@ -109,4 +110,6 @@ $container-max-widths: (
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 // Container padding
-//$container-padding-x:  20px !default;
+:root {
+  --container-padding-x: 20px;
+}

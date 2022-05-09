@@ -55,7 +55,7 @@ export default class BaseSocial extends Vue {}
 		line-height: 31px;
 		text-align: center;
 		letter-spacing: 0.085px;
-		color: rgba(var(--color-text-primary), 0.8);
+		color: rgba(var(--color-text-secondary), 0.8);
 
 		.social_type_footer & {
 			@include media-breakpoint-up(lg) {

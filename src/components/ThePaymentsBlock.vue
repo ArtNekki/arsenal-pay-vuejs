@@ -1,12 +1,12 @@
 <template>
 	<section class="page-section page-section_skew_no">
 		<div class="page-section__container">
-			<!--			 {{{ icon name="card-big" width="112" height="112" mods="pink" }}}-->
+			<BaseIcon name="card-size-lg" width="112" height="112" size="lg" color="pink" />
 			<div class="page-section__notice">
 				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
-			<h2 class="page-section__title">Подключить платежи в Instagram*</h2>
-			<p class="text text--mgb-36 text--md-size-lg">
+			<h2 class="text text_section_title">Подключить платежи в Instagram*</h2>
+			<p class="text text_section_lvl-1">
 				Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.
 			</p>
 			<BaseButton>Подключиться</BaseButton>
@@ -20,11 +20,13 @@
 import { Options, Vue } from "vue-class-component";
 import BaseNotice from "./base/BaseNotice.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
+import BaseIcon from "./base/BaseIcon.vue";
 
 @Options({
 	components: {
 		BaseNotice,
 		BaseButton,
+		BaseIcon,
 	},
 })
 export default class ThePaymentsBlock extends Vue {}
@@ -33,19 +35,22 @@ export default class ThePaymentsBlock extends Vue {}
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .page-section {
-	padding-top: 95px;
-	padding-bottom: 90px;
-	background-color: var(--color-bg-pink);
-	align-items: center;
-	text-align: center;
+	background-color: var(--color-bg-pink-light);
 
-	@include media-breakpoint-up(md) {
-		padding-top: 125px;
-		padding-bottom: 118px;
+	&__container {
+		padding-top: 95px;
+		padding-bottom: 90px;
+		align-items: center;
+		text-align: center;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 125px;
+			padding-bottom: 118px;
+		}
 	}
 
 	&__notice {
-		margin: 26px 0 15px 0;
+		margin-bottom: 16px;
 		width: 100%;
 		align-self: center;
 		z-index: 1;

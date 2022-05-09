@@ -40,7 +40,7 @@ export default class TheCookie extends Vue {}
 
 <style scoped lang="scss">
 .cookie {
-	background-color: var(--color-bg-pink);
+	background-color: var(--color-bg-pink-light);
 	position: -webkit-sticky;
 	position: sticky;
 	bottom: 0;

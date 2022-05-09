@@ -183,7 +183,7 @@ export default class TheMobileNav extends Vue {
 
 		font-size: 14.8px;
 		line-height: 42px;
-		color: rgba(var(--color-text-primary), 0.8);
+		color: rgba(var(--color-text-secondary), 0.8);
 		text-decoration: none;
 	}
 
@@ -208,7 +208,7 @@ export default class TheMobileNav extends Vue {
 		line-height: 15px;
 		text-decoration: none;
 		text-align: center;
-		color: rgba(var(--color-text-primary), 0.8);
+		color: rgba(var(--color-text-secondary), 0.8);
 		border: 1px solid var(--color-stroke-light);
 		border-radius: 20px;
 		transition: background-color 0.3s linear, border-color 0.3s linear;

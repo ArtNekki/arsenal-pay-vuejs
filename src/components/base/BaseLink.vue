@@ -40,7 +40,7 @@ export default class BaseLink extends Vue {}
 	font-weight: 500;
 	line-height: 30px;
 	letter-spacing: -0.16px;
-	color: var(--color-text-primary);
+	color: var(--color-text-secondary);
 	text-decoration: none;
 	cursor: pointer;
 
@@ -57,7 +57,7 @@ export default class BaseLink extends Vue {}
 		bottom: -4px;
 		width: 100%;
 		height: 1px;
-		background-color: var(--color-text-primary);
+		background-color: var(--color-text-secondary);
 		opacity: 0;
 		transition: background-color 0.3s;
 
