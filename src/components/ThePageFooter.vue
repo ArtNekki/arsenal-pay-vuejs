@@ -107,7 +107,7 @@
 			</div>
 			<div class="footer__bottom">
 				<div class="footer__social">
-					<!--					{{{ social mods="footer"}}}-->
+					<BaseSocial type="footer" />
 				</div>
 				<div class="footer__note">
 					<small>* Instagram, признана в России экстремистской.</small>
@@ -121,10 +121,12 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import BaseLink from "@/components/base/BaseLink.vue";
+import BaseSocial from "./base/BaseSocial.vue";
 
 @Options({
 	components: {
 		BaseLink,
+		BaseSocial,
 	},
 })
 export default class ThePageFooter extends Vue {}
