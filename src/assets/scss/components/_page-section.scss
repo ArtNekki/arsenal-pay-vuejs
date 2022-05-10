@@ -5,7 +5,7 @@
   position: relative;
   background: var(--color-bg-white);
 
-  @include media-breakpoint-only(xl) {
+  @include media-breakpoint-up(xl) {
     --container-cut: 40px;
   }
 

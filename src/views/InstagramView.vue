@@ -450,9 +450,13 @@ export default class InstagramView extends Vue {
 			text-align: left;
 		}
 
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xl) {
 			grid-template-columns: 583px auto;
 			grid-column-gap: 42px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			grid-template-columns: 513px auto;
 		}
 	}
 
@@ -463,13 +467,17 @@ export default class InstagramView extends Vue {
 			@include media-breakpoint-up(lg) {
 				position: absolute;
 				top: 0;
-				left: 0;
+				left: -4px;
 				z-index: var(--layer-2);
-				margin-left: -4px;
+				margin-left: 0;
 			}
 
 			@include media-breakpoint-up(xl) {
-				margin-left: -63px;
+				left: -63px;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				left: -163px;
 			}
 		}
 
@@ -492,47 +500,6 @@ export default class InstagramView extends Vue {
 
 	.page-section__container {
 		padding-top: 50px;
-		padding-bottom: 170px;
-
-		@include media-breakpoint-up(sm) {
-			padding-bottom: 185px;
-			text-align: center;
-			align-items: center;
-		}
-
-		@include media-breakpoint-up(md) {
-			padding-bottom: 212px;
-		}
-
-		@include media-breakpoint-up(lg) {
-			padding-top: 60px;
-			padding-bottom: 200px;
-		}
-
-		@include media-breakpoint-up(xl) {
-			padding-bottom: 245px;
-		}
-	}
-}
-
-.page-section_order_2 {
-	margin-top: -36px;
-	background-color: var(--color-bg-pink-light);
-
-	@include media-breakpoint-up(sm) {
-		margin-top: -51px;
-	}
-
-	@include media-breakpoint-up(lg) {
-		margin-top: -98px;
-	}
-
-	@include media-breakpoint-up(xl) {
-		margin-top: -143px;
-	}
-
-	.page-section__container {
-		padding-top: 0;
 		padding-bottom: 150px;
 
 		@include media-breakpoint-up(sm) {
@@ -541,17 +508,47 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(md) {
+			padding-bottom: 157px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 60px;
+			padding-bottom: 150px;
+		}
+
+		//@include media-breakpoint-up(xxl) {
+		//	padding-bottom: 285px;
+		//}
+	}
+}
+
+.page-section_order_2 {
+	background-color: var(--color-bg-pink-light);
+
+	.page-section__container {
+		top: -16px;
+		padding-top: 0;
+		padding-bottom: 132px;
+
+		@include media-breakpoint-up(sm) {
+			text-align: center;
+			align-items: center;
+		}
+
+		@include media-breakpoint-up(md) {
+			top: 0;
+			padding-top: 2px;
 			padding-bottom: 130px;
 		}
 
 		@include media-breakpoint-up(lg) {
-			padding-bottom: 172px;
+			top: -50px;
+			padding-bottom: 120px;
 		}
 
-		@include media-breakpoint-up(xl) {
-			//padding-top: 60px;
-			//padding-bottom: 170px;
-		}
+		//@include media-breakpoint-up(xxl) {
+		//	top: -183px;
+		//}
 	}
 
 	.page-section__row {
