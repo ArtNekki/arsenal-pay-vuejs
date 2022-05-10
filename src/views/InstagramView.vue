@@ -5,8 +5,8 @@
 				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
 			<div class="page-section__shift">
-				<h1 class="text text_section_title">Приём платежей в&nbsp;Instagram*</h1>
-				<p class="text text_level_1">
+				<h1 class="text text_title_level-1">Приём платежей в&nbsp;Instagram*</h1>
+				<p class="text text_level_1 text_before_button">
 					Без сайта. Без покупки онлайн кассы.<br class="br br--show-sm br--hide-md" />
 					Без потери клиентов.<br class="br br--show-xs" />Visa, MasterCard, Мир, Apple Pay.
 				</p>
@@ -16,7 +16,7 @@
 			</div>
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseImage src="instagram-page-main-widget" :breakpoints="{ xs: true, xl: true }" />
+					<BaseImage src="instagram-page/main-widget" :breakpoints="{ xs: true, xl: true }" />
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Без сайта</h3>
@@ -35,12 +35,6 @@
 					</p>
 				</div>
 			</div>
-			<!--			<div class="widget-box widget-box&#45;&#45;instagram">-->
-			<!--				<div class="widget-box__widget">-->
-			<!--					&lt;!&ndash;					{{{ img className="widget-box&#45;&#45;instagram-img" name="widget-instagram" breakpoints='{"xs": "true", "xl": true}'}}}&ndash;&gt;-->
-			<!--				</div>-->
-			<!--				<div class="widget-box__content"></div>-->
-			<!--			</div>-->
 		</div>
 	</section>
 
@@ -69,82 +63,79 @@
 					</p>
 				</div>
 			</div>
-			<div class="widget-box widget-box--instagram">
-				<div class="widget-box__content">
-					<!--					{{{ info-box-->
-					<!--					title=""-->
-					<!--					text=''-->
-					<!--					label="Бесплатно"-->
-					<!--					mods="align-left-lg, mgb-42"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="lh-md-26, mw-520, w-md-400" }}}-->
-					<!--					{{{ info-box-->
-					<!--					title=""-->
-					<!--					text=''-->
-					<!--					label="Бесплатно"-->
-					<!--					mods="align-left-lg, mgb-42"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="lh-md-26, mw-520, w-md-400" }}}-->
-					<!--					{{{ info-box-->
-					<!--					title=""-->
-					<!--					text=''-->
-					<!--					label="Бесплатно"-->
-					<!--					mods="align-left-lg, mgb-42"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="lh-md-26, mw-520, w-md-400" }}}-->
-				</div>
-			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_3">
 		<div class="page-section__container">
-			<h2 class="page-section__title">
+			<h2 class="text text_title_level-1">
 				Вам не&nbsp;нужен свой&nbsp;сайт, <br class="br br--show-xs" />чтобы&nbsp;принимать платежи.
 			</h2>
 			<div>
-				<p class="text text--md-size-lg text--inline-sm">
+				<p class="text text_level_1 text_inline_sm">
 					Больше не&nbsp;нужно тратить время и&nbsp;деньги на&nbsp;свой сайт.
 				</p>
 				<br class="br br--show-lg" />
-				<p class="text text--md-size-lg text--inline-sm">
+				<p class="text text_level_1 text_inline_sm">
 					Принимайте оплату в&nbsp;Instagram*, в любых соцсетях или месенджерах.
 				</p>
 				<br class="br br--show-lg" />
-				<p class="text text--md-size-lg text--inline-sm">
+				<p class="text text_level_1 text_inline_sm">
 					Сообщения об&nbsp;оплате будут приходить сразу на ваш телефон.
 				</p>
 			</div>
-			<div class="media-box media-box--social">
-				<div class="media-box__img">
-					<!--					{{{ img name="messenger" breakpoints='{"lg": true}'}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="instagram-page/messengers" :breakpoints="{ xs: true, lg: true }" />
 				</div>
-				<div class="media-box__content">
-					<!--					{{{ info-box-->
-					<!--					title="Ссылка в&nbsp;профиле Instagram*"-->
-					<!--					text='Разместите ссылку в&nbsp;вашем профиле Instagram*. <br class="br br&#45;&#45;show-sm br&#45;&#45;hide-lg br&#45;&#45;show-xl">-->
-					<!--					Все клиенты смогут оплачивать ваши товары и&nbsp;услуги.'-->
-					<!--					mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Оплата в&nbsp;WhatsApp, Telegram, Viber."-->
-					<!--					text='Отправляйте ссылку на&nbsp;оплату во&nbsp;время общения с&nbsp;клиентами через директ, в&nbsp;WhatsApp,-->
-					<!--					Telegram, Viber&nbsp;&mdash; <br class="br br&#45;&#45;show-sm br&#45;&#45;hide-lg">клиенты сразу смогут оплатить заказ.'-->
-					<!--					mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Оплата в VK, TikTok."-->
-					<!--					text='Разместите ссылку в&nbsp;ваших группах в&nbsp;любых соцсетях, например VK или TikTok. Принимайте оплату без&nbsp;границ.'-->
-					<!--					mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"-->
-					<!--					}}}-->
+				<div class="page-section__col">
+					<h3 class="text text_title_level-3">Ссылка в&nbsp;профиле Instagram*</h3>
+					<p class="text text_level_3">
+						Разместите ссылку в&nbsp;вашем профиле Instagram*.
+						<br class="br br--show-sm br--hide-lg br--show-xl" />
+						Все клиенты смогут оплачивать ваши товары и&nbsp;услуги.
+					</p>
+					<h3 class="text text_title_level-3">Оплата в&nbsp;WhatsApp, Telegram, Viber.</h3>
+					<p class="text text_level_3">
+						Отправляйте ссылку на&nbsp;оплату во&nbsp;время общения с&nbsp;клиентами через директ,
+						в&nbsp;WhatsApp, Telegram, Viber&nbsp;&mdash; <br class="br br--show-sm br--hide-lg" />клиенты
+						сразу смогут оплатить заказ.
+					</p>
+					<h3 class="text text_title_level-3">Оплата в VK, TikTok.</h3>
+					<p class="text text_level_3">
+						Разместите ссылку в&nbsp;ваших группах в&nbsp;любых соцсетях, например VK или TikTok. Принимайте
+						оплату без&nbsp;границ.
+					</p>
 				</div>
 			</div>
+			<!--				<div class="media-box media-box&#45;&#45;social">-->
+			<!--					<div class="media-box__img">-->
+			<!--						&lt;!&ndash;-->
+			<!--					</div>-->
+			<!--					<div class="media-box__content">-->
+			<!--										{{{ info-box&ndash;&gt;-->
+			<!--					&lt;!&ndash;					title=""&ndash;&gt;-->
+			<!--					&lt;!&ndash;					text=''&ndash;&gt;-->
+			<!--					&lt;!&ndash;					mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"&ndash;&gt;-->
+			<!--					&lt;!&ndash;					titleMods="lh-35-md"&ndash;&gt;-->
+			<!--					&lt;!&ndash;					textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"&ndash;&gt;-->
+			<!--					&lt;!&ndash;					}}}&ndash;&gt;-->
+			<!--										{{{ info-box-->
+			<!--										title=""-->
+			<!--										text=''-->
+			<!--										mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"-->
+			<!--										titleMods="lh-35-md"-->
+			<!--										textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"-->
+			<!--										}}}-->
+			<!--										{{{ info-box-->
+			<!--										title=""-->
+			<!--										text=''-->
+			<!--										mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"-->
+			<!--										titleMods="lh-35-md"-->
+			<!--										textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"-->
+			<!--										}}}-->
+			<!--				</div>-->
+			<!--			</div>-->
 		</div>
 	</section>
 
@@ -431,61 +422,59 @@ export default class InstagramView extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.page-section {
-	&__row {
-		position: relative;
-		margin-top: 80px;
+@mixin row-top-widget() {
+	position: relative;
+	margin-top: 80px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include media-breakpoint-up(lg) {
+		display: grid;
+		grid-template-columns: 385px minmax(340px, 400px);
+		grid-column-gap: 25px;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		align-items: start;
+		justify-items: start;
+		text-align: left;
+	}
+
+	@include media-breakpoint-up(xl) {
+		grid-template-columns: 583px auto;
+		grid-column-gap: 42px;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		grid-template-columns: 513px auto;
+	}
+}
+
+@mixin col-top-widget() {
+	&:first-child {
+		margin-left: -3px;
 
 		@include media-breakpoint-up(lg) {
-			display: grid;
-			grid-template-columns: 385px minmax(340px, 400px);
-			grid-column-gap: 25px;
-			width: 100%;
-			align-items: start;
-			justify-items: start;
-			text-align: left;
+			position: absolute;
+			top: 0;
+			left: -4px;
+			z-index: var(--layer-2);
+			margin-left: 0;
 		}
 
 		@include media-breakpoint-up(xl) {
-			grid-template-columns: 583px auto;
-			grid-column-gap: 42px;
+			left: -63px;
 		}
 
 		@include media-breakpoint-up(xxl) {
-			grid-template-columns: 513px auto;
+			left: -163px;
 		}
 	}
 
-	&__col {
-		&:first-child {
-			margin-left: -3px;
-
-			@include media-breakpoint-up(lg) {
-				position: absolute;
-				top: 0;
-				left: -4px;
-				z-index: var(--layer-2);
-				margin-left: 0;
-			}
-
-			@include media-breakpoint-up(xl) {
-				left: -63px;
-			}
-
-			@include media-breakpoint-up(xxl) {
-				left: -163px;
-			}
-		}
-
-		&:last-child {
-			@include media-breakpoint-up(lg) {
-				padding-top: 68px;
-				grid-column: 2 / 3;
-			}
+	&:last-child {
+		@include media-breakpoint-up(lg) {
+			padding-top: 68px;
+			grid-column: 2 / 3;
 		}
 	}
 }
@@ -515,10 +504,14 @@ export default class InstagramView extends Vue {
 			padding-top: 60px;
 			padding-bottom: 150px;
 		}
+	}
 
-		//@include media-breakpoint-up(xxl) {
-		//	padding-bottom: 285px;
-		//}
+	.page-section__row {
+		@include row-top-widget();
+	}
+
+	.page-section__col {
+		@include col-top-widget();
 	}
 }
 
@@ -545,14 +538,16 @@ export default class InstagramView extends Vue {
 			top: -50px;
 			padding-bottom: 120px;
 		}
-
-		//@include media-breakpoint-up(xxl) {
-		//	top: -183px;
-		//}
 	}
 
 	.page-section__row {
+		@include row-top-widget();
+
 		margin-top: 0;
+	}
+
+	.page-section__col {
+		@include col-top-widget();
 	}
 }
 
