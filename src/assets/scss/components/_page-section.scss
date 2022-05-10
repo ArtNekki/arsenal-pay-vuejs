@@ -118,10 +118,6 @@
     margin: 14px 0 26px 0;
     z-index: var(--layer-2);
 
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 24px;
-    }
-
     @include media-breakpoint-up(md) {
       margin-top: 52px;
     }
@@ -141,6 +137,9 @@
     @include media-breakpoint-up(xxl) {
       margin-left: -35px;
     }
+  }
+
+  &__shift {
   }
 
   //icon's shift

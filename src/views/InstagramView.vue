@@ -6,61 +6,88 @@
 			</div>
 			<div class="page-section__shift">
 				<h1 class="text text_section_title">Приём платежей в&nbsp;Instagram*</h1>
-				<p class="text text_section_lvl-1">
+				<p class="text text_level_1">
 					Без сайта. Без покупки онлайн кассы.<br class="br br--show-sm br--hide-md" />
 					Без потери клиентов.<br class="br br--show-xs" />Visa, MasterCard, Мир, Apple Pay.
 				</p>
-				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
+				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1" align="center"
+					>Подключить</BaseButton
+				>
 			</div>
-			<div class="widget-box widget-box--instagram">
-				<div class="widget-box__widget">
-					<!--					{{{ img className="widget-box&#45;&#45;instagram-img" name="widget-instagram" breakpoints='{"xs": "true", "xl": true}'}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="instagram-page-main-widget" :breakpoints="{ xs: true, xl: true }" />
 				</div>
-				<div class="widget-box__content">
-					<!--					{{{ info-box-->
-					<!--					title="Без сайта"-->
-					<!--					text='Принимайте оплату через ссылку в&nbsp;профиле Instagram*. <br class="br br&#45;&#45;show-xs br&#45;&#45;hide-md">Свой сайт больше не&nbsp;нужен.'-->
-					<!--					mods="align-left-lg, mgb-24, mgb-md-40"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="lh-md-26, mw-520, mw-md-400" }}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Бесплатная онлайн касса"-->
-					<!--					text='Вам не&nbsp;нужно покупать свою кассу. <br class="br&#45;&#45;show-sm">Мы&nbsp;даем кассу бесплатно.'-->
-					<!--					mods="align-left-lg, mgb-24, mgb-md-40"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="lh-md-26, mw-520, w-md-400, mw-md-400" }}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Удобные платёжные функции"-->
-					<!--					text='Выставление счёта клиентам. Apple Pay. Возврат платежей. Холдирование платежей.'-->
-					<!--					mods="align-left-lg, mgb-24, mgb-md-40"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="lh-md-26, mw-520, mw-md-400" }}}-->
+				<div class="page-section__col">
+					<h3 class="text text_title_level-3">Без сайта</h3>
+					<p class="text text_level_3">
+						Принимайте оплату через ссылку в&nbsp;профиле Instagram*.
+						<br class="br br&#45;&#45;show-xs br&#45;&#45;hide-md" />Свой сайт больше не&nbsp;нужен.
+					</p>
+					<h3 class="text text_title_level-3">Бесплатная онлайн касса</h3>
+					<p class="text text_level_3">
+						Вам не&nbsp;нужно покупать свою кассу. <br class="br&#45;&#45;show-sm" />Мы&nbsp;даем кассу
+						бесплатно.
+					</p>
+					<h3 class="text text_title_level-3">Удобные платёжные функции</h3>
+					<p class="text text_level_3">
+						Выставление счёта клиентам. Apple Pay. Возврат платежей. Холдирование платежей.
+					</p>
 				</div>
 			</div>
+			<!--			<div class="widget-box widget-box&#45;&#45;instagram">-->
+			<!--				<div class="widget-box__widget">-->
+			<!--					&lt;!&ndash;					{{{ img className="widget-box&#45;&#45;instagram-img" name="widget-instagram" breakpoints='{"xs": "true", "xl": true}'}}}&ndash;&gt;-->
+			<!--				</div>-->
+			<!--				<div class="widget-box__content"></div>-->
+			<!--			</div>-->
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_2 page-section_type_cut">
 		<div class="page-section__container">
+			<div class="page-section__row">
+				<div class="page-section__col"></div>
+				<div class="page-section__col">
+					<BaseChip view="pink">Бесплатно</BaseChip>
+					<h3 class="text text_title_level-3">Кнопки быстрой связи</h3>
+					<p class="text text_level_3 text_before_chip">
+						WhatsApp, Telegram, Viber&nbsp;&mdash; быстрая связь с&nbsp;клиентами для&nbsp;увеличения
+						продаж.
+					</p>
+					<BaseChip view="pink">Бесплатно</BaseChip>
+					<h3 class="text text_title_level-3">Мультиссылка</h3>
+					<p class="text text_level_3 text_before_chip">
+						Соберите все важные ссылки вместе. <br class="br&#45;&#45;show-sm" />Решает проблему
+						единственной ссылки в&nbsp;профиле Instagram*.
+					</p>
+					<BaseChip view="pink">Бесплатно</BaseChip>
+					<h3 class="text text_title_level-3">Автоматическая email рассылка</h3>
+					<p class="text text_level_3">
+						Открывает доступ к&nbsp;контенту после оплаты.
+						<br class="br br&#45;&#45;show-sm br&#45;&#45;hide-lg" />Автоматизирует работу с&nbsp;клиентами.
+					</p>
+				</div>
+			</div>
 			<div class="widget-box widget-box--instagram">
 				<div class="widget-box__content">
 					<!--					{{{ info-box-->
-					<!--					title="Кнопки быстрой связи"-->
-					<!--					text='WhatsApp, Telegram, Viber&nbsp;&mdash; быстрая связь с&nbsp;клиентами для&nbsp;увеличения продаж.'-->
+					<!--					title=""-->
+					<!--					text=''-->
 					<!--					label="Бесплатно"-->
 					<!--					mods="align-left-lg, mgb-42"-->
 					<!--					titleMods="lh-35-md"-->
 					<!--					textMods="lh-md-26, mw-520, w-md-400" }}}-->
 					<!--					{{{ info-box-->
-					<!--					title="Мультиссылка"-->
-					<!--					text='Соберите все важные ссылки вместе. <br class="br&#45;&#45;show-sm">Решает проблему единственной ссылки в&nbsp;профиле Instagram*.'-->
+					<!--					title=""-->
+					<!--					text=''-->
 					<!--					label="Бесплатно"-->
 					<!--					mods="align-left-lg, mgb-42"-->
 					<!--					titleMods="lh-35-md"-->
 					<!--					textMods="lh-md-26, mw-520, w-md-400" }}}-->
 					<!--					{{{ info-box-->
-					<!--					title="Автоматическая email рассылка"-->
-					<!--					text='Открывает доступ к&nbsp;контенту после оплаты. <br class="br br&#45;&#45;show-sm br&#45;&#45;hide-lg">Автоматизирует работу с&nbsp;клиентами.'-->
+					<!--					title=""-->
+					<!--					text=''-->
 					<!--					label="Бесплатно"-->
 					<!--					mods="align-left-lg, mgb-42"-->
 					<!--					titleMods="lh-35-md"-->
@@ -343,6 +370,8 @@ import { SwiperSlide } from "swiper/vue";
 import BaseReviewCard from "@/components/base/BaseReviewCard.vue";
 import BaseNotice from "@/components/base/BaseNotice.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
+import BaseImage from "@/components/base/BaseImage.vue";
+import BaseChip from "@/components/base/BaseChip.vue";
 
 @Options({
 	components: {
@@ -351,6 +380,8 @@ import BaseButton from "@/components/base/BaseButton.vue";
 		BaseReviewCard,
 		BaseNotice,
 		BaseButton,
+		BaseImage,
+		BaseChip,
 	},
 })
 export default class InstagramView extends Vue {
@@ -400,14 +431,50 @@ export default class InstagramView extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.page-section_order_1 {
-	bottom: -20px;
-	//z-index: 10;
-	background-color: var(--color-bg-purple);
+.page-section {
+	&__row {
+		position: relative;
+		margin-top: 80px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-	@include media-breakpoint-up(sm) {
-		bottom: -40px;
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: 385px minmax(340px, 400px);
+			grid-column-gap: 25px;
+			width: 100%;
+			align-items: start;
+			justify-items: start;
+			text-align: left;
+		}
 	}
+
+	&__col {
+		&:first-child {
+			margin-left: -3px;
+
+			@include media-breakpoint-up(lg) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: var(--layer-2);
+				margin-left: -4px;
+			}
+		}
+
+		&:last-child {
+			@include media-breakpoint-up(lg) {
+				padding-top: 68px;
+				grid-column: 2 / 3;
+			}
+		}
+	}
+}
+
+.page-section_order_1 {
+	background-color: var(--color-bg-purple);
 
 	&::before {
 		top: -90px;
@@ -415,49 +482,63 @@ export default class InstagramView extends Vue {
 	}
 
 	.page-section__container {
-		padding-top: 75px;
-		padding-bottom: 38px;
+		padding-top: 50px;
+		padding-bottom: 170px;
 
 		@include media-breakpoint-up(sm) {
-			padding-bottom: 21px;
+			padding-bottom: 185px;
+			text-align: center;
+			align-items: center;
 		}
 
 		@include media-breakpoint-up(md) {
-			padding-top: 115px;
-			padding-bottom: 28px;
+			padding-bottom: 212px;
 		}
 
 		@include media-breakpoint-up(lg) {
-			padding-top: 105px;
-			padding-bottom: 40px;
+			padding-top: 60px;
+			padding-bottom: 200px;
 		}
 	}
 }
 
 .page-section_order_2 {
+	margin-top: -36px;
 	background-color: var(--color-bg-pink-light);
 
+	@include media-breakpoint-up(sm) {
+		margin-top: -51px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-top: -98px;
+	}
+
 	.page-section__container {
-		padding-top: 96px;
-		padding-bottom: 130px;
+		padding-top: 0;
+		padding-bottom: 150px;
 
 		@include media-breakpoint-up(sm) {
-			padding-top: 160px;
+			text-align: center;
+			align-items: center;
 		}
 
 		@include media-breakpoint-up(md) {
-			padding-top: 199px;
+			padding-bottom: 130px;
 		}
 
 		@include media-breakpoint-up(lg) {
-			padding-top: 80px;
-			padding-bottom: 130px;
+			padding-bottom: 172px;
 		}
 
 		@include media-breakpoint-up(xl) {
 			padding-top: 60px;
 			padding-bottom: 170px;
 		}
+	}
+
+	.page-section__row {
+		margin-top: 0;
 	}
 }
 

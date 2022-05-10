@@ -6,9 +6,9 @@
 		}"
 	>
 		<BaseIcon name="check-mark-circle" width="48" height="38" currentColor="true" />
-		<span class="notice__text">
+		<div class="notice__text">
 			<slot />
-		</span>
+		</div>
 	</article>
 </template>
 
@@ -30,7 +30,8 @@ export default class BaseNotice extends Vue {}
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .notice {
-	padding: 2px 16px 10px;
+	padding: 4px 16px 10px;
+	max-width: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -55,10 +56,11 @@ export default class BaseNotice extends Vue {}
 	}
 
 	&__text {
+		margin-top: -2px;
 		font-size: 13.2px;
-		font-weight: 500;
+		font-weight: 600;
 		line-height: 16px;
-		letter-spacing: -0.26px;
+		letter-spacing: -0.25px;
 
 		@include media-breakpoint-up(sm) {
 			margin-left: -2px;

@@ -36,9 +36,9 @@ export default class ThePageHeader extends Vue {}
 	z-index: 100;
 	padding-top: 10px;
 
-	//@include media-breakpoint-up(lg) {
-	//	padding-top: 20px;
-	//}
+	@include media-breakpoint-up(lg) {
+		padding-top: 20px;
+	}
 
 	&__container {
 		@include container();

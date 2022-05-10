@@ -21,7 +21,7 @@
 		:class="{
 			['button_view_' + view]: view,
 			['button_size_' + size]: size,
-			['button_position_' + position]: position,
+			['button_align_' + align]: align,
 		}"
 	>
 		<slot name="icon" />
@@ -49,7 +49,7 @@ import { Options, Vue } from "vue-class-component";
 			default: "md",
 		},
 		href: String,
-		position: String,
+		align: String,
 	},
 })
 export default class BaseButton extends Vue {}
@@ -120,9 +120,10 @@ export default class BaseButton extends Vue {}
 		}
 	}
 
-	&_position_center {
+	&_align_center {
 		margin-right: auto;
 		margin-left: auto;
+		display: flex;
 	}
 }
 </style>

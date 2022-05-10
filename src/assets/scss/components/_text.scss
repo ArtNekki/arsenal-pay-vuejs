@@ -18,12 +18,27 @@
     }
   }
 
-  &_section_lvl-1 {
-    margin-bottom: 40px;
+  &_title_level-3 {
+    margin-bottom: 8px;
+    font-size: 18.2px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.62px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 20.2px;
+      line-height: 35px;
+      letter-spacing: -0.69px;
+    }
+  }
+
+  &_level_1 {
+    margin-bottom: 36px;
+    max-width: 840px;
     font-size: 18.2px;
     font-weight: 300;
     line-height: 28px;
-    letter-spacing: -0.26px;
+    letter-spacing: -0.36px;
 
     @include media-breakpoint-up(md) {
       margin-bottom: 36px;
@@ -31,6 +46,31 @@
       line-height: 32px;
       letter-spacing: -0.4px;
     }
+  }
+
+  &_level_3 {
+    margin-bottom: 24px;
+    max-width: 520px;
+    font-size: 15.2px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 40px;
+      max-width: 400px;
+      font-size: 17.2px;
+      line-height: 26px;
+      letter-spacing: -0.59px;
+    }
+
+    &.text_before_chip {
+      margin-bottom: 42px;
+    }
+  }
+
+  &_align_center {
+    text-align: center;
   }
 
   ////margin-bottom
@@ -146,18 +186,19 @@
   //  text-transform: uppercase;
   //}
   //
-  //// weight
-  //&_weight_light {
-  //  font-weight: 300;
-  //}
-  //
-  //&_weight_bold {
-  //  font-weight: 500;
-  //}
-  //
-  //&_weight_semi-bold {
-  //  font-weight: 600;
-  //}
+
+  // weight
+  &_weight_light {
+    font-weight: 300;
+  }
+
+  &_weight_bold {
+    font-weight: 500;
+  }
+
+  &_weight_semi-bold {
+    font-weight: 600;
+  }
   //
   ////--------------------breakpoint MD---------------------
   //

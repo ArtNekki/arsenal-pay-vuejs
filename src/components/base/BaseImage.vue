@@ -1,40 +1,50 @@
 <template>
 	<picture v-if="breakpoints">
 		<source
-			v-if="breakpoints.xl"
-			media="(min-width: 1200px)"
+			v-if="breakpoints.xxxl"
+			media="(min-width: 1920px)"
 			:srcset="
-				'@/assets/images/' +
-				src +
-				'--xl.' +
-				ext +
-				' 1x, @/assets/images/' +
-				src +
-				'--xl@2x.' +
-				ext +
-				' 2x, @/assets/images/' +
-				src +
-				'--xl@3x.' +
-				ext +
+				require('@/assets/images/' + src + '--xxxl.' + ext) +
+				' 1x,' +
+				require('@/assets/images/' + src + '--xxxl@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '--xxxl@3x.' + ext) +
+				' 3x'
+			"
+		/>
+		<source
+			v-if="breakpoints.xxl"
+			media="(min-width: 1440px)"
+			:srcset="
+				require('@/assets/images/' + src + '--xxl.' + ext) +
+				' 1x,' +
+				require('@/assets/images/' + src + '--xxl@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '--xxl@3x.' + ext) +
+				' 3x'
+			"
+		/>
+		<source
+			v-if="breakpoints.xl"
+			media="(min-width: 1280px)"
+			:srcset="
+				require('@/assets/images/' + src + '--xl.' + ext) +
+				' 1x,' +
+				require('@/assets/images/' + src + '--xl@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '--xl@3x.' + ext) +
 				' 3x'
 			"
 		/>
 		<source
 			v-if="breakpoints.lg"
-			media="(min-width: 992px)"
+			media="(min-width: 900px)"
 			:srcset="
-				'@/assets/images/' +
-				src +
-				'--lg.' +
-				ext +
-				' 1x, @/assets/images/' +
-				src +
-				'--lg@2x.' +
-				ext +
-				' 2x, @/assets/images/' +
-				src +
-				'--lg@3x.' +
-				ext +
+				require('@/assets/images/' + src + '--lg.' + ext) +
+				' 1x,' +
+				require('@/assets/images/' + src + '--lg@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '--lg@3x.' + ext) +
 				' 3x'
 			"
 		/>
@@ -42,47 +52,36 @@
 			v-if="breakpoints.md"
 			media="(min-width: 768px)"
 			:srcset="
-				'@/assets/images/' +
-				src +
-				'--md.' +
-				ext +
-				' 1x @/assets/images/' +
-				src +
-				'--md@2x.' +
-				ext +
-				' 2x, @/assets/images/' +
-				src +
-				'--md@3x.' +
-				ext +
+				require('@/assets/images/' + src + '--md.' + ext) +
+				' 1x,' +
+				require('@/assets/images/' + src + '--md@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '--md@3x.' + ext) +
 				' 3x'
 			"
 		/>
 		<source
 			v-if="breakpoints.sm"
-			media="(min-width: 576px)"
+			media="(min-width: 600px)"
 			:srcset="
-				'@/assets/images/' +
-				src +
-				'--sm.' +
-				ext +
-				' 1x, @/assets/images/' +
-				src +
-				'--sm@2x.' +
-				ext +
-				' 2x, @/assets/images/' +
-				src +
-				'--sm@3x.' +
-				ext +
+				require('@/assets/images/' + src + '--sm.' + ext) +
+				' 1x,' +
+				require('@/assets/images/' + src + '--sm@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '--sm@3x.' + ext) +
 				' 3x'
 			"
 		/>
 		<img
-			:src="'@/assets/images/' + src + '--xs.' + ext"
+			:src="require('@/assets/images/' + src + '--xs.' + ext)"
 			:srcset="
-				'@/assets/images/' + src + '--xs@2x.' + ext + ' 2x, @/assets/images/' + src + '--xs@3x.' + ext + ' 3x'
+				require('@/assets/images/' + src + '--xs@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '--xs@3x.' + ext) +
+				' 3x'
 			"
-			:width.attr="`${width}px`"
-			:height.attr="`${height}px`"
+			:width="width"
+			:height="height"
 			:style="{ maxWidth: maxWidth + 'px' }"
 			:alt.attr="alt"
 		/>
@@ -96,35 +95,55 @@
 			require('@/assets/images/' + src + '@3x.' + ext) +
 			' 3x'
 		"
-		:width.attr="`${width}px`"
-		:height.attr="`${height}px`"
+		:width="width"
+		:height="height"
 		:style="{ maxWidth: maxWidth + 'px' }"
 		:alt.attr="alt"
 	/>
 </template>
-require('@/assets/chat.png')
+
 <script lang="ts">
 interface Breakpoints {
+	xs?: boolean;
 	sm?: boolean;
 	md?: boolean;
 	lg?: boolean;
 	xl?: boolean;
+	xxl?: boolean;
+	xxxl?: boolean;
 }
 
 import { Options, Vue } from "vue-class-component";
 
 @Options({
 	props: {
-		width: String,
-		height: String,
-		maxWidth: String,
+		width: {
+			type: String,
+			default: null,
+		},
+		height: {
+			type: String,
+			default: null,
+		},
+		maxWidth: {
+			type: String,
+			default: null,
+		},
 		src: String,
 		ext: {
 			type: String,
 			default: "png",
 		},
 		alt: String,
-		breakpoints: Object,
+		breakpoints: {
+			xs: Boolean,
+			sm: Boolean,
+			md: Boolean,
+			lg: Boolean,
+			xl: Boolean,
+			xxl: Boolean,
+			xxxl: Boolean,
+		},
 	},
 })
 export default class BaseImage extends Vue {}
