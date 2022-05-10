@@ -449,6 +449,11 @@ export default class InstagramView extends Vue {
 			justify-items: start;
 			text-align: left;
 		}
+
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: 583px auto;
+			grid-column-gap: 42px;
+		}
 	}
 
 	&__col {
@@ -461,6 +466,10 @@ export default class InstagramView extends Vue {
 				left: 0;
 				z-index: var(--layer-2);
 				margin-left: -4px;
+			}
+
+			@include media-breakpoint-up(xl) {
+				margin-left: -63px;
 			}
 		}
 
@@ -499,6 +508,10 @@ export default class InstagramView extends Vue {
 			padding-top: 60px;
 			padding-bottom: 200px;
 		}
+
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 245px;
+		}
 	}
 }
 
@@ -512,6 +525,10 @@ export default class InstagramView extends Vue {
 
 	@include media-breakpoint-up(lg) {
 		margin-top: -98px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-top: -143px;
 	}
 
 	.page-section__container {
@@ -532,8 +549,8 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(xl) {
-			padding-top: 60px;
-			padding-bottom: 170px;
+			//padding-top: 60px;
+			//padding-bottom: 170px;
 		}
 	}
 
