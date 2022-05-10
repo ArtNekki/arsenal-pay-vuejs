@@ -1,7 +1,7 @@
 <template>
 	<section class="page-section page-section_order_1 page-section_type_cut">
 		<div class="page-section__container">
-			<div class="page-section__alert page-section__alert-top">
+			<div class="page-section__notice">
 				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
 			<div class="page-section__shift">
