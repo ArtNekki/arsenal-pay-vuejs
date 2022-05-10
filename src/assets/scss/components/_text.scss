@@ -62,7 +62,7 @@
 
     @include media-breakpoint-up(md) {
       margin-bottom: 40px;
-      max-width: 400px;
+      //max-width: 400px;
       font-size: 17.2px;
       line-height: 26px;
       letter-spacing: -0.59px;
@@ -70,6 +70,24 @@
 
     &.text_before_chip {
       margin-bottom: 42px;
+    }
+
+    &.text_mgb_60.text_screen_md {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &.text_mgb_34.text_screen_lg {
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 34px;
+      }
+    }
+
+    &.text_mgb_60.text_screen_xl {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 60px;
+      }
     }
   }
 

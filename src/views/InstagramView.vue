@@ -90,19 +90,19 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Ссылка в&nbsp;профиле Instagram*</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_60 text_mgb_34 text_screen_md text_screen_lg text_screen_xl">
 						Разместите ссылку в&nbsp;вашем профиле Instagram*.
 						<br class="br br--show-sm br--hide-lg br--show-xl" />
 						Все клиенты смогут оплачивать ваши товары и&nbsp;услуги.
 					</p>
 					<h3 class="text text_title_level-3">Оплата в&nbsp;WhatsApp, Telegram, Viber.</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_60 text_mgb_34 text_screen_md text_screen_lg text_screen_xl">
 						Отправляйте ссылку на&nbsp;оплату во&nbsp;время общения с&nbsp;клиентами через директ,
 						в&nbsp;WhatsApp, Telegram, Viber&nbsp;&mdash; <br class="br br--show-sm br--hide-lg" />клиенты
 						сразу смогут оплатить заказ.
 					</p>
 					<h3 class="text text_title_level-3">Оплата в VK, TikTok.</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_60 text_mgb_34 text_screen_md text_screen_lg text_screen_xl">
 						Разместите ссылку в&nbsp;ваших группах в&nbsp;любых соцсетях, например VK или TikTok. Принимайте
 						оплату без&nbsp;границ.
 					</p>
@@ -479,6 +479,13 @@ export default class InstagramView extends Vue {
 	}
 }
 
+.page-section {
+	@include media-breakpoint-up(sm) {
+		text-align: center;
+		align-items: center;
+	}
+}
+
 .page-section_order_1 {
 	background-color: var(--color-bg-purple);
 
@@ -490,11 +497,6 @@ export default class InstagramView extends Vue {
 	.page-section__container {
 		padding-top: 50px;
 		padding-bottom: 150px;
-
-		@include media-breakpoint-up(sm) {
-			text-align: center;
-			align-items: center;
-		}
 
 		@include media-breakpoint-up(md) {
 			padding-bottom: 157px;
@@ -523,11 +525,6 @@ export default class InstagramView extends Vue {
 		padding-top: 0;
 		padding-bottom: 132px;
 
-		@include media-breakpoint-up(sm) {
-			text-align: center;
-			align-items: center;
-		}
-
 		@include media-breakpoint-up(md) {
 			top: 0;
 			padding-top: 2px;
@@ -553,7 +550,7 @@ export default class InstagramView extends Vue {
 
 .page-section_order_3 {
 	.page-section__container {
-		padding-top: 39px;
+		padding-top: 40px;
 		padding-bottom: 205px;
 
 		@include media-breakpoint-up(sm) {
@@ -566,7 +563,92 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
+			padding-top: 84px;
 			padding-bottom: 182px;
+			align-items: center;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-top: 80px;
+		}
+	}
+
+	.page-section__row {
+		@include media-breakpoint-up(lg) {
+			margin-top: 92px;
+			display: grid;
+			grid-template-columns: 352px 400px;
+			grid-column-gap: 31px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-top: 61px;
+			grid-template-columns: 342px auto;
+			grid-column-gap: 36px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			grid-column-gap: 66px;
+		}
+	}
+
+	.page-section__col {
+		display: flex;
+		flex-direction: column;
+
+		@include media-breakpoint-up(sm) {
+			align-items: center;
+			text-align: center;
+		}
+
+		@include media-breakpoint-up(lg) {
+			align-items: start;
+			text-align: center;
+		}
+
+		&:first-child {
+			margin-top: 26px;
+			margin-bottom: 5px;
+
+			@include media-breakpoint-up(sm) {
+				margin-top: 41px;
+				align-items: center;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-top: 0;
+			}
+
+			picture {
+				position: relative;
+				left: 4px;
+				align-self: center;
+
+				@include media-breakpoint-up(sm) {
+					left: 0;
+				}
+			}
+
+			//img {
+			//	width: 313px;
+			//	height: 191px;
+			//
+			//	@include media-breakpoint-up(lg) {
+			//		width: 287px;
+			//		height: 579px;
+			//	}
+			//}
+		}
+
+		&:last-child {
+			@include media-breakpoint-up(lg) {
+				padding-top: 30px;
+				text-align: left;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding-top: 44px;
+			}
 		}
 	}
 }
