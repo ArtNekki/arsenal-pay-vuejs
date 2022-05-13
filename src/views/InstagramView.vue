@@ -269,13 +269,15 @@
 				Мультиссылка.<br class="br br--show-sm" />
 				Соберите все важные ссылки&nbsp;вместе.
 			</h2>
-			<p class="text text_level_1 text_display_inline.on_screen_sm">
-				Рассказывайте больше о&nbsp;вашем бизнесе, привлекайте новых&nbsp;клиентов.
-			</p>
-			<br class="br br--show-lg" />
-			<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
-				Отвечайте на&nbsp;часто задаваемые вопросы.
-			</p>
+			<div>
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
+					Рассказывайте больше о&nbsp;вашем бизнесе, привлекайте новых&nbsp;клиентов.
+				</p>
+				<br class="br br--show-lg" />
+				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
+					Отвечайте на&nbsp;часто задаваемые вопросы.
+				</p>
+			</div>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage src="instagram-page/widget-multilink" :breakpoints="{ xs: true, md: true }"></BaseImage>
@@ -829,7 +831,7 @@ export default class InstagramView extends Vue {
 		padding-bottom: 177px;
 
 		@include media-breakpoint-up(sm) {
-			padding-bottom: 190px;
+			padding-bottom: 174px;
 		}
 
 		@include media-breakpoint-up(md) {
@@ -879,6 +881,9 @@ export default class InstagramView extends Vue {
 	}
 
 	.page-section__row {
+		@include media-breakpoint-up(sm) {
+			margin-top: 42px;
+		}
 	}
 
 	.page-section__col {
@@ -915,6 +920,9 @@ export default class InstagramView extends Vue {
 	}
 
 	.page-section__row {
+		@include media-breakpoint-up(sm) {
+			margin-top: 42px;
+		}
 	}
 
 	.page-section__col {
