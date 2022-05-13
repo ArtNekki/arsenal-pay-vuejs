@@ -72,15 +72,15 @@
 				Вам не&nbsp;нужен свой&nbsp;сайт, <br class="br br--show-xs" />чтобы&nbsp;принимать платежи.
 			</h2>
 			<div>
-				<p class="text text_level_1 text_inline_sm">
+				<p class="text text_level_1 text_display_inline text_screen_sm">
 					Больше не&nbsp;нужно тратить время и&nbsp;деньги на&nbsp;свой сайт.
 				</p>
 				<br class="br br--show-lg" />
-				<p class="text text_level_1 text_inline_sm">
+				<p class="text text_level_1 text_display_inline text_screen_sm">
 					Принимайте оплату в&nbsp;Instagram*, в любых соцсетях или месенджерах.
 				</p>
 				<br class="br br--show-lg" />
-				<p class="text text_level_1 text_inline_sm">
+				<p class="text text_level_1 text_display_inline text_screen_sm">
 					Сообщения об&nbsp;оплате будут приходить сразу на ваш телефон.
 				</p>
 			</div>
@@ -121,12 +121,14 @@
 					Онлайн касса бесплатно. <br class="br br--show-xs" />Свою кассу покупать не&nbsp;нужно.
 				</h2>
 				<div>
-					<p class="text text_level_1 text_inline_sm">
+					<p class="text text_level_1 text_display_inline text_screen_sm">
 						Вы&nbsp;получаете полностью готовую к&nbsp;работе
 						<br class="br br--show-sm br--hide-md" />онлайн кассу ArsenalPay.
 					</p>
 					<br class="br br--show-lg" />
-					<p class="text text_level_1 text_inline_sm">В&nbsp;соответствии с&nbsp;54&nbsp;-&nbsp;ФЗ.</p>
+					<p class="text text_level_1 text_display_inline text_screen_sm">
+						В&nbsp;соответствии с&nbsp;54&nbsp;-&nbsp;ФЗ.
+					</p>
 				</div>
 				<div class="page-section__prompt">
 					<BasePrompt color="blue">
@@ -185,13 +187,14 @@
 
 	<section class="page-section page-section_order_5">
 		<div class="page-section__container">
-			<span class="page-section__label">Бесплатные чеки по всем заказам</span>
-			<h2 class="page-section__title">Web-касса ArsenalPay</h2>
-			<p class="text text--no-mgb-sm text--md-size-lg text--lg-inline">
+			<BaseChip view="pink">Бесплатные чеки по всем заказам</BaseChip>
+			<h2 class="text text_title_level-1">Web-касса ArsenalPay</h2>
+			<p class="text text_level_1">
 				Если клиент оплатил заказ наличными, переводом на&nbsp;карту, или перечислил деньги на&nbsp;расчётный
 				счёт, вы&nbsp;легко и&nbsp;быстро пробьёте чек в&nbsp;личном кабинете. Чеки пробиваются с&nbsp;полной
 				номенклатурой, в&nbsp;соответствии с&nbsp;последними изменениями 54‑ФЗ.
-				<br class="br br--show-md br--hide-lg" /><b class="text text--md-size-lg text--bold text--pink"
+				<br class="br br--show-md br--hide-lg" /><b
+					class="text text_color_pink text_weight_bold text_display_inline text_screen_sm"
 					>Чеки&nbsp;бесплатны и&nbsp;без комиссии.</b
 				>
 				<br class="br br--show-md" />
@@ -748,8 +751,7 @@ export default class InstagramView extends Vue {
 	background-color: var(--color-bg-pink-light);
 
 	.page-section__container {
-		margin-top: -13px;
-		padding-top: 0;
+		padding-top: 11px;
 		padding-bottom: 177px;
 
 		@include media-breakpoint-up(sm) {

@@ -33,7 +33,7 @@ export default class BaseChip extends Vue {
 	padding: 4px 9px;
 	display: inline-flex;
 	justify-content: center;
-	align-self: flex-start;
+	//align-self: flex-start;
 	border-radius: var(--border-radius-sm);
 
 	&_view_pink {
