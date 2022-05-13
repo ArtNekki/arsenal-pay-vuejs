@@ -1,5 +1,12 @@
 <template>
-	<picture v-if="breakpoints">
+	<picture
+		class="img"
+		:class="{
+			['img_shadow_' + shadow]: shadow,
+			['img_radius_' + radius]: radius,
+		}"
+		v-if="breakpoints"
+	>
 		<source
 			v-if="breakpoints.xxxl"
 			media="(min-width: 1920px)"
@@ -86,20 +93,28 @@
 			:alt.attr="alt"
 		/>
 	</picture>
-	<img
+	<picture
+		class="img"
+		:class="{
+			['img_shadow_' + shadow]: shadow,
+			['img_radius_' + radius]: radius,
+		}"
 		v-else
-		:src="require('@/assets/images/' + src + '.' + ext)"
-		:srcset="
-			require('@/assets/images/' + src + '@2x.' + ext) +
-			' 2x,' +
-			require('@/assets/images/' + src + '@3x.' + ext) +
-			' 3x'
-		"
-		:width="width"
-		:height="height"
-		:style="{ maxWidth: maxWidth + 'px' }"
-		:alt.attr="alt"
-	/>
+	>
+		<img
+			:src="require('@/assets/images/' + src + '.' + ext)"
+			:srcset="
+				require('@/assets/images/' + src + '@2x.' + ext) +
+				' 2x,' +
+				require('@/assets/images/' + src + '@3x.' + ext) +
+				' 3x'
+			"
+			:width="width"
+			:height="height"
+			:style="{ maxWidth: maxWidth + 'px' }"
+			:alt.attr="alt"
+		/>
+	</picture>
 </template>
 
 <script lang="ts">
@@ -144,6 +159,8 @@ import { Options, Vue } from "vue-class-component";
 			xxl: Boolean,
 			xxxl: Boolean,
 		},
+		shadow: String,
+		radius: String,
 	},
 })
 export default class BaseImage extends Vue {}
@@ -151,7 +168,16 @@ export default class BaseImage extends Vue {}
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-picture {
-	display: block;
+.img {
+	//position: relative;
+	display: inline-block;
+
+	&_shadow_md {
+		box-shadow: var(--box-shadow-md);
+	}
+
+	&_radius_md {
+		border-radius: 32px;
+	}
 }
 </style>

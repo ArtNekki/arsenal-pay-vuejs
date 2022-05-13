@@ -35,7 +35,7 @@
 
   &_level_1 {
     margin-bottom: 16px;
-    max-width: 840px;
+    max-width: 520px;
     font-size: 18.2px;
     font-weight: 300;
     line-height: 28px;
@@ -43,10 +43,13 @@
     letter-spacing: -0.26px;
 
     @include media-breakpoint-up(md) {
+      max-width: 688px;
       font-size: 20.2px;
       line-height: 32px;
       letter-spacing: -0.4px;
     }
+
+    //max-width: 840;
 
     &.text_before_button {
       margin-bottom: 36px;
@@ -55,7 +58,7 @@
 
   &_level_3 {
     margin-bottom: 24px;
-    max-width: 520px;
+    //max-width: 520px;
     font-size: 15.2px;
     font-weight: 300;
     line-height: 24px;
@@ -70,34 +73,6 @@
 
     @include media-breakpoint-up(lg) {
       max-width: 740px;
-    }
-
-    &.text_before_chip {
-      margin-bottom: 42px;
-    }
-
-    &[class~="text_mgb_60.on_screen_md"] {
-      @include media-breakpoint-up(md) {
-        margin-bottom: 60px;
-      }
-    }
-
-    &[class~="text_mgb_40.on_screen_md"] {
-      @include media-breakpoint-up(md) {
-        margin-bottom: 40px;
-      }
-    }
-
-    &[class~="text_mgb_34.text_screen_lg"] {
-      @include media-breakpoint-up(lg) {
-        margin-bottom: 34px;
-      }
-    }
-
-    &[class~="text_mgb_60.text_screen_xl"] {
-      @include media-breakpoint-up(xl) {
-        margin-bottom: 60px;
-      }
     }
   }
 
@@ -124,6 +99,12 @@
     }
   }
 
+  &[class~="text_max-width_520.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      max-width: 520px;
+    }
+  }
+
   &_mgb_60 {
     margin-bottom: 60px;
   }
@@ -132,11 +113,63 @@
     margin-bottom: 42px;
   }
 
+  &[class~="text_mgb_40.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &[class~="text_mgb_50.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &[class~="text_mgb_60.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &[class~="text_mgb_80.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &[class~="text_mgb_34.text_screen_lg"] {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &[class~="text_mgb_60.text_screen_xl"] {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 60px;
+    }
+  }
+
   &[class~="text_mgb_no.on_screen_md"] {
-    &.text_screen_md {
-      @include media-breakpoint-up(md) {
-        margin-bottom: 0;
-      }
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &[class~="text_width_400.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      max-width: 400px;
+    }
+  }
+
+  &[class~="text_lh_32.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      line-height: 32px;
+    }
+  }
+
+  &[class~="text_lh_28.on_screen_md"] {
+    @include media-breakpoint-up(md) {
+      line-height: 28px;
     }
   }
 

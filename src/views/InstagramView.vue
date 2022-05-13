@@ -20,17 +20,16 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Без сайта</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_40.on_screen_md text_width_400.on_screen_md">
 						Принимайте оплату через ссылку в&nbsp;профиле Instagram*.
-						<br class="br br&#45;&#45;show-xs br&#45;&#45;hide-md" />Свой сайт больше не&nbsp;нужен.
+						<br class="br br--show-xs br--hide-md" />Свой сайт больше не&nbsp;нужен.
 					</p>
 					<h3 class="text text_title_level-3">Бесплатная онлайн касса</h3>
-					<p class="text text_level_3">
-						Вам не&nbsp;нужно покупать свою кассу. <br class="br&#45;&#45;show-sm" />Мы&nbsp;даем кассу
-						бесплатно.
+					<p class="text text_level_3 text_mgb_40.on_screen_md text_width_400.on_screen_md">
+						Вам не&nbsp;нужно покупать свою кассу. <br class="br--show-sm" />Мы&nbsp;даем кассу бесплатно.
 					</p>
 					<h3 class="text text_title_level-3">Удобные платёжные функции</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_40.on_screen_md text_width_400.on_screen_md">
 						Выставление счёта клиентам. Apple Pay. Возврат платежей. Холдирование платежей.
 					</p>
 				</div>
@@ -45,21 +44,21 @@
 				<div class="page-section__col">
 					<BaseChip view="pink">Бесплатно</BaseChip>
 					<h3 class="text text_title_level-3">Кнопки быстрой связи</h3>
-					<p class="text text_level_3 text_before_chip">
+					<p class="text text_level_3 text_mgb_42 text_width_400.on_screen_md">
 						WhatsApp, Telegram, Viber&nbsp;&mdash; быстрая связь с&nbsp;клиентами для&nbsp;увеличения
 						продаж.
 					</p>
 					<BaseChip view="pink">Бесплатно</BaseChip>
 					<h3 class="text text_title_level-3">Мультиссылка</h3>
-					<p class="text text_level_3 text_before_chip">
-						Соберите все важные ссылки вместе. <br class="br&#45;&#45;show-sm" />Решает проблему
-						единственной ссылки в&nbsp;профиле Instagram*.
+					<p class="text text_level_3 text_mgb_42 text_width_400.on_screen_md">
+						Соберите все важные ссылки вместе. <br class="br--show-sm" />Решает проблему единственной ссылки
+						в&nbsp;профиле Instagram*.
 					</p>
 					<BaseChip view="pink">Бесплатно</BaseChip>
 					<h3 class="text text_title_level-3">Автоматическая email рассылка</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_42 text_width_400.on_screen_md">
 						Открывает доступ к&nbsp;контенту после оплаты.
-						<br class="br br&#45;&#45;show-sm br&#45;&#45;hide-lg" />Автоматизирует работу с&nbsp;клиентами.
+						<br class="br br--show-sm br--hide-lg" />Автоматизирует работу с&nbsp;клиентами.
 					</p>
 				</div>
 			</div>
@@ -90,19 +89,19 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Ссылка в&nbsp;профиле Instagram*</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md">
 						Разместите ссылку в&nbsp;вашем профиле Instagram*.
 						<br class="br br--show-sm br--hide-lg br--show-xl" />
 						Все клиенты смогут оплачивать ваши товары и&nbsp;услуги.
 					</p>
 					<h3 class="text text_title_level-3">Оплата в&nbsp;WhatsApp, Telegram, Viber.</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md">
 						Отправляйте ссылку на&nbsp;оплату во&nbsp;время общения с&nbsp;клиентами через директ,
 						в&nbsp;WhatsApp, Telegram, Viber&nbsp;&mdash; <br class="br br--show-sm br--hide-lg" />клиенты
 						сразу смогут оплатить заказ.
 					</p>
 					<h3 class="text text_title_level-3">Оплата в VK, TikTok.</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md">
 						Разместите ссылку в&nbsp;ваших группах в&nbsp;любых соцсетях, например VK или TikTok. Принимайте
 						оплату без&nbsp;границ.
 					</p>
@@ -150,17 +149,17 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Каждая оплата проходит через&nbsp;кассу</h3>
-					<p class="text text_level_3">
-						Ваш клиент оплачивает услугу или товар.<br class="br br&#45;&#45;show-sm" />
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md">
+						Ваш клиент оплачивает услугу или товар.<br class="br br--show-sm" />
 						Каждая оплата проходит через онлайн кассу ArsenalPay.
 					</p>
 					<h3 class="text text_title_level-3">Чек формируется автоматически</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md">
 						В&nbsp;кассе формируется фискальный чек с&nbsp;данными вашего&nbsp;ИП или юрлица. Далее этот чек
 						отправляется через ОФД в&nbsp;налоговую автоматически.
 					</p>
 					<h3 class="text text_title_level-3">Все чеки сохраняются в&nbsp;личном&nbsp;кабинете</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md">
 						Все платежи и&nbsp;чеки сохраняются в&nbsp;вашем личном кабинете. Каждый чек можно быстро найти,
 						проверить и&nbsp;распечатать.
 					</p>
@@ -199,33 +198,33 @@
 	<section class="page-section page-section_order_6">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_title_level-1 text_mgb_60">Удобные платёжные функции</h2>
+			<h2 class="text text_title_level-1 text_mgb_60 text_mgb_50.on_screen_md">Удобные платёжные функции</h2>
 			<div class="page-section__box">
 				<BaseIcon name="check-medium" width="52" height="46" color="pink" bottom-space="md" />
-				<h3 class="text text_title_level-3">Выставление счёта</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_title_level-3 text_lh_32.on_screen_md">Выставление счёта</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Счет выставляется в&nbsp;2&nbsp;клика. Просто укажите сумму и полную номенклатуру&nbsp;заказа.
 					Отправьте клиенту ссылку на&nbsp;оплату счета. Сразу после оплаты клиенту придёт чек, а&nbsp;вам
 					уведомление об&nbsp;успешном платеже.
 				</p>
 				<BaseIcon name="apple-pay-medium" width="68" height="45" color="black" bottom-space="md" />
-				<h3 class="text text_title_level-3">Apple Pay</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_title_level-3 text_lh_32.on_screen_md">Apple Pay</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
 					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
 					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.<br class="br br--show-lg" />
 					Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.
 				</p>
 				<BaseIcon name="refund-medium" width="52" height="52" color="purple" bottom-space="md" />
-				<h3 class="text text_title_level-3">Возврат платежа</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_title_level-3 text_lh_32.on_screen_md">Возврат платежа</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Вы&nbsp;можете вернуть деньги клиенту в&nbsp;любое время в&nbsp;личном кабинете. Возврат можно
 					сделать на&nbsp;всю сумму или на&nbsp;часть суммы. Комиссия за&nbsp;возврат платежа
 					не&nbsp;взимается.
 				</p>
 				<BaseIcon name="hold-medium" width="50" height="50" color="blue" bottom-space="md" />
-				<h3 class="text text_title_level-3">Холдирование платежей</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_title_level-3 text_lh_32.on_screen_md">Холдирование платежей</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 					При оплате деньги на&nbsp;карте клиента временно &laquo;замораживаются&raquo;. Эта&nbsp;функция
 					позволяет вам проверить наличие товара или услуги, и&nbsp;уже после проверки списать
 					&laquo;замороженные&raquo; средства с&nbsp;карты клиента. Вы&nbsp;можете списать часть суммы,
@@ -239,21 +238,26 @@
 	<section class="page-section page-section_order_7 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_title_level-1 text_mgb_42">
+			<h2 class="text text_title_level-1 text_mgb_42 text_mgb_60.on_screen_md">
 				Кнопки быстрой связи <br class="br br--show-sm" />WhatsApp, Telegram, Viber
 			</h2>
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseImage src="instagram-page/widget-buttons" :breakpoints="{ xs: true, md: true }"></BaseImage>
+					<BaseImage
+						src="instagram-page/widget-buttons"
+						shadow="md"
+						radius="md"
+						:breakpoints="{ xs: true, md: true }"
+					></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Удобное общение</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
 						Удобный способ общения обеспечит больше обращений. Поможет увеличить продажи
 						и&nbsp;не&nbsp;терять клиентов.
 					</p>
 					<h3 class="text text_title_level-3">Легко начать диалог</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
 						Клиенту достаточно просто нажать на&nbsp;кнопку WhatsApp, Telegram или Viber и&nbsp;вам придет
 						готовое первое сообщение. Возможность начать&nbsp;диалог в&nbsp;один клик облегчит общение.
 					</p>
@@ -280,16 +284,21 @@
 			</div>
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseImage src="instagram-page/widget-multilink" :breakpoints="{ xs: true, md: true }"></BaseImage>
+					<BaseImage
+						src="instagram-page/widget-multilink"
+						shadow="md"
+						radius="md"
+						:breakpoints="{ xs: true, md: true }"
+					></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Создавайте много ссылок</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
 						В&nbsp;профиле Instagram* можно добавить только одну ссылку, но&nbsp;одной ссылки часто
 						недостаточно, чтобы подробно рассказать о&nbsp;своем бизнесе и&nbsp;увеличить продажи.
 					</p>
 					<h3 class="text text_title_level-3">Привлекайте больше клиентов</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
 						Ваши клиенты смогут не&nbsp;только оплачивать заказы, но&nbsp;и&nbsp;узнавать об&nbsp;акциях,
 						новых предложениях, подробности о&nbsp;товарах, услугах и&nbsp;доставке.
 					</p>
@@ -319,13 +328,13 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Автоматизируйте работу с&nbsp;клиентами</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
 						Клиент получает письмо с&nbsp;доступом к&nbsp;контенту сразу после
 						<br class="br br--show-sm br--hide-lg" />оплаты. Вам&nbsp;больше не&nbsp;нужно самим отправлять
 						письма.
 					</p>
 					<h3 class="text text_title_level-3">Продавайте доступ к&nbsp;контенту</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
 						Продавайте курсы, чек листы, билеты, все что угодно. Отправка писем происходит сразу после
 						оплаты или в&nbsp;определенный день, например, в&nbsp;день начала курса.
 					</p>
@@ -348,8 +357,8 @@
 			</p>
 			<div class="rate">
 				<div class="rate__item">
-					<!--					{{{ rate-box count="3" text="Комиссия за успешный платёж <br class='br br&#45;&#45;show-xs' /><b>от ArsenalPay</b>" }}}-->
-					<!--					{{{ rate-box count="2" prefix="+" text="Комиссия за успешный платёж <br class='br br&#45;&#45;show-xs' /><b>от Visa, Mastercard, Мир, Apple Pay</b>" }}}-->
+					<!--					{{{ rate-box count="3" text="Комиссия за успешный платёж <br class='br br--show-xs' /><b>от ArsenalPay</b>" }}}-->
+					<!--					{{{ rate-box count="2" prefix="+" text="Комиссия за успешный платёж <br class='br br--show-xs' /><b>от Visa, Mastercard, Мир, Apple Pay</b>" }}}-->
 				</div>
 				<div class="rate__item">
 					<!--					{{{ note text='["У нас нет дополнительных комиссий и звездочек в договоре."]' mods="no-mgt, w-full" textMods="sm-center, lg" }}}-->
@@ -369,7 +378,7 @@
 			<div class="page-section__content page-section__content--payments">
 				<!--				{{{ info-box-->
 				<!--				title="Без комиссий"-->
-				<!--				text='Никаких скрытых комиссий <br class="br br&#45;&#45;show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.'-->
+				<!--				text='Никаких скрытых комиссий <br class="br br--show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.'-->
 				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
 				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm,  icon-space-md-0, mgb-18, mgb-sm-42, gb-md-40"-->
 				<!--				titleMods="lh-35-md"-->
@@ -377,7 +386,7 @@
 				<!--				}}}-->
 				<!--				{{{ info-box-->
 				<!--				title="Без минимальных сумм"-->
-				<!--				text='Накапливать сумму для <br class="br br&#45;&#45;show-xl" />вывода не&nbsp;нужно.'-->
+				<!--				text='Накапливать сумму для <br class="br br--show-xl" />вывода не&nbsp;нужно.'-->
 				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
 				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm, icon-space-md-0, mgb-18, mgb-sm-42, mgb-md-40"-->
 				<!--				titleMods="lh-35-md"-->
@@ -385,7 +394,7 @@
 				<!--				}}}-->
 				<!--				{{{ info-box-->
 				<!--				title="В&nbsp;любой банк России"-->
-				<!--				text='Ваш расчётный счёт может <br class="br br&#45;&#45;show-xl" />быть в&nbsp;любом банке&nbsp;РФ.'-->
+				<!--				text='Ваш расчётный счёт может <br class="br br--show-xl" />быть в&nbsp;любом банке&nbsp;РФ.'-->
 				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
 				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm, icon-space-md-0, mgb-18, mgb-sm-42, mgb-md-40"-->
 				<!--				titleMods="lh-35-md"-->
@@ -408,7 +417,7 @@
 			<TheReviewsSlider :reviews="reviews" />
 		</div>
 	</section>
-	<!--	<article id="kassa" class="modal modal&#45;&#45;new-check" data-close>-->
+	<!--	<article id="kassa" class="modal modal--new-check" data-close>-->
 	<!--		<div class="modal__body">-->
 	<!--			<button type="button" class="modal__close" data-close>-->
 	<!--				&lt;!&ndash;				{{{ icon name="cross" width="12" height="12" }}}&ndash;&gt;-->
@@ -734,7 +743,7 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(md) {
 			padding-top: 39px;
-			padding-bottom: 205px;
+			padding-bottom: 250px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -836,7 +845,7 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(md) {
 			padding-top: 52px;
-			padding-bottom: 227px;
+			padding-bottom: 210px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -884,14 +893,30 @@ export default class InstagramView extends Vue {
 		@include media-breakpoint-up(sm) {
 			margin-top: 42px;
 		}
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 60px;
+		}
 	}
 
 	.page-section__col {
 		&:first-child {
 			margin-bottom: 42px;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 60px;
+			}
 		}
 
 		&:last-child {
+		}
+	}
+}
+
+.page-section_order_7 {
+	.page-section__row {
+		@include media-breakpoint-up(sm) {
+			margin-top: 0;
 		}
 	}
 }
@@ -923,11 +948,25 @@ export default class InstagramView extends Vue {
 		@include media-breakpoint-up(sm) {
 			margin-top: 42px;
 		}
+
+		@include media-breakpoint-up(md) {
+			margin-top: 60px;
+		}
 	}
 
 	.page-section__col {
 		&:first-child {
+			position: relative;
 			margin-bottom: 42px;
+			margin-left: -28px;
+
+			@include media-breakpoint-up(sm) {
+				margin-left: 0;
+			}
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 60px;
+			}
 		}
 
 		&:last-child {
