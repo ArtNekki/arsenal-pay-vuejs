@@ -72,15 +72,15 @@
 				Вам не&nbsp;нужен свой&nbsp;сайт, <br class="br br--show-xs" />чтобы&nbsp;принимать платежи.
 			</h2>
 			<div>
-				<p class="text text_level_1 text_display_inline text_screen_sm">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Больше не&nbsp;нужно тратить время и&nbsp;деньги на&nbsp;свой сайт.
 				</p>
 				<br class="br br--show-lg" />
-				<p class="text text_level_1 text_display_inline text_screen_sm">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Принимайте оплату в&nbsp;Instagram*, в любых соцсетях или месенджерах.
 				</p>
 				<br class="br br--show-lg" />
-				<p class="text text_level_1 text_display_inline text_screen_sm">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Сообщения об&nbsp;оплате будут приходить сразу на ваш телефон.
 				</p>
 			</div>
@@ -90,19 +90,19 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Ссылка в&nbsp;профиле Instagram*</h3>
-					<p class="text text_level_3 text_mgb_60 text_mgb_34 text_screen_md text_screen_lg text_screen_xl">
+					<p class="text text_level_3">
 						Разместите ссылку в&nbsp;вашем профиле Instagram*.
 						<br class="br br--show-sm br--hide-lg br--show-xl" />
 						Все клиенты смогут оплачивать ваши товары и&nbsp;услуги.
 					</p>
 					<h3 class="text text_title_level-3">Оплата в&nbsp;WhatsApp, Telegram, Viber.</h3>
-					<p class="text text_level_3 text_mgb_60 text_mgb_34 text_screen_md text_screen_lg text_screen_xl">
+					<p class="text text_level_3">
 						Отправляйте ссылку на&nbsp;оплату во&nbsp;время общения с&nbsp;клиентами через директ,
 						в&nbsp;WhatsApp, Telegram, Viber&nbsp;&mdash; <br class="br br--show-sm br--hide-lg" />клиенты
 						сразу смогут оплатить заказ.
 					</p>
 					<h3 class="text text_title_level-3">Оплата в VK, TikTok.</h3>
-					<p class="text text_level_3 text_mgb_60 text_mgb_34 text_screen_md text_screen_lg text_screen_xl">
+					<p class="text text_level_3">
 						Разместите ссылку в&nbsp;ваших группах в&nbsp;любых соцсетях, например VK или TikTok. Принимайте
 						оплату без&nbsp;границ.
 					</p>
@@ -121,21 +121,21 @@
 					Онлайн касса бесплатно. <br class="br br--show-xs" />Свою кассу покупать не&nbsp;нужно.
 				</h2>
 				<div>
-					<p class="text text_level_1 text_display_inline text_screen_sm">
+					<p class="text text_level_1 text_display_inline.on_screen_sm">
 						Вы&nbsp;получаете полностью готовую к&nbsp;работе
 						<br class="br br--show-sm br--hide-md" />онлайн кассу ArsenalPay.
 					</p>
 					<br class="br br--show-lg" />
-					<p class="text text_level_1 text_display_inline text_screen_sm">
+					<p class="text text_level_1 text_display_inline.on_screen_sm">
 						В&nbsp;соответствии с&nbsp;54&nbsp;-&nbsp;ФЗ.
 					</p>
 				</div>
 				<div class="page-section__prompt">
 					<BasePrompt color="blue">
-						<p class="text text_type_prompt text_mgb_no text_screen_md">
+						<p class="text text_type_prompt text_mgb_no.on_screen_md">
 							Не&nbsp;нужно покупать свою кассу и&nbsp;фискальный накопитель.
 						</p>
-						<p class="text text_type_prompt text_mgb_no text_screen_md">
+						<p class="text text_type_prompt text_mgb_no.on_screen_md">
 							Не&nbsp;нужно заключать договор с&nbsp;ОФД и&nbsp;регистрировать кассу в&nbsp;налоговой.
 						</p>
 						<p class="text text_type_prompt">
@@ -150,12 +150,12 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_title_level-3">Каждая оплата проходит через&nbsp;кассу</h3>
-					<p class="text text_level_3 text_mgb_60 text_screen_md text_mgb_34 text_screen_lg text_screen_xl">
+					<p class="text text_level_3">
 						Ваш клиент оплачивает услугу или товар.<br class="br br&#45;&#45;show-sm" />
 						Каждая оплата проходит через онлайн кассу ArsenalPay.
 					</p>
 					<h3 class="text text_title_level-3">Чек формируется автоматически</h3>
-					<p class="text text_level_3 text_mgb_60 text_screen_md text_mgb_34 text_screen_lg text_screen_xl">
+					<p class="text text_level_3">
 						В&nbsp;кассе формируется фискальный чек с&nbsp;данными вашего&nbsp;ИП или юрлица. Далее этот чек
 						отправляется через ОФД в&nbsp;налоговую автоматически.
 					</p>
@@ -186,7 +186,7 @@
 				счёт, вы&nbsp;легко и&nbsp;быстро пробьёте чек в&nbsp;личном кабинете. Чеки пробиваются с&nbsp;полной
 				номенклатурой, в&nbsp;соответствии с&nbsp;последними изменениями 54‑ФЗ.
 				<br class="br br--show-md br--hide-lg" /><b
-					class="text text_color_pink text_weight_bold text_display_inline text_screen_sm"
+					class="text text_color_pink text_weight_bold text_display_inline.on_screen_sm"
 					>Чеки&nbsp;бесплатны и&nbsp;без комиссии.</b
 				>
 				<br class="br br--show-md" />
@@ -269,11 +269,11 @@
 				Мультиссылка.<br class="br br--show-sm" />
 				Соберите все важные ссылки&nbsp;вместе.
 			</h2>
-			<p class="text text_level_1 text_display_inline text_screen_sm">
+			<p class="text text_level_1 text_display_inline.on_screen_sm">
 				Рассказывайте больше о&nbsp;вашем бизнесе, привлекайте новых&nbsp;клиентов.
 			</p>
 			<br class="br br--show-lg" />
-			<p class="text text_level_1 text_mgb_42 text_display_inline text_screen_sm">
+			<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
 				Отвечайте на&nbsp;часто задаваемые вопросы.
 			</p>
 			<div class="page-section__row">
@@ -303,11 +303,11 @@
 				Автоматическая email <br class="br br--show-sm br--hide-md" />рассылка
 			</h2>
 			<div>
-				<p class="text text_level_1 text_display_inline text_screen_sm">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Без затрат на&nbsp;сервисы рассылок. Никаких настроек и&nbsp;интеграций.
 				</p>
 				<br class="br br--show-md" />
-				<p class="text text_level_1 text_mgb_42 text_display_inline text_screen_sm">
+				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
 					Клиент&nbsp;получает письмо с&nbsp;доступом к&nbsp;контенту после оплаты.
 				</p>
 			</div>
@@ -669,7 +669,7 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			align-items: start;
-			text-align: center;
+			text-align: left;
 		}
 
 		&:first-child {
@@ -687,12 +687,11 @@ export default class InstagramView extends Vue {
 
 			picture {
 				position: relative;
-				left: 4px;
 				align-self: center;
 
-				@include media-breakpoint-up(sm) {
-					left: 0;
-				}
+				//@include media-breakpoint-up(sm) {
+				//	left: 0;
+				//}
 			}
 
 			//img {
@@ -747,7 +746,7 @@ export default class InstagramView extends Vue {
 	}
 
 	.page-section__prompt {
-		margin-top: 13px;
+		margin-top: 30px;
 		margin-bottom: 34px;
 		display: flex;
 		justify-content: center;

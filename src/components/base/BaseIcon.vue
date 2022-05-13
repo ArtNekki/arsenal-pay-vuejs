@@ -73,7 +73,7 @@ export default class BaseIcon extends Vue {
 	}
 
 	&_mgb_md {
-		margin-bottom: 15px; //16
+		margin-bottom: 16px; //16
 	}
 }
 </style>
