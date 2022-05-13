@@ -144,14 +144,6 @@
 					</BasePrompt>
 				</div>
 			</div>
-			<!--			{{{ note text='["",-->
-			<!--			"",-->
-			<!--			"."]'-->
-			<!--			mods="blue, mgt-sm-32, mgt-md-50"-->
-			<!--			textMods="mgb-md-0"-->
-			<!--			style="margin-bottom: 7px;"-->
-			<!--			}}}-->
-
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage src="instagram-page/widget-dashboard" width="338" height="724"></BaseImage>
@@ -206,9 +198,41 @@
 
 	<section class="page-section page-section_order_6">
 		<div class="page-section__container">
-			<span class="page-section__label">Бесплатно</span>
-			<h2 class="page-section__title">Удобные платёжные функции</h2>
-			<div class="content-box content-box--quick-start content-box--shadow-md">content-box</div>
+			<BaseChip view="pink">Бесплатно</BaseChip>
+			<h2 class="text text_title_level-1 text_mgb_60">Удобные платёжные функции</h2>
+			<div class="page-section__box">
+				<BaseIcon name="check-medium" width="52" height="46" color="pink" bottom-space="md" />
+				<h3 class="text text_title_level-3">Выставление счёта</h3>
+				<p class="text text_level_3 text_mgb_60">
+					Счет выставляется в&nbsp;2&nbsp;клика. Просто укажите сумму и полную номенклатуру&nbsp;заказа.
+					Отправьте клиенту ссылку на&nbsp;оплату счета. Сразу после оплаты клиенту придёт чек, а&nbsp;вам
+					уведомление об&nbsp;успешном платеже.
+				</p>
+				<BaseIcon name="apple-pay-medium" width="68" height="45" color="black" bottom-space="md" />
+				<h3 class="text text_title_level-3">Apple Pay</h3>
+				<p class="text text_level_3 text_mgb_60">
+					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
+					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
+					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.<br class="br br--show-lg" />
+					Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.
+				</p>
+				<BaseIcon name="refund-medium" width="52" height="52" color="purple" bottom-space="md" />
+				<h3 class="text text_title_level-3">Возврат платежа</h3>
+				<p class="text text_level_3 text_mgb_60">
+					Вы&nbsp;можете вернуть деньги клиенту в&nbsp;любое время в&nbsp;личном кабинете. Возврат можно
+					сделать на&nbsp;всю сумму или на&nbsp;часть суммы. Комиссия за&nbsp;возврат платежа
+					не&nbsp;взимается.
+				</p>
+				<BaseIcon name="hold-medium" width="50" height="50" color="blue" bottom-space="md" />
+				<h3 class="text text_title_level-3">Холдирование платежей</h3>
+				<p class="text text_level_3 text_mgb_60">
+					При оплате деньги на&nbsp;карте клиента временно &laquo;замораживаются&raquo;. Эта&nbsp;функция
+					позволяет вам проверить наличие товара или услуги, и&nbsp;уже после проверки списать
+					&laquo;замороженные&raquo; средства с&nbsp;карты клиента. Вы&nbsp;можете списать часть суммы,
+					комиссия за&nbsp;платёж берётся только со&nbsp;списанной суммы. При&nbsp;отмене
+					&laquo;заморозки&raquo; никакой комиссии вы&nbsp;не&nbsp;платите.
+				</p>
+			</div>
 		</div>
 	</section>
 

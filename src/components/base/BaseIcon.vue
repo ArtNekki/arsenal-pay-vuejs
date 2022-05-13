@@ -4,6 +4,7 @@
 		:class="{
 			['icon_color_' + color]: color && !currentColor,
 			['icon_size_' + size]: size,
+			['icon_mgb_' + bottomSpace]: bottomSpace,
 		}"
 		:width="width"
 		:height="height"
@@ -24,6 +25,7 @@ import { Options, Vue } from "vue-class-component";
 		size: String,
 		color: String,
 		currentColor: Boolean,
+		bottomSpace: String,
 	},
 })
 export default class BaseIcon extends Vue {
@@ -41,22 +43,37 @@ export default class BaseIcon extends Vue {
 <style scoped lang="scss">
 .icon {
 	position: relative;
+	display: inline-block;
 	z-index: var(--layer-2);
 
 	&_color_purple {
-		color: var(--color-bg-purple);
+		color: var(--color-icon-purple);
 	}
 
 	&_color_pink {
-		color: var(--color-bg-pink);
+		color: var(--color-icon-pink);
 	}
 
 	&_color_blue {
-		color: var(--color-bg-blue);
+		color: var(--color-icon-blue-light);
 	}
 
 	&_color_green {
-		color: var(--color-bg-green);
+		color: var(--color-icon-green);
+	}
+
+	&_color_black {
+		color: var(--color-icon-black);
+	}
+
+	&_mgb_xs {
+	}
+
+	&_mgb_sm {
+	}
+
+	&_mgb_md {
+		margin-bottom: 15px; //16
 	}
 }
 </style>

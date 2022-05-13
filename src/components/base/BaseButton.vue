@@ -104,7 +104,7 @@ export default class BaseButton extends Vue {}
 		max-width: 320px;
 		width: 100%;
 		height: 52px;
-		border-radius: var(--border-radius-lg);
+		border-radius: var(--border-radius-2xl);
 	}
 
 	&_width_full {

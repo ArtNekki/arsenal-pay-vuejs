@@ -41,7 +41,7 @@ export default class BaseReviewCard extends Vue {}
 	text-align: left;
 	background-color: var(--color-bg-white);
 	box-shadow: var(--box-shadow-md);
-	border-radius: var(--border-radius-xl);
+	border-radius: var(--border-radius-2xl);
 	box-sizing: border-box;
 
 	&__img {

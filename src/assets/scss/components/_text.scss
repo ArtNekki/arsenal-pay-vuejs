@@ -67,6 +67,10 @@
       letter-spacing: -0.59px;
     }
 
+    @include media-breakpoint-up(lg) {
+      max-width: 740px;
+    }
+
     &.text_before_chip {
       margin-bottom: 42px;
     }
@@ -125,6 +129,10 @@
         display: inline;
       }
     }
+  }
+
+  &_mgb_60 {
+    margin-bottom: 60px;
   }
 
   &_mgb_no {
