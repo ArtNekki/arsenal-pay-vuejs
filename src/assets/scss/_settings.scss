@@ -8,7 +8,7 @@
   --color-bg-purple-dark: #af53ff;
   --color-bg-pink: #ffdbf1;
   --color-bg-pink-light: #fff0f7;
-  --color-bg-blue: #4682ff;
+  --color-bg-blue: rgba(70, 130, 255, 1);
   --color-bg-blue-light: #edf3ff;
   --color-bg-green: #45ba6e;
   --color-bg-green-light: #edfcf1;
@@ -19,7 +19,7 @@
 //color-icon
 :root {
   --color-icon-black: #000000;
-  --color-icon-blue: #0a79fa;
+  --color-icon-blue: rgba(10, 121, 250, 1);
   --color-icon-blue-light: #4fc7ed;
   --color-icon-pink: #f20c92;
   --color-icon-purple: #af53ff;
@@ -76,6 +76,11 @@
 // transitions
 :root {
   --transition-time: 0.3s;
+}
+
+//other
+:root {
+  --skew-angle: 5deg;
 }
 
 // z-index

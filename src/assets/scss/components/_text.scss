@@ -61,7 +61,6 @@
     letter-spacing: -0.2px;
 
     @include media-breakpoint-up(md) {
-      margin-bottom: 40px;
       //max-width: 400px;
       font-size: 17.2px;
       line-height: 26px;
@@ -70,6 +69,12 @@
 
     &.text_before_chip {
       margin-bottom: 42px;
+    }
+
+    &.text_mgb_40.text_screen_md {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 40px;
+      }
     }
 
     &.text_mgb_60.text_screen_md {
@@ -91,6 +96,19 @@
     }
   }
 
+  &_type_prompt {
+    margin: 0 0 10px 0;
+    font-size: 14.8px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    color: var(--color-text-inverse);
+
+    @include media-breakpoint-up(md) {
+      font-size: 16.1px;
+    }
+  }
+
   &_align_center {
     text-align: center;
   }
@@ -98,6 +116,14 @@
   &_inline_sm {
     @include media-breakpoint-up(sm) {
       display: inline;
+    }
+  }
+
+  &_mgb_no {
+    &.text_screen_md {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
     }
   }
 

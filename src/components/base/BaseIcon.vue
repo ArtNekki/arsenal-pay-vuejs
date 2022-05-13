@@ -40,6 +40,9 @@ export default class BaseIcon extends Vue {
 
 <style scoped lang="scss">
 .icon {
+	position: relative;
+	z-index: var(--layer-2);
+
 	&_color_purple {
 		color: var(--color-bg-purple);
 	}
@@ -54,12 +57,6 @@ export default class BaseIcon extends Vue {
 
 	&_color_green {
 		color: var(--color-bg-green);
-	}
-
-	&_size_lg {
-		margin-bottom: 26px;
-		width: 112px;
-		height: 112px;
 	}
 }
 </style>

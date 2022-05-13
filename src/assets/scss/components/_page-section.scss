@@ -1,5 +1,4 @@
 .page-section {
-  --skew-angle: 5deg;
   --container-cut: 15px;
 
   position: relative;
@@ -82,6 +81,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+
+    @include media-breakpoint-up(sm) {
+      align-items: center;
+    }
 
     .page-section_type_cut & {
       @include media-breakpoint-up(xl) {
@@ -143,6 +147,11 @@
     @include media-breakpoint-up(xl) {
       margin-left: -43px;
     }
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-bottom: 25px;
   }
 
   //icon's shift

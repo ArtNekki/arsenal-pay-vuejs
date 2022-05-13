@@ -108,92 +108,76 @@
 					</p>
 				</div>
 			</div>
-			<!--				<div class="media-box media-box&#45;&#45;social">-->
-			<!--					<div class="media-box__img">-->
-			<!--						&lt;!&ndash;-->
-			<!--					</div>-->
-			<!--					<div class="media-box__content">-->
-			<!--										{{{ info-box&ndash;&gt;-->
-			<!--					&lt;!&ndash;					title=""&ndash;&gt;-->
-			<!--					&lt;!&ndash;					text=''&ndash;&gt;-->
-			<!--					&lt;!&ndash;					mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"&ndash;&gt;-->
-			<!--					&lt;!&ndash;					titleMods="lh-35-md"&ndash;&gt;-->
-			<!--					&lt;!&ndash;					textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"&ndash;&gt;-->
-			<!--					&lt;!&ndash;					}}}&ndash;&gt;-->
-			<!--										{{{ info-box-->
-			<!--										title=""-->
-			<!--										text=''-->
-			<!--										mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"-->
-			<!--										titleMods="lh-35-md"-->
-			<!--										textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"-->
-			<!--										}}}-->
-			<!--										{{{ info-box-->
-			<!--										title=""-->
-			<!--										text=''-->
-			<!--										mods="mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60, align-left-lg"-->
-			<!--										titleMods="lh-35-md"-->
-			<!--										textMods="mw-520, mw-lg-400, mw-xl-520, lh-md-26"-->
-			<!--										}}}-->
-			<!--				</div>-->
-			<!--			</div>-->
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_4 page-section_type_cut">
+	<section class="page-section page-section_order_4 page-section_type_cut page-section_skew_inverse">
 		<div class="page-section__container">
-			<!--			{{{ icon name="kassa" width="122" height="120" mods="blue" }}}-->
-			<h2 class="page-section__title">
-				Онлайн касса бесплатно. <br class="br br--show-xs" />Свою кассу покупать не&nbsp;нужно.
-			</h2>
-			<div class="page-section__text">
+			<div class="page-section__shift">
+				<div class="page-section__icon">
+					<BaseIcon name="cashbox-size-lg" width="122" height="120" color="blue" size="lg" />
+				</div>
+				<h2 class="text text_title_level-1">
+					Онлайн касса бесплатно. <br class="br br--show-xs" />Свою кассу покупать не&nbsp;нужно.
+				</h2>
 				<div>
-					<p class="text text--center-sm text--md-size-lg text--inline-sm">
+					<p class="text text_level_1 text_inline_sm">
 						Вы&nbsp;получаете полностью готовую к&nbsp;работе
 						<br class="br br--show-sm br--hide-md" />онлайн кассу ArsenalPay.
 					</p>
 					<br class="br br--show-lg" />
-					<p class="text text--center-sm text--md-size-lg text--inline-sm">
-						В&nbsp;соответствии с&nbsp;54&nbsp;-&nbsp;ФЗ.
-					</p>
+					<p class="text text_level_1 text_inline_sm">В&nbsp;соответствии с&nbsp;54&nbsp;-&nbsp;ФЗ.</p>
+				</div>
+				<div class="page-section__prompt">
+					<BasePrompt color="blue">
+						<p class="text text_type_prompt text_mgb_no text_screen_md">
+							Не&nbsp;нужно покупать свою кассу и&nbsp;фискальный накопитель.
+						</p>
+						<p class="text text_type_prompt text_mgb_no text_screen_md">
+							Не&nbsp;нужно заключать договор с&nbsp;ОФД и&nbsp;регистрировать кассу в&nbsp;налоговой.
+						</p>
+						<p class="text text_type_prompt">
+							Не&nbsp;нужно вручную пробивать чеки и&nbsp;отправлять их&nbsp;клиенту.
+						</p>
+					</BasePrompt>
 				</div>
 			</div>
-			<!--			{{{ note text='["Не&nbsp;нужно покупать свою кассу и&nbsp;фискальный накопитель.",-->
-			<!--			"Не&nbsp;нужно заключать договор с&nbsp;ОФД и&nbsp;регистрировать кассу в&nbsp;налоговой.",-->
-			<!--			"Не&nbsp;нужно вручную пробивать чеки и&nbsp;отправлять их&nbsp;клиенту."]'-->
+			<!--			{{{ note text='["",-->
+			<!--			"",-->
+			<!--			"."]'-->
 			<!--			mods="blue, mgt-sm-32, mgt-md-50"-->
 			<!--			textMods="mgb-md-0"-->
 			<!--			style="margin-bottom: 7px;"-->
 			<!--			}}}-->
-			<div class="widget-box widget-box--dashboard">
-				<div class="widget-box__widget">
-					<!--					{{{ img name="widget-dashboard" }}}-->
+
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="instagram-page/widget-dashboard" width="338" height="724"></BaseImage>
 				</div>
-				<div class="widget-box__content">
-					<!--					{{{ info-box-->
-					<!--					title="Каждая оплата проходит через&nbsp;кассу"-->
-					<!--					text='Ваш клиент оплачивает услугу или товар. <br class="br br&#45;&#45;show-sm">-->
-					<!--					Каждая оплата проходит через онлайн кассу ArsenalPay.'-->
-					<!--					mods="align-left-lg, mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Чек формируется автоматически"-->
-					<!--					text='В&nbsp;кассе формируется фискальный чек с&nbsp;данными вашего&nbsp;ИП или юрлица.-->
-					<!--					Далее этот чек отправляется через ОФД в&nbsp;налоговую автоматически.'-->
-					<!--					mods="align-left-lg, mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Все чеки сохраняются в&nbsp;личном&nbsp;кабинете"-->
-					<!--					text='Все платежи и&nbsp;чеки сохраняются в&nbsp;вашем личном кабинете.-->
-					<!--					Каждый чек можно быстро найти, проверить и&nbsp;распечатать.'-->
-					<!--					link='{"type": "button", "text": "Пример фискального чека", "dataModal": "kassa", "icon": "invoice-medium", "color": "blue"}'-->
-					<!--					mods="align-left-lg, mgb-24, mgb-md-60, mgb-lg-34, mgb-xl-60"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-					<!--					}}}-->
+				<div class="page-section__col">
+					<h3 class="text text_title_level-3">Каждая оплата проходит через&nbsp;кассу</h3>
+					<p class="text text_level_3 text_mgb_60 text_screen_md text_mgb_34 text_screen_lg text_screen_xl">
+						Ваш клиент оплачивает услугу или товар.<br class="br br&#45;&#45;show-sm" />
+						Каждая оплата проходит через онлайн кассу ArsenalPay.
+					</p>
+					<h3 class="text text_title_level-3">Чек формируется автоматически</h3>
+					<p class="text text_level_3 text_mgb_60 text_screen_md text_mgb_34 text_screen_lg text_screen_xl">
+						В&nbsp;кассе формируется фискальный чек с&nbsp;данными вашего&nbsp;ИП или юрлица. Далее этот чек
+						отправляется через ОФД в&nbsp;налоговую автоматически.
+					</p>
+					<h3 class="text text_title_level-3">Все чеки сохраняются в&nbsp;личном&nbsp;кабинете</h3>
+					<p class="text text_level_3">
+						Все платежи и&nbsp;чеки сохраняются в&nbsp;вашем личном кабинете. Каждый чек можно быстро найти,
+						проверить и&nbsp;распечатать.
+					</p>
+					<div class="page-section__button">
+						<BaseButton text-transform="normal" icon-position="left" :full-width="true">
+							<template v-slot:icon>
+								<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
+							</template>
+							Пример фискального чека
+						</BaseButton>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -363,6 +347,8 @@ import BaseNotice from "@/components/base/BaseNotice.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
 import BaseImage from "@/components/base/BaseImage.vue";
 import BaseChip from "@/components/base/BaseChip.vue";
+import BaseIcon from "@/components/base/BaseIcon.vue";
+import BasePrompt from "@/components/base/BasePrompt.vue";
 
 @Options({
 	components: {
@@ -373,6 +359,8 @@ import BaseChip from "@/components/base/BaseChip.vue";
 		BaseButton,
 		BaseImage,
 		BaseChip,
+		BaseIcon,
+		BasePrompt,
 	},
 })
 export default class InstagramView extends Vue {
@@ -558,7 +546,7 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(md) {
-			padding-top: 78px;
+			padding-top: 80px;
 			padding-bottom: 235px;
 		}
 
@@ -656,12 +644,13 @@ export default class InstagramView extends Vue {
 .page-section_order_4 {
 	background-color: var(--color-bg-blue-light);
 
-	.page-section__container & {
+	.page-section__container {
 		padding-top: 40px;
 		padding-bottom: 180px;
 
 		@include media-breakpoint-up(sm) {
 			padding-bottom: 200px;
+			align-items: center;
 		}
 
 		@include media-breakpoint-up(md) {
@@ -678,12 +667,87 @@ export default class InstagramView extends Vue {
 			padding-bottom: 68px;
 		}
 	}
+
+	.page-section__prompt {
+		margin-top: 13px;
+		margin-bottom: 34px;
+		display: flex;
+		justify-content: center;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 33px;
+			margin-bottom: 32px;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin-top: 25px;
+			margin-bottom: 34px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-top: 10px;
+		}
+	}
+
+	.page-section__button {
+		margin-top: -2px;
+
+		@include media-breakpoint-up(sm) {
+			width: 100%;
+			max-width: 430px;
+		}
+	}
+
+	.page-section__row {
+		position: relative;
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: 350px 1fr;
+			grid-column-gap: 40px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			grid-column-gap: 84px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			grid-column-gap: 103px;
+		}
+	}
+
+	.page-section__col {
+		&:first-child {
+			display: none;
+			height: 724px;
+
+			@include media-breakpoint-up(lg) {
+				display: block;
+			}
+		}
+
+		&:last-child {
+			display: flex;
+			flex-direction: column;
+
+			@include media-breakpoint-up(sm) {
+				align-items: center;
+			}
+
+			@include media-breakpoint-up(lg) {
+				padding-top: 68px;
+				align-items: start;
+				text-align: left;
+			}
+		}
+	}
 }
 
 .page-section_order_5 {
 	background-color: var(--color-bg-pink-light);
 
-	.page-section__container & {
+	.page-section__container {
 		margin-top: -13px;
 		padding-top: 0;
 		padding-bottom: 177px;
@@ -698,15 +762,11 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
-			margin-top: -41px;
+			margin-top: -33px;
 		}
 
 		@include media-breakpoint-up(xl) {
-			margin-top: -70px;
-		}
-
-		@include media-breakpoint-up(xxl) {
-			margin-top: -77px;
+			margin-top: -60px;
 		}
 	}
 }

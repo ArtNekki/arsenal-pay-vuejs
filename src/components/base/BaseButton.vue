@@ -6,7 +6,10 @@
 		:class="{
 			['button_view_' + view]: view,
 			['button_size_' + size]: size,
-			['button_position_' + position]: position,
+			['button_align_' + align]: align,
+			['button_text-transform_' + textTransform]: textTransform,
+			['button_icon_' + iconPosition]: iconPosition,
+			['button_width_full']: fullWidth,
 		}"
 	>
 		<slot name="icon" />
@@ -22,6 +25,9 @@
 			['button_view_' + view]: view,
 			['button_size_' + size]: size,
 			['button_align_' + align]: align,
+			['button_text-transform_' + textTransform]: textTransform,
+			['button_icon_' + iconPosition]: iconPosition,
+			['button_width_full']: fullWidth,
 		}"
 	>
 		<slot name="icon" />
@@ -50,6 +56,12 @@ import { Options, Vue } from "vue-class-component";
 		},
 		href: String,
 		align: String,
+		iconPosition: String,
+		fullWidth: Boolean,
+		textTransform: {
+			type: String,
+			default: "uppercase",
+		},
 	},
 })
 export default class BaseButton extends Vue {}
@@ -58,10 +70,13 @@ export default class BaseButton extends Vue {}
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .button {
+	position: relative;
+	z-index: var(--layer-2);
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	font-family: var(--font-family);
+	font-weight: 500;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -77,10 +92,6 @@ export default class BaseButton extends Vue {}
 		margin: 0 0 0 8px;
 		padding: 0 8px;
 		height: 22px;
-		font-size: 12.2px;
-		line-height: 0.88;
-		letter-spacing: -0.23px;
-		text-transform: none;
 		border-radius: var(--border-radius-2xs);
 
 		@supports (-moz-appearance: none) {
@@ -93,11 +104,11 @@ export default class BaseButton extends Vue {}
 		max-width: 320px;
 		width: 100%;
 		height: 52px;
-		font-size: 17px;
-		font-weight: 500;
-		line-height: 20px;
-		letter-spacing: -0.2px;
 		border-radius: var(--border-radius-lg);
+	}
+
+	&_width_full {
+		max-width: 100%;
 	}
 
 	&_view_purple {
@@ -120,10 +131,54 @@ export default class BaseButton extends Vue {}
 		}
 	}
 
+	&_icon_left {
+		.icon {
+			margin-right: auto;
+			margin-left: -2px;
+		}
+	}
+
 	&_align_center {
 		margin-right: auto;
 		margin-left: auto;
 		display: flex;
+	}
+
+	&_text-transform_uppercase {
+		text-transform: uppercase;
+	}
+
+	&_text-transform_normal {
+		text-transform: unset;
+	}
+
+	&__text {
+		position: relative;
+
+		.button_size_xs & {
+			font-size: 12.2px;
+			line-height: 0.88;
+			letter-spacing: -0.23px;
+			text-transform: none;
+		}
+
+		.button_size_md & {
+			font-size: 17px;
+			line-height: 20px;
+			letter-spacing: -0.2px;
+		}
+
+		.button_icon_left & {
+			margin-right: auto;
+			margin-left: auto;
+			transform: translate3d(-10px, 0, 0);
+		}
+
+		.icon + & {
+			font-size: 15.8px;
+			line-height: 24px;
+			letter-spacing: -0.24px;
+		}
 	}
 }
 </style>
