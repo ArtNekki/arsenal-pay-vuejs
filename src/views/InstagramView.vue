@@ -238,46 +238,97 @@
 
 	<section class="page-section page-section_order_7 page-section_skew_no">
 		<div class="page-section__container">
-			<span class="page-section__label">Бесплатно</span>
-			<h2 class="page-section__title">
+			<BaseChip view="pink">Бесплатно</BaseChip>
+			<h2 class="text text_title_level-1 text_mgb_42">
 				Кнопки быстрой связи <br class="br br--show-sm" />WhatsApp, Telegram, Viber
 			</h2>
-			widget-box--buttons
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="instagram-page/widget-buttons" :breakpoints="{ xs: true, md: true }"></BaseImage>
+				</div>
+				<div class="page-section__col">
+					<h3 class="text text_title_level-3">Удобное общение</h3>
+					<p class="text text_level_3">
+						Удобный способ общения обеспечит больше обращений. Поможет увеличить продажи
+						и&nbsp;не&nbsp;терять клиентов.
+					</p>
+					<h3 class="text text_title_level-3">Легко начать диалог</h3>
+					<p class="text text_level_3">
+						Клиенту достаточно просто нажать на&nbsp;кнопку WhatsApp, Telegram или Viber и&nbsp;вам придет
+						готовое первое сообщение. Возможность начать&nbsp;диалог в&nbsp;один клик облегчит общение.
+					</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_8 page-section_skew_no">
 		<div class="page-section__container">
-			<span class="page-section__label">Бесплатно</span>
-			<h2 class="page-section__title">
+			<BaseChip view="pink">Бесплатно</BaseChip>
+			<h2 class="text text_title_level-1">
 				Мультиссылка.<br class="br br--show-sm" />
 				Соберите все важные ссылки&nbsp;вместе.
 			</h2>
-			<div>
-				<p class="text text--md-size-lg text--inline-sm">
-					Рассказывайте больше о&nbsp;вашем бизнесе, привлекайте новых&nbsp;клиентов.
-				</p>
-				<br class="br br--show-lg" />
-				<p class="text text--md-size-lg text--inline-sm">Отвечайте на&nbsp;часто задаваемые вопросы.</p>
+			<p class="text text_level_1 text_display_inline text_screen_sm">
+				Рассказывайте больше о&nbsp;вашем бизнесе, привлекайте новых&nbsp;клиентов.
+			</p>
+			<br class="br br--show-lg" />
+			<p class="text text_level_1 text_mgb_42 text_display_inline text_screen_sm">
+				Отвечайте на&nbsp;часто задаваемые вопросы.
+			</p>
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="instagram-page/widget-multilink" :breakpoints="{ xs: true, md: true }"></BaseImage>
+				</div>
+				<div class="page-section__col">
+					<h3 class="text text_title_level-3">Создавайте много ссылок</h3>
+					<p class="text text_level_3">
+						В&nbsp;профиле Instagram* можно добавить только одну ссылку, но&nbsp;одной ссылки часто
+						недостаточно, чтобы подробно рассказать о&nbsp;своем бизнесе и&nbsp;увеличить продажи.
+					</p>
+					<h3 class="text text_title_level-3">Привлекайте больше клиентов</h3>
+					<p class="text text_level_3">
+						Ваши клиенты смогут не&nbsp;только оплачивать заказы, но&nbsp;и&nbsp;узнавать об&nbsp;акциях,
+						новых предложениях, подробности о&nbsp;товарах, услугах и&nbsp;доставке.
+					</p>
+				</div>
 			</div>
-			<div class="page-section__content">widget-box--multilink</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div class="page-section__container">
-			<span class="page-section__label">Бесплатно</span>
-			<h2 class="page-section__title">Автоматическая email <br class="br br--show-sm br--hide-md" />рассылка</h2>
+			<BaseChip view="pink">Бесплатно</BaseChip>
+			<h2 class="text text_title_level-1">
+				Автоматическая email <br class="br br--show-sm br--hide-md" />рассылка
+			</h2>
 			<div>
-				<p class="text text--md-size-lg text--inline-sm">
+				<p class="text text_level_1 text_display_inline text_screen_sm">
 					Без затрат на&nbsp;сервисы рассылок. Никаких настроек и&nbsp;интеграций.
 				</p>
 				<br class="br br--show-md" />
-				<p class="text text--md-size-lg text--inline-sm">
+				<p class="text text_level_1 text_mgb_42 text_display_inline text_screen_sm">
 					Клиент&nbsp;получает письмо с&nbsp;доступом к&nbsp;контенту после оплаты.
 				</p>
 			</div>
-			mediabox--email
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="instagram-page/widget-email" :breakpoints="{ xs: true, sm: true }"></BaseImage>
+				</div>
+				<div class="page-section__col">
+					<h3 class="text text_title_level-3">Автоматизируйте работу с&nbsp;клиентами</h3>
+					<p class="text text_level_3">
+						Клиент получает письмо с&nbsp;доступом к&nbsp;контенту сразу после
+						<br class="br br--show-sm br--hide-lg" />оплаты. Вам&nbsp;больше не&nbsp;нужно самим отправлять
+						письма.
+					</p>
+					<h3 class="text text_title_level-3">Продавайте доступ к&nbsp;контенту</h3>
+					<p class="text text_level_3">
+						Продавайте курсы, чек листы, билеты, все что угодно. Отправка писем происходит сразу после
+						оплаты или в&nbsp;определенный день, например, в&nbsp;день начала курса.
+					</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -815,7 +866,7 @@ export default class InstagramView extends Vue {
 
 .page-section_order_7,
 .page-section_order_8 {
-	.page-section__container & {
+	.page-section__container {
 		padding-top: 0;
 		padding-bottom: 96px;
 
@@ -827,10 +878,22 @@ export default class InstagramView extends Vue {
 			padding-bottom: 105px;
 		}
 	}
+
+	.page-section__row {
+	}
+
+	.page-section__col {
+		&:first-child {
+			margin-bottom: 42px;
+		}
+
+		&:last-child {
+		}
+	}
 }
 
 .page-section_order_9 {
-	.page-section__container & {
+	.page-section__container {
 		padding-top: 0;
 		padding-bottom: 185px;
 
@@ -849,6 +912,18 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(xl) {
 			margin-top: -7px;
+		}
+	}
+
+	.page-section__row {
+	}
+
+	.page-section__col {
+		&:first-child {
+			margin-bottom: 42px;
+		}
+
+		&:last-child {
 		}
 	}
 }
