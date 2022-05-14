@@ -199,6 +199,12 @@
     }
   }
 
+  &[class~="text_mgb_22.on_screen_xl"] {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 22px;
+    }
+  }
+
   &[class~="text_mgb_60.on_screen_xl"] {
     @include media-breakpoint-up(xl) {
       margin-bottom: 60px;

@@ -92,7 +92,7 @@
 					<div class="page-section__col">
 						<h3 class="text text_type_title.level_3">Ссылка в&nbsp;профиле Instagram*</h3>
 						<p
-							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg"
+							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg text_mgb_60.on_screen_xl"
 						>
 							Разместите ссылку в&nbsp;вашем профиле Instagram*.
 							<br class="br br--show-sm br--hide-lg br--show-xl" />
@@ -100,7 +100,7 @@
 						</p>
 						<h3 class="text text_type_title.level_3">Оплата в&nbsp;WhatsApp, Telegram, Viber.</h3>
 						<p
-							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg"
+							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg text_mgb_60.on_screen_xl"
 						>
 							Отправляйте ссылку на&nbsp;оплату во&nbsp;время общения с&nbsp;клиентами через директ,
 							в&nbsp;WhatsApp, Telegram, Viber&nbsp;&mdash;
@@ -108,7 +108,7 @@
 						</p>
 						<h3 class="text text_type_title.level_3">Оплата в VK, TikTok.</h3>
 						<p
-							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg"
+							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg text_mgb_60.on_screen_xl"
 						>
 							Разместите ссылку в&nbsp;ваших группах в&nbsp;любых соцсетях, например VK или TikTok.
 							Принимайте оплату без&nbsp;границ.
@@ -158,20 +158,22 @@
 					<div class="page-section__col">
 						<h3 class="text text_type_title.level_3">Каждая оплата проходит через&nbsp;кассу</h3>
 						<p
-							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg"
+							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg text_mgb_60.on_screen_xl"
 						>
 							Ваш клиент оплачивает услугу или товар.<br class="br br--show-sm" />
 							Каждая оплата проходит через онлайн кассу ArsenalPay.
 						</p>
 						<h3 class="text text_type_title.level_3">Чек формируется автоматически</h3>
 						<p
-							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg"
+							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_60.on_screen_md text_mgb_34.on_screen_lg text_mgb_60.on_screen_xl"
 						>
 							В&nbsp;кассе формируется фискальный чек с&nbsp;данными вашего&nbsp;ИП или юрлица. Далее этот
 							чек отправляется через ОФД в&nbsp;налоговую автоматически.
 						</p>
 						<h3 class="text text_type_title.level_3">Все чеки сохраняются в&nbsp;личном&nbsp;кабинете</h3>
-						<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_34.on_screen_lg">
+						<p
+							class="text text_level_3 text_max-width_520.on_screen_md text_mgb_34.on_screen_lg text_mgb_22.on_screen_xl"
+						>
 							Все платежи и&nbsp;чеки сохраняются в&nbsp;вашем личном кабинете. Каждый чек можно быстро
 							найти, проверить и&nbsp;распечатать.
 						</p>
@@ -805,6 +807,10 @@ export default class InstagramView extends Vue {
 			padding-bottom: 100px;
 		}
 
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 88px;
+		}
+
 		@include media-breakpoint-up(xxl) {
 			padding-bottom: 68px;
 		}
@@ -939,7 +945,7 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(xl) {
-			padding-bottom: 105px;
+			padding-bottom: 97px;
 		}
 	}
 
@@ -992,24 +998,46 @@ export default class InstagramView extends Vue {
 				margin-top: 19px;
 				order: 2;
 			}
+
+			@include media-breakpoint-up(xl) {
+				margin-top: 0;
+			}
 		}
 
 		&:last-child {
 			@include media-breakpoint-up(lg) {
 				order: 1;
 			}
+
+			@include media-breakpoint-up(xl) {
+				margin-top: 8px;
+			}
 		}
 	}
 }
 
 .page-section_order_8 {
+	.page-section__container {
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 101px;
+		}
+	}
+
 	.page-section__row {
 		@include media-breakpoint-up(lg) {
 			margin-top: 90px;
 			display: grid;
 			grid-template-columns: 360px 1fr;
-			grid-column-gap: 60px;
+			grid-column-gap: 81px;
 			align-content: center;
+		}
+	}
+
+	.page-section__col {
+		&:last-child {
+			@include media-breakpoint-up(xl) {
+				margin-top: 25px;
+			}
 		}
 	}
 }
@@ -1053,6 +1081,10 @@ export default class InstagramView extends Vue {
 			grid-column-gap: 44px;
 			align-content: center;
 		}
+
+		@include media-breakpoint-up(xl) {
+			margin-top: 69px;
+		}
 	}
 
 	.page-section__col {
@@ -1080,6 +1112,10 @@ export default class InstagramView extends Vue {
 				align-items: start;
 				text-align: left;
 				order: 1;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding-top: 25px;
 			}
 		}
 	}
@@ -1277,7 +1313,7 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(xl) {
-			padding-top: 69px;
+			padding-top: 63px;
 		}
 	}
 }
