@@ -1,10 +1,5 @@
 <template>
-	<div
-		class="rate-box"
-		:class="{
-			[spaceBottom && spaceBottom != '0' ? 'rate-box_mgb_' + spaceBottom : 'rate-box_mgb_no']: spaceBottom,
-		}"
-	>
+	<div class="rate-box">
 		<div class="rate-box__count">
 			<span :data-prefix="prefix">{{ count }}</span>
 			<sub>%</sub>
@@ -22,10 +17,6 @@ import { Options, Vue } from "vue-class-component";
 	props: {
 		count: String,
 		prefix: String,
-		spaceBottom: {
-			type: String,
-			default: "24",
-		},
 	},
 })
 export default class BaseRateBox extends Vue {}
@@ -35,8 +26,13 @@ export default class BaseRateBox extends Vue {}
 .rate-box {
 	text-align: center;
 
-	&_mgb_24 {
-		margin-bottom: 24px;
+	@include media-breakpoint-up(md) {
+		display: grid;
+		grid-template-columns: 60px 280px;
+		grid-column-gap: 18.4px;
+		justify-items: start;
+		align-items: center;
+		text-align: left;
 	}
 
 	&__count {
@@ -49,6 +45,10 @@ export default class BaseRateBox extends Vue {}
 			font-weight: 300;
 			line-height: 63px;
 			letter-spacing: -1.33px;
+
+			@include media-breakpoint-up(md) {
+				margin-left: 0;
+			}
 
 			&::before {
 				content: attr(data-prefix);

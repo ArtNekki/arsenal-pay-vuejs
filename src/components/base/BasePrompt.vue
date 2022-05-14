@@ -34,23 +34,22 @@ export default class BasePrompt extends Vue {}
 <style scoped lang="scss">
 .prompt {
 	position: relative;
-	margin-bottom: 24px;
+	//margin-bottom: 24px;
 	padding: 24px 20px 14px;
 	width: 100%;
 	max-width: 348px;
-	display: inline-block;
 	box-shadow: var(--box-shadow-lg);
 	border-radius: var(--border-radius-sm);
 	box-sizing: border-box;
 	text-align: left;
 
 	@include media-breakpoint-up(md) {
-		margin-top: 25px;
+		//margin-top: 25px;
 		text-align: center;
 	}
 
 	@include media-breakpoint-up(lg) {
-		margin-top: 40px;
+		//margin-top: 40px;
 	}
 
 	&_color_blue {

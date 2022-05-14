@@ -367,18 +367,22 @@
 			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseRateBox count="3">
-						<p class="text text_in_rate-box">
-							Комиссия за успешный платёж <br class="br br--show-xs" /><b>от ArsenalPay</b>
-						</p>
-					</BaseRateBox>
-					<BaseRateBox count="2" prefix="+" space-bottom="0">
-						<p class="text text_in_rate-box">
-							Комиссия за успешный платёж <br class="br br--show-xs" /><b
-								>от Visa, Mastercard, Мир, Apple Pay</b
-							>
-						</p>
-					</BaseRateBox>
+					<div class="page-section__rate">
+						<BaseRateBox count="3">
+							<p class="text text_in_rate-box">
+								Комиссия за успешный платёж <br class="br br--show-xs" /><b>от ArsenalPay</b>
+							</p>
+						</BaseRateBox>
+					</div>
+					<div class="page-section__rate">
+						<BaseRateBox count="2" prefix="+">
+							<p class="text text_in_rate-box">
+								Комиссия за успешный платёж <br class="br br--show-xs" /><b
+									>от Visa, Mastercard, Мир, Apple Pay</b
+								>
+							</p>
+						</BaseRateBox>
+					</div>
 				</div>
 				<div class="page-section__col">
 					<BasePrompt color="green">
@@ -1034,13 +1038,49 @@ export default class InstagramView extends Vue {
 	.page-section__row {
 		margin-top: 15px;
 
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-content: center;
+			justify-items: start;
+			grid-column-gap: 60px;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin-top: 32px;
+		}
+
 		.page-section__col {
 			&:first-child {
 				margin-bottom: 42px;
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 28px;
+					padding-left: 40px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 0;
+					padding-left: 46px;
+				}
 			}
 
 			&:last-child {
 				text-align: center;
+
+				@include media-breakpoint-up(lg) {
+					padding-top: 25px;
+				}
+			}
+		}
+	}
+
+	.page-section__rate {
+		&:first-child {
+			margin-bottom: 24px;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 19px;
 			}
 		}
 	}
