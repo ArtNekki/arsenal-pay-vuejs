@@ -58,7 +58,7 @@
 						</p>
 						<BaseChip view="pink">Бесплатно</BaseChip>
 						<h3 class="text text_type_title.level_3">Автоматическая email рассылка</h3>
-						<p class="text text_level_3 text_mgb_42 text_width_400.on_screen_md">
+						<p class="text text_level_3 text_width_400.on_screen_md">
 							Открывает доступ к&nbsp;контенту после оплаты.
 							<br class="br br--show-sm br--hide-lg" />Автоматизирует работу с&nbsp;клиентами.
 						</p>
@@ -801,14 +801,14 @@ export default class InstagramView extends Vue {
 
 	.page-section__prompt {
 		margin-top: 30px;
-		margin-bottom: 34px;
-		display: flex;
-		justify-content: center;
+		margin-bottom: 58px;
+		margin-right: auto;
+		margin-left: auto;
 		max-width: 320px;
 
 		@include media-breakpoint-up(sm) {
 			margin-top: 33px;
-			margin-bottom: 32px;
+			margin-bottom: 56px;
 		}
 
 		@include media-breakpoint-up(md) {
@@ -939,7 +939,7 @@ export default class InstagramView extends Vue {
 			margin-top: 42px;
 		}
 
-		@include media-breakpoint-up(sm) {
+		@include media-breakpoint-up(md) {
 			margin-top: 60px;
 		}
 	}
@@ -1095,10 +1095,10 @@ export default class InstagramView extends Vue {
 	.page-section__container {
 		margin-top: -30px;
 		padding-top: 0;
-		padding-bottom: 182px;
+		padding-bottom: 175px;
 
 		@include media-breakpoint-up(sm) {
-			padding-bottom: 157px;
+			padding-bottom: 152px;
 		}
 
 		@include media-breakpoint-up(md) {
@@ -1193,13 +1193,13 @@ export default class InstagramView extends Vue {
 }
 
 .page-section_order_12 {
-	.page-section__container & {
+	.page-section__container {
 		padding-top: 30px;
-		padding-bottom: 37px;
+		padding-bottom: 58px;
 
-		@include media-breakpoint-up(sm) {
-			padding-bottom: 57px;
-		}
+		//@include media-breakpoint-up(sm) {
+		//	padding-bottom: 58px;
+		//}
 
 		@include media-breakpoint-up(md) {
 			padding-top: 48px;
