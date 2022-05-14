@@ -8,7 +8,7 @@
 
   //-------------------- Title ---------------------
 
-  &_title_level-1 {
+  &[class~="text_type_title.level_1"] {
     margin-bottom: 16px;
     font-size: 29px;
     line-height: 38px;
@@ -21,7 +21,7 @@
     }
   }
 
-  &_title_level-3 {
+  &[class~="text_type_title.level_3"] {
     margin-bottom: 8px;
     font-size: 18.2px;
     font-weight: 500;
@@ -189,13 +189,13 @@
     }
   }
 
-  &[class~="text_mgb_34.text_screen_lg"] {
+  &[class~="text_mgb_34.on_screen_lg"] {
     @include media-breakpoint-up(lg) {
       margin-bottom: 34px;
     }
   }
 
-  &[class~="text_mgb_60.text_screen_xl"] {
+  &[class~="text_mgb_60.on_screen_xl"] {
     @include media-breakpoint-up(xl) {
       margin-bottom: 60px;
     }
