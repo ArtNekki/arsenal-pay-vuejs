@@ -367,12 +367,12 @@
 			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseRateBox count="3" space-bottom="24">
+					<BaseRateBox count="3">
 						<p class="text text_in_rate-box">
 							Комиссия за успешный платёж <br class="br br--show-xs" /><b>от ArsenalPay</b>
 						</p>
 					</BaseRateBox>
-					<BaseRateBox count="2" prefix="+">
+					<BaseRateBox count="2" prefix="+" space-bottom="0">
 						<p class="text text_in_rate-box">
 							Комиссия за успешный платёж <br class="br br--show-xs" /><b
 								>от Visa, Mastercard, Мир, Apple Pay</b

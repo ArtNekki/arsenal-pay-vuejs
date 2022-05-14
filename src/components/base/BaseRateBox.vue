@@ -22,7 +22,10 @@ import { Options, Vue } from "vue-class-component";
 	props: {
 		count: String,
 		prefix: String,
-		spaceBottom: String,
+		spaceBottom: {
+			type: String,
+			default: "24",
+		},
 	},
 })
 export default class BaseRateBox extends Vue {}
