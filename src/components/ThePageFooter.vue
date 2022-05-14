@@ -4,29 +4,34 @@
 			<div class="footer__links">
 				<ul class="footer__list">
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/about.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/about.html" size="sm" color="black" link-in="footer"
 							>О компании</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/contacts.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/contacts.html" size="sm" color="black" link-in="footer"
 							>Контакты</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/blog/" size="sm" color="black" type="footer" blank="true"
+						<BaseLink
+							href="https://arsenalpay.ru/blog/"
+							size="sm"
+							color="black"
+							link-in="footer"
+							blank="true"
 							>Блог</BaseLink
 						>
 					</li>
 				</ul>
 				<ul class="footer__list">
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/cashbox.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/cashbox.html" size="sm" color="black" link-in="footer"
 							>Онлайн касса</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/tariffs.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/tariffs.html" size="sm" color="black" link-in="footer"
 							>Тарифы</BaseLink
 						>
 					</li>
@@ -37,7 +42,7 @@
 							href="https://arsenalpay.ru/priem-platezhej-v-instagram.html"
 							size="sm"
 							color="black"
-							type="footer"
+							link-in="footer"
 							>Платежи в Instagram*</BaseLink
 						>
 					</li>
@@ -46,22 +51,22 @@
 							href="https://arsenalpay.ru//priem-platezhej-na-sajte.html"
 							size="sm"
 							color="black"
-							type="footer"
+							link-in="footer"
 							>Платежи на сайте</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/quickstart.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/quickstart.html" size="sm" color="black" link-in="footer"
 							>Платежи без сайта</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/travel.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/travel.html" size="sm" color="black" link-in="footer"
 							>Турфирмам</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/providers.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/providers.html" size="sm" color="black" link-in="footer"
 							>Провайдерам</BaseLink
 						>
 					</li>
@@ -72,34 +77,34 @@
 							href="https://arsenalpay.ru/documentation/index.html"
 							size="sm"
 							color="black"
-							type="footer"
+							link-in="footer"
 							>Документация</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/support.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/support.html" size="sm" color="black" link-in="footer"
 							>Поддержка</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/developers.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/developers.html" size="sm" color="black" link-in="footer"
 							>Разработчикам</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/partnership.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/partnership.html" size="sm" color="black" link-in="footer"
 							>Агентам</BaseLink
 						>
 					</li>
 				</ul>
 				<ul class="footer__list">
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/demo.html" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/demo.html" size="sm" color="black" link-in="footer"
 							>Демо магазин</BaseLink
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/pay/" size="sm" color="black" type="footer"
+						<BaseLink href="https://arsenalpay.ru/pay/" size="sm" color="black" link-in="footer"
 							>Оплата услуг</BaseLink
 						>
 					</li>

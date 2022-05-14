@@ -45,39 +45,39 @@
 					<BaseLink href="https://arsenalpay.ru/contacts.html" size="sm" color="black">Контакты</BaseLink>
 				</li>
 				<li class="mobile-nav__item">
-					<BaseLink href="https://arsenalpay.ru/blog/" black="true" size="sm" color="black">Блог</BaseLink>
+					<BaseLink href="https://arsenalpay.ru/blog/" blank="true" size="sm" color="black">Блог</BaseLink>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
 				<li class="mobile-nav__item">
-					<BaseLink href="https://arsenalpay.ru/documentation/index.html" black="true" size="sm" color="black"
+					<BaseLink href="https://arsenalpay.ru/documentation/index.html" blank="true" size="sm" color="black"
 						>Документация</BaseLink
 					>
 				</li>
 				<li class="mobile-nav__item">
-					<BaseLink href="https://arsenalpay.ru/support.html" black="true" size="sm" color="black"
+					<BaseLink href="https://arsenalpay.ru/support.html" blank="true" size="sm" color="black"
 						>Поддержка</BaseLink
 					>
 				</li>
 				<li class="mobile-nav__item">
-					<BaseLink href="https://arsenalpay.ru/developers.html" black="true" size="sm" color="black"
+					<BaseLink href="https://arsenalpay.ru/developers.html" blank="true" size="sm" color="black"
 						>Разработчикам</BaseLink
 					>
 				</li>
 				<li class="mobile-nav__item">
-					<BaseLink href="https://arsenalpay.ru/partnership.html" black="true" size="sm" color="black"
+					<BaseLink href="https://arsenalpay.ru/partnership.html" blank="true" size="sm" color="black"
 						>Агентам</BaseLink
 					>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
 				<li class="mobile-nav__item">
-					<BaseLink href="https://arsenalpay.ru/demo.html" black="true" size="sm" color="black"
+					<BaseLink href="https://arsenalpay.ru/demo.html" blank="true" size="sm" color="black"
 						>Демо магазин</BaseLink
 					>
 				</li>
 				<li class="mobile-nav__item">
-					<BaseLink href="https://arsenalpay.ru/pay/" black="true" size="sm" color="black"
+					<BaseLink href="https://arsenalpay.ru/pay/" blank="true" size="sm" color="black"
 						>Оплата услуг</BaseLink
 					>
 				</li>

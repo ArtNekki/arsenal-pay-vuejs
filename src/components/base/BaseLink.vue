@@ -103,16 +103,8 @@ export default class BaseLink extends Vue {}
 		}
 	}
 
-	&_type_footer {
+	&_in_footer {
 		line-height: 32px;
-	}
-
-	&_type_in-text {
-		font-family: inherit;
-		font-size: inherit;
-		font-weight: 500;
-		line-height: inherit;
-		letter-spacing: inherit;
 	}
 
 	&_in_text {
