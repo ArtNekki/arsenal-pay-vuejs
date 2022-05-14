@@ -406,37 +406,34 @@
 
 	<section class="page-section page-section_order_11">
 		<div class="page-section__container">
-			<h2 class="page-section__title">
+			<h2 class="text text_title_level-1">
 				Платежи перечисляются <br class="br br--show-sm" />на&nbsp;ваш расчётный счёт ежедневно
 			</h2>
-			<p class="text text--no-mgb-sm text--md-size-lg text--lg-inline">
+			<p class="text text_level_1">
 				Деньги поступают автоматически на&nbsp;расчётный счёт юрлица, ИП&nbsp;или&nbsp;самозанятого.
 			</p>
-			<div class="page-section__content page-section__content--payments">
-				<!--				{{{ info-box-->
-				<!--				title="Без комиссий"-->
-				<!--				text='Никаких скрытых комиссий <br class="br br--show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.'-->
-				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
-				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm,  icon-space-md-0, mgb-18, mgb-sm-42, gb-md-40"-->
-				<!--				titleMods="lh-35-md"-->
-				<!--				textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="Без минимальных сумм"-->
-				<!--				text='Накапливать сумму для <br class="br br--show-xl" />вывода не&nbsp;нужно.'-->
-				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
-				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm, icon-space-md-0, mgb-18, mgb-sm-42, mgb-md-40"-->
-				<!--				titleMods="lh-35-md"-->
-				<!--				textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="В&nbsp;любой банк России"-->
-				<!--				text='Ваш расчётный счёт может <br class="br br--show-xl" />быть в&nbsp;любом банке&nbsp;РФ.'-->
-				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
-				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm, icon-space-md-0, mgb-18, mgb-sm-42, mgb-md-40"-->
-				<!--				titleMods="lh-35-md"-->
-				<!--				textMods="mw-sm-520, mw-md-540,lh-md-26"-->
-				<!--				}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseIcon name="check-circle-medium" width="48" height="38" color="pink" />
+					<h3 class="text text_title_level-3">Без комиссий</h3>
+					<p class="text text_level_3 text_mgb_48.on_screen_sm">
+						Никаких скрытых комиссий <br class="br br--show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.
+					</p>
+				</div>
+				<div class="page-section__col">
+					<BaseIcon name="check-circle-medium" width="48" height="38" color="pink" />
+					<h3 class="text text_title_level-3">Без минимальных сумм</h3>
+					<p class="text text_level_3 text_mgb_48.on_screen_sm">
+						Накапливать сумму для <br class="br br--show-xl" />вывода не&nbsp;нужно.
+					</p>
+				</div>
+				<div class="page-section__col">
+					<BaseIcon name="check-circle-medium" width="48" height="38" color="pink" />
+					<h3 class="text text_title_level-3">В&nbsp;любой банк России</h3>
+					<p class="text text_level_3 text_mgb_48.on_screen_sm">
+						Ваш расчётный счёт может <br class="br br--show-xl" />быть в&nbsp;любом банке&nbsp;РФ.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -740,21 +737,7 @@ export default class InstagramView extends Vue {
 			picture {
 				position: relative;
 				align-self: center;
-
-				//@include media-breakpoint-up(sm) {
-				//	left: 0;
-				//}
 			}
-
-			//img {
-			//	width: 313px;
-			//	height: 191px;
-			//
-			//	@include media-breakpoint-up(lg) {
-			//		width: 287px;
-			//		height: 579px;
-			//	}
-			//}
 		}
 
 		&:last-child {
@@ -1069,7 +1052,7 @@ export default class InstagramView extends Vue {
 			&:last-child {
 				text-align: center;
 
-				@include media-breakpoint-up(lg) {
+				@include media-breakpoint-up(md) {
 					padding-top: 25px;
 				}
 			}
@@ -1088,9 +1071,9 @@ export default class InstagramView extends Vue {
 }
 
 .page-section_order_11 {
-	background-color: var(--color-bg-green-light);
+	background-color: #e6fae8;
 
-	.page-section__container & {
+	.page-section__container {
 		margin-top: -30px;
 		padding-top: 0;
 		padding-bottom: 182px;
@@ -1104,8 +1087,88 @@ export default class InstagramView extends Vue {
 			padding-bottom: 212px;
 		}
 
+		@include media-breakpoint-up(lg) {
+			padding-top: 60px;
+		}
+
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 190px;
+		}
+	}
+
+	.page-section__row {
+		position: relative;
+		margin-top: 21px;
+		margin-left: -12px;
+		max-width: 940px;
+
+		@include media-breakpoint-up(sm) {
+			margin-left: 0;
+			margin-top: 28px;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin-top: 33px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 20px;
+		}
+
+		.page-section__col {
+			display: grid;
+			grid-template-columns: 48px 280px;
+			grid-template-areas:
+				"icon title"
+				"icon text";
+			grid-column-gap: 4px;
+
+			@include media-breakpoint-up(sm) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			svg {
+				margin-top: -5px;
+				grid-area: icon;
+
+				@include media-breakpoint-up(sm) {
+					margin-bottom: 8px;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 0;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-top: 0;
+				}
+			}
+
+			h3 {
+				grid-area: title;
+			}
+
+			p {
+				grid-area: text;
+			}
+
+			&:first-child {
+				h3 {
+					margin-top: 5px;
+
+					@include media-breakpoint-up(sm) {
+						margin-top: 0;
+					}
+				}
+
+				svg {
+					margin-top: 0;
+				}
+			}
 		}
 	}
 }

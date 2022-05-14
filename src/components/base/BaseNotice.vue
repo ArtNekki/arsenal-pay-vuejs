@@ -5,7 +5,7 @@
 			['notice_state_' + state]: state,
 		}"
 	>
-		<BaseIcon name="check-mark-circle" width="48" height="38" currentColor="true" />
+		<BaseIcon name="check-circle-small" width="48" height="38" currentColor="true" />
 		<div class="notice__text">
 			<slot />
 		</div>
