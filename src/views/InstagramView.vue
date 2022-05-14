@@ -662,7 +662,7 @@ export default class InstagramView extends Vue {
 		@include media-breakpoint-up(md) {
 			top: 0;
 			padding-top: 2px;
-			padding-bottom: 130px;
+			padding-bottom: 147px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -808,12 +808,10 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(sm) {
 			margin-top: 33px;
-			margin-bottom: 56px;
 		}
 
 		@include media-breakpoint-up(md) {
-			margin-top: 25px;
-			margin-bottom: 34px;
+			margin-top: 51px;
 			max-width: 646px;
 		}
 
@@ -1103,7 +1101,7 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(md) {
 			padding-top: 40px;
-			padding-bottom: 212px;
+			padding-bottom: 203px;
 		}
 
 		@include media-breakpoint-up(lg) {

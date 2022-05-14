@@ -44,7 +44,7 @@ export default class ThePaymentsBlock extends Vue {}
 		text-align: center;
 
 		@include media-breakpoint-up(md) {
-			padding-top: 125px;
+			padding-top: 131px;
 			padding-bottom: 118px;
 		}
 	}
