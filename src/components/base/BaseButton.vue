@@ -6,7 +6,6 @@
 		:class="{
 			['button_view_' + view]: view,
 			['button_size_' + size]: size,
-			['button_align_' + align]: align,
 			['button_text-transform_' + textTransform]: textTransform,
 			['button_icon_' + iconPosition]: iconPosition,
 			['button_width_full']: fullWidth,
@@ -24,7 +23,6 @@
 		:class="{
 			['button_view_' + view]: view,
 			['button_size_' + size]: size,
-			['button_align_' + align]: align,
 			['button_text-transform_' + textTransform]: textTransform,
 			['button_icon_' + iconPosition]: iconPosition,
 			['button_width_full']: fullWidth,
@@ -55,7 +53,6 @@ import { Options, Vue } from "vue-class-component";
 			default: "md",
 		},
 		href: String,
-		align: String,
 		iconPosition: String,
 		fullWidth: Boolean,
 		textTransform: {
@@ -136,12 +133,6 @@ export default class BaseButton extends Vue {}
 			margin-right: auto;
 			margin-left: -2px;
 		}
-	}
-
-	&_align_center {
-		margin-right: auto;
-		margin-left: auto;
-		display: flex;
 	}
 
 	&_text-transform_uppercase {
