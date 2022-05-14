@@ -58,6 +58,10 @@ body {
 	//scroll-behavior: smooth;
 }
 
+b {
+	font-weight: 500;
+}
+
 //img {
 //	width: 100%;
 //	height: auto;

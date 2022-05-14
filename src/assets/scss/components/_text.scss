@@ -6,6 +6,8 @@
   font-weight: normal;
   z-index: var(--layer-2);
 
+  //-------------------- Title ---------------------
+
   &_title_level-1 {
     margin-bottom: 16px;
     font-size: 29px;
@@ -32,6 +34,8 @@
       letter-spacing: -0.69px;
     }
   }
+
+  //-------------------- Text ---------------------
 
   &_level_1 {
     margin-bottom: 16px;
@@ -76,7 +80,7 @@
     }
   }
 
-  &_type_prompt {
+  &_in_prompt {
     margin: 0 0 10px 0;
     font-size: 14.8px;
     font-weight: 500;
@@ -86,11 +90,49 @@
 
     @include media-breakpoint-up(md) {
       font-size: 16.1px;
+      letter-spacing: -0.55px;
+    }
+
+    &.text_size_lg {
+      font-size: 16.1px;
+      font-weight: 600;
+      letter-spacing: -0.61px;
+
+      @include media-breakpoint-up(md) {
+        letter-spacing: -0.55px;
+      }
     }
   }
 
+  &_in_rate-box {
+    font-size: 15.2px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 16.1px;
+      line-height: 26px;
+      letter-spacing: -0.55px;
+    }
+  }
+
+  //-------------------- Align ---------------------
+
   &_align_center {
     text-align: center;
+  }
+
+  &[class~="text_align_center.on_screen_sm"] {
+    @include media-breakpoint-up(sm) {
+      text-align: center;
+    }
+  }
+
+  //-------------------- Display ---------------------
+
+  &_display_inline {
+    display: inline;
   }
 
   &[class~="text_display_inline.on_screen_sm"] {
@@ -99,11 +141,15 @@
     }
   }
 
+  //-------------------- Max width ---------------------
+
   &[class~="text_max-width_520.on_screen_md"] {
     @include media-breakpoint-up(md) {
       max-width: 520px;
     }
   }
+
+  //-------------------- Margin bottom ---------------------
 
   &_mgb_60 {
     margin-bottom: 60px;
@@ -161,6 +207,8 @@
     }
   }
 
+  //-------------------- Line-height ---------------------
+
   &[class~="text_lh_32.on_screen_md"] {
     @include media-breakpoint-up(md) {
       line-height: 32px;
@@ -173,9 +221,13 @@
     }
   }
 
+  //-------------------- Color ---------------------
+
   &_color_pink {
     color: var(--color-text-pink);
   }
+
+  //-------------------- Weight ---------------------
 
   &_weight_bold {
     font-weight: 500;

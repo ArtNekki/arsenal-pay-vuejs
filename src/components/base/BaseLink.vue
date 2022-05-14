@@ -8,6 +8,7 @@
 			['link_size_' + size]: size,
 			['link_color_' + color]: color,
 			['link_type_' + type]: type,
+			['link_in_' + linkIn]: linkIn,
 		}"
 	>
 		<slot />
@@ -25,6 +26,7 @@ import { Options, Vue } from "vue-class-component";
 		type: String,
 		size: String,
 		color: String,
+		linkIn: String,
 	},
 })
 export default class BaseLink extends Vue {}
@@ -106,6 +108,14 @@ export default class BaseLink extends Vue {}
 	}
 
 	&_type_in-text {
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: 500;
+		line-height: inherit;
+		letter-spacing: inherit;
+	}
+
+	&_in_text {
 		font-family: inherit;
 		font-size: inherit;
 		font-weight: 500;

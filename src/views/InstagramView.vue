@@ -130,14 +130,14 @@
 					</p>
 				</div>
 				<div class="page-section__prompt">
-					<BasePrompt color="blue">
-						<p class="text text_type_prompt text_mgb_no.on_screen_md">
+					<BasePrompt color="blue" :full-width="true">
+						<p class="text text_in_prompt text_mgb_no.on_screen_md">
 							Не&nbsp;нужно покупать свою кассу и&nbsp;фискальный накопитель.
 						</p>
-						<p class="text text_type_prompt text_mgb_no.on_screen_md">
+						<p class="text text_in_prompt text_mgb_no.on_screen_md">
 							Не&nbsp;нужно заключать договор с&nbsp;ОФД и&nbsp;регистрировать кассу в&nbsp;налоговой.
 						</p>
-						<p class="text text_type_prompt">
+						<p class="text text_in_prompt">
 							Не&nbsp;нужно вручную пробивать чеки и&nbsp;отправлять их&nbsp;клиенту.
 						</p>
 					</BasePrompt>
@@ -345,23 +345,56 @@
 
 	<section class="page-section page-section_order_10">
 		<div class="page-section__container">
-			<!--			{{{ icon name="rub-big" width="120" height="120" mods="green" }}}-->
-			<h2 class="page-section__title">Никакой абонентской платы</h2>
-			<p class="text text--md-size-lg">
+			<div class="page-section__icon">
+				<BaseIcon name="rub-big" width="120" height="120" color="green" />
+			</div>
+			<h2 class="text text_title_level-1">Никакой абонентской платы</h2>
+			<p class="text text_level_1">
+				<BaseLink
+					href="https://arsenalpay.ru/blog/lghotnaia-komissiia-dlia-sotsialno/"
+					color="blue"
+					:blank="true"
+					link-in="text"
+					>Сниженная комиссия 1%</BaseLink
+				>
+				при продаже одежды, еды, техники, косметики и др.<br class="br br--show-lg" />
 				Вы&nbsp;платите только за&nbsp;успешные платежи и&nbsp;экономите 50&nbsp;000&nbsp;₽ в&nbsp;год.<br
 					class="br br--show-lg"
 				/>
-				<b class="text text--md-size-lg text--bold text--pink">Бесплатные опции</b>&nbsp;&mdash; онлайн касса,
-				выставление счёта, возврат платежа, холдирование платежей, кнопки WhatsApp, Telegram, Viber,
-				мультиссылка, автоматическая email&nbsp;рассылка.
+				<b class="text text_weight_bold text_color_pink text_display_inline"> Бесплатные опции</b>&nbsp;&mdash;
+				онлайн касса, выставление счёта, возврат платежа, холдирование платежей, кнопки WhatsApp, Telegram,
+				Viber, мультиссылка, автоматическая email&nbsp;рассылка.
 			</p>
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseRateBox count="3" space-bottom="24">
+						<p class="text text_in_rate-box">
+							Комиссия за успешный платёж <br class="br br--show-xs" /><b>от ArsenalPay</b>
+						</p>
+					</BaseRateBox>
+					<BaseRateBox count="2" prefix="+">
+						<p class="text text_in_rate-box">
+							Комиссия за успешный платёж <br class="br br--show-xs" /><b
+								>от Visa, Mastercard, Мир, Apple Pay</b
+							>
+						</p>
+					</BaseRateBox>
+				</div>
+				<div class="page-section__col">
+					<BasePrompt color="green">
+						<p class="text text_in_prompt text_size_lg text_align_center.on_screen_sm">
+							У нас нет дополнительных комиссий и звездочек в договоре.
+						</p>
+					</BasePrompt>
+				</div>
+			</div>
 			<div class="rate">
 				<div class="rate__item">
 					<!--					{{{ rate-box count="3" text="Комиссия за успешный платёж <br class='br br--show-xs' /><b>от ArsenalPay</b>" }}}-->
 					<!--					{{{ rate-box count="2" prefix="+" text="Комиссия за успешный платёж <br class='br br--show-xs' /><b>от Visa, Mastercard, Мир, Apple Pay</b>" }}}-->
 				</div>
 				<div class="rate__item">
-					<!--					{{{ note text='["У нас нет дополнительных комиссий и звездочек в договоре."]' mods="no-mgt, w-full" textMods="sm-center, lg" }}}-->
+					<!--					{{{ note text='[""]' mods="no-mgt, w-full" textMods="sm-center, lg" }}}-->
 				</div>
 			</div>
 		</div>
@@ -438,6 +471,8 @@ import BaseImage from "@/components/base/BaseImage.vue";
 import BaseChip from "@/components/base/BaseChip.vue";
 import BaseIcon from "@/components/base/BaseIcon.vue";
 import BasePrompt from "@/components/base/BasePrompt.vue";
+import BaseRateBox from "@/components/base/BaseRateBox.vue";
+import BaseLink from "@/components/base/BaseLink.vue";
 
 @Options({
 	components: {
@@ -450,6 +485,8 @@ import BasePrompt from "@/components/base/BasePrompt.vue";
 		BaseChip,
 		BaseIcon,
 		BasePrompt,
+		BaseRateBox,
+		BaseLink,
 	},
 })
 export default class InstagramView extends Vue {
@@ -761,6 +798,7 @@ export default class InstagramView extends Vue {
 		margin-bottom: 34px;
 		display: flex;
 		justify-content: center;
+		max-width: 320px;
 
 		@include media-breakpoint-up(sm) {
 			margin-top: 33px;
@@ -770,6 +808,7 @@ export default class InstagramView extends Vue {
 		@include media-breakpoint-up(md) {
 			margin-top: 25px;
 			margin-bottom: 34px;
+			max-width: 646px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -989,6 +1028,20 @@ export default class InstagramView extends Vue {
 		@include media-breakpoint-up(lg) {
 			padding-top: 45px;
 			padding-bottom: 258px;
+		}
+	}
+
+	.page-section__row {
+		margin-top: 15px;
+
+		.page-section__col {
+			&:first-child {
+				margin-bottom: 42px;
+			}
+
+			&:last-child {
+				text-align: center;
+			}
 		}
 	}
 }

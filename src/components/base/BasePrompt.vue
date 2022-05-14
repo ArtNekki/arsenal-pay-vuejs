@@ -3,6 +3,7 @@
 		class="prompt"
 		:class="{
 			['prompt_color_' + color]: color,
+			['prompt_width_full']: fullWidth,
 		}"
 	>
 		<div class="prompt__text">
@@ -24,6 +25,7 @@ import BaseIcon from "@/components/base/BaseIcon.vue";
 	},
 	props: {
 		color: String,
+		fullWidth: Boolean,
 	},
 })
 export default class BasePrompt extends Vue {}
@@ -35,7 +37,8 @@ export default class BasePrompt extends Vue {}
 	margin-bottom: 24px;
 	padding: 24px 20px 14px;
 	width: 100%;
-	max-width: 320px;
+	max-width: 348px;
+	display: inline-block;
 	box-shadow: var(--box-shadow-lg);
 	border-radius: var(--border-radius-sm);
 	box-sizing: border-box;
@@ -43,7 +46,6 @@ export default class BasePrompt extends Vue {}
 
 	@include media-breakpoint-up(md) {
 		margin-top: 25px;
-		max-width: 646px;
 		text-align: center;
 	}
 
@@ -57,6 +59,10 @@ export default class BasePrompt extends Vue {}
 
 	&_color_green {
 		background-color: var(--color-bg-green);
+	}
+
+	&_width_full {
+		max-width: 100%;
 	}
 
 	&__tail {
