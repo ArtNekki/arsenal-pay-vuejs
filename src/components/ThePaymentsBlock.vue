@@ -5,10 +5,8 @@
 			<div class="page-section__notice">
 				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
-			<h2 class="text text_section_title">Подключить платежи в Instagram*</h2>
-			<p class="text text_section_lvl-1">
-				Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.
-			</p>
+			<h2 class="text text_title_level-1">Подключить платежи в Instagram*</h2>
+			<p class="text text_level_1">Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.</p>
 			<BaseButton>Подключиться</BaseButton>
 			<!--			<a href="" class="page-section__btn" style="margin-bottom: 0">Подключиться</a>-->
 			<!--			<a href="{{ footerLink }}" class="page-section__btn" style="margin-bottom: 0">Подключиться</a>-->

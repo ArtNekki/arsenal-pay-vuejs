@@ -438,15 +438,17 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_12 page-section_skew_no-bottom">
+	<section class="page-section page-section_order_12 page-section_skew_no-bottom page-section_type_slider">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Отзывы наших клиентов</h2>
-			<p class="text text--md-size-lg">
+			<h2 class="text text_title_level-1">Отзывы наших клиентов</h2>
+			<p class="text text_level_1">
 				Больше отзывов в&nbsp;нашем
-				<a href="https://www.instagram.com/arsenal_pay/" class="link link--in-text" target="_blank"
-					>Instagram*.</a
-				><br class="br br--show-xs" />Посмотрите
-				<a href="https://arsenalpay.ru/pay/" class="link link--in-text">страницы оплаты</a> клиентов.
+				<BaseLink href="https://www.instagram.com/arsenal_pay/" link-in="text" :target="true" color="blue"
+					>Instagram*.</BaseLink
+				>
+				<br class="br br--show-xs" />Посмотрите
+				<BaseLink href="https://arsenalpay.ru/pay/" link-in="text" color="blue">страницы оплаты</BaseLink>
+				клиентов.
 			</p>
 			<TheReviewsSlider :reviews="reviews" />
 		</div>

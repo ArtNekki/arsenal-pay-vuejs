@@ -92,6 +92,22 @@
         padding-right: calc(var(--container-padding-x) - var(--container-cut));
       }
     }
+
+    .page-section_type_slider & {
+      --max-width: 100%;
+
+      @include media-breakpoint-up(sm) {
+        max-width: var(--max-width);
+      }
+
+      @include media-breakpoint-up(md) {
+        max-width: var(--max-width);
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: var(--max-width);
+      }
+    }
   }
 
   &__title {
