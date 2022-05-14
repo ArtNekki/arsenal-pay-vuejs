@@ -2,7 +2,7 @@
 	<div
 		class="social"
 		:class="{
-			['social_type_' + type]: type,
+			['social_in_' + blockIn]: blockIn,
 		}"
 	>
 		<span class="social__label">Мы в соцсетях</span>
@@ -27,7 +27,7 @@ import BaseIcon from "./BaseIcon.vue";
 		BaseIcon,
 	},
 	props: {
-		type: String,
+		blockIn: String,
 	},
 })
 export default class BaseSocial extends Vue {}
@@ -39,7 +39,7 @@ export default class BaseSocial extends Vue {}
 	grid-template-columns: repeat(3, auto);
 	align-items: center;
 
-	&_type_footer {
+	&_in_footer {
 		grid-column-gap: 29px;
 
 		@include media-breakpoint-up(lg) {

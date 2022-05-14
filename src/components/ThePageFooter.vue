@@ -112,7 +112,7 @@
 			</div>
 			<div class="footer__bottom">
 				<div class="footer__social">
-					<BaseSocial type="footer" />
+					<BaseSocial block-in="footer" />
 				</div>
 				<div class="footer__note">
 					<small>* Instagram, признана в России экстремистской.</small>
