@@ -53,6 +53,10 @@
       letter-spacing: -0.4px;
     }
 
+    @include media-breakpoint-up(lg) {
+      max-width: 820px;
+    }
+
     //max-width: 840;
 
     &.text_before_button {
