@@ -1037,6 +1037,7 @@ export default class InstagramView extends Vue {
 
 	.page-section__row {
 		margin-top: 15px;
+		max-width: 820px;
 
 		@include media-breakpoint-up(lg) {
 			display: grid;
