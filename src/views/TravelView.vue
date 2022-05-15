@@ -1,165 +1,138 @@
 <template>
 	<section class="page-section page-section_order_1 page-section_skew_no-top">
 		<div class="page-section__container">
-			<!--    <div class="page-section__alert page-section__alert&#45;&#45;top">-->
-			<!--      {{{ alert text="Теперь приём платежей доступен и самозанятым" }}}-->
-			<!--    </div>-->
-			<h1 class="page-section__title">Турфирмам</h1>
-			<div class="u--mgb-sm-36">
-				<p class="text text--center-md text--md-size-lg text--ls-36 text--inline-sm text--no-mgb-md">
+			<div class="page-section__notice">
+				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
+			</div>
+			<h1 class="text text_type_title.level_1">Турфирмам</h1>
+			<div>
+				<p class="text text_level_1">
 					Полный пакет платёжных сервисов для турфирм.
-					<a href="https://arsenalpay.ru/tariffs.html" class="link link--in-text">Сниженный тариф.</a>
+					<BaseLink href="https://arsenalpay.ru/tariffs.html" :blank="true" link-in="text"
+						>Сниженный тариф.</BaseLink
+					>
 				</p>
-				<p
-					class="text text--center-md text--md-size-lg text--ls-36 text--block-lg text--inline-sm text--no-mgb-md"
-				>
-					Удобные инструменты для вашей компании и ваших клиентов.
-				</p>
-				<p class="text text--center-md text--md-size-lg text--ls-36 text--inline-sm text--no-mgb-md">
+				<p class="text text_level_1">Удобные инструменты для вашей компании и ваших клиентов.</p>
+				<p class="text text_level_1">
 					Принимайте платежи от клиентов со всего мира<br class="br br--show-lg" />
 					картами: Visa, MasterCard, Мир, Apple Pay.
 				</p>
 			</div>
-			<a
-				href="https://arsenalpay.ru/dashboard/quickstart?step=1"
-				class="page-section__btn page-section__btn--mgt-20 page-section__btn--no-mgt-sm"
-				style="margin-bottom: 0"
-				>Подключить</a
-			>
+			<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_2">
 		<div class="page-section__container">
-			<!--			{{{ icon name="kassa" width="122" height="120" mods="blue" }}}-->
-			<h2 class="page-section__title">
+			<BaseIcon name="kassa-big" width="122" height="120" color="blue" />
+			<h2 class="text text_type_title.level_1">
 				Онлайн-касса включена.<br />
 				Свою кассу покупать не нужно.
 			</h2>
 			<div>
-				<p class="text text--center-md text--md-size-lg text--inline-sm text--no-mgb-md">
+				<p class="text text_level_1">
 					Вы сразу получаете готовую к работе
-					<a href="https://arsenalpay.ru/cashbox.html" class="link link--in-text">кассу ArsenalPay</a>.<br
-						class="br br--show-md"
-					/>
+					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text"
+						>кассу ArsenalPay</BaseLink
+					>
 					Никаких расходов на кассу — вы платите только за чеки успешных покупок.
 				</p>
-				<p class="text text--center-md text--md-size-lg text--inline-sm text--block-lg text--no-mgb-xl">
+				<p class="text text_level_1">
 					Все чеки отправляются через ОФД в налоговую автоматически.<br class="br br--show-lg" />
 					Чек отправляется на email клиента сразу после оплаты.
 				</p>
 			</div>
-			<button
-				type="button"
-				class="page-section__btn page-section__btn--max-w-430 page-section__btn--max-w-430 page-section__btn--mgt-20 page-section__btn--mgt-36-sm"
-				data-modal="kassa"
-			>
-				<svg class="icon icon--blue" width="48" height="38" style="margin-left: 2px">
-					<use xlink:href="assets/img/symbol/sprite.svg#invoice-medium"></use>
-				</svg>
-				<span>Пример фискального чека</span>
-			</button>
+			<BaseButton text-transform="normal" icon-position="left" :full-width="true">
+				<template v-slot:icon>
+					<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
+				</template>
+				Пример фискального чека
+			</BaseButton>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_3">
 		<div class="page-section__container">
-			<!--			{{{ icon name="kassa" width="120" height="120" mods="pink" }}}-->
-			<h2 class="page-section__title">
+			<BaseIcon name="kassa-big" width="120" height="120" mods="pink" />
+			<h2 class="text text_type_title.level_1">
 				Бесплатная Web-касса ArsenalPay<br class="br br--show-md" />
 				для туров оплаченных наличными
 			</h2>
-			<p class="text text--ls-36 text--inline-sm text--md-size-lg">
+			<p class="text text_level_1">
 				Клиент может оплатить тур наличными, переводом на вашу карту, или перечислением на расчётный счёт.
 				В таком случае пробейте чек в личном кабинете через Web-кассу ArsenalPay. Чек отправится на email
 				клиента автоматически. В чеках указывается полная номенклатура в соответствии с 54‑ФЗ.
-				<a class="text text--ls-36 text--md-size-lg text--bold text--pink"> Чеки бесплатны и без комиссии.</a>
-				Все чеки сохраняются в личном кабинете.
+				<b class="text text_color_pink">Чеки бесплатны и без комиссии.</b> Все чеки сохраняются
+				в личном кабинете.
 			</p>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_4">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Всё удобные<br class="br br--show-xs" />платёжные функции</h2>
-			<div class="u--mgb-sm-16">
-				<p class="text text--center-md text--ls-36 text--md-size-lg text--inline-sm text--block-md">
-					Холдирование платежей. Быстрое выставление счёта. Apple Pay.
-					<br class="br br--show-md" />Отмена полной и частичной суммы. Сообщения об оплате и статусах заказа.
+			<h2 class="text text_type_title.level_1">Всё удобные<br class="br br--show-xs" />платёжные функции</h2>
+			<p class="text text_level_1">
+				Холдирование платежей. Быстрое выставление счёта. Apple Pay.
+				<br class="br br--show-md" />Отмена полной и частичной суммы. Сообщения об оплате и статусах заказа.
+			</p>
+			<div class="page-section__box">
+				<BaseIcon name="hold-medium" width="50" height="50" color="purple" />
+				<h3 class="text text_type_title.level_3">Холдирование платежей</h3>
+				<p class="text text_level_3">
+					Клиент оплачивает на вашем сайте любой тур, при этом деньги с его карты не списываются, а времено
+					«замораживаются». Вы проверяете доступность тура, затем сами подтверждаете списание «замороженных»
+					средств с карты клиента. Можно списывать неполную сумму при акциях, скидках или уменьшении стоимости
+					тура. Если тур по каким-то причинам недоступен, то вы просто делаете возврат и деньги мгновенно
+					вернутся на карту клиента. Комиссия при таком возврате не взимается.
 				</p>
-			</div>
-			<div
-				class="content-box content-box--shadow-md content-box--mgt-45 content-box--mgt-17-md content-box--mgt-50-lg content-box--mgt-17-xl content-box--pseudo-bg"
-			>
-				<!--				{{{ info-box-->
-				<!--				title="Холдирование платежей"-->
-				<!--				text='Клиент оплачивает на вашем сайте любой тур, при этом деньги с его карты не списываются, а времено-->
-				<!--				«замораживаются». Вы проверяете доступность тура, затем сами подтверждаете списание «замороженных» средств с карты клиента.-->
-				<!--				Можно списывать неполную сумму при акциях, скидках или уменьшении стоимости тура. Если тур по каким-то причинам недоступен,-->
-				<!--				то вы просто делаете возврат и деньги мгновенно вернутся на карту клиента. Комиссия при таком возврате не взимается.'-->
-				<!--				icon='{"name": "hold-medium", "color": "purple"}'-->
-				<!--				width="50" height="50"-->
-				<!--				mods="mgb-60, mgb-md-80, icon-space-lg, mgt-md-24"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title='Выставление счёта'-->
-				<!--				text='Выставляйте счета в 2 клика. Просто укажите сумму, номенклатуру и нужную вам информацию о заказе или клиенте.-->
-				<!--				Ссылка на оплату счёта создаётся автоматически, все что вам нужно — отправить ее клиенту любым удобным способом.-->
-				<!--				Клиент переходит по ссылке, оплачивает счёт и получает чек на свой email. Вам сразу приходит уведомление об оплате-->
-				<!--				на email и в личный кабинет.'-->
-				<!--				icon='{"name": "check-medium", "color": "pink"}' width="52" height="46"-->
-				<!--				mods="mgb-60, mgb-md-80, icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
 
-				<!--				{{{ info-box-->
-				<!--				title="Apple Pay"-->
-				<!--				text='Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес доставки и телефон.-->
-				<!--				Для безопасности платёж подтверждается<br class="br br&#45;&#45;show-lg" /> отпечатком пальца — Touch ID, или через распознавание лица — Face ID.-->
-				<!--				<br class="br br&#45;&#45;show-lg" />Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.'-->
-				<!--				icon='{"name": "apple-pay", "color": "black"}'-->
-				<!--				width="68" height="45"-->
-				<!--				mods="mgb-60, mgb-md-80, icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="Отмена платежа"-->
-				<!--				text='Вы можете отменить платёж в любое время в личном кабинете. Комиссии за отмену не взимаются. Также, можно отменить-->
-				<!--				только часть суммы, если изменились условия тура.'-->
-				<!--				icon='{"name": "refund-medium", "color": "pink"}'-->
-				<!--				width="52" height="52"-->
-				<!--				mods="mgb-60, mgb-md-80, icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="Сообщения об оплате"-->
-				<!--				text='Вся информация о платеже приходит на ваш email и в личный кабинет. Вы сразу видите имя клиента,-->
-				<!--				его телефон и за какой тур он заплатил.'-->
-				<!--				icon='{"name": "email-medium", "color": "green"}'-->
-				<!--				width="52" height="43"-->
-				<!--				mods="icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<div class="content-box__wrap">
-					<!--					{{{ info-box-->
-					<!--					title="Оплата в 1 клик"-->
-					<!--					text='Не нужно каждый раз вводить данные карты, достаточно воспользоваться функцией запоминания карты и всегда оплачивать в 1 клик.-->
-					<!--					Количество успешных платежей возрастает. Самый удобный способ оплаты.'-->
-					<!--					icon='{"name": "saved-card-medium", "color": ""}'-->
-					<!--					width="62" height="46"-->
-					<!--					mods="mgb-60, mgb-md-80, icon-space-lg"-->
-					<!--					textMods="mw-sm-520, mw-md-740"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Оплата в рассрочку"-->
-					<!--					text='Функция позволяет вашим клиентам оплачивать туры в рассрочку без комиссии. Выбирайте период рассрочки и оплата происходит-->
-					<!--					равными частями в течение этого периода. Деньги списываются с карты клиента автоматически.'-->
-					<!--					icon='{"name": "autopayment-medium", "color": "pink"}'-->
-					<!--					width="48" height="53"-->
-					<!--					textMods="mw-sm-520, mw-md-740"-->
-					<!--					mods="icon-space-lg"-->
-					<!--					}}}-->
+				<BaseIcon name="check-medium" width="52" height="46" color="pink" />
+				<h3 class="text text_type_title.level_3">Выставление счёта</h3>
+				<p class="text text_level_3">
+					Выставляйте счета в 2 клика. Просто укажите сумму, номенклатуру и нужную вам информацию о заказе или
+					клиенте. Ссылка на оплату счёта создаётся автоматически, все что вам нужно — отправить ее клиенту
+					любым удобным способом. Клиент переходит по ссылке, оплачивает счёт и получает чек на свой email.
+					Вам сразу приходит уведомление об оплате на email и в личный кабинет.
+				</p>
+
+				<BaseIcon name="apple-pay-medium" width="68" height="45" color="black" />
+				<h3 class="text text_type_title.level_3">Apple Pay</h3>
+				<p class="text text_level_3">
+					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
+					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
+					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.
+					<br class="br br--show-lg" />Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.
+				</p>
+
+				<BaseIcon name="refund-medium" width="52" height="52" color="pink" />
+				<h3 class="text text_type_title.level_3">Отмена платежа</h3>
+				<p class="text text_level_3">
+					Вы можете отменить платёж в любое время в личном кабинете. Комиссии за отмену не взимаются. Также,
+					можно отменить только часть суммы, если изменились условия тура.
+				</p>
+
+				<BaseIcon name="email-medium" width="52" height="43" color="green" />
+				<h3 class="text text_type_title.level_3">Сообщения об оплате</h3>
+				<p class="text text_level_3">
+					Вся информация о платеже приходит на ваш email и в личный кабинет. Вы сразу видите имя клиента, его
+					телефон и за какой тур он заплатил.
+				</p>
+				<div class="page-section__box-wrap">
+					<BaseIcon name="saved-card-medium" width="62" height="46" color="" />
+					<h3 class="text text_type_title.level_3">Оплата в 1 клик</h3>
+					<p class="text text_level_3">
+						Не нужно каждый раз вводить данные карты, достаточно воспользоваться функцией запоминания карты
+						и всегда оплачивать в 1 клик. Количество успешных платежей возрастает. Самый удобный способ
+						оплаты.
+					</p>
+
+					<BaseIcon name="autopayment-medium" width="52" height="43" color="pink" />
+					<h3 class="text text_type_title.level_3">Оплата в рассрочку</h3>
+					<p class="text text_level_3">
+						Функция позволяет вашим клиентам оплачивать туры в рассрочку без комиссии. Выбирайте период
+						рассрочки и оплата происходит равными частями в течение этого периода. Деньги списываются
+						с карты клиента автоматически.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -167,57 +140,55 @@
 
 	<section class="page-section page-section_order_5 page-section_type_cut">
 		<div class="page-section__container">
-			<!--			{{{ icon name="widget-big" width="84" height="106" mods="purple" }}}-->
-			<h2 class="page-section__title">
+			<BaseIcon name="widget-big" width="84" height="106" color="purple"></BaseIcon>
+			<h2 class="text text_type_title.level_1">
 				Красивый платёжный виджет<br class="br br--show-sm" />
 				с простой интеграцией
 			</h2>
-			<div class="page-section__text">
-				<p
-					class="text text--center-md text--ls-36 text--md-size-lg text--inline-sm text--block-md text--no-mgb-md"
-				>
+			<div class="">
+				<p class="text text_level_1">
 					Виджет легко
-					<a
-						href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
-						class="link link--in-text"
-					>
-						устанавливается</a
+					<BaseLink href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet" link-in="text"
+						>устанавливается</BaseLink
 					>
 					на любом сайте или в приложении.
 				</p>
-				<p class="text text--center-md text--ls-36 text--md-size-lg text--inline-sm text--no-mgb-md">
+				<p class="text text_level_1">
 					Вы можете разместить виджет на отдельной странице сайта, где клиенты сами<br
 						class="br br--show-lg"
 					/>
 					будут вводить и оплачивать сумму тура.
 				</p>
-				<p class="text text--center-md text--ls-36 text--md-size-lg text--inline-sm text--no-mgb-md">
+				<p class="text text_level_1">
 					Если на вашем сайте нет корзины,<br class="br br--show-lg" />
 					вы можете разместить виджет на каждой странице с туром.
 				</p>
 			</div>
-			<div class="widget-box widget-box--travel">
-				<div class="widget-box__widget">
-					<!--					{{{ img className="widget-travel" name="widget-travel" breakpoints='{"sm": true}'}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage
+						src="travel-page/widget-travel"
+						shadow="md"
+						radius="md"
+						:breakpoints="{ xs: true, sm: true }"
+					></BaseImage>
 				</div>
-				<div class="widget-box__content widget-box__content--icon-left">
-					<!--					{{{ info-box-->
-					<!--					title="Виджет оплаты"-->
-					<!--					text='Устанавливается в любое место на сайте.<br class="br br&#45;&#45;show-xs" />-->
-					<!--					Настраиваются дополнительные поля.<br class="br br&#45;&#45;show-xs" /><a href="https://arsenalpay.ru/customization/" class="link link&#45;&#45;in-text">Цвета виджета</a> настраиваются под ваш сайт.-->
-					<!--					<br class="br br&#45;&#45;show-xxs">Виджет адаптируется под все устройства.'-->
-					<!--					mods="align-left-lg, mgb-60, mgb-md-34, mgb-lg-60"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Безопасность"-->
-					<!--					text='Безопасная обработка данных карт<br class="br br&#45;&#45;show-xs" /> по стандарту PCI DSS 3.2 level 1.'-->
-					<!--					icon='{"name": "security", "color": "pink"}'-->
-					<!--					mods="align-left-lg, icon-size-lg"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-					<!--					}}}-->
+				<div class="page-section__col">
+					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
+					<p class="text text_level_3">
+						Устанавливается в любое место на сайте.<br class="br br--show-xs" />
+						Настраиваются дополнительные поля.<br class="br br--show-xs" />
+						<BaseLink href="https://arsenalpay.ru/customization/" link-in="text">Цвета виджета</BaseLink>
+						настраиваются под ваш сайт. <br class="br br--show-xxs" />Виджет адаптируется под все
+						устройства.
+					</p>
+
+					<BaseIcon name="security-medium" color="pink" />
+					<h3 class="text text_type_title.level_3">Безопасность</h3>
+					<p class="text text_level_3">
+						Безопасная обработка данных карт<br class="br br--show-xs" />
+						по стандарту PCI DSS 3.2 level 1.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -225,58 +196,47 @@
 
 	<section class="page-section page-section_order_6">
 		<div class="page-section__container">
-			<!--			{{{ icon name="rub-big" width="120" height="120" mods="green" }}}-->
-			<h2 class="page-section__title">
+			<BaseIcon name="rub-big" width="120" height="120" color="green" />
+			<h2 class="text text_type_title.level_1">
 				Платежи перечисляются<br class="br br--show-xs" />
 				на расчётный счёт фирмы каждый день
 			</h2>
-			<div class="page-section__content page-section__content--payments">
-				<!--				{{{ info-box-->
-				<!--				title="Без комиссий"-->
-				<!--				text='Никаких скрытых комиссий <br class="br br&#45;&#45;show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.'-->
-				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
-				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm,  icon-space-md-0, mgb-18, mgb-sm-42, gb-md-40"-->
-				<!--				titleMods="lh-35-md"-->
-				<!--				textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="Без минимальных сумм"-->
-				<!--				text='Накапливать сумму для <br class="br br&#45;&#45;show-xl" />вывода не&nbsp;нужно.'-->
-				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
-				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm, icon-space-md-0, mgb-18, mgb-sm-42, mgb-md-40"-->
-				<!--				titleMods="lh-35-md"-->
-				<!--				textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="В&nbsp;любой банк России"-->
-				<!--				text='Ваш расчётный счёт может <br class="br br&#45;&#45;show-xl" />быть в&nbsp;любом банке&nbsp;РФ.'-->
-				<!--				icon='{"name": "check-circle-medium", "color": "pink"}'-->
-				<!--				mods="icon-left-xs, icon-top-sm, icon-space-sm, icon-space-md-0, mgb-18, mgb-sm-42, mgb-md-40"-->
-				<!--				titleMods="lh-35-md"-->
-				<!--				textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-				<!--				}}}-->
+
+			<div class="page-section__box">
+				<BaseIcon name="check-circle-medium" width="" height="" color="pink" />
+				<h3 class="text text_type_title.level_3">Без комиссий</h3>
+				<p class="text text_level_3">
+					Никаких скрытых комиссий <br class="br br--show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.
+				</p>
+				<BaseIcon name="check-circle-medium" color="pink" width="" height="" />
+				<h3 class="text text_type_title.level_3">Без минимальных сумм</h3>
+				<p class="text text_level_3">
+					Накапливать сумму для <br class="br br--show-xl" />вывода не&nbsp;нужно.
+				</p>
+				<BaseIcon name="check-circle-medium" color="pink" width="" height="" />
+				<h3 class="text text_type_title.level_3">В&nbsp;любой банк России</h3>
+				<p class="text text_level_3">
+					Ваш расчётный счёт может <br class="br br--show-xl" />быть в&nbsp;любом банке&nbsp;РФ.
+				</p>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_7">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Никакой абонентской платы</h2>
-			<p class="text text--md-size-lg">
+			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
+			<p class="text text_level_1">
 				Вы платите только за успешные платежи.<br class="br br--show-md" />
 				Без дополнительных комиссий и звёздочек в договоре.
 			</p>
-			<div class="content-box content-box--rates">
-				<b
-					class="content-box__title content-box__title--type-two content-box__title--no-mgt content-box__title--no-mgb"
-					>Приём платежей картами всех стран мира</b
-				>
-				<p class="content-box__text">Visa, MasterCard, Мир, Apple Pay.</p>
+			<div class="page-section__box">
+				<b>Приём платежей картами всех стран мира</b>
+				<p>Visa, MasterCard, Мир, Apple Pay.</p>
 				<div class="row row--rates">
 					<!--					{{{ rate-box count="2.2" text="За успешный платёж" mods="column, inline-prefix, sm, no-mgb" }}}-->
 					<!--					{{{ rate-box count="0.2" prefix="+" text="За онлайн чек платежа" mods="column, inline-prefix, sm, no-mgb" }}}-->
 				</div>
-				<b class="content-box__title content-box__title--type-two">Сюда включено</b>
+				<b>Сюда включено</b>
 				<div class="row row--list">
 					<!--					{{{ list items='[{"icon": "input-cashier", "text": "Онлайн касса ArsenalPay", "href": "https://arsenalpay.ru/cashbox.html", "textColor": "dark-blue"}, {"icon": "input-invoice", "text": "Выставление счёта"}]' mods="" }}}-->
 					<!--					{{{ list items='[{"icon": "input-apple", "text": "Apple Pay"}, {"icon": "input-save-card", "text": "Запоминание карты"},-->
@@ -284,7 +244,7 @@
 					<!--					{{{ list items='[{"icon": "input-refund", "text": "Возврат платежа"},-->
 					<!--					{"icon": "input-autopayments", "text": "Оплата в рассрочку"}]' mods="no-mgt-md" }}}-->
 				</div>
-				<b class="content-box__title content-box__title--type-two content-box__title--mgt-45">Бесплатно</b>
+				<b>Бесплатно</b>
 				<div class="row row--list">
 					<!--					{{{ list items='[{"text": "Подключение"}, {"text": "Пользование кассой"}, {"text": "Техподдержка"}]' iconsColor="pink" mods="no-mgt, hide-lg, no-ls" }}}-->
 					<!--					{{{ list items='[{"text": "Свой менеджер"}, {"text": "Личный кабинет"}]' iconsColor="pink"  mods="hide-lg, no-mgt-md, no-ls" }}}-->
@@ -293,8 +253,8 @@
 					<!--					{{{ list items='[{"text": "Техподдержка"}, {"text": "Свой менеджер"}]' iconsColor="pink" mods="hide-xs, show-lg, no-mgt, no-ls" }}}-->
 					<!--					{{{ list items='[{"text": "Личный кабинет"}]' mods="hide-xs, show-lg, no-mgt, no-ls" iconsColor="pink" }}}-->
 				</div>
-				<div style="margin-top: 50px; width: 100%; text-align: left">
-					<a href="https://arsenalpay.ru/dashboard/register?step=1" class="btn btn--max-w-280">Подключить</a>
+				<div class="page-section__button">
+					<BaseLink href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseLink>
 				</div>
 			</div>
 		</div>
@@ -303,14 +263,14 @@
 	<section class="page-section page-section_order_8">
 		<div class="page-section__container">
 			<h2 class="page-section__title">Отзывы наших клиентов</h2>
-			<!--			{{> travel-reviews-slider }}-->
+			<TheReviewsSlider :reviews="reviews" />
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div class="page-section__container">
 			<h2 class="page-section__title">Вопросы и ответы</h2>
-			<div class="content-box content-box--faq">
+			<div class="page-section__box">
 				<!--				{{{ info-box-->
 				<!--				title="Как быстро деньги переводятся на расчётный счёт и в какой банк?"-->
 				<!--				text="Деньги перечисляются на расчётный счёт вашей компании каждый день в автоматическом режиме, вам не-->
@@ -348,16 +308,66 @@
 
 <script lang="ts">
 import { useMeta } from "vue-meta";
+import { Options, Vue } from "vue-class-component";
+import TheReviewsSlider from "@/components/TheReviewsSlider.vue";
+import BaseReviewCard from "@/components/base/BaseReviewCard.vue";
+import BaseNotice from "@/components/base/BaseNotice.vue";
+import BaseButton from "@/components/base/BaseButton.vue";
+import BaseImage from "@/components/base/BaseImage.vue";
+import BaseChip from "@/components/base/BaseChip.vue";
+import BaseIcon from "@/components/base/BaseIcon.vue";
+import BasePrompt from "@/components/base/BasePrompt.vue";
+import BaseRateBox from "@/components/base/BaseRateBox.vue";
+import BaseLink from "@/components/base/BaseLink.vue";
 
-export default {
-	setup() {
-		useMeta({
-			title: "Travel page",
-			description: "travel page",
-			"twitter:title": "Nekki",
-		});
+@Options({
+	components: {
+		TheReviewsSlider,
+		BaseReviewCard,
+		BaseNotice,
+		BaseButton,
+		BaseImage,
+		BaseChip,
+		BaseIcon,
+		BasePrompt,
+		BaseRateBox,
+		BaseLink,
 	},
-};
+})
+export default class TravelView extends Vue {
+	reviews = [
+		{
+			src: "logo-reviews-holiday",
+			name: "Holidaygo",
+			title: "<span style='display: inline-block;margin-right: 8px;'><i>✈️</i></span> Туристический портал с горящими турами",
+			text:
+				"Мы продаём туры от ведущих 130 туроператоров онлайн, поэтому нам необходима надежная система оплаты на сайте.\n" +
+				"Наши клиенты сами выбирают себе тур и сразу оплачивают его. Интеграция с ArsenalPay позволила нам безопасно принимать\n" +
+				"оплату, так как сумма на карте клиента замораживается до подтверждения бронирования. После оплаты клиенты получают чек, что\n" +
+				"свидетельствует о нашей надежности и исполнении законов.",
+		},
+		{
+			src: "logo-reviews-adven",
+			name: "ADVEN2R",
+			title: "<span style='display: inline-block;margin-right: 8px;'><i>🌴</i></span> Клуб путешественников",
+			text:
+				"Нам очень понравилась возможность не покупать онлайн кассу, а пользоваться готовой кассой ArsenalPay.\n" +
+				"Получается хорошо экономить. Тарифы на платежи тоже порадовали. Спасибо за качественный личный кабинет.\n" +
+				"Можно посмотреть платёж, имя клиента и полный чек. Мы часто выставляем счета клиентам, у вас это очень удобно сделано.\n" +
+				"Мы довольны, что наши клиенты могут купить тур не выходя из дома!",
+		},
+		{
+			src: "logo-reviews-baikal",
+			name: "BaikalExpress",
+			title: "<span style='display: inline-block;margin-right: 4px;'><i>🏖</i></span> Туры из Иркутска",
+			text:
+				"После подключения платежей от ArsenalPay наша продажа туров упростилась и стала более организованной.\n" +
+				"Мы пользуемся функцией заморозки средств, проверяем тур на доступность и только потом подтверждаем списание у клиента.\n" +
+				"Это очень удобно, так как можно сделать быстрый возврат и не волноваться. Решение с кассой нас больше чем устраивает,\n" +
+				"не надо платить лишнего и подключать дополнительные сервисы.",
+		},
+	];
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
