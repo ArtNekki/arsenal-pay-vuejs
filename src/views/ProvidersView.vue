@@ -1,143 +1,117 @@
 <template>
-	<section class="page-sectionpage-section_order_1 page-section_skew_inverse page-section_skew_no-top">
+	<section class="page-section page-section_order_1 page-section_skew_inverse page-section_skew_no-top">
 		<div class="page-section__container">
-			<!--    <div class="page-section__alert page-section__alert&#45;&#45;top">-->
-			<!--      {{{ alert text="Теперь приём платежей доступен и самозанятым" }}}-->
-			<!--    </div>-->
-			<h1 class="page-section__title">Интернет-провайдерам</h1>
-			<div class="u--mgb-sm-36">
-				<p class="text text--center-md text--md-size-lg text--ls-36 text--inline-sm text--no-mgb-md">
+			<div class="page-section__notice">
+				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
+			</div>
+			<h1 class="text text_type_title.level_1">Интернет-провайдерам</h1>
+			<div>
+				<p class="text text_level_1">
 					Полный пакет платежных сервисов для интернет и ТВ провайдеров.<br class="br br--show-lg" />
-					<a href="https://arsenalpay.ru/tariffs.html" class="link link--in-text">Сниженный тариф.</a>
+					<BaseLink href="https://arsenalpay.ru/tariffs.html" link-in="text">Сниженный тариф.</BaseLink>
 				</p>
-				<p class="text text--center-md text--md-size-lg text--ls-36 text--inline-sm text--no-mgb-md">
+				<p class="text text_level_1">
 					Удобные инструменты для вашей компании и ваших<br class="br br--show-lg" />
 					клиентов.
 				</p>
-				<p class="text text--center-md text--md-size-lg text--ls-36 text--inline-sm text--no-mgb-md">
+				<p class="text text_level_1">
 					Принимайте платежи от клиентов со всего мира картами:<br class="br br--show-lg" />
 					Visa, MasterCard, Мир, Apple Pay.
 				</p>
 			</div>
-			<a
-				href="https://arsenalpay.ru/dashboard/register?step=1"
-				class="page-section__btn page-section__btn--mgt-20 page-section__btn--no-mgt-sm page-section__btn--left-10-md page-section__btn--center-xl"
-				style="margin-bottom: 0"
-				>Подключить</a
-			>
+			<BaseButton href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseButton>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_2">
 		<div class="page-section__container">
-			<!--			{{{ icon name="kassa" width="122" height="120" mods="blue" }}}-->
-			<h2 class="page-section__title">
+			<BaseIcon name="kassa-big" width="122" height="120" color="blue" />
+			<h2 class="text text_type_title.level_1">
 				Онлайн-касса включена.<br />
 				Свою кассу покупать не нужно.
 			</h2>
 			<div>
-				<p class="text text--center-md text--md-size-lg text--inline-sm text--block-lg text--no-mgb-md">
+				<p class="text text_level_1">
 					Вы сразу получаете готовую к работе
-					<a href="https://arsenalpay.ru/cashbox.html" class="link link--in-text">кассу ArsenalPay.</a
-					><br class="br br--show-sm" />
+					<BaseLink href="https://arsenalpay.ru/cashbox.html" link-in="text">кассу ArsenalPay.</BaseLink>
+					<br class="br br--show-sm" />
 					Никаких расходов на кассу — вы платите только за чеки успешных покупок.
 				</p>
-				<p class="text text--center-md text--md-size-lg text--inline-sm">
+				<p class="text text_level_1">
 					Все чеки отправляются через ОФД в налоговую автоматически.<br class="br br--show-lg" />
 					Чек отправляется на email клиента сразу после оплаты.
 				</p>
 			</div>
-			<button
-				type="button"
-				class="page-section__btn page-section__btn--max-w-430 page-section__btn--max-w-430-md page-section__btn--mgt-20 page-section__btn--mgt-36-sm"
-				data-modal="kassa"
-			>
-				<svg class="icon icon--blue" width="48" height="38" style="margin-left: 2px">
-					<use xlink:href="assets/img/symbol/sprite.svg#invoice-medium"></use>
-				</svg>
-				<span>Пример фискального чека</span>
-			</button>
+			<BaseButton text-transform="normal" icon-position="left" :full-width="true">
+				<template v-slot:icon>
+					<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
+				</template>
+				Пример фискального чека
+			</BaseButton>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_3">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Всё для увеличения конверсии</h2>
-			<div class="u--mgb-sm-16 u--no-mgb-md">
-				<p class="text text--center-md text--md-size-lg text--ls-36 text--inline-sm text--block-md">
-					Управление автоплатежами. Запоминание карты. Apple Pay.<br class="br br--show-lg" />
-					Оплата без ввода 3DS. Страница при нулевом балансе.
+			<h2 class="text text_type_title.level_1">Всё для увеличения конверсии</h2>
+			<p class="text text_level_1">
+				Управление автоплатежами. Запоминание карты. Apple Pay.<br class="br br--show-lg" />
+				Оплата без ввода 3DS. Страница при нулевом балансе.
+			</p>
+			<div class="page-section__box">
+				<BaseIcon name="autopayment-medium" color="green" width="48" height="53" />
+				<h3 class="text text_type_title.level_3">Автоплатежи</h3>
+				<p class="text text_level_3">
+					Полное управление автоплатежами через API и в личном кабинете. Ваши клиенты смогут самостоятельно
+					изменить все настройки автоплатежа, без обращения в поддержку. Сумма автоплатежа автоматически
+					меняется при смене тарифа. Также можно изменять периодичность и отключать автоплатёж на время.
 				</p>
-			</div>
-			<div
-				class="content-box content-box--shadow-md content-box--pseudo-bg content-box--mgt-45 content-box--mgt-35-md content-box--mgt-50-lg content-box--mgt-17-xl"
-			>
-				<!--				{{{ info-box-->
-				<!--				title='Автоплатежи'-->
-				<!--				text='Полное управление автоплатежами через API и в личном кабинете. Ваши клиенты смогут самостоятельно-->
-				<!--				изменить все настройки автоплатежа, без обращения в поддержку. Сумма автоплатежа автоматически меняется при смене-->
-				<!--				тарифа. Также можно изменять периодичность и отключать автоплатёж на время.'-->
-				<!--				icon='{"name": "autopayment-medium", "color": "green"}'-->
-				<!--				width="48" height="53"-->
-				<!--				mods="mgb-60, mgb-md-80, mgt-md-24, icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title='Запоминание карты'-->
-				<!--				text='Функция позволяет совершать оплату в 1 клик. Увеличивает процент успешных платежей.-->
-				<!--				Уже 60% пользователей сохраняют свои карты, и доверие с каждым годом только растет.'-->
-				<!--				icon='{"name": "saved-card-medium", "color": "purple"}' width="62" height="46"-->
-				<!--				mods="mgb-60, mgb-md-80, icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title='Apple Pay'-->
-				<!--				text='Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты,-->
-				<!--				адрес доставки и телефон. Для безопасности платёж подтверждается<br class="br br&#45;&#45;show-lg"> отпечатком пальца — Touch ID,-->
-				<!--				или через распознавание лица — Face ID.<br class="br br&#45;&#45;show-lg"> Отдельно настраивать Apple Pay вам не придётся, все-->
-				<!--				заработает сразу.'-->
-				<!--				icon='{"name": "apple-pay", "color": "black"}'-->
-				<!--				width="68" height="45"-->
-				<!--				mods="mgb-60, mgb-md-80, icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="Оплата без 3DS"-->
-				<!--				text='Функция позволяет настраивать лимиты на сумму платежа, при которых можно не запрашивать код подтверждения оплаты 3DS.-->
-				<!--				Пользователям не нужно вводить 3DS, оплата становится быстрее и удобнее. Количество успешных платежей увеличивается.'-->
-				<!--				icon='{"name": "3ds-medium", "color": "pink"}'-->
-				<!--				width="52" height="52"-->
-				<!--				mods="mgb-60, mgb-md-80, icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="Страница при нуле"-->
-				<!--				text='Виджет оплаты можно легко встроить на страницу, которая информирует о нулевом балансе.-->
-				<!--				Клиенты смогут оплачивать услуги без дополнительной авторизации даже при отрицательном балансе. Если у вашего сервиса нет такой страницы, мы сделаем ее для вас.'-->
-				<!--				icon='{"name": "pay-page-medium", "color": "cyan"}'-->
-				<!--				width="45" height="53"-->
-				<!--				mods="icon-space-lg"-->
-				<!--				textMods="mw-sm-520, mw-md-740"-->
-				<!--				}}}-->
-				<div class="content-box__wrap">
-					<!--					{{{ info-box-->
-					<!--					title="ArsenalPay API"-->
-					<!--					text='Все платёжные функции доступны через API.<br class="br br&#45;&#45;show-lg">-->
-					<!--					Гибкое управление платежами в любом биллинге. <a href="https://arsenalpay.ru/documentation/index.html#api" class="link link&#45;&#45;in-text">Протестируйте наше API.</a>'-->
-					<!--					icon='{"name": "api-medium", "color": ""}'-->
-					<!--					width="52" height="52"-->
-					<!--					mods="mgb-60, mgb-md-80, icon-space-lg"-->
-					<!--					textMods="mw-sm-520, mw-md-740"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="IP-адреса 3DS страниц банков"-->
-					<!--					text='Мы предоставляем API для получения актуального списка IP-адресов 3DS страниц банков.-->
-					<!--					Что позволяет совершать оплату даже при закрытом доступе в интернет.'-->
-					<!--					icon='{"name": "3ds-medium", "color": "pink"}'-->
-					<!--					width="52" height="52"-->
-					<!--					mods="icon-space-lg"-->
-					<!--					textMods="mw-sm-520, mw-md-740"-->
-					<!--					}}}-->
+				<BaseIcon name="saved-card-medium" color="purple" width="62" height="46" />
+				<h3 class="text text_type_title.level_3">Запоминание карты</h3>
+				<p class="text text_level_3">
+					Функция позволяет совершать оплату в 1 клик. Увеличивает процент успешных платежей. Уже
+					60% пользователей сохраняют свои карты, и доверие с каждым годом только растет.
+				</p>
+				<BaseIcon name="apple-pay-medium" color="black" width="68" height="45" />
+				<h3 class="text text_type_title.level_3">Apple Pay</h3>
+				<p class="text text_level_3">
+					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
+					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
+					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.<br class="br br--show-lg" />
+					Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.
+				</p>
+
+				<BaseIcon name="3ds-medium" color="pink" width="52" height="52" />
+				<h3 class="text text_type_title.level_3">Оплата без 3DS</h3>
+				<p class="text text_level_3">
+					Функция позволяет настраивать лимиты на сумму платежа, при которых можно не запрашивать код
+					подтверждения оплаты 3DS. Пользователям не нужно вводить 3DS, оплата становится быстрее и удобнее.
+					Количество успешных платежей увеличивается.
+				</p>
+				<BaseIcon name="pay-medium" color="cyan" width="45" height="53" />
+				<h3 class="text text_type_title.level_3">Страница при нуле</h3>
+				<p class="text text_level_3">
+					Виджет оплаты можно легко встроить на страницу, которая информирует о нулевом балансе. Клиенты
+					смогут оплачивать услуги без дополнительной авторизации даже при отрицательном балансе. Если
+					у вашего сервиса нет такой страницы, мы сделаем ее для вас.
+				</p>
+				<div class="page-section__box-wrap">
+					<!--					<BaseIcon name="" color="" width="" height="" />-->
+					<h3 class="text text_type_title.level_3">ArsenalPay API</h3>
+					<p class="text text_level_3">
+						Все платёжные функции доступны через API.<br class="br br--show-lg" />
+						Гибкое управление платежами в любом биллинге.
+						<BaseLink href="https://arsenalpay.ru/documentation/index.html#api" link-in="text"
+							>Протестируйте наше API.</BaseLink
+						>
+					</p>
+
+					<BaseIcon name="3ds-medium" color="pink" width="52" height="52" />
+					<h3 class="text text_type_title.level_3">IP-адреса 3DS страниц банков</h3>
+					<p class="text text_level_3">
+						Мы предоставляем API для получения актуального списка IP-адресов 3DS страниц банков. Что
+						позволяет совершать оплату даже при закрытом доступе в интернет.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -145,41 +119,39 @@
 
 	<section class="page-section page-section_order_4 page-section_type_cut">
 		<div class="page-section__container">
-			<!--			{{{ icon name="widget-big" width="84" height="106" mods="purple" }}}-->
-			<h2 class="page-section__title">
+			<BaseIcon name="widget-big" width="84" height="106" color="purple" />
+			<h2 class="text text_type_title.level_1">
 				Функциональный виджет<br class="br br--show-sm" />
 				с простой интеграцией
 			</h2>
-			<p class="text text--ls-36 text--inline-sm text--md-size-lg">
+			<p class="text text_level_1">
 				Виджет легко
-				<a href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet" class="link link--in-text"
-					>устанавливается</a
+				<BaseLink href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet" link-in="text"
+					>устанавливается</BaseLink
 				>
 				не только на сайте, но и в личном кабинете, на странице при нуле или в приложении. Виджет уже
 				интегрирован<br class="br br--show-lg" />
 				с биллингами Гидра и Felix.
 			</p>
-			<div class="widget-box widget-box--providers">
-				<div class="widget-box__widget">
-					<!--					{{{ img className="widget-providers" name="widget-providers" breakpoints='{"sm": true}'}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="providers-page/widget-providers" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
-				<div class="widget-box__content">
-					<!--					{{{ info-box-->
-					<!--					title="Виджет оплаты"-->
-					<!--					text='<a href="https://arsenalpay.ru/customization/" class="link link&#45;&#45;in-text">Цвета виджета</a> настраиваются под ваш сайт.<br class="br br&#45;&#45;show-sm" /> Все варианты оплаты на одном виджете.-->
-					<!--					<br class="br br&#45;&#45;show-sm" />Виджет адаптируется под любые устройства.'-->
-					<!--					mods="align-left-lg, mgb-60, mgb-lg-86, mgb-xl-60"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-					<!--					}}}-->
-					<!--					{{{ info-box-->
-					<!--					title="Безопасность"-->
-					<!--					text='Безопасная обработка данных карт<br class="br br&#45;&#45;show-sm" /> по стандарту PCI DSS 3.2 level 1.'-->
-					<!--					icon='{"name": "security", "color": "pink"}'-->
-					<!--					mods="align-left-lg, icon-size-lg"-->
-					<!--					titleMods="lh-35-md"-->
-					<!--					textMods="mw-sm-520, mw-md-540, lh-md-26"-->
-					<!--					}}}-->
+				<div class="page-section__col">
+					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
+					<p class="text text_level_3">
+						<BaseLink href="https://arsenalpay.ru/customization/" link-in="text">Цвета виджета</BaseLink>
+						настраиваются под ваш сайт.<br class="br br--show-sm" />
+						Все варианты оплаты на одном виджете. <br class="br br--show-sm" />Виджет адаптируется под любые
+						устройства.
+					</p>
+
+					<BaseIcon name="security-medium" color="pink" />
+					<h3 class="text text_type_title.level_3">Безопасность</h3>
+					<p class="text text_level_3">
+						Безопасная обработка данных карт<br class="br br--show-sm" />
+						по стандарту PCI DSS 3.2 level 1.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -187,53 +159,41 @@
 
 	<section class="page-section page-section_order_5">
 		<div class="page-section__container">
-			<!--			{{{ icon name="app-big" width="116" height="116" mods="purple" }}}-->
-			<h2 class="page-section__title">Android + iPhone приложения</h2>
-			<p class="text text--ls-36 text--md-size-lg">
+			<BaseIcon name="app-big" width="116" height="116" color="purple" />
+			<h2 class="text text_type_title.level_1">Android + iPhone приложения</h2>
+			<p class="text text_level_1">
 				Приложение в фирменном стиле вашей компании. Удобно для клиентов и выгодно для вашего бизнеса. Отправка
-				push-уведомлений вместо СМС <br class="br br--show-lg" /><b
-					class="text text--ls-36 text--md-size-lg text--bold text--purple"
-				>
-					экономит от 500 000 ₽ в год.</b
+				push-уведомлений вместо СМС <br class="br br--show-lg" /><b class="text text_color_purple"
+					>экономит от 500 000 ₽ в год.</b
 				>
 			</p>
-			<div class="widget-box widget-box--providers-mobile">
-				<div class="widget-box__widget">
-					<!--					{{{ img className="widget-providers-mobile" name="widget-providers-mobile" breakpoints='{"lg": true}'}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="providers-page/widget-providers-mobile" :breakpoints="{ lg: true }"></BaseImage>
 				</div>
-				<div class="widget-box__content widget-box__content--icon-center">
-					<!--					{{{ icon name="settings&#45;&#45;medium" width="74" height="62" mods="purple" }}}-->
-					<b class="widget-box__title">Клиент сможет</b>
-					<ul class="list list--no-mgt list--text-sm">
-						<li class="list__item">
-							<svg class="icon icon--green" width="48px" height="38px">
-								<use xlink:href="assets/img/symbol/sprite.svg#check-list" />
-							</svg>
-							<span class="list__text">Узнавать и пополнять баланс.</span>
+				<div class="page-section__col">
+					<BaseIcon name="settings-medium" width="74" height="62" color="purple" />
+					<b class="">Клиент сможет</b>
+					<ul class="">
+						<li class="">
+							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
+							<span class="">Узнавать и пополнять баланс.</span>
 						</li>
-						<li class="list__item">
-							<svg class="icon icon--green" width="48px" height="38px">
-								<use xlink:href="assets/img/symbol/sprite.svg#check-list" />
-							</svg>
-							<span class="list__text">Вовремя получать уведомления о низком балансе.</span>
+						<li class="">
+							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
+							<span class="">Вовремя получать уведомления о низком балансе.</span>
 						</li>
-						<li class="list__item">
-							<svg class="icon icon--green" width="48px" height="38px">
-								<use xlink:href="assets/img/symbol/sprite.svg#check-list" />
-							</svg>
+						<li class="">
+							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
 							<span class="list__text">Оплачивать по карте и со счёта телефона.</span>
 						</li>
-						<li class="list__item">
-							<svg class="icon icon--green" width="48px" height="38px">
-								<use xlink:href="assets/img/symbol/sprite.svg#check-list" />
-							</svg>
-							<span class="list__text">Сохранять карту и оплачивать в 1 клик.</span>
+						<li class="">
+							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
+							<span class="">Сохранять карту и оплачивать в 1 клик.</span>
 						</li>
-						<li class="list__item">
-							<svg class="icon icon--green" width="48px" height="38px">
-								<use xlink:href="assets/img/symbol/sprite.svg#check-list" />
-							</svg>
-							<span class="list__text">Самостоятельно управлять автоплатежами.</span>
+						<li class="">
+							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
+							<span class="">Самостоятельно управлять автоплатежами.</span>
 						</li>
 					</ul>
 				</div>
@@ -243,22 +203,19 @@
 
 	<section class="page-section page-section_order_6">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Никакой абонентской платы</h2>
-			<p class="text text--md-size-lg">
+			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
+			<p class="text text_level_1">
 				Вы платите только за успешные платежи.<br class="br br--show-md" />
 				Без дополнительных комиссий и звёздочек в договоре.
 			</p>
-			<div class="content-box content-box--rates">
-				<b
-					class="content-box__title content-box__title--type-two content-box__title--no-mgt content-box__title--no-mgb"
-					>Приём платежей картами всех стран мира</b
-				>
-				<p class="content-box__text">Visa, MasterCard, Мир, Apple Pay.</p>
+			<div class="page-section__box">
+				<b class="">Приём платежей картами всех стран мира</b>
+				<p class="">Visa, MasterCard, Мир, Apple Pay.</p>
 				<div class="row row--rates">
 					<!--					{{{ rate-box count="2.2" text="За успешный платёж" mods="column, inline-prefix, sm, no-mgb" }}}-->
 					<!--					{{{ rate-box count="0.2" prefix="+" text="За онлайн чек платежа" mods="column, inline-prefix, sm, no-mgb" }}}-->
 				</div>
-				<b class="content-box__title content-box__title--type-two">Сюда включено</b>
+				<b class="">Сюда включено</b>
 				<div class="row row--list">
 					<!--					{{{ list items='[{"icon": "input-cashier", "text": "Онлайн касса ArsenalPay", "href": "https://arsenalpay.ru/cashbox.html", "textColor": "dark-blue"},-->
 					<!--					{"icon": "input-invoice", "text": "Выставление счёта"}, {"icon": "check-list", "text": "Оплата без 3D Secure"}]' iconsColor="blue" }}}-->
@@ -267,7 +224,7 @@
 					<!--					{{{ list items='[{"icon": "input-page", "text": "Страница при нуле"}, {"icon": "input-refund", "text": "Возврат платежа"},-->
 					<!--					{"icon": "input-api", "text": "Интеграция по API"}]' mods="no-mgt-md" iconsColor="blue" }}}-->
 				</div>
-				<b class="content-box__title content-box__title--type-two content-box__title--mgt-45">Бесплатно</b>
+				<b class="">Бесплатно</b>
 				<div class="row row--list">
 					<!--					{{{ list items='[{"text": "Подключение"}, {"text": "Пользование кассой"}, {"text": "Техподдержка"}]' iconsColor="pink" mods="no-mgt, hide-lg, no-ls" }}}-->
 					<!--					{{{ list items='[{"text": "Свой менеджер"}, {"text": "Личный кабинет"}]' iconsColor="pink" mods="hide-lg, no-ls, no-mgt-md" }}}-->
@@ -276,56 +233,51 @@
 					<!--					{{{ list items='[{"text": "Техподдержка"}, {"text": "Свой менеджер"}]' iconsColor="pink" mods="hide-xs, show-lg, no-mgt-lg, no-ls" }}}-->
 					<!--					{{{ list items='[{"text": "Личный кабинет"}]' iconsColor="pink" mods="hide-xs, show-lg, no-ls, no-mgt-lg" }}}-->
 				</div>
-				<div style="margin-top: 50px; width: 100%; text-align: left">
-					<a href="https://arsenalpay.ru/dashboard/register?step=1" class="btn btn--max-w-280">Подключить</a>
-				</div>
+				<BaseButton href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseButton>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_7">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Отзывы наших клиентов</h2>
-			<!--			{{> providers-reviews-slider }}-->
+			<h2 class="text text_type_title.level_1">Отзывы наших клиентов</h2>
+			<TheReviewsSlider :reviews="reviews" />
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_8 page-section_skew_no">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Вопросы и ответы</h2>
+			<h2 class="text text_type_title.level_1">Вопросы и ответы</h2>
 			<div class="content-box content-box--faq">
-				<!--				{{{ info-box-->
-				<!--				title="Как интегрировать платёжный виджет?"-->
-				<!--				text='Вы можете встроить виджет в личный кабинет для ваших пользователей, для этого у нас есть готовые модули-->
-				<!--				для биллинговых систем Гидра и Felix. Если вы пользуетесь другим биллингом, мы интегрируемся с ним. Платежи можно-->
-				<!--				принимать на вашем сайте или на публичной странице при нулевом балансе, в таком случае при оплате клиент указывает-->
-				<!--				в виджете свой лицевой счёт и почту для чека.'-->
-				<!--				mods="mgb-24, mgb-md-42, text-left"-->
-				<!--				textMods="mw-lg-820, lh-md-26"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title="Как быстро деньги переводятся на счёт и в какой банк?"-->
-				<!--				text='Расчётный счёт вашей компании может быть открыт в любом банке РФ. Открывать новый счёт не нужно. Деньги-->
-				<!--				перечисляются на р/c каждый день автоматически.'-->
-				<!--				mods="mgb-24, mgb-md-42, text-left"-->
-				<!--				textMods="mw-lg-820, lh-md-26"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title='На сколько удобно использовать онлайн-кассу ArsenalPay?'-->
-				<!--				text='Касса ArsenalPay встроена в платежный виджет, её не нужно отдельно интегрировать и настраивать под ваши системы.-->
-				<!--				Вся необходимая информация для чеков передаётся при оплате. Чеки автоматически отправляются на email клиента. Вам не придётся вносить-->
-				<!--				изменения в чеки при каждом изменении 54-ФЗ, всё это мы делаем сами.'-->
-				<!--				mods="mgb-24, mgb-md-42, text-left"-->
-				<!--				textMods="mw-lg-820, lh-md-26"-->
-				<!--				}}}-->
-				<!--				{{{ info-box-->
-				<!--				title='Чеки соответствуют последним изменениям 54-ФЗ?'-->
-				<!--				text='Мы следим за всеми изменениями 54-ФЗ и оперативно добавляем их в чеки. С 1 февраля 2021 года чеки должны содержать полную-->
-				<!--				номенклатуру товаров и услуг. Для интернет провадеров в чеке должен быть указан лицевой счёт клиента. В чеках ArsenalPay содержится вся-->
-				<!--				необходимая информация о номенклатуре и клиенте.'-->
-				<!--				mods="mgb-24, mgb-md-42, text-left"-->
-				<!--				textMods="mw-lg-820, lh-md-26"-->
-				<!--				}}}-->
+				<h3 class="text text_type_title.level_3">Как интегрировать платёжный виджет?</h3>
+				<p class="text text_level_3">
+					Вы можете встроить виджет в личный кабинет для ваших пользователей, для этого у нас есть готовые
+					модули для биллинговых систем Гидра и Felix. Если вы пользуетесь другим биллингом, мы интегрируемся
+					с ним. Платежи можно принимать на вашем сайте или на публичной странице при нулевом балансе, в таком
+					случае при оплате клиент указывает в виджете свой лицевой счёт и почту для чека.
+				</p>
+
+				<h3 class="text text_type_title.level_3">Как быстро деньги переводятся на счёт и в какой банк?</h3>
+				<p class="text text_level_3">
+					Расчётный счёт вашей компании может быть открыт в любом банке РФ. Открывать новый счёт не нужно.
+					Деньги перечисляются на р/c каждый день автоматически.
+				</p>
+
+				<h3 class="text text_type_title.level_3">На сколько удобно использовать онлайн-кассу ArsenalPay?</h3>
+				<p class="text text_level_3">
+					Касса ArsenalPay встроена в платежный виджет, её не нужно отдельно интегрировать и настраивать под
+					ваши системы. Вся необходимая информация для чеков передаётся при оплате. Чеки автоматически
+					отправляются на email клиента. Вам не придётся вносить изменения в чеки при каждом изменении 54-ФЗ,
+					всё это мы делаем сами.
+				</p>
+
+				<h3 class="text text_type_title.level_3">Чеки соответствуют последним изменениям 54-ФЗ?</h3>
+				<p class="text text_level_3">
+					Мы следим за всеми изменениями 54-ФЗ и оперативно добавляем их в чеки. С 1 февраля 2021 года чеки
+					должны содержать полную номенклатуру товаров и услуг. Для интернет провадеров в чеке должен быть
+					указан лицевой счёт клиента. В чеках ArsenalPay содержится вся необходимая информация о номенклатуре
+					и клиенте.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -338,6 +290,67 @@
 	<!--		</div>-->
 	<!--	</article>-->
 </template>
+
+<script lang="ts">
+import { useMeta } from "vue-meta";
+import { Options, Vue } from "vue-class-component";
+import TheReviewsSlider from "@/components/TheReviewsSlider.vue";
+import BaseReviewCard from "@/components/base/BaseReviewCard.vue";
+import BaseNotice from "@/components/base/BaseNotice.vue";
+import BaseButton from "@/components/base/BaseButton.vue";
+import BaseImage from "@/components/base/BaseImage.vue";
+import BaseChip from "@/components/base/BaseChip.vue";
+import BaseIcon from "@/components/base/BaseIcon.vue";
+import BasePrompt from "@/components/base/BasePrompt.vue";
+import BaseRateBox from "@/components/base/BaseRateBox.vue";
+import BaseLink from "@/components/base/BaseLink.vue";
+
+@Options({
+	components: {
+		TheReviewsSlider,
+		BaseReviewCard,
+		BaseNotice,
+		BaseButton,
+		BaseImage,
+		BaseChip,
+		BaseIcon,
+		BasePrompt,
+		BaseRateBox,
+		BaseLink,
+	},
+})
+export default class ProvidersView extends Vue {
+	reviews = [
+		{
+			src: "logo-reviews-alians",
+			name: "Альянс Телеком",
+			title: "<span style='display: inline-block;margin-right: 8px;'><i>🌐</i></span> Крупнейший провайдер телекоммуникационных услуг Приморского края",
+			text:
+				"В партнерстве с ArsenalPay предоставляем нашим клиентам надёжный способ оплаты услуг в соответствие\n" +
+				"с международным стандартом безопасности данных индустрии платёжных карт PCI DSS. При оплате наши клиенты могут быть\n" +
+				"уверены в необходимом уровне безопасности и защиты от мошенничества.",
+		},
+		{
+			src: "logo-reviews-podryad",
+			name: "Подряд",
+			title: "<span style='display: inline-block;margin-right: 8px;'><i>🌐</i></span> Один из крупнейших интернет и TV провайдеров Приморского края",
+			text:
+				"Многолетнее плодотворное сотрудничество с ArsenalPay дало возможность нашим клиентам не только удобно\n" +
+				"оплачивать услуги на сайте, но и пользоваться разработанным iOS и Android приложением со всеми функциями коммуникации и оплаты.\n" +
+				"Мы высоко оцениваем качество услуг и индивидуальный подход ArsenalPay.",
+		},
+		{
+			src: "logo-reviews-ikosmos",
+			name: "Космос",
+			title: "<span style='display: inline-block;margin-right: 8px;'><i>🌐</i></span> Интернет и TV провайдер Тюмени",
+			text:
+				"Считаем предложение ArsenalPay самым выгодным на рынке. Платежи по минимальной ставке плюс интегрированная касса без\n" +
+				"лишних расходов, такого мы больше нигде не нашли. Виджет установили на сайт без проблем, клиенты довольны удобством оплаты,\n" +
+				"чеки приходят сразу. Спасибо за качественный сервис!",
+		},
+	];
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
