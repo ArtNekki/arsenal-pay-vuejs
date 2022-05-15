@@ -24,7 +24,10 @@ import BaseIcon from "@/components/base/BaseIcon.vue";
 		BaseIcon,
 	},
 	props: {
-		color: String,
+		color: {
+			type: String,
+			default: "blue",
+		},
 		fullWidth: Boolean,
 	},
 })
