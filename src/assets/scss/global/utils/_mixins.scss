@@ -217,8 +217,8 @@
   }
 
   @include media-breakpoint-up(xl) {
-    //max-width: var(--container-width-xl);
-    max-width: 1042px;
+    max-width: var(--container-width-xl);
+    //max-width: 1042px;
   }
 
   @include media-breakpoint-up(xxl) {

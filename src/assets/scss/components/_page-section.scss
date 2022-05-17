@@ -162,7 +162,8 @@
 
   &__shift {
     @include media-breakpoint-up(xl) {
-      margin-left: -43px;
+      //margin-left: -43px;
+      margin-left: -41px;
     }
   }
 
@@ -196,9 +197,13 @@
       box-shadow: var(--box-shadow-sm);
     }
 
-    &_overflow_hidden {
-      overflow: hidden;
+    @include media-breakpoint-up(xl) {
+      max-width: 940px;
     }
+
+    //&_overflow_hidden {
+    //  overflow: hidden;
+    //}
   }
 
   &__box-wrap {
@@ -207,6 +212,12 @@
     padding-top: 77px;
     padding-bottom: 40px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(sm) {
+      align-items: center;
+    }
 
     @include media-breakpoint-up(md) {
       margin-top: 83px;

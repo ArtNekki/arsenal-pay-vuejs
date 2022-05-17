@@ -1,0 +1,9 @@
+.u_overflow_hidden {
+  overflow: hidden;
+}
+
+div[class~="u-max-width.on_screen_md"] {
+  @include media-breakpoint-up(md) {
+    width: 840px;
+  }
+}

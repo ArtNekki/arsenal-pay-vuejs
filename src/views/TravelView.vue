@@ -2,7 +2,7 @@
 	<section class="page-section page-section_order_1 page-section_skew_no-top">
 		<div class="page-section__container">
 			<h1 class="text text_type_title.level_1">Турфирмам</h1>
-			<div>
+			<div class="u-max-width.on_screen_md">
 				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Полный пакет платёжных сервисов для турфирм.
 					<br class="br br--show-sm br--hide-lg" />
@@ -33,7 +33,7 @@
 				Онлайн-касса включена.<br />
 				Свою кассу покупать не нужно.
 			</h2>
-			<div>
+			<div class="u-max-width.on_screen_md">
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Вы сразу получаете готовую к работе
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text" color="blue"
@@ -80,14 +80,18 @@
 	<section class="page-section page-section_order_4">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Всё удобные<br class="br br--show-xs" />платёжные функции</h2>
-			<p class="text text_level_1 mod_ls text_mgb_60 text_mgb_50.on_screen_md text_mgb_82.on_screen_lg">
+			<p
+				class="text text_level_1 mod_ls text_mgb_60 text_mgb_50.on_screen_md text_mgb_82.on_screen_lg text_mgb_50.on_screen_xl"
+			>
 				Холдирование платежей. Быстрое выставление счёта. Apple Pay.
 				<br class="br br--show-md" />Отмена полной и частичной суммы. Сообщения об оплате и статусах заказа.
 			</p>
 			<div class="page-section__box u_overflow_hidden">
 				<BaseIcon name="hold-medium" width="50" height="50" color="cyan" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Холдирование платежей</h3>
-				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
+				<p
+					class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md text_width_740.on_screen_lg"
+				>
 					Клиент оплачивает на вашем сайте любой тур, при этом деньги с его карты не списываются, а времено
 					«замораживаются». Вы проверяете доступность тура, затем сами подтверждаете списание «замороженных»
 					средств с карты клиента. Можно списывать неполную сумму при акциях, скидках или уменьшении стоимости
@@ -97,7 +101,9 @@
 
 				<BaseIcon name="check-medium" width="52" height="46" color="pink" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Выставление счёта</h3>
-				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
+				<p
+					class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md text_width_740.on_screen_lg"
+				>
 					Выставляйте счета в 2 клика. Просто укажите сумму, номенклатуру и нужную вам информацию о заказе или
 					клиенте. Ссылка на оплату счёта создаётся автоматически, все что вам нужно — отправить ее клиенту
 					любым удобным способом. Клиент переходит по ссылке, оплачивает счёт и получает чек на свой email.
@@ -106,7 +112,9 @@
 
 				<BaseIcon name="apple-pay-medium" width="68" height="45" color="black" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Apple Pay</h3>
-				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
+				<p
+					class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md text_width_740.on_screen_lg"
+				>
 					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
 					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
 					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.
@@ -115,21 +123,27 @@
 
 				<BaseIcon name="refund-medium" width="52" height="52" color="purple" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Отмена платежа</h3>
-				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
+				<p
+					class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md text_width_740.on_screen_lg"
+				>
 					Вы можете отменить платёж в любое время в личном кабинете. Комиссии за отмену не взимаются. Также,
 					можно отменить только часть суммы, если изменились условия тура.
 				</p>
 
 				<BaseIcon name="email-medium" width="52" height="43" color="green" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Сообщения об оплате</h3>
-				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
+				<p
+					class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md text_width_740.on_screen_lg"
+				>
 					Вся информация о платеже приходит на ваш email и в личный кабинет. Вы сразу видите имя клиента, его
 					телефон и за какой тур он заплатил.
 				</p>
 				<div class="page-section__box-wrap">
 					<BaseIcon name="saved-card-medium" width="62" height="46" color="purple" bottom-space="md" />
 					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Оплата в 1 клик</h3>
-					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
+					<p
+						class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md text_width_740.on_screen_lg"
+					>
 						Не нужно каждый раз вводить данные карты, достаточно воспользоваться функцией запоминания карты
 						и всегда оплачивать в 1 клик. Количество успешных платежей возрастает. Самый удобный способ
 						оплаты.
@@ -137,7 +151,7 @@
 
 					<BaseIcon name="autopayment-medium" width="48" height="53" color="pink" bottom-space="md" />
 					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Оплата в рассрочку</h3>
-					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_width_740.on_screen_lg">
 						Функция позволяет вашим клиентам оплачивать туры в рассрочку без комиссии. Выбирайте период
 						рассрочки и оплата происходит равными частями в течение этого периода. Деньги списываются
 						с карты клиента автоматически.
@@ -149,34 +163,36 @@
 
 	<section class="page-section page-section_order_5 page-section_type_cut">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="widget-big" width="84" height="106" color="purple"></BaseIcon>
-			</div>
-			<h2 class="text text_type_title.level_1">
-				Красивый платёжный виджет<br class="br br--show-sm" />
-				с простой интеграцией
-			</h2>
-			<div>
-				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
-					Виджет легко
-					<BaseLink
-						href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
-						link-in="text"
-						color="blue"
-						>устанавливается</BaseLink
-					>
-					на любом сайте или в приложении.
-				</p>
-				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
-					Вы можете разместить виджет на отдельной странице сайта, где клиенты сами<br
-						class="br br--show-lg"
-					/>
-					будут вводить и оплачивать сумму тура.
-				</p>
-				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
-					Если на вашем сайте нет корзины,<br class="br br--show-lg" />
-					вы можете разместить виджет на каждой странице с туром.
-				</p>
+			<div class="page-section__shift">
+				<div class="page-section__icon">
+					<BaseIcon name="widget-big" width="84" height="106" color="purple"></BaseIcon>
+				</div>
+				<h2 class="text text_type_title.level_1">
+					Красивый платёжный виджет<br class="br br--show-sm" />
+					с простой интеграцией
+				</h2>
+				<div class="u-max-width.on_screen_md">
+					<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+						Виджет легко
+						<BaseLink
+							href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
+							link-in="text"
+							color="blue"
+							>устанавливается</BaseLink
+						>
+						на любом сайте или в приложении.
+					</p>
+					<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+						Вы можете разместить виджет на отдельной странице сайта, где клиенты сами<br
+							class="br br--show-lg"
+						/>
+						будут вводить и оплачивать сумму тура.
+					</p>
+					<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+						Если на вашем сайте нет корзины,<br class="br br--show-lg" />
+						вы можете разместить виджет на каждой странице с туром.
+					</p>
+				</div>
 			</div>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -492,6 +508,11 @@ export default class TravelView extends Vue {
 			margin-top: 36px;
 			max-width: 430px;
 		}
+
+		@include media-breakpoint-up(xl) {
+			margin-top: 36px;
+			max-width: 480px;
+		}
 	}
 }
 
@@ -546,6 +567,11 @@ export default class TravelView extends Vue {
 			display: grid;
 			grid-template-columns: 348px 1fr;
 			grid-column-gap: 72px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: 153px;
+			grid-column-gap: 100px;
 		}
 	}
 
