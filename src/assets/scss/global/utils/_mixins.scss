@@ -202,17 +202,17 @@
   @include media-breakpoint-up(sm) {
     --container-padding-x: 40px;
 
-    max-width: var(--container-width-sm);
+    //max-width: var(--container-width-sm);
     padding-right: var(--container-padding-x);
     padding-left: var(--container-padding-x);
   }
 
   @include media-breakpoint-up(md) {
-    max-width: var(--container-width-md);
+    //max-width: var(--container-width-md);
   }
 
   @include media-breakpoint-up(lg) {
-    max-width: var(--container-width-lg);
+    //max-width: var(--container-width-lg);
     //max-width: 1042px;
   }
 

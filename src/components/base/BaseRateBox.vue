@@ -1,5 +1,10 @@
 <template>
-	<div class="rate-box">
+	<div
+		class="rate-box"
+		:class="{
+			['rate-box_size_' + size]: size,
+		}"
+	>
 		<div class="rate-box__count">
 			<span :data-prefix="prefix">{{ count }}</span>
 			<sub>%</sub>
@@ -17,6 +22,7 @@ import { Options, Vue } from "vue-class-component";
 	props: {
 		count: String,
 		prefix: String,
+		size: String,
 	},
 })
 export default class BaseRateBox extends Vue {}
@@ -35,6 +41,10 @@ export default class BaseRateBox extends Vue {}
 		text-align: left;
 	}
 
+	&_size_sm {
+		text-align: left;
+	}
+
 	&__count {
 		span {
 			position: relative;
@@ -50,10 +60,10 @@ export default class BaseRateBox extends Vue {}
 				margin-left: 0;
 			}
 
-			&::before {
+			&[data-prefix]::before {
 				content: attr(data-prefix);
-				position: absolute;
-				left: -38.4px;
+				position: relative;
+				//left: -38.4px;
 				display: inline-block;
 			}
 		}
@@ -66,9 +76,29 @@ export default class BaseRateBox extends Vue {}
 			font-weight: 300;
 			letter-spacing: -0.96px;
 		}
-	}
 
-	&__body {
+		.rate-box_size_sm & {
+			margin-bottom: 16px;
+
+			span {
+				margin-right: 5px;
+				margin-left: 0;
+				font-size: 28.2px;
+				line-height: 26px;
+				letter-spacing: 0;
+
+				&[data-prefix]::before {
+					margin-right: 5px;
+					margin-left: 2px;
+				}
+			}
+
+			sub {
+				font-size: 16px;
+				line-height: 26px;
+				letter-spacing: 0;
+			}
+		}
 	}
 }
 </style>

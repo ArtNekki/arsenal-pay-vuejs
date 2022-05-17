@@ -242,36 +242,85 @@
 	<section class="page-section page-section_order_7">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
-			<p class="text text_level_1">
+			<p class="text text_level_1 text_mgb_50">
 				Вы платите только за успешные платежи.<br class="br br--show-md" />
 				Без дополнительных комиссий и звёздочек в договоре.
 			</p>
 			<div class="page-section__box">
-				<b>Приём платежей картами всех стран мира</b>
-				<p>Visa, MasterCard, Мир, Apple Pay.</p>
-				<div class="row row--rates">
-					<!--					{{{ rate-box count="2.2" text="За успешный платёж" mods="column, inline-prefix, sm, no-mgb" }}}-->
-					<!--					{{{ rate-box count="0.2" prefix="+" text="За онлайн чек платежа" mods="column, inline-prefix, sm, no-mgb" }}}-->
+				<b class="text text_type_title.level_2 text_mgb_no">Приём платежей картами всех стран мира</b>
+				<p class="text text_level_2">Visa, MasterCard, Мир, Apple Pay.</p>
+				<div class="page-section__row page-section__row_type_rates">
+					<BaseRateBox count="2.2" size="sm">
+						<p class="text text_level_2 text_lh_24">За успешный платёж</p>
+					</BaseRateBox>
+					<BaseRateBox count="0.2" prefix="+" size="sm">
+						<p class="text text_level_2 text_lh_24 text_mgb_no">За онлайн чек платежа</p>
+					</BaseRateBox>
 				</div>
-				<b>Сюда включено</b>
-				<div class="row row--list">
-					<!--					{{{ list items='[{"icon": "input-cashier", "text": "Онлайн касса ArsenalPay", "href": "https://arsenalpay.ru/cashbox.html", "textColor": "dark-blue"}, {"icon": "input-invoice", "text": "Выставление счёта"}]' mods="" }}}-->
-					<!--					{{{ list items='[{"icon": "input-apple", "text": "Apple Pay"}, {"icon": "input-save-card", "text": "Запоминание карты"},-->
-					<!--					{"icon": "input-hold", "text": "Холдирование"}]' mods="order-3-md, order-1-lg, no-mgt-lg" }}}-->
-					<!--					{{{ list items='[{"icon": "input-refund", "text": "Возврат платежа"},-->
-					<!--					{"icon": "input-autopayments", "text": "Оплата в рассрочку"}]' mods="no-mgt-md" }}}-->
+				<b class="text text_type_title.level_2">Сюда включено</b>
+				<div class="page-section__row">
+					<div class="page-section__col">
+						<BaseIcon name="input-cashier" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_mgb_no">
+							<BaseLink href="https://arsenalpay.ru/cashbox.html" link-in="text" color="blue"
+								>Онлайн касса ArsenalPay</BaseLink
+							>
+						</p>
+						<BaseIcon name="input-invoice" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Выставление счёта</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="input-apple" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Apple Pay</p>
+						<BaseIcon name="input-save-card" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Запоминание карты</p>
+						<BaseIcon name="input-hold" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Холдировани</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="input-refund" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Возврат платежа</p>
+						<BaseIcon name="input-autopayments" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Оплата в рассрочку</p>
+					</div>
 				</div>
-				<b>Бесплатно</b>
-				<div class="row row--list">
-					<!--					{{{ list items='[{"text": "Подключение"}, {"text": "Пользование кассой"}, {"text": "Техподдержка"}]' iconsColor="pink" mods="no-mgt, hide-lg, no-ls" }}}-->
-					<!--					{{{ list items='[{"text": "Свой менеджер"}, {"text": "Личный кабинет"}]' iconsColor="pink"  mods="hide-lg, no-mgt-md, no-ls" }}}-->
-
-					<!--					{{{ list items='[{"text": "Подключение"}, {"text": "Пользование кассой"}]' iconsColor="pink" mods="hide-xs, show-lg, no-mgt, no-ls" }}}-->
-					<!--					{{{ list items='[{"text": "Техподдержка"}, {"text": "Свой менеджер"}]' iconsColor="pink" mods="hide-xs, show-lg, no-mgt, no-ls" }}}-->
-					<!--					{{{ list items='[{"text": "Личный кабинет"}]' mods="hide-xs, show-lg, no-mgt, no-ls" iconsColor="pink" }}}-->
+				<b class="text text_type_title.level_2">Бесплатно</b>
+				<div class="page-section__row page-section__row_hide_lg">
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Подключение</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Пользование кассой</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Техподдержка</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Свой менеджер</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Личный кабинет</p>
+					</div>
+				</div>
+				<div class="page-section__row page-section__row_show_lg">
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Подключение</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Пользование кассой</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Техподдержка</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Свой менеджер</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Личный кабинет</p>
+					</div>
 				</div>
 				<div class="page-section__button">
-					<BaseLink href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseLink>
+					<BaseButton href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseButton>
 				</div>
 			</div>
 		</div>
@@ -623,6 +672,75 @@ export default class TravelView extends Vue {
 			padding-top: 73px;
 			padding-bottom: 155px;
 		}
+	}
+
+	.page-section__box {
+		padding: 56px 20px 44px;
+		border-radius: var(--border-radius-lg);
+		background-color: var(--color-bg-gray-super-light);
+	}
+
+	.page-section__row {
+		position: relative;
+		left: -15px;
+		margin-bottom: 42px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+
+		@include media-breakpoint-up(md) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: start;
+		}
+
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		&_type_rates {
+			left: 0;
+
+			@include media-breakpoint-up(sm) {
+				display: grid;
+				grid-template-columns: repeat(2, 200px);
+				grid-column-gap: 36px;
+			}
+		}
+
+		&_hide_lg {
+			@include media-breakpoint-up(lg) {
+				display: none;
+			}
+		}
+
+		&_show_lg {
+			display: none;
+
+			@include media-breakpoint-up(lg) {
+				display: block;
+			}
+		}
+	}
+
+	.page-section__col {
+		display: grid;
+		grid-template-columns: 48px auto;
+		grid-auto-rows: 32px;
+		grid-column-gap: 1px;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+
+		svg {
+			left: -1px;
+		}
+	}
+
+	.page-section__button {
+		margin-top: 8px;
 	}
 }
 
