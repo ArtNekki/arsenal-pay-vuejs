@@ -62,6 +62,14 @@
     &.text_before_button {
       margin-bottom: 36px;
     }
+
+    &.mod_ls {
+      letter-spacing: -0.36px;
+
+      @include media-breakpoint-up(md) {
+        letter-spacing: -0.4px;
+      }
+    }
   }
 
   &_level_3 {
@@ -157,6 +165,10 @@
 
   &.text_mgb_60 {
     margin-bottom: 60px;
+  }
+
+  &.text_mgb_80 {
+    margin-bottom: 80px;
   }
 
   &.text_mgb_42 {

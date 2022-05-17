@@ -55,7 +55,11 @@ export default class BaseIcon extends Vue {
 	}
 
 	&_color_blue {
-		color: var(--color-icon-blue-light);
+		color: var(--color-icon-blue);
+	}
+
+	&_color_cyan {
+		color: var(--color-icon-cyan);
 	}
 
 	&_color_green {
