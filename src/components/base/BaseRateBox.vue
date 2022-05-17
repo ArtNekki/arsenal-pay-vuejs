@@ -43,6 +43,10 @@ export default class BaseRateBox extends Vue {}
 
 	&_size_sm {
 		text-align: left;
+
+		@include media-breakpoint-up(md) {
+			display: block;
+		}
 	}
 
 	&__count {

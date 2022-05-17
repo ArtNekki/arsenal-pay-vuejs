@@ -251,14 +251,14 @@
 				<p class="text text_level_2">Visa, MasterCard, Мир, Apple Pay.</p>
 				<div class="page-section__row page-section__row_type_rates">
 					<BaseRateBox count="2.2" size="sm">
-						<p class="text text_level_2 text_lh_24">За успешный платёж</p>
+						<p class="text text_level_2 text_lh_24 text_mgb_no.on_screen_sm">За успешный платёж</p>
 					</BaseRateBox>
 					<BaseRateBox count="0.2" prefix="+" size="sm">
 						<p class="text text_level_2 text_lh_24 text_mgb_no">За онлайн чек платежа</p>
 					</BaseRateBox>
 				</div>
 				<b class="text text_type_title.level_2">Сюда включено</b>
-				<div class="page-section__row">
+				<div class="page-section__row page-section__row_type_cards">
 					<div class="page-section__col">
 						<BaseIcon name="input-cashier" width="48" height="38" color="blue" />
 						<p class="text text_level_2 text_mgb_no">
@@ -269,7 +269,7 @@
 						<BaseIcon name="input-invoice" width="48" height="38" color="blue" />
 						<p class="text text_level_2 text_lh_32 text_mgb_no">Выставление счёта</p>
 					</div>
-					<div class="page-section__col">
+					<div class="page-section__col page-section__col_order_last.on_screen_md">
 						<BaseIcon name="input-apple" width="48" height="38" color="blue" />
 						<p class="text text_level_2 text_lh_32 text_mgb_no">Apple Pay</p>
 						<BaseIcon name="input-save-card" width="48" height="38" color="blue" />
@@ -675,9 +675,16 @@ export default class TravelView extends Vue {
 	}
 
 	.page-section__box {
+		max-width: 820px;
 		padding: 56px 20px 44px;
 		border-radius: var(--border-radius-lg);
 		background-color: var(--color-bg-gray-super-light);
+		align-items: start;
+
+		@include media-breakpoint-up(sm) {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
 	}
 
 	.page-section__row {
@@ -690,21 +697,39 @@ export default class TravelView extends Vue {
 
 		@include media-breakpoint-up(md) {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(2, 270px);
+			grid-column-gap: 36px;
 			align-items: start;
 		}
 
 		@include media-breakpoint-up(lg) {
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: 270px repeat(2, 234px);
+			grid-column-gap: 9px;
 		}
 
 		&_type_rates {
 			left: 0;
 
-			@include media-breakpoint-up(sm) {
+			@include media-breakpoint-only(sm) {
 				display: grid;
 				grid-template-columns: repeat(2, 200px);
 				grid-column-gap: 36px;
+			}
+
+			//@include media-breakpoint-up(md) {
+			//	grid-template-columns: repeat(2, 270px);
+			//}
+			//
+			//@include media-breakpoint-up(md) {
+			//	grid-template-columns: repeat(2, 270px);
+			//}
+		}
+
+		&_type_cards {
+			margin-bottom: 45px;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 27px;
 			}
 		}
 
@@ -718,7 +743,7 @@ export default class TravelView extends Vue {
 			display: none;
 
 			@include media-breakpoint-up(lg) {
-				display: block;
+				display: grid;
 			}
 		}
 	}
@@ -729,6 +754,12 @@ export default class TravelView extends Vue {
 		grid-auto-rows: 32px;
 		grid-column-gap: 1px;
 		align-items: center;
+
+		&[class~="page-section__col_order_last.on_screen_md"] {
+			@include media-breakpoint-only(md) {
+				order: 1;
+			}
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 18px;
@@ -741,6 +772,11 @@ export default class TravelView extends Vue {
 
 	.page-section__button {
 		margin-top: 8px;
+		max-width: 280px;
+
+		@include media-breakpoint-up(md) {
+			margin-top: -11px;
+		}
 	}
 }
 

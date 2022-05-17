@@ -213,6 +213,12 @@
     }
   }
 
+  &[class~="text_mgb_no.on_screen_sm"] {
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
+  }
+
   &[class~="text_mgb_40.on_screen_md"] {
     @include media-breakpoint-up(md) {
       margin-bottom: 40px;
