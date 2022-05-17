@@ -5,7 +5,7 @@
 			<div>
 				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Полный пакет платёжных сервисов для турфирм.
-					<br class="br br--show-sm" />
+					<br class="br br--show-sm br--hide-lg" />
 					<BaseLink href="https://arsenalpay.ru/tariffs.html" :blank="true" link-in="text" color="blue"
 						>Сниженный тариф.</BaseLink
 					>
@@ -14,7 +14,7 @@
 					Удобные инструменты для вашей компании и ваших клиентов.
 				</p>
 				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
-					Принимайте платежи от клиентов со всего мира<br class="br br--show-lg" />
+					Принимайте платежи от клиентов со всего мира<br class="br br--show-lg" />
 					картами: Visa, MasterCard, Мир, Apple Pay.
 				</p>
 			</div>
@@ -80,7 +80,7 @@
 	<section class="page-section page-section_order_4">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Всё удобные<br class="br br--show-xs" />платёжные функции</h2>
-			<p class="text text_level_1 mod_ls text_mgb_60 text_mgb_50.on_screen_md">
+			<p class="text text_level_1 mod_ls text_mgb_60 text_mgb_50.on_screen_md text_mgb_82.on_screen_lg">
 				Холдирование платежей. Быстрое выставление счёта. Apple Pay.
 				<br class="br br--show-md" />Отмена полной и частичной суммы. Сообщения об оплате и статусах заказа.
 			</p>
@@ -168,7 +168,7 @@
 					на любом сайте или в приложении.
 				</p>
 				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
-					Вы можете разместить виджет на отдельной странице сайта, где клиенты сами<br
+					Вы можете разместить виджет на отдельной странице сайта, где клиенты сами<br
 						class="br br--show-lg"
 					/>
 					будут вводить и оплачивать сумму тура.
@@ -189,7 +189,7 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
-					<p class="text text_level_3 text_mgb_60 text_mgb_34.on_screen_md">
+					<p class="text text_level_3 text_mgb_60 text_mgb_34.on_screen_md text_mgb_60.on_screen_lg">
 						Устанавливается в любое место на сайте.<br class="br br--show-xs" />
 						Настраиваются дополнительные поля.<br class="br br--show-xs" />
 						<BaseLink href="https://arsenalpay.ru/customization/" link-in="text" color="blue"
@@ -530,12 +530,23 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(md) {
 			padding-top: 61px;
 		}
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 170px;
+		}
 	}
 
 	.page-section__row {
 		margin-top: 80px;
 		display: flex;
 		flex-direction: column;
+
+		@include media-breakpoint-up(lg) {
+			padding-left: 20px;
+			display: grid;
+			grid-template-columns: 348px 1fr;
+			grid-column-gap: 72px;
+		}
 	}
 
 	.page-section__col {
@@ -552,6 +563,11 @@ export default class TravelView extends Vue {
 		}
 
 		&:last-child {
+			@include media-breakpoint-up(lg) {
+				padding-top: 143px;
+				align-items: start;
+				text-align: left;
+			}
 		}
 
 		picture {
