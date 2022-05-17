@@ -582,8 +582,10 @@
   //}
 }
 
-.u_overflow_hidden {
-  overflow: hidden;
+div[class~="u_overflow_hidden.on_screen_md"] {
+  @include media-breakpoint-up(md) {
+    overflow: hidden;
+  }
 }
 
 div[class~="u-max-width.on_screen_md"] {
