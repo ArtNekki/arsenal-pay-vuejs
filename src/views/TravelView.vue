@@ -3,14 +3,16 @@
 		<div class="page-section__container">
 			<h1 class="text text_type_title.level_1">Турфирмам</h1>
 			<div>
-				<p class="text text_level_1 mod_ls">
+				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Полный пакет платёжных сервисов для турфирм.
-					<BaseLink href="https://arsenalpay.ru/tariffs.html" :blank="true" link-in="text"
+					<BaseLink href="https://arsenalpay.ru/tariffs.html" :blank="true" link-in="text" color="blue"
 						>Сниженный тариф.</BaseLink
 					>
 				</p>
-				<p class="text text_level_1 mod_ls">Удобные инструменты для вашей компании и ваших клиентов.</p>
-				<p class="text text_level_1 mod_ls">
+				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+					Удобные инструменты для вашей компании и ваших клиентов.
+				</p>
+				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Принимайте платежи от клиентов со всего мира<br class="br br--show-lg" />
 					картами: Visa, MasterCard, Мир, Apple Pay.
 				</p>
@@ -31,14 +33,14 @@
 				Свою кассу покупать не нужно.
 			</h2>
 			<div>
-				<p class="text text_level_1">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Вы сразу получаете готовую к работе
-					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text"
+					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text" color="blue"
 						>кассу ArsenalPay</BaseLink
 					>
 					Никаких расходов на кассу — вы платите только за чеки успешных покупок.
 				</p>
-				<p class="text text_level_1">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Все чеки отправляются через ОФД в налоговую автоматически.<br class="br br--show-lg" />
 					Чек отправляется на email клиента сразу после оплаты.
 				</p>
@@ -67,8 +69,8 @@
 				Клиент может оплатить тур наличными, переводом на вашу карту, или перечислением на расчётный счёт.
 				В таком случае пробейте чек в личном кабинете через Web-кассу ArsenalPay. Чек отправится на email
 				клиента автоматически. В чеках указывается полная номенклатура в соответствии с 54‑ФЗ.
-				<b class="text text_color_pink mod_ls">Чеки бесплатны и без комиссии.</b> Все чеки сохраняются
-				в личном кабинете.
+				<b class="text text_color_pink text_display_inline mod_ls">Чеки бесплатны и без комиссии.</b> Все чеки
+				сохраняются в личном кабинете.
 			</p>
 		</div>
 	</section>
@@ -109,7 +111,7 @@
 					<br class="br br--show-lg" />Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.
 				</p>
 
-				<BaseIcon name="refund-medium" width="52" height="52" color="pink" bottom-space="md" />
+				<BaseIcon name="refund-medium" width="52" height="52" color="purple" bottom-space="md" />
 				<h3 class="text text_type_title.level_3">Отмена платежа</h3>
 				<p class="text text_level_3 text_mgb_60">
 					Вы можете отменить платёж в любое время в личном кабинете. Комиссии за отмену не взимаются. Также,
@@ -152,21 +154,24 @@
 				Красивый платёжный виджет<br class="br br--show-sm" />
 				с простой интеграцией
 			</h2>
-			<div class="">
-				<p class="text text_level_1 mod_ls">
+			<div>
+				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Виджет легко
-					<BaseLink href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet" link-in="text"
+					<BaseLink
+						href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
+						link-in="text"
+						color="blue"
 						>устанавливается</BaseLink
 					>
 					на любом сайте или в приложении.
 				</p>
-				<p class="text text_level_1 mod_ls">
+				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Вы можете разместить виджет на отдельной странице сайта, где клиенты сами<br
 						class="br br--show-lg"
 					/>
 					будут вводить и оплачивать сумму тура.
 				</p>
-				<p class="text text_level_1 text_mgb_80 mod_ls">
+				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Если на вашем сайте нет корзины,<br class="br br--show-lg" />
 					вы можете разместить виджет на каждой странице с туром.
 				</p>
@@ -456,6 +461,12 @@ export default class TravelView extends Vue {
 			padding-top: 167px;
 		}
 	}
+
+	.page-section__button {
+		@include media-breakpoint-up(sm) {
+			margin-top: 36px;
+		}
+	}
 }
 
 .page-section_order_2 {
@@ -468,6 +479,13 @@ export default class TravelView extends Vue {
 		//@include media-breakpoint-up(md) {
 		//	padding-bottom: 146px;
 		//}
+	}
+
+	.page-section__button {
+		@include media-breakpoint-up(sm) {
+			margin-top: 36px;
+			max-width: 430px;
+		}
 	}
 }
 
@@ -487,7 +505,7 @@ export default class TravelView extends Vue {
 .page-section_order_4 {
 	.page-section__container {
 		padding-top: 48px;
-		padding-bottom: 235px;
+		padding-bottom: 230px;
 		overflow: hidden;
 
 		@include media-breakpoint-up(md) {
@@ -501,7 +519,7 @@ export default class TravelView extends Vue {
 	background-color: var(--color-bg-purple-light);
 
 	.page-section__container {
-		padding-top: 55px;
+		padding-top: 60px;
 		padding-bottom: 196px;
 
 		@include media-breakpoint-up(md) {
@@ -510,12 +528,17 @@ export default class TravelView extends Vue {
 	}
 
 	.page-section__row {
+		margin-top: 80px;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.page-section__col {
 		--image-width: 320px;
+
+		@include media-breakpoint-up(sm) {
+			--image-width: 348px;
+		}
 
 		&:first-child {
 			margin-bottom: 90px;
@@ -548,7 +571,7 @@ export default class TravelView extends Vue {
 
 		@include media-breakpoint-up(sm) {
 			padding-top: 62px;
-			padding-bottom: 217px;
+			padding-bottom: 214px;
 		}
 	}
 
@@ -561,6 +584,10 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(sm) {
 			margin-left: 0;
 			margin-top: 28px;
+		}
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 45px;
 		}
 
 		@include media-breakpoint-up(md) {
@@ -686,6 +713,7 @@ export default class TravelView extends Vue {
 		border-radius: var(--border-radius-lg);
 		background-color: var(--color-bg-gray-super-light);
 		align-items: start;
+		text-align: left;
 
 		@include media-breakpoint-up(sm) {
 			padding-right: 40px;
@@ -812,6 +840,7 @@ export default class TravelView extends Vue {
 		padding-top: 60px;
 		padding-bottom: 95px;
 		align-items: start;
+		text-align: left;
 
 		@include media-breakpoint-up(md) {
 			padding-bottom: 80px;
