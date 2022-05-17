@@ -328,32 +328,38 @@
 
 	<section class="page-section page-section_order_8">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Отзывы наших клиентов</h2>
+			<h2 class="text text_type_title.level_1">Отзывы наших клиентов</h2>
 			<TheReviewsSlider :reviews="reviews" />
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div class="page-section__container">
-			<h2 class="text text_type_title.level_1">Вопросы и ответы</h2>
-			<div class="page-section__box">
-				<h3 class="text text_type_title.level_3">
+			<h2 class="text text_type_title.level_1 text_align_center text_mgb_42 text_mgb_52.on_screen_md">
+				Вопросы и ответы
+			</h2>
+			<div class="page-section__shift">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
 					Как быстро деньги переводятся на расчётный счёт и в какой банк?
 				</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Деньги перечисляются на расчётный счёт вашей компании каждый день в автоматическом режиме, вам не
 					нужно выводить их самостоятельно. Расчётный счёт можно иметь в любом банке РФ, новый счёт открывать
 					не придётся.
 				</p>
 
-				<h3 class="text text_type_title.level_3">Принимаются ли карты всех стран мира?</h3>
-				<p class="text text_level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Принимаются ли карты всех стран мира?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					У нас нет ограничений по странам мира. Клиент сможет оплатить тур любой зарубежной картой Visa,
 					MasterCard, Maestro.
 				</p>
 
-				<h3 class="text text_type_title.level_3">На сколько выгодней использовать онлайн-кассу ArsenalPay?</h3>
-				<p class="text text_level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					На сколько выгодней использовать онлайн-кассу ArsenalPay?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Касса ArsenalPay работает при каждом платеже автоматически. Вы не тратите время и деньги на покупку,
 					настройку и работу с кассой. Все чеки, как и все платежи находятся в одном личном кабинете. Чеки
 					всегда соответствуют последним изменениям 54-ФЗ, мы за этим следим. При изменении в законе вам
@@ -800,13 +806,22 @@ export default class TravelView extends Vue {
 }
 
 .page-section_order_9 {
-	margin-top: -70px;
 	padding-top: 0;
-	padding-bottom: 95px;
 
-	@include media-breakpoint-up(md) {
-		margin-top: -128px;
-		padding-bottom: 80px;
+	.page-section__container {
+		padding-top: 60px;
+		padding-bottom: 95px;
+		align-items: start;
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 80px;
+		}
+	}
+
+	.page-section__shift {
+		@include media-breakpoint-up(xl) {
+			margin-left: 71px;
+		}
 	}
 }
 </style>
