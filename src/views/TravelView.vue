@@ -5,6 +5,7 @@
 			<div>
 				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
 					Полный пакет платёжных сервисов для турфирм.
+					<br class="br br--show-sm" />
 					<BaseLink href="https://arsenalpay.ru/tariffs.html" :blank="true" link-in="text" color="blue"
 						>Сниженный тариф.</BaseLink
 					>
@@ -36,8 +37,9 @@
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Вы сразу получаете готовую к работе
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text" color="blue"
-						>кассу ArsenalPay</BaseLink
+						>кассу ArsenalPay.</BaseLink
 					>
+					<br class="br br--show-sm" />
 					Никаких расходов на кассу — вы платите только за чеки успешных покупок.
 				</p>
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
@@ -82,10 +84,10 @@
 				Холдирование платежей. Быстрое выставление счёта. Apple Pay.
 				<br class="br br--show-md" />Отмена полной и частичной суммы. Сообщения об оплате и статусах заказа.
 			</p>
-			<div class="page-section__box">
+			<div class="page-section__box u_overflow_hidden">
 				<BaseIcon name="hold-medium" width="50" height="50" color="cyan" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Холдирование платежей</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Холдирование платежей</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Клиент оплачивает на вашем сайте любой тур, при этом деньги с его карты не списываются, а времено
 					«замораживаются». Вы проверяете доступность тура, затем сами подтверждаете списание «замороженных»
 					средств с карты клиента. Можно списывать неполную сумму при акциях, скидках или уменьшении стоимости
@@ -94,8 +96,8 @@
 				</p>
 
 				<BaseIcon name="check-medium" width="52" height="46" color="pink" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Выставление счёта</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Выставление счёта</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Выставляйте счета в 2 клика. Просто укажите сумму, номенклатуру и нужную вам информацию о заказе или
 					клиенте. Ссылка на оплату счёта создаётся автоматически, все что вам нужно — отправить ее клиенту
 					любым удобным способом. Клиент переходит по ссылке, оплачивает счёт и получает чек на свой email.
@@ -103,8 +105,8 @@
 				</p>
 
 				<BaseIcon name="apple-pay-medium" width="68" height="45" color="black" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Apple Pay</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Apple Pay</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
 					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
 					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.
@@ -112,30 +114,30 @@
 				</p>
 
 				<BaseIcon name="refund-medium" width="52" height="52" color="purple" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Отмена платежа</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Отмена платежа</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Вы можете отменить платёж в любое время в личном кабинете. Комиссии за отмену не взимаются. Также,
 					можно отменить только часть суммы, если изменились условия тура.
 				</p>
 
 				<BaseIcon name="email-medium" width="52" height="43" color="green" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Сообщения об оплате</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Сообщения об оплате</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Вся информация о платеже приходит на ваш email и в личный кабинет. Вы сразу видите имя клиента, его
 					телефон и за какой тур он заплатил.
 				</p>
 				<div class="page-section__box-wrap">
 					<BaseIcon name="saved-card-medium" width="62" height="46" color="purple" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">Оплата в 1 клик</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Оплата в 1 клик</h3>
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 						Не нужно каждый раз вводить данные карты, достаточно воспользоваться функцией запоминания карты
 						и всегда оплачивать в 1 клик. Количество успешных платежей возрастает. Самый удобный способ
 						оплаты.
 					</p>
 
 					<BaseIcon name="autopayment-medium" width="48" height="53" color="pink" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">Оплата в рассрочку</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Оплата в рассрочку</h3>
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 						Функция позволяет вашим клиентам оплачивать туры в рассрочку без комиссии. Выбирайте период
 						рассрочки и оплата происходит равными частями в течение этого периода. Деньги списываются
 						с карты клиента автоматически.
@@ -187,7 +189,7 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<p class="text text_level_3 text_mgb_60 text_mgb_34.on_screen_md">
 						Устанавливается в любое место на сайте.<br class="br br--show-xs" />
 						Настраиваются дополнительные поля.<br class="br br--show-xs" />
 						<BaseLink href="https://arsenalpay.ru/customization/" link-in="text" color="blue"
@@ -197,7 +199,7 @@
 						устройства.
 					</p>
 
-					<BaseIcon name="security-medium" width="38" height="48" color="pink" bottom-space="md" />
+					<BaseIcon name="security-medium" width="38" height="48" color="pink" bottom-space="sm" />
 					<h3 class="text text_type_title.level_3">Безопасность</h3>
 					<p class="text text_level_3 text_mgb_60">
 						Безопасная обработка данных карт<br class="br br--show-xs" />
@@ -222,21 +224,21 @@
 				<div class="page-section__col">
 					<BaseIcon name="check-circle-medium" width="48" height="38" color="pink" />
 					<h3 class="text text_type_title.level_3">Без комиссий</h3>
-					<p class="text text_level_3 text_mgb_48.on_screen_sm">
+					<p class="text text_level_3 text_mgb_48.on_screen_sm text_mgb_42.on_screen_md">
 						Никаких скрытых комиссий <br class="br br--show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.
 					</p>
 				</div>
 				<div class="page-section__col">
 					<BaseIcon name="check-circle-medium" width="48" height="38" color="pink" />
 					<h3 class="text text_type_title.level_3">Без минимальных сумм</h3>
-					<p class="text text_level_3 text_mgb_48.on_screen_sm">
+					<p class="text text_level_3 text_mgb_48.on_screen_sm text_mgb_42.on_screen_md">
 						Накапливать сумму для <br class="br br--show-xl" />вывода не&nbsp;нужно.
 					</p>
 				</div>
 				<div class="page-section__col">
 					<BaseIcon name="check-circle-medium" width="48" height="38" color="pink" />
 					<h3 class="text text_type_title.level_3">В&nbsp;любой банк России</h3>
-					<p class="text text_level_3 text_mgb_48.on_screen_sm">
+					<p class="text text_level_3 text_mgb_48.on_screen_sm text_mgb_42.on_screen_md">
 						Ваш расчётный счёт может <br class="br br--show-xl" />быть в&nbsp;любом банке&nbsp;РФ.
 					</p>
 				</div>
@@ -466,6 +468,10 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(sm) {
 			margin-top: 36px;
 		}
+
+		@include media-breakpoint-up(md) {
+			max-width: 304px;
+		}
 	}
 }
 
@@ -506,7 +512,6 @@ export default class TravelView extends Vue {
 	.page-section__container {
 		padding-top: 48px;
 		padding-bottom: 230px;
-		overflow: hidden;
 
 		@include media-breakpoint-up(md) {
 			padding-top: 69px;
@@ -520,7 +525,7 @@ export default class TravelView extends Vue {
 
 	.page-section__container {
 		padding-top: 60px;
-		padding-bottom: 196px;
+		padding-bottom: 198px;
 
 		@include media-breakpoint-up(md) {
 			padding-top: 61px;

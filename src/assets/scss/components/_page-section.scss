@@ -195,6 +195,10 @@
       border-radius: var(--border-radius-lg);
       box-shadow: var(--box-shadow-sm);
     }
+
+    &_overflow_hidden {
+      overflow: hidden;
+    }
   }
 
   &__box-wrap {
@@ -205,9 +209,9 @@
     width: 100%;
 
     @include media-breakpoint-up(md) {
-      margin-top: 162px;
-      padding-top: 48px;
-      padding-bottom: 80px;
+      margin-top: 83px;
+      padding-top: 46px;
+      padding-bottom: 0;
     }
 
     &::before {
@@ -222,7 +226,7 @@
 
       @include media-breakpoint-up(md) {
         top: 0;
-        bottom: -30px;
+        bottom: -60px;
         left: -50px;
         right: -50px;
         height: unset;
@@ -239,7 +243,7 @@
       height: 85px;
       display: none;
       transform: rotate3d(0, 0, 1, 5deg);
-      background-color: var(--pink-light-color);
+      background-color: var(--color-bg-pink-light);
 
       @include media-breakpoint-up(md) {
         display: block;
