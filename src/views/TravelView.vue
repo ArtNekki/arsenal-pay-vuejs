@@ -3,17 +3,17 @@
 		<div class="page-section__container">
 			<h1 class="text text_type_title.level_1">Турфирмам</h1>
 			<div class="u-max-width.on_screen_md">
-				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+				<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 					Полный пакет платёжных сервисов для турфирм.
 					<br class="br br--show-sm br--hide-lg" />
 					<BaseLink href="https://arsenalpay.ru/tariffs.html" :blank="true" link-in="text" color="blue"
 						>Сниженный тариф.</BaseLink
 					>
 				</p>
-				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+				<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 					Удобные инструменты для вашей компании и ваших клиентов.
 				</p>
-				<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+				<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 					Принимайте платежи от клиентов со всего мира<br class="br br--show-lg" />
 					картами: Visa, MasterCard, Мир, Apple Pay.
 				</p>
@@ -67,12 +67,12 @@
 				Бесплатная Web-касса ArsenalPay<br class="br br--show-md" />
 				для туров оплаченных наличными
 			</h2>
-			<p class="text text_level_1 mod_ls">
+			<p class="text text_level_1 text_ls_sm">
 				Клиент может оплатить тур наличными, переводом на вашу карту, или перечислением на расчётный счёт.
 				В таком случае пробейте чек в личном кабинете через Web-кассу ArsenalPay. Чек отправится на email
 				клиента автоматически. В чеках указывается полная номенклатура в соответствии с 54‑ФЗ.
-				<b class="text text_color_pink text_display_inline mod_ls">Чеки бесплатны и без комиссии.</b> Все чеки
-				сохраняются в личном кабинете.
+				<b class="text text_color_pink text_display_inline text_ls_sm">Чеки бесплатны и без комиссии.</b>
+				Все чеки сохраняются в личном кабинете.
 			</p>
 		</div>
 	</section>
@@ -81,7 +81,7 @@
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Всё удобные<br class="br br--show-xs" />платёжные функции</h2>
 			<p
-				class="text text_level_1 mod_ls text_mgb_60 text_mgb_50.on_screen_md text_mgb_82.on_screen_lg text_mgb_50.on_screen_xl"
+				class="text text_level_1 text_ls_sm text_mgb_60 text_mgb_50.on_screen_md text_mgb_82.on_screen_lg text_mgb_50.on_screen_xl"
 			>
 				Холдирование платежей. Быстрое выставление счёта. Apple Pay.
 				<br class="br br--show-md" />Отмена полной и частичной суммы. Сообщения об оплате и статусах заказа.
@@ -172,7 +172,7 @@
 					с простой интеграцией
 				</h2>
 				<div class="u-max-width.on_screen_md">
-					<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+					<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 						Виджет легко
 						<BaseLink
 							href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
@@ -182,13 +182,13 @@
 						>
 						на любом сайте или в приложении.
 					</p>
-					<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+					<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 						Вы можете разместить виджет на отдельной странице сайта, где клиенты сами<br
 							class="br br--show-lg"
 						/>
 						будут вводить и оплачивать сумму тура.
 					</p>
-					<p class="text text_level_1 text_display_inline.on_screen_sm mod_ls">
+					<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 						Если на вашем сайте нет корзины,<br class="br br--show-lg" />
 						вы можете разместить виджет на каждой странице с туром.
 					</p>

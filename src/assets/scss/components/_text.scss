@@ -71,7 +71,7 @@
       margin-bottom: 36px;
     }
 
-    &.mod_ls {
+    &.text_ls_sm {
       letter-spacing: -0.36px;
 
       @include media-breakpoint-up(md) {
@@ -332,6 +332,10 @@
 
   //-------------------- Line-height ---------------------
 
+  &.text_lh_32 {
+    line-height: 32px;
+  }
+
   &[class~="text_lh_32.on_screen_md"] {
     @include media-breakpoint-up(md) {
       line-height: 32px;
@@ -348,6 +352,10 @@
 
   &_color_pink {
     color: var(--color-text-pink);
+  }
+
+  &_color_purple {
+    color: var(--color-text-purple);
   }
 
   //-------------------- Weight ---------------------
