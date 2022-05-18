@@ -198,88 +198,145 @@
 	</section>
 
 	<section class="page-section page-section_order_6 page-section_skew_no">
-		<div id="http-uvedomleniya" class="page-section__container">
-			<!--			{{{ icon name="http" width="116" height="116" mods="purple" }}}-->
-			<h2 class="page-section__title">HTTP-уведомления</h2>
-			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+		<div class="page-section__container">
+			<div class="page-section__icon">
+				<BaseIcon name="http-big" width="116" height="116" mods="purple" />
+			</div>
+			<h2 class="text text_type_title.level_1">HTTP-уведомления</h2>
+			<p class="text text_level_1">
 				Обновляйте статус заказа на&nbsp;своем сайте. <br class="br br--show-md" />Передавайте данные
 				из&nbsp;корзины для чека.
 			</p>
-			<div class="content-box content-box--shadow-xs">
-				<!--				{{{ info-box title="Все настройки в&nbsp;личном кабинете" text='Секретный ключ для проверки HTTP-уведомлений вы получаете<br class="br br&#45;&#45;show-md">-->
-				<!--				при регистрации в&nbsp;личном кабинете.' icon='{"name": "check", "color": "purple"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title="Для всех событий доступны HTTP-уведомления" text="Проверка заказа, успешная оплата, возврат платежа, изменение подписки." icon='{"name": "check", "color": "purple"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title='В&nbsp;CMS модулях обработка уведомлений <br class="br br&#45;&#45;show-sm br&#45;&#45;hide-md">уже настроена' text="Чек по&nbsp;умолчанию формируется из&nbsp;товарных позиций корзины." icon='{"name": "check", "color": "purple"}' }}}-->
-				<div class="content-box__link">
-					<a
-						href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
-						class="link link--more"
-						target="_blank"
-					>
-						<span>Подробнее</span>
-					</a>
-				</div>
+			<div class="page-section__box">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<h3 class="text text_type_title.level_3">Все настройки в&nbsp;личном кабинете</h3>
+				<p class="text text_level_3">
+					Секретный ключ для проверки HTTP-уведомлений вы получаете<br class="br br--show-md" />
+					при регистрации в&nbsp;личном кабинете.
+				</p>
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<h3 class="text text_type_title.level_3">Для всех событий доступны HTTP-уведомления</h3>
+				<p class="text text_level_3">Проверка заказа, успешная оплата, возврат платежа, изменение подписки.</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<h3 class="text text_type_title.level_3">
+					В&nbsp;CMS модулях обработка уведомлений <br class="br br--show-sm br--hide-md" />уже настроена
+				</h3>
+				<p class="text text_level_3">Чек по&nbsp;умолчанию формируется из&nbsp;товарных позиций корзины.</p>
+
+				<BaseLink
+					href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
+					:blank="true"
+					type="more"
+					color="blue"
+					>Подробнее</BaseLink
+				>
 			</div>
 		</div>
 	</section>
 	<section class="page-section page-section_order_7 page-section_skew_no">
-		<div id="email-uvedomleniya" class="page-section__container">
-			<!--			{{{ icon name="email" width="116" height="116" mods="green" }}}-->
-			<h2 class="page-section__title">Email-уведомления</h2>
-			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+		<div class="page-section__container">
+			<div class="page-section__icon">
+				<BaseIcon name="email-big" width="116" height="116" color="green" />
+			</div>
+			<h2 class="text text_type_title.level_1">Email-уведомления</h2>
+			<p class="text text_level_3">
 				Email-уведомления удобно применять на&nbsp;лендингах <br class="br br--show-md" />или на&nbsp;сайтах без
 				интернет-магазина.
 			</p>
-			<div class="content-box content-box--shadow-xs">
-				<!--				{{{ info-box title='Можно получать <br class="br br&#45;&#45;show-xs br&#45;&#45;hide-sm">информацию об&nbsp;оплате по&nbsp;email' text='Вы&nbsp;будете получать информацию о&nbsp;платеже и&nbsp;дополнительные данные,<br class="br br&#45;&#45;show-lg">-->
-				<!--				которые клиент укажет в&nbsp;платёжной форме.' icon='{"name": "check", "color": "green"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title='Вы&nbsp;сможете сразу узнавать кто, сколько и&nbsp;за&nbsp;что <br class="br br&#45;&#45;show-md br&#45;&#45;hide-lg">вам заплатил.' text="Никаких доработок и&nbsp;настроек на&nbsp;сайте не&nbsp;требуется." icon='{"name": "check", "color": "green"}' }}}-->
-				<div class="content-box__link">
-					<a
-						href="https://arsenalpay.ru/documentation/index.html#email-uvedomleniya"
-						class="link link--more"
-						target="_blank"
-					>
-						<span>Подробнее</span>
-					</a>
-				</div>
+			<div class="page-section__box">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<h3 class="text text_type_title.level_3">
+					Можно получать <br class="br br--show-xs br--hide-sm" />информацию об&nbsp;оплате по&nbsp;email
+				</h3>
+				<p class="text text_level_3">
+					Вы&nbsp;будете получать информацию о&nbsp;платеже и&nbsp;дополнительные данные,<br
+						class="br br--show-lg"
+					/>
+					которые клиент укажет в&nbsp;платёжной форме.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<h3 class="text text_type_title.level_3">
+					Вы&nbsp;сможете сразу узнавать кто, сколько и&nbsp;за&nbsp;что
+					<br class="br br--show-md br--hide-lg" />вам заплатил.
+				</h3>
+				<p class="text text_level_3">Никаких доработок и&nbsp;настроек на&nbsp;сайте не&nbsp;требуется.</p>
+				<BaseLink
+					href="https://arsenalpay.ru/documentation/index.html#email-uvedomleniya"
+					:blank="true"
+					type="more"
+					color="blue"
+					>Подробнее</BaseLink
+				>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_8 page-section_skew_no-top page-section_skew_inverse">
-		<div id="nastrojki-kassy" class="page-section__container">
-			<!--			{{{ icon name="kassa" width="122" height="120" mods="blue" }}}-->
-			<h2 class="page-section__title">Настройки кассы</h2>
-			<!--			<p class="text text&#45;&#45;mgb-36 text&#45;&#45;mgb-md-36 text&#45;&#45;md-size-lg">-->
-			<!--				Фискальный чек отправляется на&nbsp;email покупателя и&nbsp;в&nbsp ФНС через ОФД.<br class="br br&#45;&#45;show-lg"/>-->
-			<!--				Все чеки сохраняются в&nbsp;личном кабинете.-->
-			<!--			</p>-->
-			<div class="content-box content-box--shadow-xs">
-				<!--				{{{ info-box title="Для готовых CMS плагинов касса уже настроена" text='Чек будет приходить клиентам на&nbsp;email со&nbsp;всеми товарными позициями.<br class="br br&#45;&#45;show-lg">-->
-				<!--				Если вам не&nbsp;нужны товарные позиции в&nbsp;чеке, можно сделать чек с&nbsp;общей суммой.' icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title="Для лендингов касса уже настроена" text='Самая простая интеграция. Подходит для любого сайта без интернет-магазина.-->
-				<!--				Клиентам приходит чек с&nbsp;общей суммой заказа, без товарных позиций. <br class="br br&#45;&#45;show-lg">На&nbsp;ваш email отправляются данные об&nbsp;оплате заказа-->
-				<!--				и&nbsp;информация о&nbsp;клиенте.' icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title='Для интернет-магазинов вы&nbsp;решаете <br class="br br&#45;&#45;show-sm br&#45;&#45;hide-md">как настроить кассу' text="Вы&nbsp;можете настроить передачу товарных позиций в&nbsp;чек,-->
-				<!--				просто добавьте <a href='https://arsenalpay.ru/documentation/index.html#http-uvedomleniya' class='link link&#45;&#45;in-text' target='_blank'>структуру ofd</a> в&nbsp;функцию check.-->
-				<!--				Если вам не&nbsp;нужны товарные позиции в&nbsp;чеке, мы&nbsp;настроим для вас чек с&nbsp;общей суммой." icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
+		<div class="page-section__container">
+			<div class="page-section__icon">
+				<BaseIcon name="kassa-big" width="122" height="120" color="blue" />
+			</div>
+			<h2 class="text text_type_title.level_1">Настройки кассы</h2>
+			<p class="text text_level_1">
+				<!--				Фискальный чек отправляется на&nbsp;email покупателя и&nbsp;в&nbsp ФНС через ОФД.<br-->
+				<!--					class="br br&#45;&#45;show-lg"-->
+				<!--				/>-->
+				<!--				Все чеки сохраняются в&nbsp;личном кабинете.-->
+			</p>
+			<div class="page-section__box">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<h3 class="text text_type_title.level_3">Для готовых CMS плагинов касса уже настроена</h3>
+				<p class="text text_level_3">
+					Чек будет приходить клиентам на&nbsp;email со&nbsp;всеми товарными позициями.<br
+						class="br br--show-lg"
+					/>
+					Если вам не&nbsp;нужны товарные позиции в&nbsp;чеке, можно сделать чек с&nbsp;общей суммой.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<h3 class="text text_type_title.level_3">Для лендингов касса уже настроена</h3>
+				<p class="text text_level_3">
+					Самая простая интеграция. Подходит для любого сайта без интернет-магазина. Клиентам приходит чек
+					с&nbsp;общей суммой заказа, без товарных позиций. <br class="br br--show-lg" />На&nbsp;ваш email
+					отправляются данные об&nbsp;оплате заказа и&nbsp;информация о&nbsp;клиенте.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<h3 class="text text_type_title.level_3">
+					Для интернет-магазинов вы&nbsp;решаете <br class="br br--show-sm br--hide-md" />как настроить кассу
+				</h3>
+				<p class="text text_level_3">
+					Вы&nbsp;можете настроить передачу товарных позиций в&nbsp;чек, просто добавьте
+					<BaseLink
+						href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
+						:blank="true"
+						link-in="text"
+						color="blue"
+						>структуру ofd</BaseLink
+					>
+					в&nbsp;функцию check. Если вам не&nbsp;нужны товарные позиции в&nbsp;чеке, мы&nbsp;настроим для вас
+					чек с&nbsp;общей суммой.
+				</p>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div id="arsenalpay-api" class="page-section__container">
-			<!--			{{{ icon name="api" width="116" height="116" mods="purple" }}}-->
-			<h2 class="page-section__title">ArsenalPay API</h2>
-			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+			<div class="page-section__icon">
+				<BaseIcon name="api-big" width="116" height="116" color="purple" />
+			</div>
+			<h2 class="text text_type_title.level_1">ArsenalPay API</h2>
+			<p class="text text_level_1">
 				Воспользуйтесь API для гибкой интеграции платежей на&nbsp;своем сайте.
 				<br class="br br--show-xl" />Параметры&nbsp;авторизации для доступа к&nbsp;API вы&nbsp;получаете<br
 					class="br br--show-md"
 				/>
 				при регистрации в&nbsp;личном кабинете.
-				<a href="https://arsenalpay.ru/api/doc/" class="link link--in-text" target="_blank"
-					>Протестируйте наше API.</a
+				<BaseLink href="https://arsenalpay.ru/api/doc/" :blank="true" link-in="text" color="blue"
+					>Протестируйте наше API.</BaseLink
 				>
 			</p>
 			<div class="content-box content-box--shadow-xs">
