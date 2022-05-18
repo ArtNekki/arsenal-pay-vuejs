@@ -561,6 +561,11 @@ export default class ProvidersView extends Vue {
 			margin-left: 166px;
 			grid-column-gap: 100px;
 		}
+
+		@include media-breakpoint-up(xxl) {
+			margin-left: 125px;
+			grid-column-gap: 140px;
+		}
 	}
 
 	.page-section__col {
@@ -663,6 +668,11 @@ export default class ProvidersView extends Vue {
 		@include media-breakpoint-up(xl) {
 			margin-left: 121px;
 			grid-column-gap: 90px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			margin-left: 82px;
+			grid-column-gap: 130px;
 		}
 	}
 
@@ -772,7 +782,10 @@ export default class ProvidersView extends Vue {
 	}
 
 	.page-section__shift {
-		left: -8px;
+
+		@include media-breakpoint-up(lg) {
+			left: -8px;
+		}
 
 		@include media-breakpoint-up(xl) {
 			left: 0;
