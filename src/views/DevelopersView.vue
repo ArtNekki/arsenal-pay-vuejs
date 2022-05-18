@@ -3,24 +3,36 @@
 		class="page-section page-section_order_1 page-section_type_cut page-section_skew_no-top page-section_skew_inverse"
 	>
 		<div class="page-section__container">
-			<div class="page-section__alert page-section__alert--top">
-				<!--				{{{ alert text="Теперь приём платежей доступен и самозанятым" }}}-->
+			<div class="page-section__notice">
+				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
-			<h1 class="page-section__title">Разработчикам</h1>
-			<div class="page-section__text">
-				<p class="text text--mgb-36 text--mgb-sm-32 text--mgb-md-36 text--ls-36 text--md-size-lg">
-					Готовые CMS плагины, виджет оплаты для интернет-магазинов и&nbsp;лендингов.
-				</p>
+			<h1 class="text text_type_title.level_1">Разработчикам</h1>
+			<p class="text text_level_3">Готовые CMS плагины, виджет оплаты для интернет-магазинов и&nbsp;лендингов.</p>
+			<div class="page-section__button">
+				<BaseButton href="https://arsenalpay.ru/dashboard/registration-type">Подключить</BaseButton>
 			</div>
-			<a href="https://arsenalpay.ru/dashboard/registration-type" class="page-section__btn">Подключить</a>
-			<div class="widget-box widget-box--dev">
-				<div class="widget-box__widget">
-					<!--					{{{ img className="developers-page" name="widget" breakpoints='{"sm": true}'}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage src="developers-page/widget" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
-				<div class="widget-box__content">
-					<!--					{{{ info-box title="Виджет оплаты"  text='Встраивается в&nbsp;любое место на&nbsp;сайте. <br class="br br&#45;&#45;show-xs">Адаптирован под любые устройства.<br class="br br&#45;&#45;show-xs">-->
-					<!--					Цвет виджета <a href="https://arsenalpay.ru/customization/" class="link link&#45;&#45;in-text">настраивается</a> под цвет вашего сайта.' mods="align-left-lg, mgb-60" titleMods="lh-35-md" textMods="lh-md-26" }}}-->
-					<!--					{{{ info-box title="Безопасность"  text='Безопасная обработка данных карт <br class="br br&#45;&#45;show-sm">по&nbsp; стандарту PCI DSS 3.2 level 1.'  icon='{"name": "security", "color": "pink"}' mods="align-left-lg, icon-size-lg" titleMods="lh-35-md" textMods="lh-md-26" }}}-->
+				<div class="page-section__col">
+					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
+					<p class="text text_level_3">
+						Встраивается в&nbsp;любое место на&nbsp;сайте. <br class="br br--show-xs" />Адаптирован под
+						любые устройства.<br class="br br--show-xs" />
+						Цвет виджета
+						<BaseLink href="https://arsenalpay.ru/customization/" link-in="text" color="blue">
+							настраивается</BaseLink
+						>
+						под цвет вашего сайта.
+					</p>
+
+					<BaseIcon name="security-medium" color="pink" width="38" height="48" />
+					<h3 class="text text_type_title.level_3">Безопасность</h3>
+					<p class="text text_level_3">
+						Безопасная обработка данных карт <br class="br br--show-sm" />по&nbsp; стандарту
+						PCI DSS 3.2 level 1.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -28,110 +40,157 @@
 
 	<section class="page-section page-section_order_2 page-section_skew_inverse">
 		<div class="page-section__container">
-			<div class="widget-details">
-				<!--				{{{ info-box title="Все способы оплаты в&nbsp;одном виджете"  text='Банковские карты:<br class="br br&#45;&#45;show-xs br&#45;&#45;hide-md"> Visa, MasterCard, Мир, Apple Pay.-->
-				<br class="br br--show-xs" />Оплата с баланса мобильного телефона.<br
-					class="br br--show-xs"
-				/>Электронные кошельки.' icon='{"name": "number-1", "color": "purple"}' mods="align-left-lg"
-				titleMods="lh-35-md" textMods="lh-md-26" }}}
-				<div class="widget-details__item widget-details__item--tab">
-					<!--					{{{ img name="widget-tabs" breakpoints='{"sm": true}'}}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseIcon name="num-one" width="37" height="37" color="purple" />
+					<h3 class="text text_type_title.level_3">Все способы оплаты в&nbsp;одном виджете</h3>
+					<p class="text text_level_3">
+						Банковские карты:<br class="br br--show-xs br--hide-md" />
+						Visa, MasterCard, Мир, Apple Pay. <br class="br br--show-xs" />Оплата с баланса мобильного
+						телефона.<br class="br br--show-xs" />Электронные кошельки.
+					</p>
 				</div>
-				<!--				{{{ info-box title="Настройка дополнительных полей" text='Комментарии клиента, email для чека, ФИО, адрес и&nbsp;др.<br class="br br&#45;&#45;show-md br&#45;&#45;hide-lg">-->
-				Настройка плейсхолдеров и&nbsp;масок для полей.' icon='{"name": "number-2", "color": "purple"}'
-				mods="align-left-lg" titleMods="lh-35-md" textMods="lh-md-26" }}}
-				<div class="widget-details__item widget-details__item--fields">
-					<!--					{{{ img name="widget-fields" breakpoints='{"sm": true}'}}}-->
+				<div class="page-section__col">
+					<BaseImage src="developers-page/widget-tabs" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
-				<!--				{{{ info-box title="Удобный ввод" text='Проверка вводимых данных. <br class="br br&#45;&#45;show-xs">Подсказки при неверном вводе.-->
-				<br class="br br--show-xs" />Браузерное автозаполнение. <br class="br br--show-xs" />Перевод курсора
-				на&nbsp;следующее поле. <br class="br br--show-xs" />Определение платёжной системы.
-				<br class="br br--show-xs" />Определение операторов сотовой связи.' icon='{"name": "number-3", "color":
-				"purple"}' mods="align-left-lg" titleMods="lh-35-md" textMods="lh-md-26" link='{"text": "Посмотреть
-				виджет", "dataModal": "widgetModal", "color": "purple"}'}}}
-				<div class="widget-details__item widget-details__item--card">
-					<!--					{{{ img name="widget-card" breakpoints='{"sm": true}'}}}-->
+				<div class="page-section__col">
+					<BaseIcon name="num-two" width="37" height="37" color="purple" />
+					<h3 class="text text_type_title.level_3">Настройка дополнительных полей</h3>
+					<p class="text text_level_3">
+						Комментарии клиента, email для чека, ФИО, адрес и&nbsp;др.<br
+							class="br br--show-md br--hide-lg"
+						/>
+						Настройка плейсхолдеров и&nbsp;масок для полей.
+					</p>
+				</div>
+				<div class="page-section__col">
+					<BaseImage src="developers-page/widget-fields" :breakpoints="{ sm: true }"></BaseImage>
+				</div>
+				<div class="page-section__col">
+					<BaseIcon name="num-three" width="37" height="37" color="purple" />
+					<h3 class="text text_type_title.level_3">Удобный ввод</h3>
+					<p class="text text_level_3">
+						Проверка вводимых данных. <br class="br br--show-xs" />Подсказки при неверном вводе.
+						<br class="br br--show-xs" />Браузерное автозаполнение. <br class="br br--show-xs" />Перевод
+						курсора на&nbsp;следующее поле. <br class="br br--show-xs" />Определение платёжной системы.
+						<br class="br br--show-xs" />Определение операторов сотовой связи.
+					</p>
+				</div>
+				<div class="page-section__col">
+					<BaseImage src="developers-page/widget-card" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_3 page-section_skew_inverse">
-		<div id="testirovanie-oplaty-i-kassy" class="page-section__container">
-			<!--			{{{ icon name="test" width="116" height="116" mods="green" }}}-->
-			<h2 class="page-section__title">Тестирование оплаты и&nbsp;кассы</h2>
-			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+		<div class="page-section__container">
+			<BaseIcon name="test-big" width="116" height="116" color="green" />
+			<h2 class="text text_type_title.level_1">Тестирование оплаты и&nbsp;кассы</h2>
+			<p class="text text_level_1">
 				Все параметры для тестирования виджета доступны <br class="br br--show-md" />после регистрации
 				в&nbsp;личном кабинете.
 			</p>
-			<div class="content-box content-box--shadow-xs">
-				<!--				{{{ info-box title="Устанавливайте виджет сразу"  text='Вы&nbsp;можете установить виджет на&nbsp;свой сайт, настроить его, <br class="br br&#45;&#45;show-md">совершать-->
-				<!--				тестовые платежи и&nbsp;проверять статус платежей <br class="br br&#45;&#45;show-md br&#45;&#45;hide-lg">в&nbsp;личном кабинете.' icon='{"name": "check", "color": "green"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title="Тестируйте фискальные чеки" text='В&nbsp;тестовом режиме онлайн чеки формируются на&nbsp;базе тестовой кассы.<br class="br br&#45;&#45;show-lg">-->
-				<!--				Тестовые чеки в&nbsp;ФНС не&nbsp;отправляются.' icon='{"name": "check", "color": "green"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title="Деньги с&nbsp;карты не&nbsp;списываются" text='Для тестирования оплаты используйте любую действующую карту.<br class="br br&#45;&#45;show-lg">-->
-				<!--				В&nbsp;тестовом режиме деньги с&nbsp;карты не&nbsp;списываются.' icon='{"name": "check", "color": "green"}' }}}-->
-				<div class="content-box__link">
-					<a
-						href="https://arsenalpay.ru/documentation/index.html#testirovanie"
-						class="link link--more"
-						target="_blank"
-						><span>Подробнее</span></a
-					>
-				</div>
+			<div class="page-section__box">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" />
+				<h3 class="text text_type_title.level_3">Устанавливайте виджет сразу</h3>
+				<p class="text text_level_3">
+					Вы&nbsp;можете установить виджет на&nbsp;свой сайт, настроить его,
+					<br class="br br--show-md" />совершать тестовые платежи и&nbsp;проверять статус платежей
+					<br class="br br--show-md br--hide-lg" />в&nbsp;личном кабинете.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" />
+				<h3 class="text text_type_title.level_3">Тестируйте фискальные чеки</h3>
+				<p class="text text_level_3">
+					В&nbsp;тестовом режиме онлайн чеки формируются на&nbsp;базе тестовой кассы.<br
+						class="br br--show-lg"
+					/>
+					Тестовые чеки в&nbsp;ФНС не&nbsp;отправляются.
+				</p>
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" />
+				<h3 class="text text_type_title.level_3">Деньги с&nbsp;карты не&nbsp;списываются</h3>
+				<p class="text text_level_3">
+					Для тестирования оплаты используйте любую действующую карту.<br class="br br--show-lg" />
+					В&nbsp;тестовом режиме деньги с&nbsp;карты не&nbsp;списываются.
+				</p>
+				<BaseLink
+					href="https://arsenalpay.ru/documentation/index.html#testirovanie"
+					:blank="true"
+					type="more"
+					color="blue"
+					>Подробнее</BaseLink
+				>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_4 page-section_skew_inverse page-section_skew_no-bottom">
 		<div id="integratsiya-vidzheta" class="page-section__container">
-			<!--			{{{ icon name="settings" width="126" height="92" mods="blue" }}}-->
-			<h2 class="page-section__title">Интеграция виджета</h2>
-			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+			<div class="page-section__icon">
+				<BaseIcon name="settings-big" width="126" height="92" color="blue" />
+			</div>
+			<h2 class="text text_type_title.level_1">Интеграция виджета</h2>
+			<p class="text text_level_1">
 				Посмотрите
-				<a
+				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#scenarii-integracii"
-					class="link link--in-text"
-					target="_blank"
-					>сценарии интеграции</a
+					:blank="true"
+					link-in="text"
+					color="blue"
+					>сценарии интеграции</BaseLink
 				>
 				для интернет-магазинов и&nbsp;лендингов.
 			</p>
-			<div class="content-box content-box--shadow-xs">
-				<!--				{{{ info-box title="Встроенный виджет" text='Встроенный виджет будет открываться в&nbsp;любом месте на&nbsp;вашем сайте.<br class="br br&#45;&#45;show-lg">-->
-				<!--				Просто вставьте код виджета на&nbsp;страницу сайта, туда где происходит оплата.' icon='{"name": "check", "color": "blue"}' mods="mgb-40" }}}-->
-				<!--				{{{ info-box title="Виджет на&nbsp;отдельной странице" text="Виджет будет открываться на&nbsp;отдельной странице, для этого просто-->
-				<!--				вставьте ссылку на&nbsp;виджет в&nbsp;том месте сайта, где у&nbsp;вас происходит переход к&nbsp;оплате." icon='{"name": "check", "color": "blue"}' }}}-->
-				<div class="content-box__link">
-					<a
-						href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
-						class="link link--more"
-						target="_blank"
-					>
-						<span>Подробнее</span>
-					</a>
-				</div>
+			<div class="page-section__box">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<h3 class="text text_type_title.level_3">Встроенный виджет</h3>
+				<p class="text text_level_3">
+					Встроенный виджет будет открываться в&nbsp;любом месте на&nbsp;вашем сайте.<br
+						class="br br--show-lg"
+					/>
+					Просто вставьте код виджета на&nbsp;страницу сайта, туда где происходит оплата.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<h3 class="text text_type_title.level_3">Виджет на&nbsp;отдельной странице</h3>
+				<p class="text text_level_3">
+					Виджет будет открываться на&nbsp;отдельной странице, для этого просто вставьте ссылку на&nbsp;виджет
+					в&nbsp;том месте сайта, где у&nbsp;вас происходит переход к&nbsp;оплате.
+				</p>
+
+				<BaseLink
+					href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
+					:blank="true"
+					type="more"
+					color="blue"
+					>Подробнее</BaseLink
+				>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_5 page-section_skew_no">
-		<div id="gotovye-cms-plaginy" class="page-section__container">
-			<!--			{{{ icon name="cms" width="116" height="116" mods="cyan" }}}-->
-			<h2 class="page-section__title">Готовые CMS плагины</h2>
-			<p class="text text--mgb-36 text--mgb-md-36 text--md-size-lg">
+		<div class="page-section__container">
+			<div class="page-section__icon">
+				<BaseIcon name="cms-big" width="116" height="116" color="cyan" />
+			</div>
+			<h2 class="text text_type_title.level_1">Готовые CMS плагины</h2>
+			<p class="text text_level_1">
 				Скачайте и&nbsp;установите готовый модуль под вашу платформу.<br class="br br--show-md" />
 				Если&nbsp;для вашей платформы нет модуля, напишите нам и&nbsp;мы&nbsp;его сделаем.
 			</p>
-			<div class="content-box content-box--shadow-xs content-box--links-box content-box--pdb-54">
-				<h3 class="content-box__title">Все настройки в&nbsp;личном кабинете</h3>
-				<p class="content-box__text">
+			<div class="page-section__box">
+				<h3 class="text text_type_title.level_3">Все настройки в&nbsp;личном кабинете</h3>
+				<p class="text text_level_3">
 					Настройте модуль, используя данные, полученные при регистрации
 					<br class="br br--show-lg" />в&nbsp;личном кабинете. Касса для CMS
 					<br class="br br--show-sm br--hide-md" />
 					модулей уже настроена.
 				</p>
-				<div class="row row--cms">
+				<div class="page-section__row">
+					<div class="page-section__col"></div>
+					<div class="page-section__col"></div>
 					<div style="width: 100%">
 						<!--						{{{ links-box name="cms" logo='{"name": "logo-ecwid", "width": "140", "height": "60"}' links='[{"text": "Market", "href": "https://www.ecwid.com/apps/paymentgateways/arsenalpay"}, {"text": "Инструкция PDF", "href": "https://arsenalpay.ru/instructions/Ecwid_%D0%A1%D0%9C%D0%A1_instruction.pdf"}]'}}}-->
 						<!--						{{{ links-box name="cms" logo='{"name": "logo-tilda", "width": "164", "height": "60"}' href="https://arsenalpay.ru/instructions/Tilda_instruction.pdf" class="links-box links-box&#45;&#45;link"  mods="link"}}}-->
@@ -267,6 +326,26 @@
 	<!--		</div>-->
 	<!--	</article>-->
 </template>
+
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import BaseNotice from "@/components/base/BaseNotice.vue";
+import BaseButton from "@/components/base/BaseButton.vue";
+import BaseImage from "@/components/base/BaseImage.vue";
+import BaseIcon from "@/components/base/BaseIcon.vue";
+import BaseLink from "@/components/base/BaseLink.vue";
+
+@Options({
+	components: {
+		BaseNotice,
+		BaseButton,
+		BaseImage,
+		BaseIcon,
+		BaseLink,
+	},
+})
+export default class DevelopersView extends Vue {}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">

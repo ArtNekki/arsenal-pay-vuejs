@@ -188,6 +188,7 @@
     max-width: 860px;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-bg-white);
 
     @include media-breakpoint-up(sm) {
       align-items: center;

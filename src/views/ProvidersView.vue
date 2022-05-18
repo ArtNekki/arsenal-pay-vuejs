@@ -782,7 +782,6 @@ export default class ProvidersView extends Vue {
 	}
 
 	.page-section__shift {
-
 		@include media-breakpoint-up(lg) {
 			left: -8px;
 		}
