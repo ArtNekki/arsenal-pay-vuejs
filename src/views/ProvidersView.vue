@@ -151,7 +151,7 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<p class="text text_level_3 text_mgb_60 text_mgb_86.on_screen_lg">
 						<BaseLink href="https://arsenalpay.ru/customization/" link-in="text" color="blue"
 							>Цвета виджета</BaseLink
 						>
@@ -173,17 +173,19 @@
 
 	<section class="page-section page-section_order_5">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="app-big" width="116" height="116" color="purple" />
+			<div class="page-section__shift">
+				<div class="page-section__icon">
+					<BaseIcon name="app-big" width="116" height="116" color="purple" />
+				</div>
+				<h2 class="text text_type_title.level_1">Android + iPhone приложения</h2>
+				<p class="text text_level_1 text_ls_sm text_mgb_80">
+					Приложение в фирменном стиле вашей компании. Удобно для клиентов и выгодно для вашего бизнеса.
+					Отправка push-уведомлений вместо СМС <br class="br br--show-lg" /><b
+						class="text text_color_purple text_weight_bold text_display_inline"
+						>экономит от 500 000 ₽ в год.</b
+					>
+				</p>
 			</div>
-			<h2 class="text text_type_title.level_1">Android + iPhone приложения</h2>
-			<p class="text text_level_1 text_ls_sm text_mgb_80">
-				Приложение в фирменном стиле вашей компании. Удобно для клиентов и выгодно для вашего бизнеса. Отправка
-				push-уведомлений вместо СМС <br class="br br--show-lg" /><b
-					class="text text_color_purple text_weight_bold text_display_inline"
-					>экономит от 500 000 ₽ в год.</b
-				>
-			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage src="providers-page/widget-providers-mobile" :breakpoints="{ lg: true }"></BaseImage>
@@ -542,6 +544,12 @@ export default class ProvidersView extends Vue {
 	}
 
 	.page-section__row {
+		@include media-breakpoint-up(lg) {
+			margin-left: 20px;
+			display: grid;
+			grid-template-columns: 348px 380px;
+			grid-column-gap: 72px;
+		}
 	}
 
 	.page-section__col {
@@ -571,6 +579,12 @@ export default class ProvidersView extends Vue {
 					margin-bottom: 12px;
 				}
 			}
+
+			@include media-breakpoint-up(lg) {
+				padding-top: 70px;
+				align-items: start;
+				text-align: left;
+			}
 		}
 
 		picture {
@@ -599,7 +613,7 @@ export default class ProvidersView extends Vue {
 		padding-bottom: 260px;
 
 		@include media-breakpoint-up(lg) {
-			margin-bottom: -30px;
+			margin-bottom: -120px;
 			padding-right: calc(var(--container-padding-x) - var(--container-cut));
 			padding-bottom: 117px;
 			overflow: hidden;
@@ -614,7 +628,7 @@ export default class ProvidersView extends Vue {
 			z-index: 1;
 			height: 26px;
 			transform: rotate3d(0, 0, 1, 3deg);
-			background-color: var(--white-color);
+			background-color: var(--color-bg-white);
 
 			@include media-breakpoint-up(lg) {
 				bottom: -55px;
@@ -625,6 +639,11 @@ export default class ProvidersView extends Vue {
 	}
 
 	.page-section__row {
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: 338px 1fr;
+			grid-column-gap: 47px;
+		}
 	}
 
 	.page-section__col {
@@ -638,15 +657,35 @@ export default class ProvidersView extends Vue {
 			position: relative;
 			margin-bottom: 90px;
 			height: 658px;
+
+			@include media-breakpoint-up(lg) {
+				height: 496px;
+			}
 		}
 
 		&:last-child {
+			--shift: 34px;
+
+			@include media-breakpoint-up(lg) {
+				padding-top: 100px;
+				align-items: start;
+				text-align: left;
+			}
+
 			& > svg.icon {
 				margin-bottom: 16px;
 
 				@include media-breakpoint-up(sm) {
 					margin-bottom: 12px;
 				}
+
+				@include media-breakpoint-up(lg) {
+					margin-left: var(--shift);
+				}
+			}
+
+			& > b {
+				margin-left: var(--shift);
 			}
 		}
 
@@ -659,6 +698,13 @@ export default class ProvidersView extends Vue {
 			background-color: (var(--color-bg-white));
 			box-shadow: var(--box-shadow-purple-xl);
 			border-radius: 54px;
+
+			@include media-breakpoint-up(lg) {
+				width: 338px;
+				height: 496px;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
 		}
 	}
 
@@ -672,6 +718,10 @@ export default class ProvidersView extends Vue {
 		@include media-breakpoint-up(sm) {
 			left: -19px;
 		}
+
+		//@include media-breakpoint-up(lg) {
+		//	left: 0;
+		//}
 
 		li {
 			position: relative;
@@ -699,6 +749,10 @@ export default class ProvidersView extends Vue {
 				margin-top: -4px;
 			}
 		}
+	}
+
+	.page-section__shift {
+		left: -8px;
 	}
 }
 

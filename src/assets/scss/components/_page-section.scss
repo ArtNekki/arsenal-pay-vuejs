@@ -161,6 +161,8 @@
   }
 
   &__shift {
+    position: relative;
+
     @include media-breakpoint-up(xl) {
       //margin-left: -43px;
       margin-left: -41px;
