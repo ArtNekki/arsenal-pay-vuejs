@@ -126,32 +126,34 @@
 
 	<section class="page-section page-section_order_4 page-section_type_cut">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="widget-big" width="84" height="106" color="purple" />
+			<div class="page-section__shift">
+				<div class="page-section__icon">
+					<BaseIcon name="widget-big" width="84" height="106" color="purple" />
+				</div>
+				<h2 class="text text_type_title.level_1">
+					Функциональный виджет<br class="br br--show-sm" />
+					с простой интеграцией
+				</h2>
+				<p class="text text_level_1 text_ls_sm text_mgb_80">
+					Виджет легко
+					<BaseLink
+						href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
+						link-in="text"
+						color="blue"
+						>устанавливается</BaseLink
+					>
+					не только на сайте, но и в личном кабинете, на странице при нуле или в приложении. Виджет уже
+					интегрирован<br class="br br--show-lg" />
+					с биллингами Гидра и Felix.
+				</p>
 			</div>
-			<h2 class="text text_type_title.level_1">
-				Функциональный виджет<br class="br br--show-sm" />
-				с простой интеграцией
-			</h2>
-			<p class="text text_level_1 text_ls_sm text_mgb_80">
-				Виджет легко
-				<BaseLink
-					href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
-					link-in="text"
-					color="blue"
-					>устанавливается</BaseLink
-				>
-				не только на сайте, но и в личном кабинете, на странице при нуле или в приложении. Виджет уже
-				интегрирован<br class="br br--show-lg" />
-				с биллингами Гидра и Felix.
-			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage src="providers-page/widget-providers" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
-					<p class="text text_level_3 text_mgb_60 text_mgb_86.on_screen_lg">
+					<p class="text text_level_3 text_mgb_60 text_mgb_86.on_screen_lg text_mgb_60.on_screen_xl">
 						<BaseLink href="https://arsenalpay.ru/customization/" link-in="text" color="blue"
 							>Цвета виджета</BaseLink
 						>
@@ -470,6 +472,10 @@ export default class ProvidersView extends Vue {
 			margin-left: -20px;
 			max-width: 304px;
 		}
+
+		@include media-breakpoint-up(xl) {
+			margin-left: 0;
+		}
 	}
 }
 
@@ -550,6 +556,11 @@ export default class ProvidersView extends Vue {
 			grid-template-columns: 348px 380px;
 			grid-column-gap: 72px;
 		}
+
+		@include media-breakpoint-up(xl) {
+			margin-left: 166px;
+			grid-column-gap: 100px;
+		}
 	}
 
 	.page-section__col {
@@ -584,6 +595,10 @@ export default class ProvidersView extends Vue {
 				padding-top: 70px;
 				align-items: start;
 				text-align: left;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding-top: 83px;
 			}
 		}
 
@@ -643,6 +658,11 @@ export default class ProvidersView extends Vue {
 			display: grid;
 			grid-template-columns: 338px 1fr;
 			grid-column-gap: 47px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-left: 121px;
+			grid-column-gap: 90px;
 		}
 	}
 
@@ -753,6 +773,10 @@ export default class ProvidersView extends Vue {
 
 	.page-section__shift {
 		left: -8px;
+
+		@include media-breakpoint-up(xl) {
+			left: 0;
+		}
 	}
 }
 
