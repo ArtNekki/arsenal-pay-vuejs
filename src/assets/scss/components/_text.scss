@@ -181,6 +181,7 @@
   &[class~="text_align_center.on_screen_sm"] {
     @include media-breakpoint-up(sm) {
       text-align: center;
+      align-self: center;
     }
   }
 
@@ -346,6 +347,12 @@
     @include media-breakpoint-up(md) {
       line-height: 28px;
     }
+  }
+
+  //-------------------- Letter - spacing ---------------------
+
+  &_ls_no {
+    letter-spacing: 0;
   }
 
   //-------------------- Color ---------------------

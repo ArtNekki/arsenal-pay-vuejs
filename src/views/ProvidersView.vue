@@ -226,37 +226,91 @@
 
 	<section class="page-section page-section_order_6">
 		<div class="page-section__container">
-			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
-			<p class="text text_level_1">
+			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
+			<p class="text text_level_1 text_mgb_50">
 				Вы платите только за успешные платежи.<br class="br br--show-md" />
 				Без дополнительных комиссий и звёздочек в договоре.
 			</p>
 			<div class="page-section__box">
-				<b class="">Приём платежей картами всех стран мира</b>
-				<p class="">Visa, MasterCard, Мир, Apple Pay.</p>
-				<div class="row row--rates">
-					<!--					{{{ rate-box count="2.2" text="За успешный платёж" mods="column, inline-prefix, sm, no-mgb" }}}-->
-					<!--					{{{ rate-box count="0.2" prefix="+" text="За онлайн чек платежа" mods="column, inline-prefix, sm, no-mgb" }}}-->
+				<b class="text text_type_title.level_2 text_mgb_no">Приём платежей картами всех стран мира</b>
+				<p class="text text_level_2">Visa, MasterCard, Мир, Apple Pay.</p>
+				<div class="page-section__row page-section__row_type_rates">
+					<BaseRateBox count="2.2" size="sm">
+						<p class="text text_level_2 text_lh_24 text_mgb_no.on_screen_sm">За успешный платёж</p>
+					</BaseRateBox>
+					<BaseRateBox count="0.2" prefix="+" size="sm">
+						<p class="text text_level_2 text_lh_24 text_mgb_no">За онлайн чек платежа</p>
+					</BaseRateBox>
 				</div>
-				<b class="">Сюда включено</b>
-				<div class="row row--list">
-					<!--					{{{ list items='[{"icon": "input-cashier", "text": "Онлайн касса ArsenalPay", "href": "https://arsenalpay.ru/cashbox.html", "textColor": "dark-blue"},-->
-					<!--					{"icon": "input-invoice", "text": "Выставление счёта"}, {"icon": "check-list", "text": "Оплата без 3D Secure"}]' iconsColor="blue" }}}-->
-					<!--					{{{ list items='[{"icon": "input-apple", "text": "Apple Pay"}, {"icon": "input-save-card", "text": "Запоминание карты"},-->
-					<!--					{"icon": "input-hold", "text": "Автоплатежи"}]' iconsColor="blue" mods="order-3-md, no-mgt-lg, order-1-lg" }}}-->
-					<!--					{{{ list items='[{"icon": "input-page", "text": "Страница при нуле"}, {"icon": "input-refund", "text": "Возврат платежа"},-->
-					<!--					{"icon": "input-api", "text": "Интеграция по API"}]' mods="no-mgt-md" iconsColor="blue" }}}-->
+				<b class="text text_type_title.level_2">Сюда включено</b>
+				<div class="page-section__row page-section__row_type_cards">
+					<div class="page-section__col">
+						<BaseIcon name="input-cashier" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_mgb_no">
+							<BaseLink href="https://arsenalpay.ru/cashbox.html" link-in="text" color="blue"
+								>Онлайн касса ArsenalPay</BaseLink
+							>
+						</p>
+						<BaseIcon name="input-invoice" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Выставление счёта</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Оплата без 3D Secure</p>
+					</div>
+					<div class="page-section__col page-section__col_order_last.on_screen_md">
+						<BaseIcon name="input-apple" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Apple Pay</p>
+						<BaseIcon name="input-save-card" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Запоминание карты</p>
+						<BaseIcon name="autopayment-small" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Автоплатежи</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="input-page" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Страница при нуле</p>
+						<BaseIcon name="input-refund" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Возврат платежа</p>
+						<BaseIcon name="input-api" width="48" height="38" color="blue" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Интеграция по API</p>
+					</div>
 				</div>
-				<b class="">Бесплатно</b>
-				<div class="row row--list">
-					<!--					{{{ list items='[{"text": "Подключение"}, {"text": "Пользование кассой"}, {"text": "Техподдержка"}]' iconsColor="pink" mods="no-mgt, hide-lg, no-ls" }}}-->
-					<!--					{{{ list items='[{"text": "Свой менеджер"}, {"text": "Личный кабинет"}]' iconsColor="pink" mods="hide-lg, no-ls, no-mgt-md" }}}-->
-
-					<!--					{{{ list items='[{"text": "Подключение"}, {"text": "Пользование кассой"}]' iconsColor="pink" mods="hide-xs, show-lg, no-mgt-lg, no-ls" }}}-->
-					<!--					{{{ list items='[{"text": "Техподдержка"}, {"text": "Свой менеджер"}]' iconsColor="pink" mods="hide-xs, show-lg, no-mgt-lg, no-ls" }}}-->
-					<!--					{{{ list items='[{"text": "Личный кабинет"}]' iconsColor="pink" mods="hide-xs, show-lg, no-ls, no-mgt-lg" }}}-->
+				<b class="text text_type_title.level_2">Бесплатно</b>
+				<div class="page-section__row page-section__row_hide_lg">
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Подключение</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Пользование кассой</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Техподдержка</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Свой менеджер</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Личный кабинет</p>
+					</div>
 				</div>
-				<BaseButton href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseButton>
+				<div class="page-section__row page-section__row_show_lg">
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Подключение</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Пользование кассой</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Техподдержка</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Свой менеджер</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no text_ls_no">Личный кабинет</p>
+					</div>
+				</div>
+				<div class="page-section__button">
+					<BaseButton href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseButton>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -270,32 +324,44 @@
 
 	<section class="page-section page-section_order_8 page-section_skew_no">
 		<div class="page-section__container">
-			<h2 class="text text_type_title.level_1">Вопросы и ответы</h2>
-			<div class="content-box content-box--faq">
-				<h3 class="text text_type_title.level_3">Как интегрировать платёжный виджет?</h3>
-				<p class="text text_level_3">
+			<h2
+				class="text text_type_title.level_1 text_align_center.on_screen_sm text_mgb_42 text_mgb_52.on_screen_md"
+			>
+				Вопросы и ответы
+			</h2>
+			<div class="page-section__shift">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Как интегрировать платёжный виджет?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Вы можете встроить виджет в личный кабинет для ваших пользователей, для этого у нас есть готовые
 					модули для биллинговых систем Гидра и Felix. Если вы пользуетесь другим биллингом, мы интегрируемся
 					с ним. Платежи можно принимать на вашем сайте или на публичной странице при нулевом балансе, в таком
 					случае при оплате клиент указывает в виджете свой лицевой счёт и почту для чека.
 				</p>
 
-				<h3 class="text text_type_title.level_3">Как быстро деньги переводятся на счёт и в какой банк?</h3>
-				<p class="text text_level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Как быстро деньги переводятся на счёт и в какой банк?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Расчётный счёт вашей компании может быть открыт в любом банке РФ. Открывать новый счёт не нужно.
 					Деньги перечисляются на р/c каждый день автоматически.
 				</p>
 
-				<h3 class="text text_type_title.level_3">На сколько удобно использовать онлайн-кассу ArsenalPay?</h3>
-				<p class="text text_level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					На сколько удобно использовать онлайн-кассу ArsenalPay?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Касса ArsenalPay встроена в платежный виджет, её не нужно отдельно интегрировать и настраивать под
 					ваши системы. Вся необходимая информация для чеков передаётся при оплате. Чеки автоматически
 					отправляются на email клиента. Вам не придётся вносить изменения в чеки при каждом изменении 54-ФЗ,
 					всё это мы делаем сами.
 				</p>
 
-				<h3 class="text text_type_title.level_3">Чеки соответствуют последним изменениям 54-ФЗ?</h3>
-				<p class="text text_level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Чеки соответствуют последним изменениям 54-ФЗ?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Мы следим за всеми изменениями 54-ФЗ и оперативно добавляем их в чеки. С 1 февраля 2021 года чеки
 					должны содержать полную номенклатуру товаров и услуг. Для интернет провадеров в чеке должен быть
 					указан лицевой счёт клиента. В чеках ArsenalPay содержится вся необходимая информация о номенклатуре
@@ -594,6 +660,107 @@ export default class ProvidersView extends Vue {
 			padding-bottom: 155px;
 		}
 	}
+
+	.page-section__box {
+		max-width: 820px;
+		//padding: 56px 20px 44px;
+		padding: 54px 20px 44px;
+		border-radius: var(--border-radius-lg);
+		background-color: var(--color-bg-gray-super-light);
+		outline: 1px solid var(--color-stroke-lighten);
+		align-items: start;
+		text-align: left;
+		box-shadow: none;
+
+		@include media-breakpoint-up(sm) {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+	}
+
+	.page-section__row {
+		position: relative;
+		left: -15px;
+		margin-bottom: 42px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+
+		@include media-breakpoint-up(md) {
+			display: grid;
+			grid-template-columns: repeat(2, 270px);
+			grid-column-gap: 36px;
+			align-items: start;
+		}
+
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: 270px repeat(2, 234px);
+			grid-column-gap: 9px;
+		}
+
+		&_type_rates {
+			left: 0;
+
+			@include media-breakpoint-only(sm) {
+				display: grid;
+				grid-template-columns: repeat(2, 200px);
+				grid-column-gap: 36px;
+			}
+		}
+
+		&_type_cards {
+			margin-bottom: 45px;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 27px;
+			}
+		}
+
+		&_hide_lg {
+			@include media-breakpoint-up(lg) {
+				display: none;
+			}
+		}
+
+		&_show_lg {
+			display: none;
+
+			@include media-breakpoint-up(lg) {
+				display: grid;
+			}
+		}
+	}
+
+	.page-section__col {
+		display: grid;
+		grid-template-columns: 48px auto;
+		grid-auto-rows: 32px;
+		grid-column-gap: 1px;
+		align-items: center;
+
+		&[class~="page-section__col_order_last.on_screen_md"] {
+			@include media-breakpoint-only(md) {
+				order: 1;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+
+		svg {
+			left: -1px;
+		}
+	}
+
+	.page-section__button {
+		margin-top: 8px;
+		max-width: 280px;
+
+		@include media-breakpoint-up(md) {
+			margin-top: -11px;
+		}
+	}
 }
 
 .page-section_order_7 {
@@ -613,14 +780,22 @@ export default class ProvidersView extends Vue {
 }
 
 .page-section_order_8 {
+	padding-top: 0;
+
 	.page-section__container {
-		margin-top: -70px;
-		padding-top: 0;
+		padding-top: 60px;
 		padding-bottom: 95px;
+		align-items: start;
+		text-align: left;
 
 		@include media-breakpoint-up(md) {
-			margin-top: -128px;
 			padding-bottom: 80px;
+		}
+	}
+
+	.page-section__shift {
+		@include media-breakpoint-up(xl) {
+			margin-left: 71px;
 		}
 	}
 }

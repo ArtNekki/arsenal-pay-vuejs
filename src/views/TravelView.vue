@@ -358,7 +358,9 @@
 
 	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div class="page-section__container">
-			<h2 class="text text_type_title.level_1 text_align_center text_mgb_42 text_mgb_52.on_screen_md">
+			<h2
+				class="text text_type_title.level_1 text_align_center.on_screen_sm text_mgb_42 text_mgb_52.on_screen_md"
+			>
 				Вопросы и ответы
 			</h2>
 			<div class="page-section__shift">
