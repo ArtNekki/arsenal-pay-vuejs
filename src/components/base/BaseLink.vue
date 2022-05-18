@@ -11,7 +11,10 @@
 			['link_in_' + linkIn]: linkIn,
 		}"
 	>
-		<slot />
+		<span>
+			<slot />
+		</span>
+		<slot name="icon" />
 	</a>
 </template>
 
@@ -52,26 +55,32 @@ export default class BaseLink extends Vue {}
 		}
 	}
 
-	&::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: -4px;
-		width: 100%;
-		height: 1px;
-		background-color: var(--color-text-secondary);
-		opacity: 0;
-		transition: background-color 0.3s;
+	span {
+		position: relative;
+		//display: inline-block;
 
-		@include hover() {
-			opacity: 1;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -4px;
+			//bottom: 0;
+			width: 100%;
+			height: 1px;
+			background-color: var(--color-text-secondary);
+			opacity: 0;
+			transition: background-color 0.3s;
+
+			@include hover() {
+				opacity: 1;
+			}
 		}
 	}
 
 	&_color_purple {
 		color: var(--color-text-purple);
 
-		&::before {
+		span::before {
 			background-color: var(--color-text-purple);
 		}
 	}
@@ -79,7 +88,7 @@ export default class BaseLink extends Vue {}
 	&_color_pink {
 		color: var(--color-text-pink);
 
-		&::before {
+		span::before {
 			background-color: var(--color-text-pink);
 		}
 	}
@@ -87,7 +96,7 @@ export default class BaseLink extends Vue {}
 	&_color_blue {
 		color: var(--color-text-blue);
 
-		&::before {
+		span::before {
 			background-color: var(--color-text-blue);
 		}
 	}
@@ -98,7 +107,7 @@ export default class BaseLink extends Vue {}
 		font-weight: 400;
 		letter-spacing: 0.065px;
 
-		&::before {
+		span::before {
 			bottom: -3px;
 		}
 	}
@@ -136,25 +145,6 @@ export default class BaseLink extends Vue {}
 			height: var(--icon-size);
 			display: inline-block;
 			//background: url("arrow-right--blue") no-repeat;
-		}
-
-		span {
-			position: relative;
-
-			&::before {
-				content: "";
-				position: absolute;
-				left: 0;
-				bottom: -4px;
-				width: 100%;
-				height: 1px;
-				background-color: var(--blue-dark-color);
-				opacity: 0;
-
-				@include hover() {
-					opacity: 1;
-				}
-			}
 		}
 
 		&.link_color_purple {
