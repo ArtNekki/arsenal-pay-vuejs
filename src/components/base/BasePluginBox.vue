@@ -1,6 +1,5 @@
 <template>
-	<div></div>
-	<a :href="href" class="plugin-box">
+	<a :href="href" class="plugin-box plugin-box_is_active">
 		<div class="plugin-box__body">
 			<BaseIcon :name="name" :width="width" :height="height" />
 			<div class="plugin-box__caret">
@@ -12,7 +11,7 @@
 				<BaseLink :href="link.href" :blank="true" color="blue">
 					{{ link.text }}
 					<template v-slot:icon>
-						<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
+						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
 					</template>
 				</BaseLink>
 			</li>
@@ -90,4 +89,89 @@ export default class BasePluginBox extends Vue {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.plugin-box {
+	display: block;
+	border: 1px solid rgba(#000000, 0.2);
+	border-radius: 40px;
+
+	@include media-breakpoint-up(sm) {
+		width: 100%;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 16px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 22px;
+		}
+	}
+
+	@include hover {
+		border-color: rgba(#000000, 0.6);
+		background-color: rgba(#000000, 0.04);
+	}
+
+	&__body {
+		position: relative;
+		padding: 4px 14px 4px 28px;
+		width: 100%;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	&__list {
+		@include list-clear();
+
+		margin-bottom: 23px; //25
+		padding: 0 28px;
+		display: none;
+
+		.plugin-box_is_active & {
+			display: block;
+		}
+	}
+
+	&__item {
+		margin-top: 8px;
+		margin-bottom: 8px;
+		text-align: left;
+
+		svg.icon {
+			position: absolute;
+			top: -9px;
+		}
+
+		@-moz-document url-prefix() {
+			& {
+				margin-top: 7px;
+			}
+		}
+	}
+
+	&__caret {
+		transform: rotate3d(0, 0, 1, 90deg);
+
+		.plugin-box_is_active & {
+			transform: rotate3d(0, 0, 1, -90deg);
+		}
+
+		.links-box--link & {
+			transform: rotate3d(0, 0, 1, 0deg);
+		}
+	}
+
+	br {
+		display: block;
+
+		@media (min-width: 414px) {
+			display: none;
+		}
+	}
+}
+</style>

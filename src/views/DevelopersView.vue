@@ -189,7 +189,6 @@
 					модулей уже настроена.
 				</p>
 				<div class="page-section__row">
-					<!--					plugins: {{ plugins }}-->
 					<div v-for="col in plugins" class="page-section__col" :key="col">
 						<BasePluginBox v-for="plugin in col" :name="plugin.name" :links="plugin.links" :key="plugin" />
 					</div>
@@ -641,6 +640,14 @@ export default class DevelopersView extends Vue {
 		@include media-breakpoint-up(md) {
 			padding-bottom: 160px;
 		}
+	}
+}
+
+.page-section_order_5 {
+	.page-section__row {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 25px;
 	}
 }
 
