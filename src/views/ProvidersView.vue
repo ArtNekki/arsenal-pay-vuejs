@@ -2,7 +2,7 @@
 	<section class="page-section page-section_order_1 page-section_skew_inverse page-section_skew_no-top">
 		<div class="page-section__container">
 			<h1 class="text text_type_title.level_1">Интернет-провайдерам</h1>
-			<div class="u-max-width.on_screen_md">
+			<div class="u-max-width.on_screen_md u-max-width.on_screen_lg">
 				<p class="text text_level_1 text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 					Полный пакет платежных сервисов для интернет и ТВ провайдеров. <br class="br br--show-lg" />
 					<BaseLink href="https://arsenalpay.ru/tariffs.html" link-in="text" color="blue"
@@ -33,10 +33,12 @@
 				Онлайн-касса включена.<br />
 				Свою кассу покупать не нужно.
 			</h2>
-			<div>
+			<div class="u-max-width.on_screen_md u-max-width.on_screen_lg">
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Вы сразу получаете готовую к работе
-					<BaseLink href="https://arsenalpay.ru/cashbox.html" link-in="text">кассу ArsenalPay.</BaseLink>
+					<BaseLink href="https://arsenalpay.ru/cashbox.html" link-in="text" color="blue"
+						>кассу ArsenalPay.</BaseLink
+					>
 					<br class="br br--show-sm" />
 					Никаких расходов на кассу — вы платите только за чеки успешных покупок.
 				</p>
@@ -59,27 +61,27 @@
 	<section class="page-section page-section_order_3">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Всё для увеличения конверсии</h2>
-			<p class="text text_level_1 text_ls_sm text_mgb_60">
+			<p class="text text_level_1 text_ls_sm text_mgb_60 text_mgb_50.on_screen_md">
 				Управление автоплатежами. Запоминание карты. Apple Pay.<br class="br br--show-lg" />
 				Оплата без ввода 3DS. Страница при нулевом балансе.
 			</p>
-			<div class="page-section__box">
+			<div class="page-section__box u_overflow_hidden.on_screen_md">
 				<BaseIcon name="autopayment-medium" color="green" width="48" height="53" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Автоплатежи</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Автоплатежи</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Полное управление автоплатежами через API и в личном кабинете. Ваши клиенты смогут самостоятельно
 					изменить все настройки автоплатежа, без обращения в поддержку. Сумма автоплатежа автоматически
 					меняется при смене тарифа. Также можно изменять периодичность и отключать автоплатёж на время.
 				</p>
 				<BaseIcon name="saved-card-medium" color="purple" width="62" height="46" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Запоминание карты</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Запоминание карты</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Функция позволяет совершать оплату в 1 клик. Увеличивает процент успешных платежей. Уже
 					60% пользователей сохраняют свои карты, и доверие с каждым годом только растет.
 				</p>
 				<BaseIcon name="apple-pay-medium" color="black" width="68" height="45" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Apple Pay</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Apple Pay</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
 					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
 					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.<br class="br br--show-lg" />
@@ -87,23 +89,23 @@
 				</p>
 
 				<BaseIcon name="3ds-medium" color="pink" width="52" height="52" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Оплата без 3DS</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Оплата без 3DS</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Функция позволяет настраивать лимиты на сумму платежа, при которых можно не запрашивать код
 					подтверждения оплаты 3DS. Пользователям не нужно вводить 3DS, оплата становится быстрее и удобнее.
 					Количество успешных платежей увеличивается.
 				</p>
 				<BaseIcon name="pay-medium" color="cyan" width="45" height="53" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Страница при нуле</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Страница при нуле</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Виджет оплаты можно легко встроить на страницу, которая информирует о нулевом балансе. Клиенты
 					смогут оплачивать услуги без дополнительной авторизации даже при отрицательном балансе. Если
 					у вашего сервиса нет такой страницы, мы сделаем ее для вас.
 				</p>
 				<div class="page-section__box-wrap">
 					<BaseIcon name="api-medium" color="purple" width="52" height="52" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">ArsenalPay API</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">ArsenalPay API</h3>
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 						Все платёжные функции доступны через API.<br class="br br--show-lg" />
 						Гибкое управление платежами в любом биллинге.
 						<BaseLink href="https://arsenalpay.ru/documentation/index.html#api" link-in="text" color="blue"
@@ -112,8 +114,8 @@
 					</p>
 
 					<BaseIcon name="3ds-medium" color="pink" width="52" height="52" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">IP-адреса 3DS страниц банков</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">IP-адреса 3DS страниц банков</h3>
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 						Мы предоставляем API для получения актуального списка IP-адресов 3DS страниц банков. Что
 						позволяет совершать оплату даже при закрытом доступе в интернет.
 					</p>
@@ -158,7 +160,7 @@
 						устройства.
 					</p>
 
-					<BaseIcon name="security-medium" width="38" height="48" color="pink" bottom-space="md" />
+					<BaseIcon name="security-medium" width="38" height="48" color="pink" />
 					<h3 class="text text_type_title.level_3">Безопасность</h3>
 					<p class="text text_level_3">
 						Безопасная обработка данных карт<br class="br br--show-sm" />
@@ -178,7 +180,7 @@
 			<p class="text text_level_1 text_ls_sm text_mgb_80">
 				Приложение в фирменном стиле вашей компании. Удобно для клиентов и выгодно для вашего бизнеса. Отправка
 				push-уведомлений вместо СМС <br class="br br--show-lg" /><b
-					class="text text_color_purple text_weight_bold"
+					class="text text_color_purple text_weight_bold text_display_inline"
 					>экономит от 500 000 ₽ в год.</b
 				>
 			</p>
@@ -187,34 +189,36 @@
 					<BaseImage src="providers-page/widget-providers-mobile" :breakpoints="{ lg: true }"></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<BaseIcon name="settings-medium" width="74" height="62" color="purple" bottom-space="md" />
-					<b class="text text_type_title.level_3">Клиент сможет</b>
+					<BaseIcon name="settings-medium" width="74" height="62" color="purple" />
+					<b class="text text_type_title.level_3 text_size_lg.on_screen_sm">Клиент сможет</b>
 					<ul class="page-section__list">
 						<li>
 							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
-							<p class="text text_level_3 text_lh_32 text_mgb_no">Узнавать и пополнять баланс.</p>
+							<p class="text text_level_3 text_lh_32 text_mgb_no text_increase_no.on_screen_md">
+								Узнавать и пополнять баланс.
+							</p>
 						</li>
 						<li>
 							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
-							<p class="text text_level_3 text_lh_32 text_mgb_no">
+							<p class="text text_level_3 text_lh_32 text_mgb_no text_increase_no.on_screen_md">
 								Вовремя получать уведомления о низком балансе.
 							</p>
 						</li>
 						<li>
 							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
-							<p class="text text_level_3 text_lh_32 text_mgb_no">
+							<p class="text text_level_3 text_lh_32 text_mgb_no text_increase_no.on_screen_md">
 								Оплачивать по карте и со счёта телефона.
 							</p>
 						</li>
 						<li>
 							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
-							<span class="text text_level_3 text_lh_32 text_mgb_no"
-								>Сохранять карту и оплачивать в 1 клик.</span
-							>
+							<p class="text text_level_3 text_lh_32 text_mgb_no text_increase_no.on_screen_md">
+								Сохранять карту и оплачивать в 1 клик.
+							</p>
 						</li>
 						<li>
 							<BaseIcon name="check-list-small" width="48px" height="38px" color="green" />
-							<p class="text text_level_3 text_lh_32 text_mgb_no">
+							<p class="text text_level_3 text_lh_32 text_mgb_no text_increase_no.on_screen_md">
 								Самостоятельно управлять автоплатежами.
 							</p>
 						</li>
@@ -229,7 +233,7 @@
 			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Вы платите только за успешные платежи.<br class="br br--show-md" />
-				Без дополнительных комиссий и звёздочек в договоре.
+				Без дополнительных комиссий и звёздочек в договоре.
 			</p>
 			<div class="page-section__box">
 				<b class="text text_type_title.level_2 text_mgb_no">Приём платежей картами всех стран мира</b>
@@ -461,6 +465,7 @@ export default class ProvidersView extends Vue {
 		}
 
 		@include media-breakpoint-up(md) {
+			margin-left: -20px;
 			max-width: 304px;
 		}
 	}
@@ -474,7 +479,7 @@ export default class ProvidersView extends Vue {
 		padding-bottom: 248px;
 
 		@include media-breakpoint-up(md) {
-			padding-bottom: 146px;
+			padding-bottom: 246px;
 		}
 	}
 
@@ -509,6 +514,10 @@ export default class ProvidersView extends Vue {
 
 	.page-section__box-wrap {
 		margin-top: 44px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 85px;
+		}
 	}
 }
 
@@ -538,11 +547,30 @@ export default class ProvidersView extends Vue {
 	.page-section__col {
 		--image-width: 320px;
 
+		@include media-breakpoint-up(sm) {
+			--image-width: 348px;
+		}
+
 		&:first-child {
 			margin-bottom: 90px;
+
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 100px;
+			}
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 90px;
+			}
 		}
 
 		&:last-child {
+			& > svg.icon {
+				margin-bottom: 16px;
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 12px;
+				}
+			}
 		}
 
 		picture {
@@ -554,6 +582,11 @@ export default class ProvidersView extends Vue {
 			background-color: (var(--color-bg-white));
 			box-shadow: var(--box-shadow-md);
 			border-radius: 54px;
+			overflow: hidden;
+
+			@include media-breakpoint-up(sm) {
+				height: 502px;
+			}
 		}
 	}
 }
@@ -608,6 +641,13 @@ export default class ProvidersView extends Vue {
 		}
 
 		&:last-child {
+			& > svg.icon {
+				margin-bottom: 16px;
+
+				@include media-breakpoint-up(sm) {
+					margin-bottom: 12px;
+				}
+			}
 		}
 
 		picture {
@@ -629,19 +669,35 @@ export default class ProvidersView extends Vue {
 		left: -16px;
 		text-align: left;
 
+		@include media-breakpoint-up(sm) {
+			left: -19px;
+		}
+
 		li {
 			position: relative;
 			display: grid;
 			grid-template-columns: 48px 1fr;
 			grid-column-gap: 5px;
 
+			@include media-breakpoint-up(sm) {
+				height: 32px;
+			}
+
 			&:first-child {
 				margin-bottom: -4px;
+
+				@include media-breakpoint-up(sm) {
+					margin-bottom: 0;
+				}
 			}
 		}
 
 		svg.icon {
 			margin-top: -2px;
+
+			@include media-breakpoint-up(sm) {
+				margin-top: -4px;
+			}
 		}
 	}
 }
@@ -663,8 +719,7 @@ export default class ProvidersView extends Vue {
 
 	.page-section__box {
 		max-width: 820px;
-		//padding: 56px 20px 44px;
-		padding: 54px 20px 44px;
+		padding: 56px 20px 44px;
 		border-radius: var(--border-radius-lg);
 		background-color: var(--color-bg-gray-super-light);
 		outline: 1px solid var(--color-stroke-lighten);
@@ -675,6 +730,7 @@ export default class ProvidersView extends Vue {
 		@include media-breakpoint-up(sm) {
 			padding-right: 40px;
 			padding-left: 40px;
+			outline: none;
 		}
 	}
 

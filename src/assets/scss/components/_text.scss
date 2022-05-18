@@ -41,6 +41,14 @@
       line-height: 35px;
       letter-spacing: -0.69px;
     }
+
+    &[class~="text_size_lg.on_screen_sm"] {
+      @include media-breakpoint-up(sm) {
+        font-size: 20.2px;
+        line-height: 35px;
+        letter-spacing: -0.69px;
+      }
+    }
   }
 
   //-------------------- Text ---------------------
@@ -113,6 +121,14 @@
 
     @include media-breakpoint-up(lg) {
       max-width: 820px;
+    }
+
+    &[class~="text_increase_no.on_screen_md"] {
+      @include media-breakpoint-up(md) {
+        font-size: 15.2px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+      }
     }
   }
 
@@ -605,6 +621,12 @@ div[class~="u_overflow_hidden.on_screen_md"] {
 
 div[class~="u-max-width.on_screen_md"] {
   @include media-breakpoint-up(md) {
+    width: 688px;
+  }
+}
+
+div[class~="u-max-width.on_screen_lg"] {
+  @include media-breakpoint-up(lg) {
     width: 840px;
   }
 }

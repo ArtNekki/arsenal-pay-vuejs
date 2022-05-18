@@ -2,7 +2,7 @@
 	<section class="page-section page-section_order_1 page-section_skew_no-top">
 		<div class="page-section__container">
 			<h1 class="text text_type_title.level_1">Турфирмам</h1>
-			<div class="u-max-width.on_screen_md">
+			<div class="u-max-width.on_screen_md u-max-width.on_screen_lg">
 				<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 					Полный пакет платёжных сервисов для турфирм.
 					<br class="br br--show-sm br--hide-lg" />
