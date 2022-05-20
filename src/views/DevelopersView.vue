@@ -7,7 +7,9 @@
 				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
 			<h1 class="text text_type_title.level_1">Разработчикам</h1>
-			<p class="text text_level_3">Готовые CMS плагины, виджет оплаты для интернет-магазинов и&nbsp;лендингов.</p>
+			<p class="text text_level_1 text_ls_sm">
+				Готовые CMS плагины, виджет оплаты для интернет-магазинов и&nbsp;лендингов.
+			</p>
 			<div class="page-section__button">
 				<BaseButton href="https://arsenalpay.ru/dashboard/registration-type">Подключить</BaseButton>
 			</div>
@@ -17,7 +19,7 @@
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Виджет оплаты</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_60">
 						Встраивается в&nbsp;любое место на&nbsp;сайте. <br class="br br--show-xs" />Адаптирован под
 						любые устройства.<br class="br br--show-xs" />
 						Цвет виджета
@@ -42,41 +44,49 @@
 		<div class="page-section__container">
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseIcon name="num-one" width="37" height="37" color="purple" />
+					<BaseIcon name="num-one" width="37" height="37" color="purple" bottom-space="sm" />
 					<h3 class="text text_type_title.level_3">Все способы оплаты в&nbsp;одном виджете</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_no">
 						Банковские карты:<br class="br br--show-xs br--hide-md" />
 						Visa, MasterCard, Мир, Apple Pay. <br class="br br--show-xs" />Оплата с баланса мобильного
 						телефона.<br class="br br--show-xs" />Электронные кошельки.
 					</p>
 				</div>
-				<div class="page-section__col">
+				<div class="page-section__col page-section__col_type_tabs">
 					<BaseImage src="developers-page/widget-tabs" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<BaseIcon name="num-two" width="37" height="37" color="purple" />
+					<BaseIcon name="num-two" width="37" height="37" color="purple" bottom-space="sm" />
 					<h3 class="text text_type_title.level_3">Настройка дополнительных полей</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_no">
 						Комментарии клиента, email для чека, ФИО, адрес и&nbsp;др.<br
 							class="br br--show-md br--hide-lg"
 						/>
 						Настройка плейсхолдеров и&nbsp;масок для полей.
 					</p>
 				</div>
-				<div class="page-section__col">
+				<div class="page-section__col page-section__col_type_fields">
 					<BaseImage src="developers-page/widget-fields" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<BaseIcon name="num-three" width="37" height="37" color="purple" />
+					<BaseIcon name="num-three" width="37" height="37" color="purple" bottom-space="sm" />
 					<h3 class="text text_type_title.level_3">Удобный ввод</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_16">
 						Проверка вводимых данных. <br class="br br--show-xs" />Подсказки при неверном вводе.
 						<br class="br br--show-xs" />Браузерное автозаполнение. <br class="br br--show-xs" />Перевод
 						курсора на&nbsp;следующее поле. <br class="br br--show-xs" />Определение платёжной системы.
 						<br class="br br--show-xs" />Определение операторов сотовой связи.
 					</p>
+					<div style="margin-top: 25px">
+						<BaseLink href="#" type="more" color="purple">
+							Посмотреть виджет
+							<template v-slot:icon>
+								<!--							<BaseIcon name="chevron-right" width="48" height="38"></BaseIcon>-->
+							</template>
+						</BaseLink>
+					</div>
 				</div>
-				<div class="page-section__col">
+				<div class="page-section__col page-section__col_type_card">
 					<BaseImage src="developers-page/widget-card" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
 			</div>
@@ -85,32 +95,34 @@
 
 	<section class="page-section page-section_order_3 page-section_skew_inverse">
 		<div class="page-section__container">
-			<BaseIcon name="test-big" width="116" height="116" color="green" />
+			<div class="page-section__icon">
+				<BaseIcon name="test-big" width="116" height="116" color="green" />
+			</div>
 			<h2 class="text text_type_title.level_1">Тестирование оплаты и&nbsp;кассы</h2>
-			<p class="text text_level_1">
+			<p class="text text_level_1 text_mgb_50">
 				Все параметры для тестирования виджета доступны <br class="br br--show-md" />после регистрации
 				в&nbsp;личном кабинете.
 			</p>
-			<div class="page-section__box">
-				<BaseIcon name="check-circle-large" width="37" height="37" color="green" />
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Устанавливайте виджет сразу</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Вы&nbsp;можете установить виджет на&nbsp;свой сайт, настроить его,
 					<br class="br br--show-md" />совершать тестовые платежи и&nbsp;проверять статус платежей
 					<br class="br br--show-md br--hide-lg" />в&nbsp;личном кабинете.
 				</p>
 
-				<BaseIcon name="check-circle-large" width="37" height="37" color="green" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Тестируйте фискальные чеки</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					В&nbsp;тестовом режиме онлайн чеки формируются на&nbsp;базе тестовой кассы.<br
 						class="br br--show-lg"
 					/>
 					Тестовые чеки в&nbsp;ФНС не&nbsp;отправляются.
 				</p>
-				<BaseIcon name="check-circle-large" width="37" height="37" color="green" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Деньги с&nbsp;карты не&nbsp;списываются</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Для тестирования оплаты используйте любую действующую карту.<br class="br br--show-lg" />
 					В&nbsp;тестовом режиме деньги с&nbsp;карты не&nbsp;списываются.
 				</p>
@@ -131,7 +143,7 @@
 				<BaseIcon name="settings-big" width="126" height="92" color="blue" />
 			</div>
 			<h2 class="text text_type_title.level_1">Интеграция виджета</h2>
-			<p class="text text_level_1">
+			<p class="text text_level_1 text_mgb_50">
 				Посмотрите
 				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#scenarii-integracii"
@@ -142,19 +154,19 @@
 				>
 				для интернет-магазинов и&nbsp;лендингов.
 			</p>
-			<div class="page-section__box">
-				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Встроенный виджет</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Встроенный виджет будет открываться в&nbsp;любом месте на&nbsp;вашем сайте.<br
 						class="br br--show-lg"
 					/>
 					Просто вставьте код виджета на&nbsp;страницу сайта, туда где происходит оплата.
 				</p>
 
-				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Виджет на&nbsp;отдельной странице</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Виджет будет открываться на&nbsp;отдельной странице, для этого просто вставьте ссылку на&nbsp;виджет
 					в&nbsp;том месте сайта, где у&nbsp;вас происходит переход к&nbsp;оплате.
 				</p>
@@ -176,13 +188,13 @@
 				<BaseIcon name="cms-big" width="116" height="116" color="cyan" />
 			</div>
 			<h2 class="text text_type_title.level_1">Готовые CMS плагины</h2>
-			<p class="text text_level_1">
+			<p class="text text_level_1 text_mgb_50">
 				Скачайте и&nbsp;установите готовый модуль под вашу платформу.<br class="br br--show-md" />
 				Если&nbsp;для вашей платформы нет модуля, напишите нам и&nbsp;мы&nbsp;его сделаем.
 			</p>
-			<div class="page-section__box">
+			<div class="page-section__box page-section__box_type_two">
 				<h3 class="text text_type_title.level_3">Все настройки в&nbsp;личном кабинете</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_50">
 					Настройте модуль, используя данные, полученные при регистрации
 					<br class="br br--show-lg" />в&nbsp;личном кабинете. Касса для CMS
 					<br class="br br--show-sm br--hide-md" />
@@ -203,26 +215,30 @@
 				<BaseIcon name="http-big" width="116" height="116" mods="purple" />
 			</div>
 			<h2 class="text text_type_title.level_1">HTTP-уведомления</h2>
-			<p class="text text_level_1">
+			<p class="text text_level_1 text_mgb_50">
 				Обновляйте статус заказа на&nbsp;своем сайте. <br class="br br--show-md" />Передавайте данные
 				из&nbsp;корзины для чека.
 			</p>
-			<div class="page-section__box">
-				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Все настройки в&nbsp;личном кабинете</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Секретный ключ для проверки HTTP-уведомлений вы получаете<br class="br br--show-md" />
 					при регистрации в&nbsp;личном кабинете.
 				</p>
-				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Для всех событий доступны HTTP-уведомления</h3>
-				<p class="text text_level_3">Проверка заказа, успешная оплата, возврат платежа, изменение подписки.</p>
+				<p class="text text_level_3 text_mgb_40">
+					Проверка заказа, успешная оплата, возврат платежа, изменение подписки.
+				</p>
 
-				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">
 					В&nbsp;CMS модулях обработка уведомлений <br class="br br--show-sm br--hide-md" />уже настроена
 				</h3>
-				<p class="text text_level_3">Чек по&nbsp;умолчанию формируется из&nbsp;товарных позиций корзины.</p>
+				<p class="text text_level_3 text_mgb_40">
+					Чек по&nbsp;умолчанию формируется из&nbsp;товарных позиций корзины.
+				</p>
 
 				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
@@ -240,28 +256,30 @@
 				<BaseIcon name="email-big" width="116" height="116" color="green" />
 			</div>
 			<h2 class="text text_type_title.level_1">Email-уведомления</h2>
-			<p class="text text_level_3">
+			<p class="text text_level_1 text_mgb_50">
 				Email-уведомления удобно применять на&nbsp;лендингах <br class="br br--show-md" />или на&nbsp;сайтах без
 				интернет-магазина.
 			</p>
-			<div class="page-section__box">
-				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">
 					Можно получать <br class="br br--show-xs br--hide-sm" />информацию об&nbsp;оплате по&nbsp;email
 				</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Вы&nbsp;будете получать информацию о&nbsp;платеже и&nbsp;дополнительные данные,<br
 						class="br br--show-lg"
 					/>
 					которые клиент укажет в&nbsp;платёжной форме.
 				</p>
 
-				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">
 					Вы&nbsp;сможете сразу узнавать кто, сколько и&nbsp;за&nbsp;что
 					<br class="br br--show-md br--hide-lg" />вам заплатил.
 				</h3>
-				<p class="text text_level_3">Никаких доработок и&nbsp;настроек на&nbsp;сайте не&nbsp;требуется.</p>
+				<p class="text text_level_3 text_mgb_40">
+					Никаких доработок и&nbsp;настроек на&nbsp;сайте не&nbsp;требуется.
+				</p>
 				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#email-uvedomleniya"
 					:blank="true"
@@ -279,35 +297,35 @@
 				<BaseIcon name="kassa-big" width="122" height="120" color="blue" />
 			</div>
 			<h2 class="text text_type_title.level_1">Настройки кассы</h2>
-			<p class="text text_level_1">
-				<!--				Фискальный чек отправляется на&nbsp;email покупателя и&nbsp;в&nbsp ФНС через ОФД.<br-->
-				<!--					class="br br&#45;&#45;show-lg"-->
-				<!--				/>-->
-				<!--				Все чеки сохраняются в&nbsp;личном кабинете.-->
+			<p class="text text_level_1 text_mgb_50">
+				Фискальный чек отправляется на&nbsp;email покупателя и&nbsp;в&nbsp;ФНС через ОФД.<br
+					class="br br--show-lg"
+				/>
+				Все чеки сохраняются в&nbsp;личном кабинете.
 			</p>
-			<div class="page-section__box">
-				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Для готовых CMS плагинов касса уже настроена</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Чек будет приходить клиентам на&nbsp;email со&nbsp;всеми товарными позициями.<br
 						class="br br--show-lg"
 					/>
 					Если вам не&nbsp;нужны товарные позиции в&nbsp;чеке, можно сделать чек с&nbsp;общей суммой.
 				</p>
 
-				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Для лендингов касса уже настроена</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Самая простая интеграция. Подходит для любого сайта без интернет-магазина. Клиентам приходит чек
 					с&nbsp;общей суммой заказа, без товарных позиций. <br class="br br--show-lg" />На&nbsp;ваш email
 					отправляются данные об&nbsp;оплате заказа и&nbsp;информация о&nbsp;клиенте.
 				</p>
 
-				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">
 					Для интернет-магазинов вы&nbsp;решаете <br class="br br--show-sm br--hide-md" />как настроить кассу
 				</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_40">
 					Вы&nbsp;можете настроить передачу товарных позиций в&nbsp;чек, просто добавьте
 					<BaseLink
 						href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
@@ -329,7 +347,7 @@
 				<BaseIcon name="api-big" width="116" height="116" color="purple" />
 			</div>
 			<h2 class="text text_type_title.level_1">ArsenalPay API</h2>
-			<p class="text text_level_1">
+			<p class="text text_level_1 text_mgb_50">
 				Воспользуйтесь API для гибкой интеграции платежей на&nbsp;своем сайте.
 				<br class="br br--show-xl" />Параметры&nbsp;авторизации для доступа к&nbsp;API вы&nbsp;получаете<br
 					class="br br--show-md"
@@ -339,19 +357,37 @@
 					>Протестируйте наше API.</BaseLink
 				>
 			</p>
-			<div class="content-box content-box--shadow-xs">
-				<!--				{{{ icon name="settings&#45;&#45;medium" width="74" height="62" mods="purple" }}}-->
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="settings-medium" width="74" height="62" mods="purple" />
+
 				<h3 class="content-box__title">Основные функции API</h3>
-				<!--				{{{ check-list items='["Статус платежа", "Подтверждение холда", "Отмена платежа","Возврат платежа", "Изменение подписки", "Просмотр чека"]' mods="api" }}}-->
-				<div class="content-box__link">
-					<a
-						href="https://arsenalpay.ru/documentation/index.html#api"
-						class="link link--more"
-						target="_blank"
-					>
-						<span>Все функции</span>
-					</a>
+				<div class="page-section__row">
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Статус платежа</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Подтверждение холда</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Отмена платежа</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Возврат платежа</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Изменение подписки</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Просмотр чека</p>
+					</div>
 				</div>
+				<BaseLink
+					href="https://arsenalpay.ru/documentation/index.html#api"
+					:blank="true"
+					type="more"
+					color="blue"
+					>Все функции</BaseLink
+				>
 			</div>
 		</div>
 	</section>
@@ -610,7 +646,7 @@ export default class DevelopersView extends Vue {
 
 	.page-section__container {
 		padding-top: 52px;
-		padding-bottom: 200px;
+		padding-bottom: 175px;
 
 		@include media-breakpoint-up(md) {
 			padding-top: 52px;
@@ -620,6 +656,35 @@ export default class DevelopersView extends Vue {
 		@include media-breakpoint-up(lg) {
 			padding-top: 62px;
 			padding-bottom: 210px;
+		}
+	}
+
+	.page-section__row {
+		margin-top: 80px;
+
+		.page-section__col {
+			&:first-child {
+				margin-bottom: 90px;
+
+				picture {
+					padding: 19px 16px 21px;
+					width: 320px;
+					height: 498px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 54px;
+					box-sizing: border-box;
+					box-shadow: var(--box-shadow-purple-xl);
+					background-color: var(--color-bg-white);
+				}
+			}
+
+			&:last-child {
+				& > svg.icon {
+					margin-bottom: 16px;
+				}
+			}
 		}
 	}
 }
@@ -642,6 +707,155 @@ export default class DevelopersView extends Vue {
 			padding-top: 105px;
 			padding-bottom: 232px;
 			overflow: hidden;
+		}
+	}
+
+	.page-section__row {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		@include media-breakpoint-up(sm) {
+			align-items: center;
+		}
+
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: minmax(425px, 1fr) minmax(410px, 1fr);
+			align-items: unset;
+			grid-column-gap: 12px;
+			grid-row-gap: 30px;
+		}
+
+		@media (min-width: 1000px) {
+			grid-template-columns: minmax(410px, 1fr) minmax(386px, 1fr);
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: 5px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			margin-left: -17px;
+			padding-left: 0;
+		}
+
+		.page-section__col {
+			&[class*="type"] {
+				position: relative;
+				z-index: var(--layer-2);
+				margin-right: auto;
+				margin-left: auto;
+				width: 360px;
+
+				@include media-breakpoint-up(sm) {
+					width: auto;
+				}
+
+				@include media-breakpoint-up(lg) {
+					right: -30px;
+					margin: 0;
+					justify-self: center;
+				}
+
+				@include media-breakpoint-up(xl) {
+					right: -40px;
+				}
+
+				@include media-breakpoint-up(xxl) {
+					right: -65px;
+				}
+			}
+
+			&.page-section__col_type_tabs {
+				@include media-breakpoint-only(xs) {
+					margin-top: 42px;
+					margin-bottom: 82px;
+					width: 320px;
+					height: 100px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border: 1px solid var(--color-stroke-lighten);
+					border-radius: 70px;
+					box-shadow: -2px 26px 40px 1px rgba(0, 0, 0, 0.08), 0 1px 7px 0 rgba(0, 0, 0, 0.09);
+					box-sizing: border-box;
+				}
+
+				@include media-breakpoint-up(sm) {
+					margin-top: 30px;
+					margin-bottom: 20px;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 50px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin: 47px 0 0 0;
+				}
+			}
+
+			&.page-section__col_type_fields {
+				@include media-breakpoint-only(xs) {
+					margin-top: 42px;
+					margin-bottom: 82px;
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					max-width: 320px;
+				}
+
+				@include media-breakpoint-up(sm) {
+					margin-top: 30px;
+					margin-bottom: 70px;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 80px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin: 21px 0 0 0;
+				}
+			}
+
+			&.page-section__col_type_card {
+				@include media-breakpoint-only(xs) {
+					margin-top: 54px;
+					margin-bottom: 0;
+					width: 100%;
+					max-width: 320px;
+					height: 210px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border: solid 1px var(--color-stroke-lighten);
+					border-radius: 50px;
+					box-shadow: -2px 26px 36px 1px rgba(0, 0, 0, 0.08), 0 1px 7px 0 rgba(0, 0, 0, 0.09);
+					box-sizing: border-box;
+				}
+
+				@include media-breakpoint-up(sm) {
+					margin-top: 41px;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 12px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin: 85px 0 0 0;
+				}
+
+				@include media-breakpoint-up(xl) {
+					margin: 60px 0 0 0;
+				}
+			}
+
+			//&:nth-child(odd) {
+			//	border: 1px solid green;
+			//}
 		}
 	}
 }

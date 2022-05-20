@@ -5,8 +5,8 @@
                 <g>
                     <g>
                         <g transform="translate(-282 -1486) translate(40 1486) translate(242) translate(2 2)">
-                            <circle cx="16.5" cy="16.5" r="15.5" fill="#FFF" fill-opacity="0" stroke="var(--icon-color, #000000)" stroke-width="2"/>
-                            <path fill="var(--icon-color, #000000)" fill-rule="nonzero" d="M17.965 23.7L17.965 10.4 13.082 10.4 13.082 12.053 16.084 12.053 16.084 23.7z"/>
+                            <circle cx="16.5" cy="16.5" r="15.5" fill="#FFF" fill-opacity="0" stroke="currentColor" stroke-width="2"/>
+                            <path fill="currentColor" fill-rule="nonzero" d="M17.965 23.7L17.965 10.4 13.082 10.4 13.082 12.053 16.084 12.053 16.084 23.7z"/>
                         </g>
                     </g>
                 </g>
