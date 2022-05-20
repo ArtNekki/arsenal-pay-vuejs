@@ -194,7 +194,7 @@
 			</p>
 			<div class="page-section__box page-section__box_type_two">
 				<h3 class="text text_type_title.level_3">Все настройки в&nbsp;личном кабинете</h3>
-				<p class="text text_level_3 text_mgb_50">
+				<p class="text text_level_3 text_mgb_50 text_lh_28.on_screen_md">
 					Настройте модуль, используя данные, полученные при регистрации
 					<br class="br br--show-lg" />в&nbsp;личном кабинете. Касса для CMS
 					<br class="br br--show-sm br--hide-md" />
@@ -202,7 +202,7 @@
 				</p>
 				<div class="page-section__row">
 					<div v-for="col in plugins" class="page-section__col" :key="col">
-						<BasePluginBox v-for="plugin in col" :name="plugin.name" :links="plugin.links" :key="plugin" />
+						<BasePluginBox v-for="plugin in col" :name="plugin.logo" :links="plugin.links" :key="plugin" />
 					</div>
 				</div>
 			</div>
@@ -915,10 +915,24 @@ export default class DevelopersView extends Vue {
 }
 
 .page-section_order_5 {
+	--bottom-space: 25px;
+
 	.page-section__row {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 25px;
+		@include media-breakpoint-up(md) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: var(--bottom-space);
+		}
+	}
+
+	.page-section__col {
+		&:first-child {
+			margin-bottom: var(--bottom-space);
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 

@@ -1,5 +1,12 @@
 <template>
-	<a :href="href" class="plugin-box plugin-box_is_active">
+	<a
+		:href="href"
+		class="plugin-box"
+		:class="{
+			'plugin-box_is_active': isActive,
+		}"
+		@click="toggleBoxState"
+	>
 		<div class="plugin-box__body">
 			<BaseIcon :name="name" :width="width" :height="height" />
 			<div class="plugin-box__caret">
@@ -9,7 +16,7 @@
 		<ul v-if="links?.length" class="plugin-box__list">
 			<li v-for="link in links" class="plugin-box__item" :key="link">
 				<BaseLink :href="link.href" :blank="true" color="blue">
-					{{ link.text }}
+					<span v-html="link.text"></span>
 					<template v-slot:icon>
 						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
 					</template>
@@ -19,73 +26,77 @@
 	</a>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { Options, Vue } from "vue-class-component";
 import BaseIcon from "@/components/base/BaseIcon.vue";
 import BaseLink from "./BaseLink.vue";
 
-@Options({
+export default {
 	components: {
 		BaseIcon,
 		BaseLink,
 	},
 	props: {
 		href: String,
-		name: {
-			type: String,
-			default: "logo-ecwid",
-		},
+		name: String,
 		links: String,
 	},
-})
-export default class BasePluginBox extends Vue {
-	public width!: string;
-	public height = `60`;
-
-	// mounted() {
-	// 	switch (this.name) {
-	// 		case `logo-ecwid`:
-	// 			this.width = `140`;
-	// 			break;
-	// 		case `logo-tilda`:
-	// 			this.width = `164`;
-	// 			break;
-	// 		case `logo-in-sales`:
-	// 			this.width = `96`;
-	// 			break;
-	// 		case `logo-joomla`:
-	// 			this.width = `152`;
-	// 			break;
-	// 		case `logo-netcat`:
-	// 			this.width = `132`;
-	// 			break;
-	// 		case `logo-webasyst`:
-	// 			this.width = `145`;
-	// 			break;
-	// 		case `logo-umi-cms`:
-	// 			this.width = `125`;
-	// 			break;
-	// 		case `logo-bitrix`:
-	// 			this.width = `190`;
-	// 			break;
-	// 		case `logo-woocommerce`:
-	// 			this.width = `170`;
-	// 			break;
-	// 		case `logo-opencart`:
-	// 			this.width = `166`;
-	// 			break;
-	// 		case `logo-prestashop`:
-	// 			this.width = `180`;
-	// 			break;
-	// 		case `logo-siberian`:
-	// 			this.width = `140`;
-	// 			break;
-	// 		case `logo-virtuemart`:
-	// 			this.width = `140`;
-	// 			break;
-	// 	}
-	// }
-}
+	data() {
+		return {
+			isActive: false,
+			width: '',
+			height: '60'
+		};
+	},
+	methods: {
+		toggleBoxState() {
+			this.isActive = !this.isActive;
+		},
+	},
+	mounted() {
+		switch (this.name) {
+			case `logo-ecwid`:
+				this.width = `140`;
+				break;
+			case `logo-tilda`:
+				this.width = `164`;
+				break;
+			case `logo-in-sales`:
+				this.width = `96`;
+				break;
+			case `logo-joomla`:
+				this.width = `152`;
+				break;
+			case `logo-netcat`:
+				this.width = `132`;
+				break;
+			case `logo-webasyst`:
+				this.width = `145`;
+				break;
+			case `logo-umi-cms`:
+				this.width = `125`;
+				break;
+			case `logo-bitrix`:
+				this.width = `190`;
+				break;
+			case `logo-woocommerce`:
+				this.width = `170`;
+				break;
+			case `logo-opencart`:
+				this.width = `166`;
+				break;
+			case `logo-prestashop`:
+				this.width = `180`;
+				break;
+			case `logo-siberian`:
+				this.width = `140`;
+				break;
+			case `logo-virtuemart`:
+				this.width = `140`;
+				break;
+		}
+	}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -166,11 +177,17 @@ export default class BasePluginBox extends Vue {
 		}
 	}
 
-	br {
-		display: block;
+	&__item {
+		>>> a.link {
+			>>> span {
+				>>> span br {
+					display: block;
 
-		@media (min-width: 414px) {
-			display: none;
+					@media (min-width: 414px) {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }

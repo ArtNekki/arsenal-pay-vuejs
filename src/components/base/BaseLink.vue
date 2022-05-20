@@ -57,14 +57,14 @@ export default class BaseLink extends Vue {}
 
 	span {
 		position: relative;
-		//display: inline-block;
+		display: inline-block;
 
 		&::before {
 			content: "";
 			position: absolute;
 			left: 0;
-			bottom: -4px;
-			//bottom: 0;
+			//bottom: -4px;
+			bottom: 0;
 			width: 100%;
 			height: 1px;
 			background-color: var(--color-text-secondary);
