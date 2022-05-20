@@ -4,6 +4,7 @@
 		class="plugin-box"
 		:class="{
 			'plugin-box_is_active': isActive,
+			'plugin-box_type_link': href,
 		}"
 		@click="toggleBoxState"
 	>
@@ -31,7 +32,7 @@ import { Options, Vue } from "vue-class-component";
 import BaseIcon from "@/components/base/BaseIcon.vue";
 import BaseLink from "./BaseLink.vue";
 
-export default {
+@Options({
 	components: {
 		BaseIcon,
 		BaseLink,
@@ -41,18 +42,16 @@ export default {
 		name: String,
 		links: String,
 	},
-	data() {
-		return {
-			isActive: false,
-			width: '',
-			height: '60'
-		};
-	},
-	methods: {
-		toggleBoxState() {
-			this.isActive = !this.isActive;
-		},
-	},
+})
+export default class BasePluginBox extends Vue {
+	 width = '';
+	 height = '60';
+	 isActive = false;
+
+	toggleBoxState() {
+		this.isActive = !this.isActive;
+	}
+
 	mounted() {
 		switch (this.name) {
 			case `logo-ecwid`:
@@ -96,7 +95,7 @@ export default {
 				break;
 		}
 	}
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -172,7 +171,7 @@ export default {
 			transform: rotate3d(0, 0, 1, -90deg);
 		}
 
-		.links-box--link & {
+		.plugin-box_type_link & {
 			transform: rotate3d(0, 0, 1, 0deg);
 		}
 	}

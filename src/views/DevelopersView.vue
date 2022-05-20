@@ -202,7 +202,13 @@
 				</p>
 				<div class="page-section__row">
 					<div v-for="col in plugins" class="page-section__col" :key="col">
-						<BasePluginBox v-for="plugin in col" :name="plugin.logo" :links="plugin.links" :key="plugin" />
+						<BasePluginBox
+							v-for="plugin in col"
+							:name="plugin.logo"
+							:href="plugin.href"
+							:links="plugin.links"
+							:key="plugin"
+						/>
 					</div>
 				</div>
 			</div>
