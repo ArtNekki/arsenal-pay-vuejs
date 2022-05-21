@@ -1004,6 +1004,7 @@ export default class DevelopersView extends Vue {
 		}
 
 		@include media-breakpoint-up(md) {
+			margin-left: 0;
 			display: grid;
 			grid-template-columns: repeat(2, 276px);
 			grid-column-gap: 10px;
@@ -1011,13 +1012,11 @@ export default class DevelopersView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
-			margin-left: 0;
 			grid-template-columns: 249px 200px 243px;
 			grid-column-gap: 24px;
 		}
 
 		@include media-breakpoint-up(xl) {
-			margin-left: 68px;
 			grid-column-gap: 50px;
 		}
 
@@ -1058,6 +1057,7 @@ export default class DevelopersView extends Vue {
 
 		@include media-breakpoint-up(md) {
 			grid-column-gap: 8px;
+			justify-content: start;
 		}
 
 		@include media-breakpoint-up(lg) {
