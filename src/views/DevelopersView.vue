@@ -77,7 +77,7 @@
 						курсора на&nbsp;следующее поле. <br class="br br--show-xs" />Определение платёжной системы.
 						<br class="br br--show-xs" />Определение операторов сотовой связи.
 					</p>
-					<div style="margin-top: 16px">
+					<div class="page-section__link">
 						<BaseLink :icon="true" color="purple">
 							Посмотреть виджет
 							<template v-slot:icon>
@@ -948,7 +948,7 @@ export default class DevelopersView extends Vue {
 				}
 
 				@include media-breakpoint-up(sm) {
-					margin-top: 41px;
+					margin-top: 34px;
 				}
 
 				@include media-breakpoint-up(md) {
@@ -963,6 +963,14 @@ export default class DevelopersView extends Vue {
 					margin: 60px 0 0 0;
 				}
 			}
+		}
+	}
+
+	.page-section__link {
+		margin-top: 16px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 0;
 		}
 	}
 }
