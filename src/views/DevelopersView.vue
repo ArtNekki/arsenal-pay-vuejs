@@ -105,24 +105,26 @@
 			</p>
 			<div class="page-section__box page-section__box_type_two">
 				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Устанавливайте виджет сразу</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Устанавливайте виджет сразу</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Вы&nbsp;можете установить виджет на&nbsp;свой сайт, настроить его,
 					<br class="br br--show-md" />совершать тестовые платежи и&nbsp;проверять статус платежей
 					<br class="br br--show-md br--hide-lg" />в&nbsp;личном кабинете.
 				</p>
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Тестируйте фискальные чеки</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Тестируйте фискальные чеки</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					В&nbsp;тестовом режиме онлайн чеки формируются на&nbsp;базе тестовой кассы.<br
 						class="br br--show-lg"
 					/>
 					Тестовые чеки в&nbsp;ФНС не&nbsp;отправляются.
 				</p>
 				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Деньги с&nbsp;карты не&nbsp;списываются</h3>
-				<p class="text text_level_3 text_mgb_34">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Деньги с&nbsp;карты не&nbsp;списываются
+				</h3>
+				<p class="text text_level_3 text_mgb_34 text_lh_28.on_screen_md">
 					Для тестирования оплаты используйте любую действующую карту.<br class="br br--show-lg" />
 					В&nbsp;тестовом режиме деньги с&nbsp;карты не&nbsp;списываются.
 				</p>
@@ -160,8 +162,8 @@
 			</p>
 			<div class="page-section__box page-section__box_type_two">
 				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Встроенный виджет</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Встроенный виджет</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Встроенный виджет будет открываться в&nbsp;любом месте на&nbsp;вашем сайте.<br
 						class="br br--show-lg"
 					/>
@@ -169,8 +171,8 @@
 				</p>
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Виджет на&nbsp;отдельной странице</h3>
-				<p class="text text_level_3 text_mgb_34">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Виджет на&nbsp;отдельной странице</h3>
+				<p class="text text_level_3 text_mgb_34 text_lh_28.on_screen_md">
 					Виджет будет открываться на&nbsp;отдельной странице, для этого просто вставьте ссылку на&nbsp;виджет
 					в&nbsp;том месте сайта, где у&nbsp;вас происходит переход к&nbsp;оплате.
 				</p>
@@ -201,7 +203,9 @@
 				Если&nbsp;для вашей платформы нет модуля, напишите нам и&nbsp;мы&nbsp;его сделаем.
 			</p>
 			<div class="page-section__box page-section__box_type_two">
-				<h3 class="text text_type_title.level_3">Все настройки в&nbsp;личном кабинете</h3>
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Все настройки в&nbsp;личном кабинете
+				</h3>
 				<p class="text text_level_3 text_mgb_50 text_lh_28.on_screen_md">
 					Настройте модуль, используя данные, полученные при регистрации
 					<br class="br br--show-lg" />в&nbsp;личном кабинете. Касса для CMS
@@ -235,22 +239,26 @@
 			</p>
 			<div class="page-section__box page-section__box_type_two">
 				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Все настройки в&nbsp;личном кабинете</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Все настройки в&nbsp;личном кабинете
+				</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Секретный ключ для проверки HTTP-уведомлений вы получаете<br class="br br--show-md" />
 					при регистрации в&nbsp;личном кабинете.
 				</p>
 				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Для всех событий доступны HTTP-уведомления</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Для всех событий доступны HTTP-уведомления
+				</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Проверка заказа, успешная оплата, возврат платежа, изменение подписки.
 				</p>
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
 					В&nbsp;CMS модулях обработка уведомлений <br class="br br--show-sm br--hide-md" />уже настроена
 				</h3>
-				<p class="text text_level_3 text_mgb_34">
+				<p class="text text_level_3 text_mgb_34 text_lh_28.on_screen_md">
 					Чек по&nbsp;умолчанию формируется из&nbsp;товарных позиций корзины.
 				</p>
 
@@ -280,10 +288,10 @@
 			</p>
 			<div class="page-section__box page-section__box_type_two">
 				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
 					Можно получать <br class="br br--show-xs br--hide-sm" />информацию об&nbsp;оплате по&nbsp;email
 				</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Вы&nbsp;будете получать информацию о&nbsp;платеже и&nbsp;дополнительные данные,<br
 						class="br br--show-lg"
 					/>
@@ -291,11 +299,11 @@
 				</p>
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
 					Вы&nbsp;сможете сразу узнавать кто, сколько и&nbsp;за&nbsp;что
 					<br class="br br--show-md br--hide-lg" />вам заплатил.
 				</h3>
-				<p class="text text_level_3 text_mgb_34">
+				<p class="text text_level_3 text_mgb_34 text_lh_28.on_screen_md">
 					Никаких доработок и&nbsp;настроек на&nbsp;сайте не&nbsp;требуется.
 				</p>
 				<BaseLink
@@ -327,8 +335,10 @@
 			</p>
 			<div class="page-section__box page-section__box_type_two">
 				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Для готовых CMS плагинов касса уже настроена</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Для готовых CMS плагинов касса уже настроена
+				</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Чек будет приходить клиентам на&nbsp;email со&nbsp;всеми товарными позициями.<br
 						class="br br--show-lg"
 					/>
@@ -336,18 +346,18 @@
 				</p>
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">Для лендингов касса уже настроена</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Для лендингов касса уже настроена</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Самая простая интеграция. Подходит для любого сайта без интернет-магазина. Клиентам приходит чек
 					с&nbsp;общей суммой заказа, без товарных позиций. <br class="br br--show-lg" />На&nbsp;ваш email
 					отправляются данные об&nbsp;оплате заказа и&nbsp;информация о&nbsp;клиенте.
 				</p>
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
-				<h3 class="text text_type_title.level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
 					Для интернет-магазинов вы&nbsp;решаете <br class="br br--show-sm br--hide-md" />как настроить кассу
 				</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
 					Вы&nbsp;можете настроить передачу товарных позиций в&nbsp;чек, просто добавьте
 					<BaseLink
 						href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
@@ -1037,6 +1047,10 @@ export default class DevelopersView extends Vue {
 
 	.page-section__container {
 		padding-top: 120px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 159px;
+		}
 	}
 
 	.page-section__row {
