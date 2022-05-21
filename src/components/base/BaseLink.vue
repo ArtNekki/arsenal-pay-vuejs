@@ -9,6 +9,7 @@
 			['link_color_' + color]: color,
 			['link_type_' + type]: type,
 			['link_in_' + linkIn]: linkIn,
+			['link_with_icon']: icon,
 		}"
 	>
 		<span>
@@ -30,6 +31,7 @@ import { Options, Vue } from "vue-class-component";
 		size: String,
 		color: String,
 		linkIn: String,
+		icon: Boolean,
 	},
 })
 export default class BaseLink extends Vue {}
@@ -57,14 +59,14 @@ export default class BaseLink extends Vue {}
 
 	span {
 		position: relative;
-		display: inline-block;
+		//display: inline-block;
 
 		&::before {
 			content: "";
 			position: absolute;
 			left: 0;
-			//bottom: -4px;
-			bottom: 0;
+			bottom: -4px;
+			//bottom: 0;
 			width: 100%;
 			height: 1px;
 			background-color: var(--color-text-secondary);
@@ -124,37 +126,47 @@ export default class BaseLink extends Vue {}
 		letter-spacing: inherit;
 	}
 
-	&_type_more {
-		--icon-size: 14px;
+	//&_type_more {
+	//	--icon-size: 14px;
+	//
+	//	line-height: var(--icon-size);
+	//	text-transform: uppercase;
+	//	user-select: none;
+	//
+	//	&::before {
+	//		display: none;
+	//	}
+	//
+	//	&::after {
+	//		content: "";
+	//		position: absolute;
+	//		top: 50%;
+	//		transform: translateY(-50%);
+	//		right: -21px;
+	//		width: var(--icon-size);
+	//		height: var(--icon-size);
+	//		display: inline-block;
+	//		//background: url("arrow-right--blue") no-repeat;
+	//	}
+	//
+	//	&.link_color_purple {
+	//		&::after {
+	//			//background: url("arrow-right--purple") no-repeat;
+	//		}
+	//
+	//		span::before {
+	//			background-color: var(--purple-dark-color);
+	//		}
+	//	}
+	//}
 
-		line-height: var(--icon-size);
+	&_with_icon {
 		text-transform: uppercase;
-		user-select: none;
 
-		&::before {
-			display: none;
-		}
-
-		&::after {
-			content: "";
+		:deep(svg) {
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			right: -21px;
-			width: var(--icon-size);
-			height: var(--icon-size);
-			display: inline-block;
-			//background: url("arrow-right--blue") no-repeat;
-		}
-
-		&.link_color_purple {
-			&::after {
-				//background: url("arrow-right--purple") no-repeat;
-			}
-
-			span::before {
-				background-color: var(--purple-dark-color);
-			}
 		}
 	}
 

@@ -122,17 +122,21 @@
 				</p>
 				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Деньги с&nbsp;карты не&nbsp;списываются</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<p class="text text_level_3 text_mgb_34">
 					Для тестирования оплаты используйте любую действующую карту.<br class="br br--show-lg" />
 					В&nbsp;тестовом режиме деньги с&nbsp;карты не&nbsp;списываются.
 				</p>
 				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#testirovanie"
 					:blank="true"
-					type="more"
+					:icon="true"
 					color="blue"
-					>Подробнее</BaseLink
 				>
+					Подробнее
+					<template v-slot:icon>
+						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+					</template>
+				</BaseLink>
 			</div>
 		</div>
 	</section>
@@ -166,7 +170,7 @@
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="blue" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">Виджет на&nbsp;отдельной странице</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<p class="text text_level_3 text_mgb_34">
 					Виджет будет открываться на&nbsp;отдельной странице, для этого просто вставьте ссылку на&nbsp;виджет
 					в&nbsp;том месте сайта, где у&nbsp;вас происходит переход к&nbsp;оплате.
 				</p>
@@ -174,10 +178,14 @@
 				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#platezhnyj-vidzhet"
 					:blank="true"
-					type="more"
+					:icon="true"
 					color="blue"
-					>Подробнее</BaseLink
 				>
+					Подробнее
+					<template v-slot:icon>
+						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+					</template>
+				</BaseLink>
 			</div>
 		</div>
 	</section>
@@ -218,7 +226,7 @@
 	<section class="page-section page-section_order_6 page-section_skew_no">
 		<div class="page-section__container">
 			<div class="page-section__icon">
-				<BaseIcon name="http-big" width="116" height="116" mods="purple" />
+				<BaseIcon name="http-big" width="116" height="116" color="purple" />
 			</div>
 			<h2 class="text text_type_title.level_1">HTTP-уведомления</h2>
 			<p class="text text_level_1 text_mgb_50">
@@ -242,17 +250,21 @@
 				<h3 class="text text_type_title.level_3">
 					В&nbsp;CMS модулях обработка уведомлений <br class="br br--show-sm br--hide-md" />уже настроена
 				</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<p class="text text_level_3 text_mgb_34">
 					Чек по&nbsp;умолчанию формируется из&nbsp;товарных позиций корзины.
 				</p>
 
 				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#http-uvedomleniya"
 					:blank="true"
-					type="more"
+					:icon="true"
 					color="blue"
-					>Подробнее</BaseLink
 				>
+					Подробнее
+					<template v-slot:icon>
+						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+					</template>
+				</BaseLink>
 			</div>
 		</div>
 	</section>
@@ -267,7 +279,7 @@
 				интернет-магазина.
 			</p>
 			<div class="page-section__box page-section__box_type_two">
-				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">
 					Можно получать <br class="br br--show-xs br--hide-sm" />информацию об&nbsp;оплате по&nbsp;email
 				</h3>
@@ -278,21 +290,25 @@
 					которые клиент укажет в&nbsp;платёжной форме.
 				</p>
 
-				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
+				<BaseIcon name="check-circle-large" width="37" height="37" color="green" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3">
 					Вы&nbsp;сможете сразу узнавать кто, сколько и&nbsp;за&nbsp;что
 					<br class="br br--show-md br--hide-lg" />вам заплатил.
 				</h3>
-				<p class="text text_level_3 text_mgb_40">
+				<p class="text text_level_3 text_mgb_34">
 					Никаких доработок и&nbsp;настроек на&nbsp;сайте не&nbsp;требуется.
 				</p>
 				<BaseLink
 					href="https://arsenalpay.ru/documentation/index.html#email-uvedomleniya"
 					:blank="true"
-					type="more"
+					:icon="true"
 					color="blue"
-					>Подробнее</BaseLink
 				>
+					Подробнее
+					<template v-slot:icon>
+						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+					</template>
+				</BaseLink>
 			</div>
 		</div>
 	</section>
@@ -347,7 +363,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_9 page-section_skew_no">
+	<section class="page-section page-section_order_9">
 		<div id="arsenalpay-api" class="page-section__container">
 			<div class="page-section__icon">
 				<BaseIcon name="api-big" width="116" height="116" color="purple" />
@@ -409,10 +425,13 @@
 					<BaseLink
 						href="https://arsenalpay.ru/documentation/index.html#api"
 						:blank="true"
-						type="more"
+						:icon="true"
 						color="blue"
-						>Все функции</BaseLink
-					>
+						>Все функции
+						<template v-slot:icon>
+							<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+						</template>
+					</BaseLink>
 				</div>
 			</div>
 		</div>
@@ -995,7 +1014,6 @@ export default class DevelopersView extends Vue {
 	background-color: var(--color-bg-blue-light);
 
 	.page-section__container {
-		padding-top: 0;
 		padding-bottom: 120px;
 
 		@include media-breakpoint-up(md) {
@@ -1006,6 +1024,10 @@ export default class DevelopersView extends Vue {
 
 .page-section_order_5 {
 	--bottom-space: 25px;
+
+	.page-section__container {
+		padding-top: 120px;
+	}
 
 	.page-section__row {
 		@include media-breakpoint-up(md) {
@@ -1018,6 +1040,14 @@ export default class DevelopersView extends Vue {
 	.page-section__col {
 		&:first-child {
 			margin-bottom: var(--bottom-space);
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 0;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: -5px;
 
 			@include media-breakpoint-up(md) {
 				margin-bottom: 0;
@@ -1138,9 +1168,8 @@ export default class DevelopersView extends Vue {
 	}
 
 	.page-section__link {
-		margin-top: 25px;
+		margin-top: 17px;
 		margin-left: 5px;
-		margin-bottom: 8px;
 	}
 }
 </style>
