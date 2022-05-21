@@ -95,6 +95,10 @@
     line-height: 30px;
     letter-spacing: -0.2px;
 
+    @include media-breakpoint-up(md) {
+      letter-spacing: -0.59px;
+    }
+
     &.text_lh_24 {
       line-height: 24px;
     }

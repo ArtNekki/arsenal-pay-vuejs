@@ -364,36 +364,56 @@
 				>
 			</p>
 			<div class="page-section__box page-section__box_type_two">
-				<BaseIcon name="settings-medium" width="74" height="62" mods="purple" />
+				<BaseIcon name="settings-medium" width="74" height="62" color="purple" bottom-space="sm" />
 
-				<h3 class="content-box__title">Основные функции API</h3>
-				<div class="page-section__row">
+				<h3 class="text text_type_title.level_3">Основные функции API</h3>
+				<div class="page-section__row page-section__row_type_one">
 					<div class="page-section__col">
-						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
-						<p class="text text_level_2 text_lh_32 text_mgb_no">Статус платежа</p>
-						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Статус платежа</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
 						<p class="text text_level_2 text_lh_32 text_mgb_no">Подтверждение холда</p>
 					</div>
 					<div class="page-section__col">
-						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
-						<p class="text text_level_2 text_lh_32 text_mgb_no">Отмена платежа</p>
-						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
-						<p class="text text_level_2 text_lh_32 text_mgb_no">Возврат платежа</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Отмена платежа</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Возврат платежа</p>
 					</div>
 					<div class="page-section__col">
-						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
-						<p class="text text_level_2 text_lh_32 text_mgb_no">Изменение подписки</p>
-						<BaseIcon name="check-list-small" width="48" height="38" color="pink" />
-						<p class="text text_level_2 text_lh_32 text_mgb_no">Просмотр чека</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Изменение подписки</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Просмотр чека</p>
 					</div>
 				</div>
-				<BaseLink
-					href="https://arsenalpay.ru/documentation/index.html#api"
-					:blank="true"
-					type="more"
-					color="blue"
-					>Все функции</BaseLink
-				>
+				<div class="page-section__row page-section__row_type_two">
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Статус платежа</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_2 text_lh_32 text_mgb_no">Подтверждение холда</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Отмена платежа</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Возврат платежа</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Изменение подписки</p>
+						<BaseIcon name="check-list-small" width="48" height="38" color="purple" />
+						<p class="text text_level_3 text_lh_32 text_mgb_no">Просмотр чека</p>
+					</div>
+				</div>
+				<div class="page-section__link">
+					<BaseLink
+						href="https://arsenalpay.ru/documentation/index.html#api"
+						:blank="true"
+						type="more"
+						color="blue"
+						>Все функции</BaseLink
+					>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -965,10 +985,98 @@ export default class DevelopersView extends Vue {
 		padding-top: 8px;
 		padding-bottom: 120px;
 
+		@include media-breakpoint-up(sm) {
+			align-content: center;
+		}
+
 		@include media-breakpoint-up(md) {
 			padding-top: 50px;
 			padding-bottom: 160px;
 		}
+	}
+
+	.page-section__row {
+		margin-top: 27px;
+		margin-left: -15px;
+
+		@include media-breakpoint-up(sm) {
+			margin-left: 25px;
+		}
+
+		@include media-breakpoint-up(md) {
+			display: grid;
+			grid-template-columns: repeat(2, 276px);
+			grid-column-gap: 10px;
+			justify-content: center;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-left: 0;
+			grid-template-columns: 249px 200px 243px;
+			grid-column-gap: 24px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-left: 68px;
+			grid-column-gap: 50px;
+		}
+
+		&_type_one {
+			@include media-breakpoint-up(md) {
+				display: none;
+			}
+
+			@include media-breakpoint-up(lg) {
+				display: grid;
+			}
+		}
+
+		&_type_two {
+			display: none;
+
+			@include media-breakpoint-up(md) {
+				display: grid;
+			}
+
+			@include media-breakpoint-up(lg) {
+				display: none;
+			}
+		}
+	}
+
+	.page-section__col {
+		margin-bottom: 22px;
+		display: grid;
+		grid-template-columns: 48px 200px;
+		grid-column-gap: 4px;
+		grid-auto-rows: 32px;
+
+		@include media-breakpoint-up(sm) {
+			justify-content: center;
+			justify-items: start;
+		}
+
+		@include media-breakpoint-up(md) {
+			grid-column-gap: 8px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: 48px 1fr;
+		}
+
+		svg.icon {
+			top: -2px;
+
+			@include media-breakpoint-up(sm) {
+				top: 2px;
+			}
+		}
+	}
+
+	.page-section__link {
+		margin-top: 25px;
+		margin-left: 5px;
+		margin-bottom: 8px;
 	}
 }
 </style>
