@@ -236,6 +236,10 @@
     margin-bottom: 16px;
   }
 
+  &.text_mgb_30 {
+    margin-bottom: 30px;
+  }
+
   &.text_mgb_34 {
     margin-bottom: 34px;
   }
@@ -636,19 +640,23 @@
   //}
 }
 
-div[class~="u_overflow_hidden.on_screen_md"] {
+[class~="u-overflow-hidden"] {
+  overflow: hidden;
+}
+
+[class~="u_overflow_hidden.on_screen_md"] {
   @include media-breakpoint-up(md) {
     overflow: hidden;
   }
 }
 
-div[class~="u-max-width.on_screen_md"] {
+[class~="u-max-width.on_screen_md"] {
   @include media-breakpoint-up(md) {
     width: 688px;
   }
 }
 
-div[class~="u-max-width.on_screen_lg"] {
+[class~="u-max-width.on_screen_lg"] {
   @include media-breakpoint-up(lg) {
     width: 840px;
   }

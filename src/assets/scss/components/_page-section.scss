@@ -283,6 +283,13 @@
         display: block;
       }
     }
+
+    &_skew_no {
+      &::before,
+      &::after {
+        transform: none;
+      }
+    }
   }
 
   &__row {

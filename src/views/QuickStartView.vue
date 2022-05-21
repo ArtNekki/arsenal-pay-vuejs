@@ -7,24 +7,28 @@
 
 			<h1 class="text text_type_title.level_1">Приём платежей без сайта</h1>
 			<div>
-				<p class="text text_level_1">
+				<p class="text text_level_1 text_ls_sm text_display_inline.on_screen_sm">
 					Вам больше не&nbsp;нужен свой сайт, чтобы принимать платежи. <br class="br br--show-md" />
 				</p>
-				<p class="text text_level_1">
+				<p class="text text_level_1 text_ls_sm text_display_inline.on_screen_sm">
 					Принимайте оплату где угодно&nbsp;&mdash; в&nbsp;любых соцсетях или месенджерах.
 				</p>
-				<p class="text text_level_1">
+				<p class="text text_level_1 text_ls_sm text_display_inline.on_screen_sm">
 					<br class="br br--show-lg" />Карты всех стран мира:
 					<br class="br br--show-xs br--hide-sm" />Visa, MasterCard, Мир, Apple Pay.
 				</p>
 			</div>
-			<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
+			<div class="page-section__button">
+				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
+			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_2">
 		<div class="page-section__container">
-			<BaseIcon name="rub-big" width="120" height="120" color="green" />
+			<div class="page-section__icon">
+				<BaseIcon name="rub-big" width="120" height="120" color="green" />
+			</div>
 			<h2 class="text text_type_title.level_1">Никаких расходов на&nbsp;сайт и&nbsp;кассу</h2>
 			<div>
 				<p class="text text_level_1">
@@ -32,96 +36,114 @@
 				</p>
 				<p class="text text_level_1">Экономия на&nbsp;сайте от&nbsp;20&nbsp;000&nbsp;₽&nbsp;в&nbsp;год.</p>
 			</div>
-			<BasePrompt color="green">
-				<p class="text text_in_prompt">
-					Не&nbsp;нужно покупать или брать в <br class="br br--show-xs br--hide-sm" />аренду свою онлайн
-					кассу.
-				</p>
-				<p class="text text_in_prompt">
-					Не&nbsp;нужно тратить время и&nbsp;деньги&nbsp;на разработку и&nbsp;поддержку своего сайта.
-				</p>
-				<p class="text text_in_prompt">
-					Не&nbsp;нужно тратить деньги на&nbsp;SSL сертификат и&nbsp;хостинг для сайта.
-				</p>
-			</BasePrompt>
+			<div class="page-section__prompt">
+				<BasePrompt color="green">
+					<p class="text text_in_prompt">
+						Не&nbsp;нужно покупать или брать в <br class="br br--show-xs br--hide-sm" />аренду свою онлайн
+						кассу.
+					</p>
+					<p class="text text_in_prompt">
+						Не&nbsp;нужно тратить время и&nbsp;деньги&nbsp;на разработку и&nbsp;поддержку своего сайта.
+					</p>
+					<p class="text text_in_prompt">
+						Не&nbsp;нужно тратить деньги на&nbsp;SSL сертификат и&nbsp;хостинг для сайта.
+					</p>
+				</BasePrompt>
+			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_3">
-		<div class="page-section__container">
-			<h2 class="text text_type_title.level_1">Быстрый старт платежей</h2>
-			<div class="">
-				<p class="text text_level_1">Минимум документов. Бесплатная онлайн касса.</p>
-				<p class="text text_level_1">
-					Платежи перечисляются на&nbsp;расчётный счёт юрлица, ИП&nbsp;или&nbsp;самозанятого.
-				</p>
-			</div>
-			<div class="page-section__box">
-				<BaseIcon name="rocket-medium" color="purple" width="46" height="64" />
-				<h3 class="text text_type_title.level_3">Простое подключение</h3>
-				<p class="text text_level_3">Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.</p>
+		<div class="u-overflow-hidden">
+			<div class="page-section__container">
+				<h2 class="text text_type_title.level_1">Быстрый старт платежей</h2>
+				<div class="">
+					<p class="text text_level_1">Минимум документов. Бесплатная онлайн касса.</p>
+					<p class="text text_level_1 text_mgb_60">
+						Платежи перечисляются на&nbsp;расчётный счёт юрлица, ИП&nbsp;или&nbsp;самозанятого.
+					</p>
+				</div>
+				<div class="page-section__box page-section__box_type_one u_overflow_hidden.on_screen_md">
+					<BaseIcon name="rocket-medium" color="purple" width="46" height="64" bottom-space="md" />
+					<h3 class="text text_type_title.level_3">Простое подключение</h3>
+					<p class="text text_level_3 text_mgb_60">
+						Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.
+					</p>
 
-				<BaseIcon name="kassa-medium" color="blue" />
-				<h3 class="text text_type_title.level_3">Онлайн касса бесплатно</h3>
-				<p class="text text_level_3">
-					Вам не&nbsp;нужно покупать или брать в&nbsp;аренду свою онлайн кассу.<br class="br br--show-lg" />
-					Все&nbsp;платежи проходят через
-					<a href="https://arsenalpay.ru/cashbox.html" class="link link--in-text">кассу&nbsp;ArsenalPay</a>
-					бесплатно.<br class="br br--show-lg" />
-					При&nbsp;каждой оплате фискальный чек отправляется через ОФД в&nbsp;налоговую.<br
-						class="br br--show-lg"
-					/>
-					Все&nbsp;чеки сохраняются в&nbsp;личном кабинете, их&nbsp;легко найти и&nbsp;проверить.
-				</p>
-				<BaseButton text-transform="normal" :full-width="true">
-					<template v-slot:icon>
-						<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
-					</template>
-					Пример фискального чека
-				</BaseButton>
-				<BaseChip view="pink">Бесплатные чеки по всем заказам</BaseChip>
+					<BaseIcon name="kassa-medium" color="blue" width="63" height="60" bottom-space="md" />
+					<h3 class="text text_type_title.level_3">Онлайн касса бесплатно</h3>
+					<p class="text text_level_3 text_mgb_no">
+						Вам не&nbsp;нужно покупать или брать в&nbsp;аренду свою онлайн кассу.<br
+							class="br br--show-lg"
+						/>
+						Все&nbsp;платежи проходят через
+						<BaseLink href="https://arsenalpay.ru/cashbox.html" link-in="text" :blank="true" color="blue"
+							>кассу&nbsp;ArsenalPay</BaseLink
+						>
+						бесплатно.<br class="br br--show-lg" />
+						При&nbsp;каждой оплате фискальный чек отправляется через ОФД в&nbsp;налоговую.<br
+							class="br br--show-lg"
+						/>Все&nbsp;чеки сохраняются в&nbsp;личном кабинете, их&nbsp;легко найти и&nbsp;проверить.
+					</p>
+					<div class="page-section__button">
+						<BaseButton text-transform="normal" :full-width="true">
+							<template v-slot:icon>
+								<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
+							</template>
+							Пример фискального чека
+						</BaseButton>
+					</div>
 
-				<h3 class="text text_type_title.level_3">Web-касса ArsenalPay</h3>
-				<p class="text text_level_3">
-					Пробивайте чеки по&nbsp;заказам, которые были оплачены наличными, переводом на&nbsp;карту или
-					перечислением на&nbsp;расчётный счёт. Вы&nbsp;легко пробьёте чек в&nbsp;личном кабинете меньше чем
-					за&nbsp;минуту. Чеки&nbsp;пробиваются с&nbsp;полной номенклатурой, в&nbsp;соответствии
-					с&nbsp;последними изменениями 54&#8209;ФЗ.
-					<b class="text text_color_pink">Чеки&nbsp;бесплатны&nbsp;и&nbsp;без&nbsp;комиссии.</b>
-					Сразу&nbsp;отправляются в&nbsp;налоговую и&nbsp;на&nbsp;email клиента. Теперь у&nbsp;вас будут чеки
-					по&nbsp;всем заказам, вне&nbsp;зависимости от&nbsp;способа оплаты.
-				</p>
+					<div class="page-section__box-wrap page-section__box-wrap_skew_no">
+						<BaseChip view="pink">Бесплатные чеки по всем заказам</BaseChip>
 
-				<BaseIcon name="rub-medium" color="green" width="53" height="53" />
-				<h3 class="text text_type_title.level_3">Платежи приходят на&nbsp;ваш расчётный счёт</h3>
-				<p class="text text_level_3">
-					Никаких комиссий&nbsp;&mdash; вывод на&nbsp;расчётный счёт бесплатный.
-					<br class="br br--show-lg" />Деньги&nbsp;перечисляются каждый день, минимальных сумм нет.<br
-						class="br br--show-lg"
-					/>
-					Деньги&nbsp;поступают на&nbsp;расчётный счёт юрлица, ИП&nbsp;или&nbsp;самозанятого в&nbsp;любой банк
-					РФ. Перевод&nbsp;происходит автоматически, самим выводить&nbsp;не&nbsp;нужно.
-				</p>
+						<h3 class="text text_type_title.level_3">Web-касса ArsenalPay</h3>
+						<p class="text text_level_3 text_mgb_60">
+							Пробивайте чеки по&nbsp;заказам, которые были оплачены наличными, переводом на&nbsp;карту
+							или перечислением на&nbsp;расчётный счёт. Вы&nbsp;легко пробьёте чек в&nbsp;личном кабинете
+							меньше чем за&nbsp;минуту. Чеки&nbsp;пробиваются с&nbsp;полной номенклатурой,
+							в&nbsp;соответствии с&nbsp;последними изменениями 54&#8209;ФЗ.
+							<b class="text text_color_pink text_weight_bold"
+								>Чеки&nbsp;бесплатны&nbsp;и&nbsp;без&nbsp;комиссии.</b
+							>
+							Сразу&nbsp;отправляются в&nbsp;налоговую и&nbsp;на&nbsp;email клиента. Теперь у&nbsp;вас
+							будут чеки по&nbsp;всем заказам, вне&nbsp;зависимости от&nbsp;способа оплаты.
+						</p>
+					</div>
 
-				<BaseIcon name="email-medium" color="pink" width="52" height="43" />
-				<h3 class="text text_type_title.level_3">Мгновенные сообщения об&nbsp;оплате</h3>
-				<p class="text text_level_3">
-					Уведомления о&nbsp;платежах приходят на&nbsp;ваш email и&nbsp;в&nbsp;личный кабинет.
-					<br class="br br--show-lg" />Вы&nbsp;сразу узнаете кто, сколько и&nbsp;за&nbsp;что&nbsp;оплатил.
-				</p>
-				<BaseIcon name="responsive-medium" color="purple" width="56" height="42" />
-				<h3 class="text text_type_title.level_3">Удобный личный кабинет</h3>
-				<p class="text text_level_3">
-					Контролируйте платежи на&nbsp;любом устройстве. <br class="br br--show-sm" />Просматривайте
-					статистику. Проверяйте чеки по&nbsp;каждому платежу.
-				</p>
+					<BaseIcon name="rub-medium" color="green" width="53" height="53" bottom-space="md" />
+					<h3 class="text text_type_title.level_3">Платежи приходят на&nbsp;ваш расчётный счёт</h3>
+					<p class="text text_level_3 text_mgb_60">
+						Никаких комиссий&nbsp;&mdash; вывод на&nbsp;расчётный счёт бесплатный.
+						<br class="br br--show-lg" />Деньги&nbsp;перечисляются каждый день, минимальных сумм нет.<br
+							class="br br--show-lg"
+						/>
+						Деньги&nbsp;поступают на&nbsp;расчётный счёт юрлица, ИП&nbsp;или&nbsp;самозанятого в&nbsp;любой
+						банк РФ. Перевод&nbsp;происходит автоматически, самим выводить&nbsp;не&nbsp;нужно.
+					</p>
+
+					<BaseIcon name="email-medium" color="pink" width="52" height="43" bottom-space="md" />
+					<h3 class="text text_type_title.level_3">Мгновенные сообщения об&nbsp;оплате</h3>
+					<p class="text text_level_3 text_mgb_60">
+						Уведомления о&nbsp;платежах приходят на&nbsp;ваш email и&nbsp;в&nbsp;личный кабинет.
+						<br class="br br--show-lg" />Вы&nbsp;сразу узнаете кто, сколько и&nbsp;за&nbsp;что&nbsp;оплатил.
+					</p>
+					<BaseIcon name="responsive-medium" color="purple" width="56" height="42" bottom-space="md" />
+					<h3 class="text text_type_title.level_3">Удобный личный кабинет</h3>
+					<p class="text text_level_3 text_mgb_60">
+						Контролируйте платежи на&nbsp;любом устройстве. <br class="br br--show-sm" />Просматривайте
+						статистику. Проверяйте чеки по&nbsp;каждому платежу.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="page-section page-section_order_4 page-section_type_cut">
 		<div class="page-section__container">
-			<BaseIcon name="pay-big" width="80" height="100" color="purple" />
+			<div class="page-section__icon">
+				<BaseIcon name="pay-big" width="80" height="100" color="purple" />
+			</div>
 			<h2 class="text text_type_title.level_1">Ваша страница оплаты</h2>
 			<div>
 				<p class="text text_level_1">
@@ -153,13 +175,13 @@
 					</p>
 
 					<h3 class="text text_type_title.level_3">Автоматическая email рассылка</h3>
-					<p class="text text_level_3">
+					<p class="text text_level_3 text_mgb_30">
 						Клиент получает письмо с&nbsp;доступом к&nbsp;контенту сразу после
 						<br class="br br--show-sm br--hide-lg" />оплаты. Вам&nbsp;больше не&nbsp;нужно самим отправлять
 						письма.
 					</p>
 
-					<BaseIcon name="security-medium" color="purple" />
+					<BaseIcon name="security-medium" color="purple" width="38" height="48" bottom-space="sm" />
 					<h3 class="text text_type_title.level_3">Безопасные платежи для любых устройств</h3>
 					<p class="text text_level_3">
 						Страница отвечает стандартам безопасности Visa&nbsp;и&nbsp;Mastercard. Оплачивать одинаково
@@ -173,37 +195,37 @@
 	<section class="page-section page-section_order_5">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Удобные платёжные функции</h2>
-			<p class="text text_level_1">
+			<p class="text text_level_1 text_mgb_60">
 				Быстрое выставление счёта. Возврат платежа в&nbsp;любой момент. Холдирование&nbsp;платежей.
 			</p>
 			<div class="page-section__box">
-				<BaseIcon name="check-medium" color="pink" width="52" height="46" />
+				<BaseIcon name="check-medium" color="pink" width="52" height="46" bottom-space="md" />
 				<h3 class="text text_type_title.level_3">Выставление счёта</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_60">
 					Счёт выставляется за&nbsp;минуту, просто укажите сумму и&nbsp;нужную вам информацию о&nbsp;заказе.
 					Отправьте клиенту ссылку на&nbsp;оплату счёта. Вам придёт уведомление как&nbsp;только счёт будет
 					оплачен.
 				</p>
 
-				<BaseIcon name="apple-pay-medium" color="black" width="68" height="45" />
-				<h3 class="text text_type_title.level_3">Apple Pay</h3>
-				<p class="text text_level_3">
-					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес
-					доставки и телефон. Для безопасности платёж подтверждается<br class="br br--show-lg" />
-					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.<br class="br br--show-lg" />
-					Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.
-				</p>
+				<!--				<BaseIcon name="apple-pay-medium" color="black" width="68" height="45" bottom-space="md" />-->
+				<!--				<h3 class="text text_type_title.level_3">Apple Pay</h3>-->
+				<!--				<p class="text text_level_3 text_mgb_60">-->
+				<!--					Apple Pay упростит и ускорит оплату для ваших клиентов. Им не нужно вводить данные карты, адрес-->
+				<!--					доставки и телефон. Для безопасности платёж подтверждается<br class="br br&#45;&#45;show-lg" />-->
+				<!--					отпечатком пальца — Touch ID, или через распознавание лица — Face ID.<br class="br br&#45;&#45;show-lg" />-->
+				<!--					Отдельно настраивать Apple Pay вам не придётся, все заработает сразу.-->
+				<!--				</p>-->
 
-				<BaseIcon name="refund-medium" color="purple" width="52" height="52" />
+				<BaseIcon name="refund-medium" color="purple" width="52" height="52" bottom-space="md" />
 				<h3 class="text text_type_title.level_3">Возврат платежа</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_60">
 					Вернуть деньги на&nbsp;карту клиента вы можете в&nbsp;любой момент в&nbsp;личном кабинете. Вернуть
 					можно как полную сумму, так и&nbsp;частичную. Комиссия за&nbsp;возврат не&nbsp;взимается.
 				</p>
 
-				<BaseIcon name="hold-medium" color="blue" width="50" height="50" />
+				<BaseIcon name="hold-medium" color="cyan" width="50" height="50" bottom-space="md" />
 				<h3 class="text text_type_title.level_3">Холдирование платежей</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_60">
 					Клиент совершает обычную оплату, но&nbsp;деньги с&nbsp;его карты не&nbsp;списываются,
 					а&nbsp;временно &laquo;замораживаются&raquo;. Такой способ оплаты даёт вам возможность проверить
 					наличие товара или услуги, и&nbsp;только после этого списать нужную сумму с&nbsp;карты клиента.
@@ -254,23 +276,42 @@
 
 	<section class="page-section page-section_order_7">
 		<div class="page-section__container">
-			<BaseIcon name="rub-big" width="120" height="120" color="green" />
+			<div class="page-section__icon">
+				<BaseIcon name="rub-big" width="120" height="120" color="green" />
+			</div>
 			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
 			<p class="text text_level_1">
-				Вы&nbsp;платите только за&nbsp;успешные платежи и&nbsp;экономите 50&nbsp;000&nbsp;₽ в&nbsp;год.<br
-					class="br br--show-lg"
-				/>
-				<b class="text text_color_pink">Бесплатные опции</b>&nbsp;&mdash; своя&nbsp;страница оплаты, онлайн
-				касса, выставление счёта, возврат платежа, холдирование платежей, кнопки WhatsApp, Telegram, Viber,
-				важные ссылки, автоматическая email&nbsp;рассылка.
+				Вы&nbsp;платите только за&nbsp;успешные платежи и&nbsp;экономите 50&nbsp;000&nbsp;₽ в&nbsp;год.
+				<br class="br br--show-lg" />
+				<b class="text text_color_pink text_weight_bold text_display_inline">Бесплатные опции</b>&nbsp;&mdash;
+				своя&nbsp;страница оплаты, онлайн касса, выставление счёта, возврат платежа, холдирование платежей,
+				кнопки WhatsApp, Telegram, Viber, важные ссылки, автоматическая email&nbsp;рассылка.
 			</p>
-			<div class="rate">
-				<div class="rate__item">
-					<!--					{{{ rate-box count="3" text="Комиссия за успешный платёж <br class='br br&#45;&#45;show-xs' /><b>от ArsenalPay</b>" }}}-->
-					<!--					{{{ rate-box count="2" prefix="+" text="Комиссия за успешный платёж <br class='br br&#45;&#45;show-xs' /><b>от Visa, Mastercard, Мир, Apple Pay</b>" }}}-->
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<div class="page-section__rate">
+						<BaseRateBox count="3">
+							<p class="text text_in_rate-box">
+								Комиссия за успешный платёж <br class="br br--show-xs" /><b>от ArsenalPay</b>
+							</p>
+						</BaseRateBox>
+					</div>
+					<div class="page-section__rate">
+						<BaseRateBox count="2" prefix="+">
+							<p class="text text_in_rate-box">
+								Комиссия за успешный платёж <br class="br br--show-xs" /><b
+									>от Visa, Mastercard, Мир, Apple Pay</b
+								>
+							</p>
+						</BaseRateBox>
+					</div>
 				</div>
-				<div class="rate__item">
-					<!--					{{{ note text='["У нас нет дополнительных комиссий и звездочек в договоре."]' mods="no-mgt, w-full" textMods="sm-center, lg" }}}-->
+				<div class="page-section__col">
+					<BasePrompt color="green">
+						<p class="text text_in_prompt text_size_lg text_align_center.on_screen_sm">
+							У нас нет дополнительных комиссий и звездочек в договоре.
+						</p>
+					</BasePrompt>
 				</div>
 			</div>
 		</div>
@@ -292,12 +333,18 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_9">
+	<section class="page-section page-section_order_9 page-section_skew_no-bottom">
 		<div class="page-section__container">
-			<h2 class="page-section__title">Вопросы и ответы</h2>
-			<div class="page-section__box">
-				<h3 class="text text_type_title.level_3">Почему можно не&nbsp;иметь свой интернет магазин?</h3>
-				<p class="text text_level_3">
+			<h2
+				class="text text_type_title.level_1 text_align_center.on_screen_sm text_mgb_42 text_mgb_52.on_screen_md"
+			>
+				Вопросы и ответы
+			</h2>
+			<div class="page-section__shift">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Почему можно не&nbsp;иметь свой интернет магазин?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Мы&nbsp;создали страницу оплаты, с&nbsp;которой вам не&nbsp;обязательно иметь интернет магазин.<br
 						class="br br--show-lg"
 					/>
@@ -308,25 +355,29 @@
 					требованиям безопасности.
 				</p>
 
-				<h3 class="text text_type_title.level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
 					Почему можно не&nbsp;покупать и&nbsp;не&nbsp;брать в&nbsp;аренду онлайн кассу?
 				</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Все платежи проходят через онлайн кассу ArsenalPay. Мы&nbsp;выступаем как агент и&nbsp;отправляем
 					чеки от&nbsp;имени нашего сервиса приема платежей ArsenalPay. В&nbsp;чеке указывается ваш
 					ИНН&nbsp;ИП&nbsp;или юрлица, и&nbsp;все необходимые данные, в&nbsp;соответствии с&nbsp;законом
 					54-ФЗ.
 				</p>
 
-				<h3 class="text text_type_title.level_3">Где и&nbsp;как я&nbsp;смогу принимать платежи?</h3>
-				<p class="text text_level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Где и&nbsp;как я&nbsp;смогу принимать платежи?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Вы&nbsp;можете продавать на&nbsp;любой площадке&nbsp;&mdash; на&nbsp;своем сайте, в&nbsp;cоцсетях
 					или в&nbsp;WhatsApp, Telegram, Viber. Договаривайтесь с&nbsp;клиентом об&nbsp;оплате
 					и&nbsp;присылайте ему ссылку на&nbsp;вашу страницу оплаты. Клиент легко и&nbsp;быстро оплатит заказ.
 				</p>
 
-				<h3 class="text text_type_title.level_3">Действительно&nbsp;ли сервис без&nbsp;абонентской платы?</h3>
-				<p class="text text_level_3">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					Действительно&nbsp;ли сервис без&nbsp;абонентской платы?
+				</h3>
+				<p class="text text_level_3 text_mgb_42.on_screen_md">
 					Мы&nbsp;предоставляем все функции сервиса бесплатно. Вы&nbsp;оплачиваете только комиссию
 					за&nbsp;платежи, никакой абонентской платы мы&nbsp;не&nbsp;берем. Тариф всегда фиксированный
 					и&nbsp;указан в&nbsp;договоре, никаких скрытых комиссий у&nbsp;нас нет.
@@ -360,7 +411,7 @@ import BaseLink from "@/components/base/BaseLink.vue";
 
 @Options({
 	components: {
-		// TheReviewsSlider,
+		TheReviewsSlider,
 		BaseReviewCard,
 		BaseNotice,
 		BaseButton,
@@ -422,12 +473,20 @@ export default class TravelView extends Vue {
 <style scoped lang="scss">
 .page-section_order_1 {
 	.page-section__container {
-		padding-top: 52px;
+		padding-top: 50px;
 		padding-bottom: 222px;
 
 		@include media-breakpoint-up(md) {
 			padding-top: 62px;
 			padding-bottom: 200px;
+		}
+	}
+
+	.page-section__button {
+		margin-top: 20px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 36px;
 		}
 	}
 }
@@ -444,17 +503,35 @@ export default class TravelView extends Vue {
 			padding-bottom: 245px;
 		}
 	}
+
+	.page-section__prompt {
+		margin-top: 16px;
+	}
 }
 
 .page-section_order_3 {
 	.page-section__container {
 		padding-top: 40px;
-		padding-bottom: 230px;
+		padding-bottom: 170px;
 
 		@include media-breakpoint-up(md) {
 			padding-top: 81px;
 			padding-bottom: 270px;
 		}
+	}
+
+	.page-section__box-wrap {
+		margin-top: 80px;
+		margin-bottom: 80px;
+		padding-top: 80px;
+		padding-bottom: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.page-section__button {
+		margin-top: 22px;
 	}
 }
 
@@ -477,6 +554,32 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 147px;
 		}
+	}
+
+	.page-section__row {
+		margin-top: 22px;
+	}
+
+	.page-section__col {
+		&:first-child {
+			margin-bottom: 50px;
+
+			picture.img {
+				--border-radius-top: 50px;
+				--border-radius-bottom: 36px;
+
+				height: 850px;
+				border-radius: var(--border-radius-top) var(--border-radius-top) var(--border-radius-bottom)
+					var(--border-radius-bottom);
+				box-shadow: var(--box-shadow-purple-xl);
+			}
+		}
+
+		//&:last-child {
+		//	svg.icon {
+		//		margin-bottom: 0;
+		//	}
+		//}
 	}
 }
 
@@ -513,6 +616,10 @@ export default class TravelView extends Vue {
 			overflow: unset;
 		}
 	}
+
+	.page-section__image {
+		margin-top: 15px;
+	}
 }
 
 .page-section_order_7 {
@@ -529,6 +636,57 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(lg) {
 			padding-top: 42px;
 			padding-bottom: 225px;
+		}
+	}
+
+	.page-section__row {
+		margin-top: 15px;
+		max-width: 820px;
+
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-content: center;
+			justify-items: start;
+			grid-column-gap: 60px;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin-top: 35px;
+		}
+
+		.page-section__col {
+			&:first-child {
+				margin-bottom: 42px;
+
+				@include media-breakpoint-up(md) {
+					margin-bottom: 28px;
+					padding-left: 58px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 0;
+					padding-left: 46px;
+				}
+			}
+
+			&:last-child {
+				text-align: center;
+
+				@include media-breakpoint-up(md) {
+					padding-top: 25px;
+				}
+			}
+		}
+	}
+
+	.page-section__rate {
+		&:first-child {
+			margin-bottom: 24px;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 19px;
+			}
 		}
 	}
 }
@@ -548,14 +706,22 @@ export default class TravelView extends Vue {
 }
 
 .page-section_order_9 {
+	padding-top: 0;
+
 	.page-section__container {
-		margin-top: -70px;
-		padding-top: 0;
+		padding-top: 60px;
 		padding-bottom: 95px;
+		align-items: start;
+		text-align: left;
 
 		@include media-breakpoint-up(md) {
-			margin-top: -128px;
 			padding-bottom: 80px;
+		}
+	}
+
+	.page-section__shift {
+		@include media-breakpoint-up(xl) {
+			margin-left: 71px;
 		}
 	}
 }

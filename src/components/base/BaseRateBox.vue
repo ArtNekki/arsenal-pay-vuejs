@@ -66,8 +66,8 @@ export default class BaseRateBox extends Vue {}
 
 			&[data-prefix]::before {
 				content: attr(data-prefix);
-				position: relative;
-				//left: -38.4px;
+				position: absolute;
+				left: -38.4px;
 				display: inline-block;
 			}
 		}
