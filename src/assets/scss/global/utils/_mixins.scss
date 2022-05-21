@@ -212,13 +212,13 @@
   }
 
   @include media-breakpoint-up(lg) {
-    //max-width: var(--container-width-lg);
+    max-width: var(--container-width-lg);
     //max-width: 1042px;
   }
 
   @include media-breakpoint-up(xl) {
     max-width: var(--container-width-xl);
-    //max-width: 1042px;
+    max-width: 1042px;
   }
 
   @include media-breakpoint-up(xxl) {
@@ -355,4 +355,10 @@
   @include media-breakpoint-up(lg) {
     //align-self: flex-start;
   }
+}
+
+@mixin content-center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

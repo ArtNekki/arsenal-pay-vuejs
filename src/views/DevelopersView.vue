@@ -3,14 +3,14 @@
 		class="page-section page-section_order_1 page-section_type_cut page-section_skew_no-top page-section_skew_inverse"
 	>
 		<div class="page-section__container">
-			<div class="page-section__notice">
+			<div class="page-section__notice u-shift-left.on_screen_xl">
 				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 			</div>
-			<h1 class="text text_type_title.level_1">Разработчикам</h1>
-			<p class="text text_level_1 text_ls_sm">
+			<h1 class="text text_type_title.level_1 u-shift-left.on_screen_xl">Разработчикам</h1>
+			<p class="text text_level_1 text_ls_sm u-shift-left.on_screen_xl">
 				Готовые CMS плагины, виджет оплаты для интернет-магазинов и&nbsp;лендингов.
 			</p>
-			<div class="page-section__button">
+			<div class="page-section__button u-shift-left.on_screen_xl">
 				<BaseButton href="https://arsenalpay.ru/dashboard/registration-type">Подключить</BaseButton>
 			</div>
 			<div class="page-section__row">
@@ -30,8 +30,8 @@
 					</p>
 
 					<BaseIcon name="security-medium" color="pink" width="38" height="48" />
-					<h3 class="text text_type_title.level_3">Безопасность</h3>
-					<p class="text text_level_3">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Безопасность</h3>
+					<p class="text text_level_3 text_lh_28.on_screen_md">
 						Безопасная обработка данных карт <br class="br br--show-sm" />по&nbsp; стандарту
 						PCI DSS 3.2 level 1.
 					</p>
@@ -53,7 +53,7 @@
 					</p>
 				</div>
 				<div class="page-section__col page-section__col_type_tabs">
-					<BaseImage src="developers-page/widget-tabs" :breakpoints="{ sm: true }"></BaseImage>
+					<BaseImage src="developers-page/widget-tabs" :breakpoints="{ xs: true, sm: true }"></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<BaseIcon name="num-two" width="37" height="37" color="purple" bottom-space="sm" />
@@ -66,7 +66,7 @@
 					</p>
 				</div>
 				<div class="page-section__col page-section__col_type_fields">
-					<BaseImage src="developers-page/widget-fields" :breakpoints="{ sm: true }"></BaseImage>
+					<BaseImage src="developers-page/widget-fields" :breakpoints="{ xs: true, sm: true }"></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<BaseIcon name="num-three" width="37" height="37" color="purple" bottom-space="sm" />
@@ -77,7 +77,7 @@
 						курсора на&nbsp;следующее поле. <br class="br br--show-xs" />Определение платёжной системы.
 						<br class="br br--show-xs" />Определение операторов сотовой связи.
 					</p>
-					<div style="margin-top: 25px">
+					<div style="margin-top: 8px">
 						<BaseLink href="#" type="more" color="purple">
 							Посмотреть виджет
 							<template v-slot:icon>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 				<div class="page-section__col page-section__col_type_card">
-					<BaseImage src="developers-page/widget-card" :breakpoints="{ sm: true }"></BaseImage>
+					<BaseImage src="developers-page/widget-card" :breakpoints="{ xs: true, sm: true }"></BaseImage>
 				</div>
 			</div>
 		</div>
@@ -676,20 +676,45 @@ export default class DevelopersView extends Vue {
 
 		@include media-breakpoint-up(md) {
 			padding-top: 52px;
-			padding-bottom: 240px;
+			padding-bottom: 217px;
 		}
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 62px;
-			padding-bottom: 210px;
+			padding-bottom: 148px;
 		}
 	}
 
 	.page-section__row {
 		margin-top: 80px;
 
+		@include media-breakpoint-up(md) {
+			margin-top: 100px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-left: 20px;
+			display: grid;
+			grid-template-columns: 348px 380px;
+			grid-column-gap: 72px;
+			justify-content: center;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-left: 165px;
+			grid-template-columns: 348px 1fr;
+			grid-column-gap: 100px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-left: 127px;
+			grid-column-gap: 139px;
+		}
+
 		.page-section__col {
 			&:first-child {
+				@include content-center();
+
 				margin-bottom: 90px;
 
 				picture {
@@ -703,14 +728,36 @@ export default class DevelopersView extends Vue {
 					box-sizing: border-box;
 					box-shadow: var(--box-shadow-purple-xl);
 					background-color: var(--color-bg-white);
+					overflow: hidden;
+
+					@include media-breakpoint-up(sm) {
+						width: 348px;
+						height: 502px;
+					}
 				}
 			}
 
 			&:last-child {
+				@include media-breakpoint-up(lg) {
+					padding-top: 82px;
+					align-items: start;
+					text-align: left;
+				}
+
 				& > svg.icon {
 					margin-bottom: 16px;
+
+					@include media-breakpoint-up(md) {
+						margin-bottom: 12px;
+					}
 				}
 			}
+		}
+	}
+
+	.page-section__button {
+		@include media-breakpoint-up(md) {
+			max-width: 304px;
 		}
 	}
 }
@@ -721,12 +768,13 @@ export default class DevelopersView extends Vue {
 		padding-bottom: 220px; //165
 
 		@include media-breakpoint-up(sm) {
-			padding-top: 50px;
+			padding-top: 41px;
 			padding-bottom: 159px;
 		}
 
 		@include media-breakpoint-up(md) {
-			padding-bottom: 228px;
+			padding-top: 50px;
+			padding-bottom: 215px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -746,6 +794,7 @@ export default class DevelopersView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
+			//left: -13px;
 			display: grid;
 			grid-template-columns: minmax(425px, 1fr) minmax(410px, 1fr);
 			align-items: unset;
@@ -754,6 +803,7 @@ export default class DevelopersView extends Vue {
 		}
 
 		@media (min-width: 1000px) {
+			left: 0;
 			grid-template-columns: minmax(410px, 1fr) minmax(386px, 1fr);
 		}
 
@@ -767,6 +817,14 @@ export default class DevelopersView extends Vue {
 		}
 
 		.page-section__col {
+			display: flex;
+			flex-direction: column;
+
+			@include media-breakpoint-up(lg) {
+				align-items: start;
+				text-align: left;
+			}
+
 			&[class*="type"] {
 				position: relative;
 				z-index: var(--layer-2);
@@ -791,6 +849,11 @@ export default class DevelopersView extends Vue {
 				@include media-breakpoint-up(xxl) {
 					right: -65px;
 				}
+
+				:deep picture.img img {
+					width: 100%;
+					height: auto;
+				}
 			}
 
 			&.page-section__col_type_tabs {
@@ -810,11 +873,11 @@ export default class DevelopersView extends Vue {
 
 				@include media-breakpoint-up(sm) {
 					margin-top: 30px;
-					margin-bottom: 20px;
+					margin-bottom: 18px;
 				}
 
 				@include media-breakpoint-up(md) {
-					margin-bottom: 50px;
+					margin-bottom: 49px;
 				}
 
 				@include media-breakpoint-up(lg) {
@@ -825,7 +888,7 @@ export default class DevelopersView extends Vue {
 			&.page-section__col_type_fields {
 				@include media-breakpoint-only(xs) {
 					margin-top: 42px;
-					margin-bottom: 82px;
+					margin-bottom: 80px;
 					display: flex;
 					flex-direction: column;
 					width: 100%;
@@ -834,11 +897,11 @@ export default class DevelopersView extends Vue {
 
 				@include media-breakpoint-up(sm) {
 					margin-top: 30px;
-					margin-bottom: 70px;
+					margin-bottom: 68px;
 				}
 
 				@include media-breakpoint-up(md) {
-					margin-bottom: 80px;
+					margin-bottom: 78px;
 				}
 
 				@include media-breakpoint-up(lg) {
@@ -849,6 +912,7 @@ export default class DevelopersView extends Vue {
 			&.page-section__col_type_card {
 				@include media-breakpoint-only(xs) {
 					margin-top: 54px;
+					padding-top: 4px;
 					margin-bottom: 0;
 					width: 100%;
 					max-width: 320px;
@@ -878,10 +942,6 @@ export default class DevelopersView extends Vue {
 					margin: 60px 0 0 0;
 				}
 			}
-
-			//&:nth-child(odd) {
-			//	border: 1px solid green;
-			//}
 		}
 	}
 }
@@ -892,6 +952,10 @@ export default class DevelopersView extends Vue {
 	.page-section__container {
 		padding-top: 40px;
 		padding-bottom: 230px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 51px;
+		}
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 54px;

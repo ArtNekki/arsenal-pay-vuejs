@@ -649,3 +649,9 @@ div[class~="u-max-width.on_screen_lg"] {
     width: 840px;
   }
 }
+
+[class~="u-shift-left.on_screen_xl"] {
+  @include media-breakpoint-up(xl) {
+    margin-left: -41px;
+  }
+}
