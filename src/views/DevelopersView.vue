@@ -810,7 +810,7 @@ export default class DevelopersView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 105px;
-			padding-bottom: 232px;
+			padding-bottom: 185px;
 			overflow: hidden;
 		}
 	}
@@ -998,7 +998,7 @@ export default class DevelopersView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 54px;
-			padding-bottom: 200px;
+			padding-bottom: 285px;
 		}
 
 		@include media-breakpoint-up(xl) {
@@ -1019,7 +1019,7 @@ export default class DevelopersView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
-			padding-top: 140px;
+			padding-top: 56px;
 		}
 
 		@include media-breakpoint-up(xl) {
