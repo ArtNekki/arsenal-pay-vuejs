@@ -77,11 +77,11 @@
 						курсора на&nbsp;следующее поле. <br class="br br--show-xs" />Определение платёжной системы.
 						<br class="br br--show-xs" />Определение операторов сотовой связи.
 					</p>
-					<div style="margin-top: 8px">
-						<BaseLink href="#" type="more" color="purple">
+					<div style="margin-top: 16px">
+						<BaseLink :icon="true" color="purple">
 							Посмотреть виджет
 							<template v-slot:icon>
-								<!--							<BaseIcon name="chevron-right" width="48" height="38"></BaseIcon>-->
+								<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
 							</template>
 						</BaseLink>
 					</div>
@@ -363,7 +363,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_9">
+	<section class="page-section page-section_order_9 page-section_skew_no-bottom">
 		<div id="arsenalpay-api" class="page-section__container">
 			<div class="page-section__icon">
 				<BaseIcon name="api-big" width="116" height="116" color="purple" />
@@ -775,6 +775,8 @@ export default class DevelopersView extends Vue {
 	}
 
 	.page-section__button {
+		align-self: center;
+
 		@include media-breakpoint-up(md) {
 			max-width: 304px;
 		}

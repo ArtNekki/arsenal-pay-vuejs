@@ -137,6 +137,7 @@
 
   &__notice {
     margin: 14px 0 26px 0;
+    align-self: center;
     z-index: var(--layer-2);
 
     @include media-breakpoint-up(md) {
