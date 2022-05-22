@@ -323,7 +323,7 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_7">
+	<section class="page-section page-section_order_7 page-section_type_reviews">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Отзывы наших клиентов</h2>
 			<TheReviewsSlider :reviews="reviews" />
