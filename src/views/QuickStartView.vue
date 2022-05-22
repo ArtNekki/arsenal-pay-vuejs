@@ -349,16 +349,17 @@
 		</div>
 	</section>
 
-	<section class="page-section page-section_order_8">
+	<section class="page-section page-section_order_8 page-section_type_reviews">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Отзывы наших клиентов</h2>
 			<p class="text text_level_1">
 				Больше отзывов в&nbsp;нашем
-				<BaseLink href="https://www.instagram.com/arsenal_pay/" :blank="true" link-in="text"
+				<BaseLink href="https://www.instagram.com/arsenal_pay/" :blank="true" link-in="text" color="blue"
 					>Instagram*.</BaseLink
 				>
 				<br class="br br--show-xs" />Посмотрите
-				<BaseLink href="https://arsenalpay.ru/pay/" link-in="text">страницы оплаты</BaseLink> клиентов.
+				<BaseLink href="https://arsenalpay.ru/pay/" link-in="text" color="blue">страницы оплаты</BaseLink>
+				клиентов.
 				<a href="" class="link link--in-text"></a>
 			</p>
 			<TheReviewsSlider :reviews="reviews" />
@@ -461,7 +462,7 @@ export default class QuickstartView extends Vue {
 		{
 			src: "logo-clo-store",
 			name: "@5clo_store",
-			title: "<span style='display: inline-block;margin-right: 8px;'>🌳</span> Магазин экологичных игрушек для детей. Вязаные и деревянные игрушки.",
+			title: "<span style='display: inline-block;margin-right: 12px;'>🌳</span> Магазин экологичных игрушек для детей. Вязаные и деревянные игрушки.",
 			text:
 				"Спасибо ArsenalPay за удобный сервис, который можно использовать где угодно.\n" +
 				"У меня несколько аккаунтов в разных соцсетях и нет сайта. Все время уходит на развитие брэнда, на сайт времени совсем не остается.\n" +
@@ -474,7 +475,7 @@ export default class QuickstartView extends Vue {
 		{
 			src: "logo-toko",
 			name: "@tokoshopdecor",
-			title: "<span style='display: inline-block;margin-right: 8px;'>🌿</span> Магазин декора — уютные вещи ручной работы, рождённые на островах Индонезии.",
+			title: "<span style='display: inline-block;margin-right: 12px;'>🌿</span> Магазин декора — уютные вещи ручной работы, рождённые на островах Индонезии.",
 			text:
 				"Нашим клиентам не всегда удобно переводить на карту, тем более с комиссией. Проще пользоваться кредитной картой,\n" +
 				"          а теперь ещё есть возможность получать ОФД чек, для подтверждения покупки и предъявления в бухгалтерию (иногда у нас поступали\n" +
@@ -488,7 +489,7 @@ export default class QuickstartView extends Vue {
 		{
 			src: "logo-marussia",
 			name: "@marussia_italia",
-			title: "<span style='display: inline-block;margin-right: 8px;'>🇮🇹</span> Обувь и аксессуары из Италии.",
+			title: "<span style='display: inline-block;margin-right: 12px;'>🇮🇹</span> Обувь и аксессуары из Италии.",
 			text:
 				"Мы продаём итальянскую обувь высокого качества в Инстаграм*, наш магазин популярен и мы хотим соответсвовать ожиданиям наших клиентов.\n" +
 				"          Онлайн оплата с чеками — это то, что нам было нужно, но в итоге мы получили даже больше. На странице с оплатой можно разместить свои ссылки и кнопку перехода в WhatsApp, очень удобно для клиентов.\n" +
@@ -804,7 +805,7 @@ export default class QuickstartView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 42px;
-			padding-bottom: 242px;
+			padding-bottom: 243px;
 		}
 	}
 
