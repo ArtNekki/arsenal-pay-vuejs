@@ -6,7 +6,14 @@
 		</div>
 		<b class="text text_level_3 text_increase_no.on_screen_md text_weight_bold text_mgb_14" v-html="data.title"></b>
 		<p class="text text_level_3 text_increase_no.on_screen_md text_mgb_no" v-html="data.text"></p>
-		<BaseLink v-if="data?.link" :href="data?.link?.href">{{ data?.link?.text }}</BaseLink>
+		<div v-if="data?.link" class="review-card__link">
+			<BaseLink :href="data?.link?.href" :blank="true" :icon="true" color="blue">
+				{{ data?.link?.text }}
+				<template v-slot:icon>
+					<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+				</template>
+			</BaseLink>
+		</div>
 	</article>
 </template>
 
@@ -14,6 +21,7 @@
 import { Options, Vue } from "vue-class-component";
 import BaseImage from "./BaseImage.vue";
 import BaseLink from "@/components/base/BaseLink.vue";
+import BaseIcon from "./BaseIcon.vue";
 
 @Options({
 	props: {
@@ -30,6 +38,7 @@ import BaseLink from "@/components/base/BaseLink.vue";
 	},
 	components: {
 		BaseImage,
+		BaseIcon,
 		BaseLink,
 	},
 })
@@ -71,20 +80,18 @@ export default class BaseReviewCard extends Vue {}
 		}
 	}
 
+	&__link {
+		margin-top: 14px;
+
+		:deep(.link) span {
+			font-size: 14.4px;
+		}
+	}
+
 	:deep(i) {
+		display: inline-block;
 		font-size: 19px;
 		font-style: normal;
 	}
-
-	//&__text {
-	//	margin: 14px 0 23px 0;
-	//	font-size: 15.2px;
-	//	line-height: 24px;
-	//	letter-spacing: -0.3px;
-	//
-	//	&:last-child {
-	//		margin-bottom: 0;
-	//	}
-	//}
 }
 </style>

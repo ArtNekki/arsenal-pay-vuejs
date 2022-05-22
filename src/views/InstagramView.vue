@@ -462,7 +462,7 @@
 			</div>
 		</section>
 
-		<section class="page-section page-section_order_12 page-section_skew_no-bottom page-section_type_slider">
+		<section class="page-section page-section_order_12 page-section_skew_no-bottom page-section_type_reviews">
 			<div class="page-section__container">
 				<h2 class="text text_type_title.level_1">Отзывы наших клиентов</h2>
 				<p class="text text_level_1">
@@ -531,7 +531,7 @@ export default class InstagramView extends Vue {
 		{
 			src: "logo-olgkosmetolog",
 			name: "@olgkosmetolog",
-			title: "<span style='display: inline-block;margin-right: 11px;'>👩</span>Косметолог Ольга Петрунина<br /><span style='display: inline-block;margin-right: 11px;'>🏆</span>Косметолог года 2018",
+			title: "<i style='margin-right: 12px;'>👩</i>Косметолог Ольга Петрунина<br /><i style='margin-right: 12px;'>🏆</i>Косметолог года 2018",
 			text:
 				"Мои подписчики со&nbsp;всего мира смогли купить чек лист с&nbsp;обзором средств по&nbsp;домашнему уходу с&nbsp;помощью\n" +
 				"ArsenalPay. Нам очень быстро настроили email рассылку, все работало автоматически, подписчики получали чек листы после оплаты.\n" +
@@ -544,7 +544,7 @@ export default class InstagramView extends Vue {
 		{
 			src: "logo-dontsleep-studio",
 			name: "@dontsleep.studio",
-			title: "<span style='display: inline-block;margin-right: 8px;'>📸</span>Фотостудия Don&rsquo;t Sleep 500&nbsp;кв.&nbsp;метров&nbsp;пространства для вашего&nbsp;творчества.",
+			title: "<i style='margin-right: 8px;'>📸</i>Фотостудия Don&rsquo;t Sleep 500&nbsp;кв.&nbsp;метров&nbsp;пространства для вашего&nbsp;творчества.",
 			text:
 				"Наши клиенты часто бронируют студию через Instagram*, теперь они могут сразу оплатить бронь. Давно хотели подключить онлайн\n" +
 				"оплату, но&nbsp;почти везде нужно иметь сайт. ArsenalPay работает с&nbsp;клиентами без сайта, как нам и&nbsp;нужно.\n" +
@@ -557,7 +557,7 @@ export default class InstagramView extends Vue {
 		{
 			src: "logo-protapki",
 			name: "@protapki",
-			title: "<span style='display: inline-block;margin-right: 8px;'>🌸</span>Продажа обуви бренда CEYO",
+			title: "<i style='margin-right: 8px;'>🌸</i>Продажа обуви бренда CEYO",
 			text:
 				"Мы&nbsp;дали возможность совершать спонтанные покупки наших тапок и&nbsp;сандалий с&nbsp;анатомической стелькой напрямую\n" +
 				"в&nbsp;Инстаграм*. Очень помогло, что не&nbsp;пришлось покупать свою онлайн-кассу и&nbsp;все чеки отправляются покупателям автоматически.\n" +
@@ -1225,15 +1225,15 @@ export default class InstagramView extends Vue {
 	.page-section__container {
 		margin-top: -30px;
 		padding-top: 0;
-		padding-bottom: 175px;
+		padding-bottom: 185px;
 
 		@include media-breakpoint-up(sm) {
-			padding-bottom: 152px;
+			padding-bottom: 160px;
 		}
 
 		@include media-breakpoint-up(md) {
 			padding-top: 40px;
-			padding-bottom: 203px;
+			padding-bottom: 180px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -1325,15 +1325,11 @@ export default class InstagramView extends Vue {
 
 .page-section_order_12 {
 	.page-section__container {
-		padding-top: 30px;
+		padding-top: 31px;
 		padding-bottom: 58px;
 
-		//@include media-breakpoint-up(sm) {
-		//	padding-bottom: 58px;
-		//}
-
 		@include media-breakpoint-up(md) {
-			padding-top: 48px;
+			padding-top: 73px;
 		}
 
 		@include media-breakpoint-up(lg) {
