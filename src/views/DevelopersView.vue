@@ -78,7 +78,7 @@
 						<br class="br br--show-xs" />Определение операторов сотовой связи.
 					</p>
 					<div class="page-section__link">
-						<BaseLink :icon="true" color="purple">
+						<BaseLink :icon="true" color="purple" @click="showModal()">
 							Посмотреть виджет
 							<template v-slot:icon>
 								<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
@@ -446,17 +446,7 @@
 			</div>
 		</div>
 	</section>
-
-	<!--	<article id="widgetModal" class="modal" data-close>-->
-	<!--		<div class="modal__body">-->
-	<!--			<button type="button" class="modal__close" data-close>-->
-	<!--				{{{ icon name="cross" width="12" height="12" }}}-->
-	<!--			</button>-->
-	<!--			<h1 class="modal__title">Виджет оплаты</h1>-->
-	<!--			<p class="modal__text">Вы можете встроить виджет оплаты в любое место на сайте и реализовать любую логику появления виджета. Например, отображать виджет на странице корзины, или показывать его во всплывающем окне вашего сайта. </p>-->
-	<!--			<iframe class="iframe iframe&#45;&#45;widget" data-src="https://arsenalpay.ru/widget.html?widget=6022&destination=ArsenalPay-test&amount=1000" height="398"></iframe>-->
-	<!--		</div>-->
-	<!--	</article>-->
+	<PaymentWidgetModal :opened="isOpened" @on-close="isOpened = false" />
 </template>
 
 <script lang="ts">
@@ -467,6 +457,7 @@ import BaseImage from "@/components/base/BaseImage.vue";
 import BaseIcon from "@/components/base/BaseIcon.vue";
 import BaseLink from "@/components/base/BaseLink.vue";
 import BasePluginBox from "@/components/base/BasePluginBox.vue";
+import PaymentWidgetModal from "@/components/modals/PaymentWidgetModal.vue";
 
 @Options({
 	components: {
@@ -476,9 +467,16 @@ import BasePluginBox from "@/components/base/BasePluginBox.vue";
 		BaseIcon,
 		BaseLink,
 		BasePluginBox,
+		PaymentWidgetModal,
 	},
 })
 export default class DevelopersView extends Vue {
+	isOpened = false;
+
+	showModal() {
+		this.isOpened = true;
+	}
+
 	get plugins() {
 		const pluginsOneCol = [
 			{

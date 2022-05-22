@@ -1,0 +1,161 @@
+.form {
+  width: 416px;
+  margin: 60px auto 0;
+
+  &--partnership {
+    width: calc(100% - 40px);
+    max-width: 416px;
+    margin: 0 auto;
+  }
+
+  &__row {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 16px;
+
+    &--help {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  &__field {
+    max-width: 416px;
+    &--full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__label {
+    margin-bottom: 18px;
+    display: block;
+    //font-family: $font-family;
+    font-size: 20.2px;
+    font-weight: 500;
+    line-height: 1.68;
+    letter-spacing: -0.69px;
+    color: var(--gray-color);
+    text-align: left;
+    padding: 0 8px;
+  }
+
+  &__submit {
+    margin-top: 10px;
+    width: 100%;
+    //font-family: $font-family;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #0a79fa;
+    border-radius: 40px;
+    border: solid 1px #0c81ff;
+    background-color: var(--color-bg-white);
+    cursor: pointer;
+    text-transform: uppercase;
+    max-width: 416px;
+    padding: 15px 0;
+
+    @include hover {
+      background-color: #0c81ff;
+      color: var(--color-bg-white);
+    }
+
+    &--with-loader {
+      padding-top: 6px;
+
+      @include hover {
+        background-color: transparent;
+        cursor: default;
+      }
+    }
+
+    &__loader {
+      width: 48px;
+      height: 36px;
+      -webkit-animation: spin 0.8s linear infinite;
+      -moz-animation: spin 0.8s linear infinite;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @-moz-keyframes spin {
+      100% { -moz-transform: rotate(-360deg); }
+    }
+
+    @-webkit-keyframes spin {
+      100% { -webkit-transform: rotate(-360deg); }
+    }
+
+    @keyframes spin {
+      100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
+
+    &--partnership {
+      height: 52px;
+    }
+  }
+
+  &__result-message {
+    max-width: 840px;
+    width: calc(100% - 40px);
+    margin: -44px auto -10px;
+    text-align: left;
+    white-space: pre-line;
+    font-size: 20.2px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: -0.4px;
+    color: #333;
+
+    @include media-breakpoint-up(sm) {
+      text-align: center;
+    }
+  }
+
+  &__help {
+    @include btn-default();
+
+    width: 54px;
+    height: 52px;
+    padding: 16px 21px 16px 22px;
+    //font-family: $font-family;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 26px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+
+    @include hover {
+      border-color: #666666;
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  &__alert {
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+
+  &__message {
+    margin-top: 16px;
+    padding: 18px 20px;
+    grid-column: 1 / -1;
+    //font-family: $font-family;
+    font-size: 17.2px;
+    font-weight: 300;
+    line-height: 1.63;
+    letter-spacing: -0.59px;
+    color: var(--gray-color);
+    text-align: left;
+    border-radius: 26px;
+    background-color: #f0f0f0;
+  }
+}

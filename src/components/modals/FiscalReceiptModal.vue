@@ -1,6 +1,6 @@
 <template>
 	<article
-		class="modal modal--new-check"
+		class="modal"
 		:class="{
 			['modal_is_opened']: opened,
 		}"
