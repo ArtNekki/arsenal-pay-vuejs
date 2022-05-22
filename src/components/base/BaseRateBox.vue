@@ -3,6 +3,7 @@
 		class="rate-box"
 		:class="{
 			['rate-box_size_' + size]: size,
+			['rate-box_prefix_inline']: prefixInline,
 		}"
 	>
 		<div class="rate-box__count">
@@ -22,6 +23,7 @@ import { Options, Vue } from "vue-class-component";
 	props: {
 		count: String,
 		prefix: String,
+		prefixInline: Boolean,
 		size: String,
 	},
 })
@@ -69,6 +71,11 @@ export default class BaseRateBox extends Vue {}
 				position: absolute;
 				left: -38.4px;
 				display: inline-block;
+
+				.rate-box_prefix_inline & {
+					position: relative;
+					left: -2px;
+				}
 			}
 		}
 

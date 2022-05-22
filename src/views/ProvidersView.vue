@@ -246,7 +246,7 @@
 					<BaseRateBox count="2.2" size="sm">
 						<p class="text text_level_2 text_lh_24 text_mgb_no.on_screen_sm">За успешный платёж</p>
 					</BaseRateBox>
-					<BaseRateBox count="0.2" prefix="+" size="sm">
+					<BaseRateBox count="0.2" prefix="+" :prefix-inline="true" size="sm">
 						<p class="text text_level_2 text_lh_24 text_mgb_no">За онлайн чек платежа</p>
 					</BaseRateBox>
 				</div>
