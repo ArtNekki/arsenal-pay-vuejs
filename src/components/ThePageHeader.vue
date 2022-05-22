@@ -5,25 +5,34 @@
 				<BaseIcon name="header-logo" width="75" height="42" color="pink" />
 			</a>
 			<TheMainNav />
-			<button type="button" class="page-header__burger" data-open-mobile>
+			<button type="button" class="page-header__burger" @click="showMobile()">
 				<span></span>
 			</button>
 		</nav>
 	</header>
+	<TheMobileNav :opened="isOpened" @on-close="isOpened = false" />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import TheMainNav from "@/components/TheMainNav.vue";
 import BaseIcon from "@/components/base/BaseIcon.vue";
+import TheMobileNav from "@/components/TheMobileNav.vue";
 
 @Options({
 	components: {
 		TheMainNav,
 		BaseIcon,
+		TheMobileNav,
 	},
 })
-export default class ThePageHeader extends Vue {}
+export default class ThePageHeader extends Vue {
+	isOpened = false;
+
+	showMobile() {
+		this.isOpened = true;
+	}
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -5,7 +5,6 @@
 		<template v-slot:twitter:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
 	</metainfo>
 	<ThePageHeader />
-	<TheMobileNav />
 	<router-view />
 	<ThePaymentsBlock />
 	<ThePageFooter />
@@ -32,8 +31,6 @@ import TheCookie from "./components/TheCookie.vue";
 	},
 })
 export default class App extends Vue {
-	mobileMenuOpened = false;
-
 	meta = setup(() =>
 		useMeta({
 			title: "Hello",

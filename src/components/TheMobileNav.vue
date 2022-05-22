@@ -1,8 +1,8 @@
 <template>
-	<div class="mobile-nav" :class="{ 'mobile-nav_state_opened': menuOpened }">
+	<div class="mobile-nav" :class="{ 'mobile-nav_state_opened': opened }">
 		<div class="mobile-nav__main">
-			<button type="button" class="mobile-nav__close" @click="closeMobileNav()">
-				<!--				{{{ icon name="cross" width="11" height="11" }}}-->
+			<button type="button" class="mobile-nav__close" @click="$emit('onClose')">
+				<BaseIcon name="cross" width="11" height="11" color="black" />
 			</button>
 			<ul class="mobile-nav__list">
 				<li class="mobile-nav__item">
@@ -83,7 +83,7 @@
 				</li>
 			</ul>
 			<a href="https://arsenalpay.ru/dashboard/login" class="mobile-nav__login">Войти</a>
-			<!--			{{{ social }}}-->
+			<BaseSocial />
 			<!--    {{> lang}}-->
 		</div>
 	</div>
@@ -92,23 +92,20 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import BaseLink from "@/components/base/BaseLink.vue";
+import BaseIcon from "./base/BaseIcon.vue";
+import BaseSocial from "./base/BaseSocial.vue";
 
 @Options({
 	components: {
 		BaseLink,
+		BaseIcon,
+		BaseSocial,
+	},
+	props: {
+		opened: Boolean,
 	},
 })
-export default class TheMobileNav extends Vue {
-	menuOpened = false;
-
-	mounted() {
-		console.log(`the component is now mounted.`, this.menuOpened);
-	}
-
-	closeMobileNav() {
-		this.menuOpened = false;
-	}
-}
+export default class TheMobileNav extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
