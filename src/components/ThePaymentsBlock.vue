@@ -35,7 +35,7 @@ export default class ThePaymentsBlock extends Vue {}
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .page-section {
-	background-color: var(--color-bg-pink-light);
+	background-color: var(--color-bg-pink-darken);
 
 	&__container {
 		padding-top: 100px;

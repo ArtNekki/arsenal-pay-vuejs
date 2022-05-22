@@ -1,78 +1,130 @@
 <template>
 	<section class="page-section page-section_skew_no">
 		<div class="page-section__container page-section__container--about">
-			<h1 class="page-section__title">Платежи с любовью</h1>
-			<div class="page-section__text page-section__text--about">
-				<p class="text text--mgb-34 text--mgb-sm-32 text--mgb-md-36 text--ls-26 text--md-size-lg">
-					Мы верим, что онлайн-платежи могут быть
-					<a
-						href="https://arsenalpay.ru/tariffs.html"
-						class="link link--in-text"
-						target="_blank"
-						rel="noopener noreferrer"
-						>прозрачными</a
+			<h1 class="text text_type_title.level_1">Платежи с любовью</h1>
+			<p class="text text_level_1 text_mgb_50 text_width_820.on_screen_lg">
+				Мы верим, что онлайн-платежи могут быть
+				<!--				rel="noopener noreferrer"-->
+				<BaseLink href="https://arsenalpay.ru/tariffs.html" link-in="text" :blank="true" color="blue"
+					>прозрачными</BaseLink
+				>
+				для бизнеса и удобными для
+				<BaseLink href="https://arsenalpay.ru/developers.html" link-in="text" :blank="true" color="blue"
+					>разработчиков.</BaseLink
+				>
+			</p>
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Удобство использования</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
+					Мы стараемся сделать онлайн-платежи максимально удобными и простыми в использовании, чтобы вы могли
+					сосредоточиться на своем бизнесе. Быстрая интеграция, понятные тарифы, встроенная онлайн-касса
+					и личный кабинет со всеми функциями доступными с телефона.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Онлайн-касса</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
+					Вам не нужно думать об онлайн-кассе и изменениях в законодательстве, мы берём это на себя. Помогаем
+					экономить не только ваше время, но и деньги.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Для бизнеса любого размера</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
+					Все функции доступны для бизнеса любого размера от самозанятых до крупных компаний. Для компаний
+					с большим оборотом даём персональные скидки. Для начинающего бизнеса нет никаких затрат при
+					отсутствии платежей.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Платежи без границ</h3>
+				<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md">
+					Принимайте платежи от клиентов со всего мира на любых площадках —  
+					<BaseLink
+						href="https://arsenalpay.ru/priem-platezhej-na-sajte.html"
+						link-in="text"
+						:blank="true"
+						color="blue"
+						>на сайте</BaseLink
+					>,
+					<BaseLink href="https://arsenalpay.ru/quickstart.html" link-in="text" :blank="true" color="blue"
+						>без сайта</BaseLink
+					>,
+					<BaseLink
+						href="https://arsenalpay.ru/priem-platezhej-v-instagram.html"
+						link-in="text"
+						:blank="true"
+						color="blue"
+						>в Instagram*</BaseLink
+					>, на лендингах, в соцсетях, в мессенджерах, в приложениях. Карты любой страны мира доступны сразу.
+				</p>
+
+				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Безопасность</h3>
+				<p class="text text_level_3 text_mgb_no text_lh_28.on_screen_md">
+					Мы прошли
+					<BaseLink
+						href="https://arsenalpay.ru/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82_PCI_DSS.pdf"
+						link-in="text"
+						:blank="true"
+						color="blue"
+						>сертификацию PCI DSS</BaseLink
 					>
-					для бизнеса и удобными для
-					<a
-						href="https://arsenalpay.ru/developers.html"
-						class="link link--in-text"
-						target="_blank"
-						rel="noopener noreferrer"
-						>разработчиков.</a
-					>
+					– максимальный стандарт безопасности от Visa, Mastercard и Мир. Все платежи надежно защищены.
 				</p>
 			</div>
-			<!--			<div class="content-box content-box&#45;&#45;shadow-xs content-box&#45;&#45;about">-->
-			<!--				{{{ info-box title="Удобство использования"  text='Мы стараемся сделать онлайн-платежи максимально удобными-->
-			<!--				и простыми в использовании, чтобы вы могли сосредоточиться на своем бизнесе. Быстрая интеграция, понятные-->
-			<!--				тарифы, встроенная онлайн-касса и личный кабинет со всеми функциями доступными с телефона.'-->
-			<!--				icon='{"name": "check", "color": "pink"}' mods="mgb-40" textMods="lsp-md-m055" }}}-->
-
-			<!--				{{{ info-box title="Онлайн-касса" text='Вам не нужно думать об онлайн-кассе и изменениях в законодательстве,-->
-			<!--				мы берём это на себя. Помогаем экономить не только ваше время, но и деньги.'-->
-			<!--				icon='{"name": "check", "color": "pink"}' mods="mgb-40" textMods="lsp-md-m055" }}}-->
-
-			<!--				{{{ info-box title="Для бизнеса любого размера" text='Все функции доступны для бизнеса любого размера-->
-			<!--				от самозанятых до крупных компаний. Для компаний с большим оборотом даём персональные скидки.-->
-			<!--				Для начинающего бизнеса нет никаких затрат при отсутствии платежей.'-->
-			<!--				icon='{"name": "check", "color": "pink"}' mods="mgb-40" textMods="lsp-md-m055" }}}-->
-
-			<!--				{{{ info-box title="Платежи без границ" text='Принимайте платежи от клиентов со всего мира на любых площадках-->
-			<!--				—  <a href="https://arsenalpay.ru/priem-platezhej-na-sajte.html" class="link link&#45;&#45;in-text" target="_blank"-->
-			<!--					  rel="noopener noreferrer">на сайте,</a> <a href="https://arsenalpay.ru/quickstart.html" class="link link&#45;&#45;in-text"-->
-			<!--																 target="_blank" rel="noopener noreferrer">без сайта,</a> <a href="https://arsenalpay.ru/priem-platezhej-v-instagram.html"-->
-			<!--																															 class="link link&#45;&#45;in-text" target="_blank" rel="noopener noreferrer">в Instagram*,</a> на лендингах, в соцсетях,-->
-			<!--				в мессенджерах, в приложениях. Карты любой страны мира доступны сразу.'-->
-			<!--				icon='{"name": "check", "color": "pink"}' mods="mgb-40" textMods="lsp-md-m055" }}}-->
-
-			<!--				{{{ info-box title="Безопасность" text='Мы прошли <a href="https://arsenalpay.ru/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82_PCI_DSS.pdf"-->
-			<!--																	 class="link link&#45;&#45;in-text" target="_blank" rel="noopener noreferrer">сертификацию PCI DSS</a> – максимальный-->
-			<!--				стандарт безопасности от Visa, Mastercard и Мир. Все платежи надежно защищены.'-->
-			<!--				icon='{"name": "check", "color": "pink"}' mods="mgb-40" textMods="lsp-md-m055"}}}-->
-			<!--			</div>-->
-			<!--			<div class="content-box content-box&#45;&#45;shadow-xs content-box&#45;&#45;about">-->
-			<!--				{{{ info-box title="Юридическая информация"  text='ООО «Арсенал Медиа»<br>-->
-			<!--				ИНН 2536154341<br>-->
-			<!--				КПП 254001001<br>-->
-			<!--				ОГРН 1052503036464'-->
-			<!--				icon='{"name": "check", "color": "pink"}' mods="mgb-40" textMods="lsp-md-m055" }}}-->
-			<!--			</div>-->
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Юридическая информация</h3>
+				<p class="text text_level_3 text_lh_28.on_screen_md text_mgb_no">
+					ООО «Арсенал Медиа»<br />
+					ИНН 2536154341<br />
+					КПП 254001001<br />
+					ОГРН 1052503036464
+				</p>
+			</div>
 		</div>
 	</section>
 </template>
+
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import BaseNotice from "@/components/base/BaseNotice.vue";
+import BaseButton from "@/components/base/BaseButton.vue";
+import BaseImage from "@/components/base/BaseImage.vue";
+import BaseIcon from "@/components/base/BaseIcon.vue";
+import BaseLink from "@/components/base/BaseLink.vue";
+import BasePluginBox from "@/components/base/BasePluginBox.vue";
+
+@Options({
+	components: {
+		BaseButton,
+		BaseIcon,
+		BaseLink,
+	},
+})
+export default class AboutView extends Vue {}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .page-section {
 	background-color: var(--color-bg-pink-light);
 
-	&__container {
-		padding-top: 130px;
+	.page-section__container {
+		padding-top: 128px;
 		padding-bottom: 130px;
 
 		@include media-breakpoint-up(md) {
-			padding-top: 140px;
-			padding-bottom: 190px;
+			padding-top: 166px;
+			padding-bottom: 158px;
+		}
+	}
+
+	.page-section__box {
+		&:not(:last-child) {
+			margin-bottom: 70px;
 		}
 	}
 }
