@@ -60,7 +60,7 @@ export default {
 	width: 100%;
 
 	@include media-breakpoint-up(md) {
-		margin-top: -30px;
+		margin-top: -19px;
 	}
 }
 
@@ -91,20 +91,6 @@ export default {
 
 	&-slide {
 		width: 320px !important;
-
-		&:not(:last-child) {
-			@media (min-width: 1045px) {
-				margin-right: 20px;
-			}
-
-			@include media-breakpoint-up(xl) {
-				margin-right: 20px;
-			}
-
-			@include media-breakpoint-up(xxl) {
-				margin-right: 46px;
-			}
-		}
 	}
 
 	&-button {
@@ -150,6 +136,63 @@ export default {
 				--icon-color: rgba(0, 0, 0, 0.3);
 			}
 		}
+	}
+}
+
+:deep(.swiper) {
+	@include media-breakpoint-up(xxl) {
+		margin-left: 6px;
+	}
+}
+
+:deep(.swiper) .swiper-wrapper {
+	@media (min-width: 1045px) {
+		transform: translate3d(0, 0, 0) !important;
+	}
+}
+
+:deep(.swiper) .swiper-button-prev,
+:deep(.swiper) .swiper-button-next {
+	top: 45px;
+	width: 48px;
+	height: 38px;
+	background-color: var(--color-bg-blue);
+
+	&::after {
+		content: "";
+		width: inherit;
+		height: inherit;
+	}
+}
+
+:deep(.swiper) .swiper-button-prev {
+	left: var(--container-padding-x);
+
+	&::after {
+		content: "";
+		background-image: url("~@/assets/icons/arrow-right.svg");
+	}
+
+	@include media-breakpoint-up(sm) {
+		left: calc(var(--container-padding-x) + 20px);
+	}
+}
+
+:deep(.swiper) .swiper-button-next {
+	right: var(--container-padding-x);
+
+	&::after {
+		background-image: url("~@/assets/icons/arrow-right.svg");
+	}
+
+	@include media-breakpoint-up(sm) {
+		right: calc(var(--container-padding-x) + 20px);
+	}
+}
+
+:deep(.swiper) .swiper-slide {
+	@include media-breakpoint-up(xxl) {
+		margin-right: 40px !important;
 	}
 }
 </style>

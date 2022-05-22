@@ -36,27 +36,27 @@ export default class PartnershipModal extends Vue {}
 </script>
 
 <style scoped lang="scss">
- .modal {
-	 flex-direction: row;
-	 height: initial;
-	 max-height: initial;
-	 --modal-height: initial;
+.modal {
+	flex-direction: row;
+	height: initial;
+	max-height: initial;
+	--modal-height: initial;
 
-	 .modal__body {
-		 padding: 22px 0 80px;
+	.modal__body {
+		padding: 22px 0 80px;
 
-		 @include media-breakpoint-up(sm) {
-			 --modal-height: initial;
+		@include media-breakpoint-up(sm) {
+			--modal-height: initial;
 
-			 padding-bottom: 90px;
-			 max-width: 940px;
-			 width: calc(100% - 40px);
-		 }
-	 }
+			padding-bottom: 90px;
+			max-width: 940px;
+			width: calc(100% - 40px);
+		}
+	}
 
-	 .modal__title {
-		 width: calc(100% - 40px);
-		 margin: 58px auto 60px;
-	 }
- }
+	.modal__title {
+		width: calc(100% - 40px);
+		margin: 58px auto 60px;
+	}
+}
 </style>
