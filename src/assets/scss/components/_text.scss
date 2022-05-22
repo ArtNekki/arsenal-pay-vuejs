@@ -218,6 +218,12 @@
     }
   }
 
+  &[class~="text_display_inline.on_screen_lg"] {
+    @include media-breakpoint-up(lg) {
+      display: inline;
+    }
+  }
+
   //-------------------- Max width ---------------------
 
   &[class~="text_max-width_520.on_screen_md"] {

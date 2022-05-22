@@ -554,6 +554,10 @@ export default class TravelView extends Vue {
 			margin-top: 24px;
 			max-width: 660px;
 		}
+
+		@include media-breakpoint-up(lg) {
+			margin-top: 40px;
+		}
 	}
 }
 
@@ -632,6 +636,13 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(md) {
 			margin-top: 56px;
 		}
+
+		@include media-breakpoint-up(lg) {
+			left: -20px;
+			display: grid;
+			grid-template-columns: 360px 1fr;
+			grid-column-gap: 60px;
+		}
 	}
 
 	.page-section__col {
@@ -661,11 +672,13 @@ export default class TravelView extends Vue {
 			}
 		}
 
-		//&:last-child {
-		//	svg.icon {
-		//		margin-bottom: 0;
-		//	}
-		//}
+		&:last-child {
+			@include media-breakpoint-up(lg) {
+				padding-top: 33px;
+				align-items: start;
+				text-align: left;
+			}
+		}
 	}
 }
 
@@ -783,7 +796,7 @@ export default class TravelView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 42px;
-			padding-bottom: 225px;
+			padding-bottom: 242px;
 		}
 	}
 
