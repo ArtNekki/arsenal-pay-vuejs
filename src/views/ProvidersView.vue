@@ -48,7 +48,7 @@
 				</p>
 			</div>
 			<div class="page-section__button">
-				<BaseButton text-transform="normal" icon-position="left" :full-width="true">
+				<BaseButton text-transform="normal" icon-position="left" :full-width="true" @click="showModal()">
 					<template v-slot:icon>
 						<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
 					</template>
@@ -378,14 +378,7 @@
 			</div>
 		</div>
 	</section>
-	<!--	<article id="kassa" class="modal modal&#45;&#45;new-check" data-close>-->
-	<!--		<div class="modal__body">-->
-	<!--			<button type="button" class="modal__close" data-close>-->
-	<!--&lt;!&ndash;				{{{ icon name="cross" width="12" height="12" }}}&ndash;&gt;-->
-	<!--			</button>-->
-	<!--			{{{ img name="new-check" mods="new-check" breakpoints='{"md": true}'}}}-->
-	<!--		</div>-->
-	<!--	</article>-->
+	<FiscalReceiptModal :opened="isOpened" @on-close="isOpened = false" />
 </template>
 
 <script lang="ts">
@@ -401,10 +394,12 @@ import BaseIcon from "@/components/base/BaseIcon.vue";
 import BasePrompt from "@/components/base/BasePrompt.vue";
 import BaseRateBox from "@/components/base/BaseRateBox.vue";
 import BaseLink from "@/components/base/BaseLink.vue";
+import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
 
 @Options({
 	components: {
 		TheReviewsSlider,
+		FiscalReceiptModal,
 		BaseReviewCard,
 		BaseNotice,
 		BaseButton,
@@ -417,6 +412,12 @@ import BaseLink from "@/components/base/BaseLink.vue";
 	},
 })
 export default class ProvidersView extends Vue {
+	isOpened = false;
+
+	showModal() {
+		this.isOpened = true;
+	}
+
 	reviews = [
 		{
 			src: "logo-reviews-alians",

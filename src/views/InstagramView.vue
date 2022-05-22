@@ -178,7 +178,12 @@
 							найти, проверить и&nbsp;распечатать.
 						</p>
 						<div class="page-section__button">
-							<BaseButton text-transform="normal" icon-position="left" :full-width="true">
+							<BaseButton
+								text-transform="normal"
+								icon-position="left"
+								:full-width="true"
+								@click="showModal()"
+							>
 								<template v-slot:icon>
 									<BaseIcon name="invoice-medium" width="48" height="38"></BaseIcon>
 								</template>
@@ -472,6 +477,7 @@
 				<TheReviewsSlider :reviews="reviews" />
 			</div>
 		</section>
+		<FiscalReceiptModal :opened="isOpened" @on-close="isOpened = false" />
 		<!--	<article id="kassa" class="modal modal--new-check" data-close>-->
 		<!--		<div class="modal__body">-->
 		<!--			<button type="button" class="modal__close" data-close>-->
@@ -496,11 +502,13 @@ import BaseIcon from "@/components/base/BaseIcon.vue";
 import BasePrompt from "@/components/base/BasePrompt.vue";
 import BaseRateBox from "@/components/base/BaseRateBox.vue";
 import BaseLink from "@/components/base/BaseLink.vue";
+import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
 
 @Options({
 	components: {
 		TheReviewsSlider,
 		SwiperSlide,
+		FiscalReceiptModal,
 		BaseReviewCard,
 		BaseNotice,
 		BaseButton,
@@ -513,6 +521,12 @@ import BaseLink from "@/components/base/BaseLink.vue";
 	},
 })
 export default class InstagramView extends Vue {
+	isOpened = false;
+
+	showModal() {
+		this.isOpened = true;
+	}
+
 	reviews = [
 		{
 			src: "logo-olgkosmetolog",

@@ -1,0 +1,168 @@
+.modal {
+  --body-padding: 20px;
+  --body-padding-sm: 40px;
+  --body-padding-xl: 50px;
+  --modal-height: 820px;
+  --modal-width: 450px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 10px;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(#000000, 0.2);
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  &_is_opened {
+    display: flex;
+  }
+
+  &--partnership {
+    flex-direction: row;
+    height: initial;
+    max-height: initial;
+    --modal-height: initial;
+  }
+
+  &__body {
+    position: relative;
+    margin: auto;
+    padding: var(--body-padding);
+    padding-right: var(--body-padding);
+    width: 100%;
+    max-width: var(--modal-width);
+    height: var(--modal-height);
+    min-height: var(--modal-height);
+    max-height: var(--modal-height);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--white-color);
+    box-shadow: -2px 35px 53px 1px rgba(0, 0, 0, 0.25),
+      0 1px 7px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 38px;
+    box-sizing: border-box;
+
+    @include media-breakpoint-up(sm) {
+      --modal-width: 560px;
+      --modal-height: 700px;
+
+      padding: var(--body-padding-sm);
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+      --modal-width: 728px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      --modal-width: 860px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      --modal-width: 940px;
+
+      padding: var(--body-padding-xl);
+    }
+
+    &--partnership {
+      padding: 22px 0 80px;
+
+      @include media-breakpoint-up(sm) {
+        padding-bottom: 90px;
+        --modal-height: initial;
+        max-width: 940px;
+        width: calc(100% - 40px);
+      }
+    }
+
+    .modal--check & {
+      --modal-height: 658px;
+      --modal-width: 320px;
+
+      padding: 0;
+      background-color: #f3f3f3;
+      overflow: hidden;
+
+      @include media-breakpoint-up(sm) {
+        --modal-height: 1070px;
+        --modal-width: 520px;
+      }
+
+      @include media-breakpoint-up(md) {
+        --modal-height: 1310px;
+        --modal-width: 636px;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 60px;
+    margin-bottom: 17px;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.5px;
+    color: rgba(#000000, 0.9);
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 40px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 38px;
+      line-height: 48px;
+      letter-spacing: -1.16px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 30px;
+    }
+
+    &--partnership {
+      width: calc(100% - 40px);
+      margin: 58px auto 60px;
+    }
+  }
+
+  &__text {
+    padding-right: 40px;
+    margin: 0 0 15px 0;
+    max-width: 380px;
+    font-size: 18.2px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: -0.36px;
+
+    @include media-breakpoint-up(sm) {
+      padding-right: 0;
+      max-width: unset;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 20.2px;
+      line-height: 32px;
+      letter-spacing: -0.4px;
+    }
+  }
+
+  &__close {
+    @include close-btn();
+
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    z-index: 10;
+  }
+
+  &__scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
