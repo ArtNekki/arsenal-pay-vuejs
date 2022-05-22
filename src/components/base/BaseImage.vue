@@ -174,7 +174,6 @@ export default class BaseImage extends Vue {}
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--color-bg-white);
 
 	&_shadow_md {
 		box-shadow: var(--box-shadow-md);
