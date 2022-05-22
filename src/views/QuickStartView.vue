@@ -40,11 +40,11 @@
 			</div>
 			<div class="page-section__prompt">
 				<BasePrompt color="green" :full-width="true">
-					<p class="text text_in_prompt">
+					<p class="text text_in_prompt text_mgb_no.on_screen_md">
 						Не&nbsp;нужно покупать или брать в <br class="br br--show-xs br--hide-sm" />аренду свою онлайн
 						кассу.
 					</p>
-					<p class="text text_in_prompt">
+					<p class="text text_in_prompt text_mgb_no.on_screen_md">
 						Не&nbsp;нужно тратить время и&nbsp;деньги&nbsp;на разработку и&nbsp;поддержку своего сайта.
 					</p>
 					<p class="text text_in_prompt">
@@ -63,20 +63,20 @@
 					<p class="text text_level_1 text_display_inline.on_screen_sm">
 						Минимум документов. Бесплатная онлайн касса.
 					</p>
-					<p class="text text_level_1 text_mgb_60 text_display_inline.on_screen_sm">
+					<p class="text text_level_1 text_mgb_60 text_mgb_34.on_screen_md">
 						Платежи перечисляются на&nbsp;расчётный счёт юрлица, ИП&nbsp;или&nbsp;самозанятого.
 					</p>
 				</div>
 				<div class="page-section__box page-section__box_type_one u_overflow_hidden.on_screen_md">
 					<BaseIcon name="rocket-medium" color="purple" width="46" height="64" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">Простое подключение</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Простое подключение</h3>
+					<p class="text text_level_3 text_mgb_60 text_mgb_80.on_screen_md text_lh_28.on_screen_md">
 						Для подключения нужен только ИНН юрлица, ИП&nbsp;или&nbsp;самозанятого.
 					</p>
 
 					<BaseIcon name="kassa-medium" color="blue" width="63" height="60" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">Онлайн касса бесплатно</h3>
-					<p class="text text_level_3 text_mgb_no">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Онлайн касса бесплатно</h3>
+					<p class="text text_level_3 text_mgb_no text_lh_28.on_screen_md">
 						Вам не&nbsp;нужно покупать или брать в&nbsp;аренду свою онлайн кассу.<br
 							class="br br--show-lg"
 						/>
@@ -101,8 +101,8 @@
 					<div class="page-section__box-wrap page-section__box-wrap_skew_no">
 						<BaseChip view="pink">Бесплатные чеки по всем заказам</BaseChip>
 
-						<h3 class="text text_type_title.level_3">Web-касса ArsenalPay</h3>
-						<p class="text text_level_3 text_mgb_60">
+						<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Web-касса ArsenalPay</h3>
+						<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 							Пробивайте чеки по&nbsp;заказам, которые были оплачены наличными, переводом на&nbsp;карту
 							или перечислением на&nbsp;расчётный счёт. Вы&nbsp;легко пробьёте чек в&nbsp;личном кабинете
 							меньше чем за&nbsp;минуту. Чеки&nbsp;пробиваются с&nbsp;полной номенклатурой,
@@ -116,10 +116,12 @@
 					</div>
 
 					<BaseIcon name="rub-medium" color="green" width="53" height="53" bottom-space="md" />
-					<h3 class="text text_type_title.level_3 text_mgb_16.on_screen_sm">
+					<h3
+						class="text text_type_title.level_3 text_mgb_16.on_screen_sm text_mgb_8.on_screen_md text_lh_32.on_screen_md"
+					>
 						Платежи приходят на&nbsp;ваш расчётный счёт
 					</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 						Никаких комиссий&nbsp;&mdash; вывод на&nbsp;расчётный счёт бесплатный.
 						<br class="br br--show-lg" />Деньги&nbsp;перечисляются каждый день, минимальных сумм нет.<br
 							class="br br--show-lg"
@@ -129,16 +131,22 @@
 					</p>
 
 					<BaseIcon name="email-medium" color="pink" width="52" height="43" bottom-space="md" />
-					<h3 class="text text_type_title.level_3 text_mgb_16.on_screen_sm">
+					<h3
+						class="text text_type_title.level_3 text_mgb_16.on_screen_sm text_mgb_8.on_screen_md text_lh_32.on_screen_md"
+					>
 						Мгновенные сообщения об&nbsp;оплате
 					</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 						Уведомления о&nbsp;платежах приходят на&nbsp;ваш email и&nbsp;в&nbsp;личный кабинет.
 						<br class="br br--show-lg" />Вы&nbsp;сразу узнаете кто, сколько и&nbsp;за&nbsp;что&nbsp;оплатил.
 					</p>
 					<BaseIcon name="responsive-medium" color="purple" width="56" height="42" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">Удобный личный кабинет</h3>
-					<p class="text text_level_3 text_mgb_60">
+					<h3
+						class="text text_type_title.level_3 text_mgb_16.on_screen_sm text_mgb_8.on_screen_md text_lh_32.on_screen_md"
+					>
+						Удобный личный кабинет
+					</h3>
+					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 						Контролируйте платежи на&nbsp;любом устройстве. <br class="br br--show-sm" />Просматривайте
 						статистику. Проверяйте чеки по&nbsp;каждому платежу.
 					</p>
@@ -164,34 +172,46 @@
 					<BaseImage src="quickstart-page/widget-no-site" :breakpoints="{ sm: true }"></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<h3 class="text text_type_title.level_3">Узнаваемая страница</h3>
-					<p class="text text_level_3">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Узнаваемая страница</h3>
+					<p
+						class="text text_level_3 text_width_540.on_screen_sm text_lh_28.on_screen_md text_mgb_40.on_screen_md"
+					>
 						Страница выглядит как минисайт с&nbsp;вашим логотипом, названием и&nbsp;описанием компании.
 						Вызывает доверие клиентов при оплате.
 					</p>
 
-					<h3 class="text text_type_title.level_3">Кнопки быстрой связи</h3>
-					<p class="text text_level_3">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Кнопки быстрой связи</h3>
+					<p
+						class="text text_level_3 text_width_540.on_screen_sm text_lh_28.on_screen_md text_mgb_40.on_screen_md"
+					>
 						Кнопки WhatsApp, Telegram, Viber&nbsp;&mdash; быстрая связь с&nbsp;клиентами для&nbsp;увеличения
 						продаж. Клиент просто нажимает на&nbsp;кнопку и&nbsp;вам приходит готовое первое сообщение.
 					</p>
 
-					<h3 class="text text_type_title.level_3">Важные ссылки</h3>
-					<p class="text text_level_3">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Важные ссылки</h3>
+					<p
+						class="text text_level_3 text_width_540.on_screen_sm text_lh_28.on_screen_md text_mgb_40.on_screen_md"
+					>
 						Соберите все важные ссылки на&nbsp;одной странице. Рассказывайте об&nbsp;акциях, новых
 						предложениях, отвечайте на&nbsp;частые вопросы.
 					</p>
 
-					<h3 class="text text_type_title.level_3">Автоматическая email рассылка</h3>
-					<p class="text text_level_3 text_mgb_30">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Автоматическая email рассылка</h3>
+					<p
+						class="text text_level_3 text_mgb_30 text_width_540.on_screen_sm text_lh_28.on_screen_md text_mgb_46.on_screen_md"
+					>
 						Клиент получает письмо с&nbsp;доступом к&nbsp;контенту сразу после
 						<br class="br br--show-sm br--hide-lg" />оплаты. Вам&nbsp;больше не&nbsp;нужно самим отправлять
 						письма.
 					</p>
 
 					<BaseIcon name="security-medium" color="purple" width="38" height="48" bottom-space="sm" />
-					<h3 class="text text_type_title.level_3">Безопасные платежи для любых устройств</h3>
-					<p class="text text_level_3">
+					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+						Безопасные платежи для любых устройств
+					</h3>
+					<p
+						class="text text_level_3 text_width_540.on_screen_sm text_lh_28.on_screen_md text_mgb_40.on_screen_md"
+					>
 						Страница отвечает стандартам безопасности Visa&nbsp;и&nbsp;Mastercard. Оплачивать одинаково
 						удобно и&nbsp;с&nbsp;компьютера и&nbsp;с&nbsp;телефона.
 					</p>
@@ -203,13 +223,13 @@
 	<section class="page-section page-section_order_5">
 		<div class="page-section__container">
 			<h2 class="text text_type_title.level_1">Удобные платёжные функции</h2>
-			<p class="text text_level_1 text_mgb_60">
+			<p class="text text_level_1 text_mgb_60 text_mgb_36.on_screen_md">
 				Быстрое выставление счёта. Возврат платежа в&nbsp;любой момент. Холдирование&nbsp;платежей.
 			</p>
 			<div class="page-section__box page-section__box_type_one">
 				<BaseIcon name="check-medium" color="pink" width="52" height="46" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Выставление счёта</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Выставление счёта</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Счёт выставляется за&nbsp;минуту, просто укажите сумму и&nbsp;нужную вам информацию о&nbsp;заказе.
 					Отправьте клиенту ссылку на&nbsp;оплату счёта. Вам придёт уведомление как&nbsp;только счёт будет
 					оплачен.
@@ -225,15 +245,15 @@
 				<!--				</p>-->
 
 				<BaseIcon name="refund-medium" color="purple" width="52" height="52" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Возврат платежа</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Возврат платежа</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Вернуть деньги на&nbsp;карту клиента вы можете в&nbsp;любой момент в&nbsp;личном кабинете. Вернуть
 					можно как полную сумму, так и&nbsp;частичную. Комиссия за&nbsp;возврат не&nbsp;взимается.
 				</p>
 
 				<BaseIcon name="hold-medium" color="cyan" width="50" height="50" bottom-space="md" />
-				<h3 class="text text_type_title.level_3">Холдирование платежей</h3>
-				<p class="text text_level_3 text_mgb_60">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Холдирование платежей</h3>
+				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 					Клиент совершает обычную оплату, но&nbsp;деньги с&nbsp;его карты не&nbsp;списываются,
 					а&nbsp;временно &laquo;замораживаются&raquo;. Такой способ оплаты даёт вам возможность проверить
 					наличие товара или услуги, и&nbsp;только после этого списать нужную сумму с&nbsp;карты клиента.
@@ -251,30 +271,32 @@
 				Принимайте оплату в&nbsp;любых соцсетях или месенджерах, <br class="br br--show-md" />на&nbsp;сайте без
 				интернет магазина, или выставляйте счета по&nbsp;email.
 			</p>
-			<div class="page-section__content">
+			<div class="page-section__social">
 				<div class="page-section__image">
 					<BaseImage src="quickstart-page/messenger"></BaseImage>
 				</div>
-				<h3 class="text text_type_title.level_3">В&nbsp;WhatsApp, Telegram, Viber</h3>
-				<p class="text text_level_3 text_mgb_48.on_screen_sm">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">В&nbsp;WhatsApp, Telegram, Viber</h3>
+				<p class="text text_level_3 text_mgb_48.on_screen_sm text_lh_28.on_screen_md text_mgb_44.on_screen_md">
 					Отправляйте клиентам ссылку на&nbsp;страницу оплаты <br class="br br--show-sm" />при переписке
 					в&nbsp;месенджерах.
 				</p>
 
-				<h3 class="text text_type_title.level_3">В VK, TikTok или Instagram*</h3>
-				<p class="text text_level_3 text_mgb_48.on_screen_sm">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">В VK, TikTok или Instagram*</h3>
+				<p class="text text_level_3 text_mgb_48.on_screen_sm text_lh_28.on_screen_md text_mgb_44.on_screen_md">
 					Разместите ссылку на&nbsp;вашу страницу в&nbsp;соцсетях,<br class="br br--show-sm" />
 					каждый клиент сможет оплатить заказ по&nbsp;этой ссылке.
 				</p>
 
-				<h3 class="text text_type_title.level_3">На&nbsp;сайте без интернет магазина</h3>
-				<p class="text text_level_3 text_mgb_48.on_screen_sm">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">
+					На&nbsp;сайте без интернет магазина
+				</h3>
+				<p class="text text_level_3 text_mgb_48.on_screen_sm text_lh_28.on_screen_md text_mgb_44.on_screen_md">
 					Разместите ссылку на&nbsp;сайте без интернет магазина,<br class="br br--show-sm" />
 					в&nbsp;том месте где хотите принимать платежи.
 				</p>
 
-				<h3 class="text text_type_title.level_3">Выставляйте счета по&nbsp;email</h3>
-				<p class="text text_level_3 text_mgb_48.on_screen_sm">
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Выставляйте счета по&nbsp;email</h3>
+				<p class="text text_level_3 text_mgb_48.on_screen_sm text_lh_28.on_screen_md text_mgb_44.on_screen_md">
 					Выставляйте счета вашим клиентам по&nbsp;email<br class="br br--show-sm" />
 					и&nbsp;присылайте ссылку на&nbsp;страницу оплаты.
 				</p>
@@ -496,6 +518,17 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(sm) {
 			margin-top: 36px;
 		}
+
+		@include media-breakpoint-up(md) {
+			max-width: 304px;
+		}
+	}
+
+	.page-section__notice {
+		@include media-breakpoint-up(md) {
+			margin-top: 43px;
+			margin-bottom: 24px;
+		}
 	}
 }
 
@@ -515,10 +548,12 @@ export default class TravelView extends Vue {
 	.page-section__prompt {
 		margin-top: 16px;
 		max-width: 320px;
+		width: 100%;
 
-		//@include media-breakpoint-up(sm) {
-		//	margin-top: 32px;
-		//}
+		@include media-breakpoint-up(md) {
+			margin-top: 24px;
+			max-width: 660px;
+		}
 	}
 }
 
@@ -534,9 +569,9 @@ export default class TravelView extends Vue {
 	}
 
 	.page-section__box {
-		@include media-breakpoint-up(sm) {
-			margin-top: 60px;
-		}
+		//@include media-breakpoint-up(sm) {
+		//	margin-top: 60px;
+		//}
 	}
 
 	.page-section__box-wrap {
@@ -551,6 +586,12 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(sm) {
 			align-items: center;
 			text-align: center;
+		}
+
+		&::before {
+			@include media-breakpoint-up(md) {
+				bottom: 0;
+			}
 		}
 	}
 
@@ -587,6 +628,10 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(sm) {
 			margin-top: 35px;
 		}
+
+		@include media-breakpoint-up(md) {
+			margin-top: 56px;
+		}
 	}
 
 	.page-section__col {
@@ -595,6 +640,10 @@ export default class TravelView extends Vue {
 
 			@include media-breakpoint-up(sm) {
 				margin-bottom: 58px;
+			}
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 77px;
 			}
 
 			picture.img {
@@ -660,6 +709,63 @@ export default class TravelView extends Vue {
 		@include media-breakpoint-up(sm) {
 			margin-top: 25px;
 			margin-bottom: 16px;
+		}
+
+		@include media-breakpoint-up(md) {
+			display: none;
+		}
+	}
+
+	.page-section__social {
+		@include media-breakpoint-up(md) {
+			margin-top: 70px;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			z-index: 2;
+			width: 400px;
+			height: 560px;
+			background-repeat: no-repeat;
+
+			@include media-breakpoint-up(md) {
+				content: "";
+			}
+
+			@include media-breakpoint-up(xl) {
+				top: -67px;
+			}
+		}
+
+		&::before {
+			left: -65px;
+			top: 195px;
+			background-image: url("~@/assets/images/quickstart-page/social-left.svg");
+
+			@include media-breakpoint-up(lg) {
+				left: 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				left: -155px;
+				background-image: url("~@/assets/images/quickstart-page/social-left-xl.svg");
+			}
+		}
+
+		&::after {
+			//top: -37px;
+			top: 225px;
+			right: -205px;
+			background-image: url("~@/assets/images/quickstart-page/social-right.svg");
+
+			@include media-breakpoint-up(lg) {
+				right: -138px;
+			}
+
+			@include media-breakpoint-up(xl) {
+				background-image: url("~@/assets/images/quickstart-page/social-right-xl.svg");
+			}
 		}
 	}
 }
