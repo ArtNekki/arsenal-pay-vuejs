@@ -157,15 +157,17 @@
 
 	<section class="page-section page-section_order_4 page-section_type_cut">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="pay-big" width="80" height="100" color="purple" />
-			</div>
-			<h2 class="text text_type_title.level_1">Ваша страница оплаты</h2>
-			<div>
-				<p class="text text_level_1">
-					Заменяет сайт. <br class="br br--show-xs br--hide-sm" />Увеличивает продажи.
-					<br class="br br--show-xs br--hide-lg" />Рассказывает о&nbsp;вашем бизнесе.
-				</p>
+			<div class="page-section__shift">
+				<div class="page-section__icon">
+					<BaseIcon name="pay-big" width="80" height="100" color="purple" />
+				</div>
+				<h2 class="text text_type_title.level_1">Ваша страница оплаты</h2>
+				<div>
+					<p class="text text_level_1">
+						Заменяет сайт. <br class="br br--show-xs br--hide-sm" />Увеличивает продажи.
+						<br class="br br--show-xs br--hide-lg" />Рассказывает о&nbsp;вашем бизнесе.
+					</p>
+				</div>
 			</div>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -622,7 +624,7 @@ export default class TravelView extends Vue {
 		}
 
 		@include media-breakpoint-up(xl) {
-			padding-bottom: 147px;
+			padding-bottom: 150px;
 		}
 	}
 
@@ -642,6 +644,11 @@ export default class TravelView extends Vue {
 			display: grid;
 			grid-template-columns: 360px 1fr;
 			grid-column-gap: 60px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			left: -16px;
+			grid-column-gap: 94px;
 		}
 	}
 
