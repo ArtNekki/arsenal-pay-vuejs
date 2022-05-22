@@ -360,6 +360,12 @@
     }
   }
 
+  &[class~="text_mgb_no.on_screen_lg"] {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
   &[class~="text_mgb_34.on_screen_lg"] {
     @include media-breakpoint-up(lg) {
       margin-bottom: 34px;

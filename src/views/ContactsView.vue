@@ -1,60 +1,137 @@
 <template>
 	<section class="page-section page-section_skew_no">
 		<div class="page-section__container page-section__container--contacts">
-			<h1 class="page-section__title">Контакты</h1>
-			<div class="page-section__text page-section__text--contacts">
-				<p class="text text--mgb-34 text--mgb-sm-32 text--mgb-md-36 text--ls-26 text--md-size-lg">
-					Свяжитесь с нами, мы найдём ответ на ваш вопрос.
+			<h1 class="text text_type_title.level_1">Контакты</h1>
+			<p class="text text_level_1 text_mgb_50">Свяжитесь с нами, мы найдём ответ на ваш вопрос.</p>
+
+			<div class="page-section__box page-section__box_type_two">
+				<div class="page-section__row">
+					<div class="page-section__col">
+						<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
+						<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Партнёрам</h3>
+						<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md text_mgb_no.on_screen_lg">
+							<BaseLink href="mailto:partners@arsenalpay.ru" link-in="text" :blank="true" color="blue"
+								>partners@arsenalpay.ru</BaseLink
+							>
+						</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
+						<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Бухгалтерия</h3>
+						<p class="text text_level_3 text_mgb_40 text_lh_28.on_screen_md text_mgb_no.on_screen_lg">
+							<BaseLink href="mailto:accounts@arsenalpay.ru" link-in="text" :blank="true" color="blue"
+								>accounts@arsenalpay.ru</BaseLink
+							>
+						</p>
+					</div>
+					<div class="page-section__col">
+						<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
+						<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Общие вопросы</h3>
+						<p
+							class="text text_level_3 text_mgb_no text_mgb_8.on_screen_md text_lh_28.on_screen_md text_mgb_no.on_screen_lg"
+						>
+							<BaseLink href="mailto:info@arsenalpay.ru" link-in="text" :blank="true" color="blue"
+								>info@arsenalpay.ru</BaseLink
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Поддержка</h3>
+				<p class="text text_level_3 text_mgb_no text_mgb_8.on_screen_md text_lh_28.on_screen_md">
+					Мы подготовили для вас ответы <br class="br br--show-xs br--hide-sm" />на 
+					<BaseLink href="https://arsenalpay.ru/support.html" link-in="text" :blank="true" color="blue"
+						>частые вопросы</BaseLink
+					>
+					по платежам. Вы можете самостоятельно проверить
+					<BaseLink href="https://arsenalpay.ru/support.html" link-in="text" :blank="true" color="blue"
+						>статус своего платежа.</BaseLink
+					>
+					Напишите нам на
+					<BaseLink href="mailto:pay@arsenalpay.ru" link-in="text" :blank="true" color="blue"
+						>pay@arsenalpay.ru</BaseLink
+					>, если вы не нашли ответ на свой вопрос.
 				</p>
 			</div>
 
-			<!--			<div class="content-box content-box&#45;&#45;shadow-xs content-box&#45;&#45;contacts content-box&#45;&#45;contacts-row">-->
-			<!--				{{{ info-box title="Партнёрам" text='<a href="mailto:partners@arsenalpay.ru" class="link link&#45;&#45;in-text" target="_blank"-->
-			<!--														rel="noopener noreferrer">partners@arsenalpay.ru</a>'-->
-			<!--				icon='{"name": "check", "color": "purple"}' mods="contacts-row,mgb-40" textMods="lsp-md-m055" }}}-->
+			<div class="page-section__box page-section__box_type_two">
+				<BaseIcon name="check-circle-large" width="37" height="37" color="purple" bottom-space="sm" />
 
-			<!--				{{{ info-box title="Бухгалтерия" text='<a href="mailto:accounts@arsenalpay.ru" class="link link&#45;&#45;in-text" target="_blank"-->
-			<!--														  rel="noopener noreferrer">accounts@arsenalpay.ru</a>'-->
-			<!--				icon='{"name": "check", "color": "purple"}' mods="contacts-row,mgb-40" textMods="lsp-md-m055" }}}-->
+				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Работа в нашей команде</h3>
+				<p class="text text_level_3 text_mgb_no text_mgb_8.on_screen_md text_lh_28.on_screen_md">
+					Каждый день мы стараемся сделать наши платежные инструменты ещё лучше. Мы всегда рады талантливым
+					ребятам. Присылайте своё резюме на
+					<BaseLink href="mailto:jointeam@arsenalpay.ru" link-in="text" :blank="true" color="blue"
+						>jointeam@arsenalpay.ru</BaseLink
+					>
 
-			<!--				{{{ info-box title="Общие вопросы" text='<a href="mailto:info@arsenalpay.ru" class="link link&#45;&#45;in-text" target="_blank"-->
-			<!--															rel="noopener noreferrer">info@arsenalpay.ru</a>'-->
-			<!--				icon='{"name": "check", "color": "purple"}' mods="contacts-row,mgb-40" textMods="lsp-md-m055" }}}-->
-			<!--			</div>-->
-
-			<!--			<div class="content-box content-box&#45;&#45;shadow-xs content-box&#45;&#45;contacts">-->
-			<!--				{{{ info-box title="Поддержка" text='Мы подготовили для вас ответы <br class="br br&#45;&#45;show-xs br&#45;&#45;hide-sm">на <a href="https://arsenalpay.ru/support.html"-->
-			<!--																																class="link link&#45;&#45;in-text" target="_blank" rel="noopener noreferrer">частые вопросы</a> по платежам.-->
-			<!--				Вы можете самостоятельно проверить <a href="https://arsenalpay.ru/support.html"-->
-			<!--													  class="link link&#45;&#45;in-text" target="_blank" rel="noopener noreferrer">статус своего платежа.</a> Напишите нам на-->
-			<!--				<a href="mailto:pay@arsenalpay.ru" class="link link&#45;&#45;in-text" target="_blank" rel="noopener noreferrer">-->
-			<!--					pay@arsenalpay.ru,</a> если вы не нашли ответ на свой вопрос.'-->
-			<!--				icon='{"name": "check", "color": "purple"}' mods="mgb-40" textMods="lsp-md-m055" }}}-->
-			<!--			</div>-->
-
-			<!--			<div class="content-box content-box&#45;&#45;shadow-xs content-box&#45;&#45;contacts">-->
-			<!--				{{{ info-box title="Работа в нашей команде" text='Каждый день мы стараемся сделать наши платежные инструменты-->
-			<!--				ещё лучше. Мы всегда рады талантливым ребятам. Присылайте своё резюме на <a href="mailto:jointeam@arsenalpay.ru"-->
-			<!--																							class="link link&#45;&#45;in-text" target="_blank" rel="noopener noreferrer">jointeam@arsenalpay.ru</a> и присоединяйтесь<br class="br br&#45;&#45;hide-xs br&#45;&#45;show-sm br&#45;&#45;hide-lg">-->
-			<!--				к нашей команде.'-->
-			<!--				icon='{"name": "check", "color": "purple"}' mods="mgb-40" textMods="lsp-md-m055" }}}-->
-			<!--			</div>-->
+					и присоединяйтесь<br class="br br--hide-xs br--show-sm br--hide-lg" />
+					к нашей команде.
+				</p>
+			</div>
 		</div>
 	</section>
 </template>
+
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import BaseNotice from "@/components/base/BaseNotice.vue";
+import BaseButton from "@/components/base/BaseButton.vue";
+import BaseImage from "@/components/base/BaseImage.vue";
+import BaseIcon from "@/components/base/BaseIcon.vue";
+import BaseLink from "@/components/base/BaseLink.vue";
+import BasePluginBox from "@/components/base/BasePluginBox.vue";
+
+@Options({
+	components: {
+		BaseButton,
+		BaseIcon,
+		BaseLink,
+	},
+})
+export default class ContactsView extends Vue {}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .page-section {
 	background-color: var(--color-bg-purple-light);
 
-	&__container {
-		padding-top: 130px;
-		padding-bottom: 130px;
+	.page-section__container {
+		padding-top: 128px;
+		padding-bottom: 118px;
 
 		@include media-breakpoint-up(md) {
-			padding-top: 140px;
-			padding-bottom: 190px;
+			padding-top: 166px;
+			padding-bottom: 158px;
+		}
+	}
+
+	.page-section__box {
+		&:not(:last-child) {
+			margin-bottom: 70px;
+		}
+	}
+
+	.page-section__row {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 9px;
+			max-width: 740px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-content: space-between;
+			grid-column-gap: 40px;
+		}
+	}
+
+	.page-section__col {
+		@include media-breakpoint-only(xs) {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
 		}
 	}
 }

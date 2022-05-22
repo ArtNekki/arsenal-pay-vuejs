@@ -62,7 +62,7 @@
 
 				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Безопасность</h3>
-				<p class="text text_level_3 text_mgb_no text_lh_28.on_screen_md">
+				<p class="text text_level_3 text_mgb_no text_mgb_8.on_screen_md text_lh_28.on_screen_md">
 					Мы прошли
 					<BaseLink
 						href="https://arsenalpay.ru/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82_PCI_DSS.pdf"
@@ -77,7 +77,7 @@
 			<div class="page-section__box page-section__box_type_two">
 				<BaseIcon name="check-circle-large" width="37" height="37" color="pink" bottom-space="sm" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Юридическая информация</h3>
-				<p class="text text_level_3 text_lh_28.on_screen_md text_mgb_no">
+				<p class="text text_level_3 text_mgb_no text_mgb_8.on_screen_md text_lh_28.on_screen_md">
 					ООО «Арсенал Медиа»<br />
 					ИНН 2536154341<br />
 					КПП 254001001<br />
