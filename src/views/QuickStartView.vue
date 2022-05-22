@@ -31,13 +31,15 @@
 			</div>
 			<h2 class="text text_type_title.level_1">Никаких расходов на&nbsp;сайт и&nbsp;кассу</h2>
 			<div>
-				<p class="text text_level_1">
+				<p class="text text_level_1 text_display_inline.on_screen_lg text_mgb_no">
 					Экономия на&nbsp;кассе 30&nbsp;000&nbsp;- 40&nbsp;000&nbsp;₽ в&nbsp;год.
 				</p>
-				<p class="text text_level_1">Экономия на&nbsp;сайте от&nbsp;20&nbsp;000&nbsp;₽&nbsp;в&nbsp;год.</p>
+				<p class="text text_level_1 text_display_inline.on_screen_lg">
+					Экономия на&nbsp;сайте от&nbsp;20&nbsp;000&nbsp;₽&nbsp;в&nbsp;год.
+				</p>
 			</div>
 			<div class="page-section__prompt">
-				<BasePrompt color="green">
+				<BasePrompt color="green" :full-width="true">
 					<p class="text text_in_prompt">
 						Не&nbsp;нужно покупать или брать в <br class="br br--show-xs br--hide-sm" />аренду свою онлайн
 						кассу.
@@ -58,8 +60,10 @@
 			<div class="page-section__container">
 				<h2 class="text text_type_title.level_1">Быстрый старт платежей</h2>
 				<div class="">
-					<p class="text text_level_1">Минимум документов. Бесплатная онлайн касса.</p>
-					<p class="text text_level_1 text_mgb_60">
+					<p class="text text_level_1 text_display_inline.on_screen_sm">
+						Минимум документов. Бесплатная онлайн касса.
+					</p>
+					<p class="text text_level_1 text_mgb_60 text_display_inline.on_screen_sm">
 						Платежи перечисляются на&nbsp;расчётный счёт юрлица, ИП&nbsp;или&nbsp;самозанятого.
 					</p>
 				</div>
@@ -103,7 +107,7 @@
 							или перечислением на&nbsp;расчётный счёт. Вы&nbsp;легко пробьёте чек в&nbsp;личном кабинете
 							меньше чем за&nbsp;минуту. Чеки&nbsp;пробиваются с&nbsp;полной номенклатурой,
 							в&nbsp;соответствии с&nbsp;последними изменениями 54&#8209;ФЗ.
-							<b class="text text_color_pink text_weight_bold"
+							<b class="text text_color_pink text_weight_bold text_display_inline.on_screen_sm"
 								>Чеки&nbsp;бесплатны&nbsp;и&nbsp;без&nbsp;комиссии.</b
 							>
 							Сразу&nbsp;отправляются в&nbsp;налоговую и&nbsp;на&nbsp;email клиента. Теперь у&nbsp;вас
@@ -112,7 +116,9 @@
 					</div>
 
 					<BaseIcon name="rub-medium" color="green" width="53" height="53" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">Платежи приходят на&nbsp;ваш расчётный счёт</h3>
+					<h3 class="text text_type_title.level_3 text_mgb_16.on_screen_sm">
+						Платежи приходят на&nbsp;ваш расчётный счёт
+					</h3>
 					<p class="text text_level_3 text_mgb_60">
 						Никаких комиссий&nbsp;&mdash; вывод на&nbsp;расчётный счёт бесплатный.
 						<br class="br br--show-lg" />Деньги&nbsp;перечисляются каждый день, минимальных сумм нет.<br
@@ -123,7 +129,9 @@
 					</p>
 
 					<BaseIcon name="email-medium" color="pink" width="52" height="43" bottom-space="md" />
-					<h3 class="text text_type_title.level_3">Мгновенные сообщения об&nbsp;оплате</h3>
+					<h3 class="text text_type_title.level_3 text_mgb_16.on_screen_sm">
+						Мгновенные сообщения об&nbsp;оплате
+					</h3>
 					<p class="text text_level_3 text_mgb_60">
 						Уведомления о&nbsp;платежах приходят на&nbsp;ваш email и&nbsp;в&nbsp;личный кабинет.
 						<br class="br br--show-lg" />Вы&nbsp;сразу узнаете кто, сколько и&nbsp;за&nbsp;что&nbsp;оплатил.
@@ -198,7 +206,7 @@
 			<p class="text text_level_1 text_mgb_60">
 				Быстрое выставление счёта. Возврат платежа в&nbsp;любой момент. Холдирование&nbsp;платежей.
 			</p>
-			<div class="page-section__box">
+			<div class="page-section__box page-section__box_type_one">
 				<BaseIcon name="check-medium" color="pink" width="52" height="46" bottom-space="md" />
 				<h3 class="text text_type_title.level_3">Выставление счёта</h3>
 				<p class="text text_level_3 text_mgb_60">
@@ -248,25 +256,25 @@
 					<BaseImage src="quickstart-page/messenger"></BaseImage>
 				</div>
 				<h3 class="text text_type_title.level_3">В&nbsp;WhatsApp, Telegram, Viber</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_48.on_screen_sm">
 					Отправляйте клиентам ссылку на&nbsp;страницу оплаты <br class="br br--show-sm" />при переписке
 					в&nbsp;месенджерах.
 				</p>
 
 				<h3 class="text text_type_title.level_3">В VK, TikTok или Instagram*</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_48.on_screen_sm">
 					Разместите ссылку на&nbsp;вашу страницу в&nbsp;соцсетях,<br class="br br--show-sm" />
 					каждый клиент сможет оплатить заказ по&nbsp;этой ссылке.
 				</p>
 
 				<h3 class="text text_type_title.level_3">На&nbsp;сайте без интернет магазина</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_48.on_screen_sm">
 					Разместите ссылку на&nbsp;сайте без интернет магазина,<br class="br br--show-sm" />
 					в&nbsp;том месте где хотите принимать платежи.
 				</p>
 
 				<h3 class="text text_type_title.level_3">Выставляйте счета по&nbsp;email</h3>
-				<p class="text text_level_3">
+				<p class="text text_level_3 text_mgb_48.on_screen_sm">
 					Выставляйте счета вашим клиентам по&nbsp;email<br class="br br--show-sm" />
 					и&nbsp;присылайте ссылку на&nbsp;страницу оплаты.
 				</p>
@@ -506,6 +514,11 @@ export default class TravelView extends Vue {
 
 	.page-section__prompt {
 		margin-top: 16px;
+		max-width: 320px;
+
+		//@include media-breakpoint-up(sm) {
+		//	margin-top: 32px;
+		//}
 	}
 }
 
@@ -520,6 +533,12 @@ export default class TravelView extends Vue {
 		}
 	}
 
+	.page-section__box {
+		@include media-breakpoint-up(sm) {
+			margin-top: 60px;
+		}
+	}
+
 	.page-section__box-wrap {
 		margin-top: 80px;
 		margin-bottom: 80px;
@@ -528,10 +547,16 @@ export default class TravelView extends Vue {
 		display: flex;
 		flex-direction: column;
 		align-items: start;
+
+		@include media-breakpoint-up(sm) {
+			align-items: center;
+			text-align: center;
+		}
 	}
 
 	.page-section__button {
 		margin-top: 22px;
+		max-width: 480px;
 	}
 }
 
@@ -558,11 +583,19 @@ export default class TravelView extends Vue {
 
 	.page-section__row {
 		margin-top: 22px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 35px;
+		}
 	}
 
 	.page-section__col {
 		&:first-child {
 			margin-bottom: 50px;
+
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 58px;
+			}
 
 			picture.img {
 				--border-radius-top: 50px;
@@ -572,6 +605,10 @@ export default class TravelView extends Vue {
 				border-radius: var(--border-radius-top) var(--border-radius-top) var(--border-radius-bottom)
 					var(--border-radius-bottom);
 				box-shadow: var(--box-shadow-purple-xl);
+
+				@include media-breakpoint-up(sm) {
+					height: 928px;
+				}
 			}
 		}
 
@@ -619,6 +656,11 @@ export default class TravelView extends Vue {
 
 	.page-section__image {
 		margin-top: 15px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 25px;
+			margin-bottom: 16px;
+		}
 	}
 }
 

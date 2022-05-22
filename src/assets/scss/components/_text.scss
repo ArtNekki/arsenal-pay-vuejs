@@ -264,15 +264,15 @@
     margin-bottom: 80px;
   }
 
-  &[class~="text_mgb_48.on_screen_sm"] {
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 48px;
-    }
-  }
-
   &[class~="text_mgb_no.on_screen_sm"] {
     @include media-breakpoint-up(sm) {
       margin-bottom: 0;
+    }
+  }
+
+  &[class~="text_mgb_16.on_screen_sm"] {
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 16px;
     }
   }
 
@@ -291,6 +291,12 @@
   &[class~="text_mgb_42.on_screen_md"] {
     @include media-breakpoint-up(md) {
       margin-bottom: 42px;
+    }
+  }
+
+  &[class~="text_mgb_48.on_screen_sm"] {
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 48px;
     }
   }
 
