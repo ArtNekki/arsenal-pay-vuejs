@@ -65,7 +65,7 @@
 				Управление автоплатежами. Запоминание карты. Apple Pay.<br class="br br--show-lg" />
 				Оплата без ввода 3DS. Страница при нулевом балансе.
 			</p>
-			<div class="page-section__box u_overflow_hidden.on_screen_md">
+			<div class="page-section__box page-section__box_type_one u_overflow_hidden.on_screen_md">
 				<BaseIcon name="autopayment-medium" color="green" width="48" height="53" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Автоплатежи</h3>
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">

@@ -674,6 +674,7 @@ export default class QuickstartView extends Vue {
 				border-radius: var(--border-radius-top) var(--border-radius-top) var(--border-radius-bottom)
 					var(--border-radius-bottom);
 				box-shadow: var(--box-shadow-purple-xl);
+				background-color: var(--color-bg-white);
 
 				@include media-breakpoint-up(sm) {
 					height: 928px;

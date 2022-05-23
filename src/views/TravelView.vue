@@ -86,7 +86,7 @@
 				Холдирование платежей. Быстрое выставление счёта. Apple Pay.
 				<br class="br br--show-md" />Отмена полной и частичной суммы. Сообщения об оплате и статусах заказа.
 			</p>
-			<div class="page-section__box u_overflow_hidden.on_screen_md">
+			<div class="page-section__box page-section__box_type_one u_overflow_hidden.on_screen_md">
 				<BaseIcon name="hold-medium" width="50" height="50" color="cyan" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Холдирование платежей</h3>
 				<p

@@ -220,7 +220,7 @@
 				<h2 class="text text_type_title.level_1 text_mgb_60 text_mgb_50.on_screen_md">
 					Удобные платёжные функции
 				</h2>
-				<div class="page-section__box">
+				<div class="page-section__box page-section__box_type_one">
 					<BaseIcon name="check-medium" width="52" height="46" color="pink" bottom-space="md" />
 					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Выставление счёта</h3>
 					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
