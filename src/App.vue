@@ -6,7 +6,7 @@
 	</metainfo>
 	<ThePageHeader />
 	<router-view />
-	<ThePaymentsBlock />
+	<ThePaymentsBlock :page="page.toString()" />
 	<ThePageFooter />
 	<TheCookie />
 </template>
@@ -20,6 +20,7 @@ import ThePageFooter from "@/components/ThePageFooter.vue";
 import TheMobileNav from "./components/TheMobileNav.vue";
 import ThePaymentsBlock from "./components/ThePaymentsBlock.vue";
 import TheCookie from "./components/TheCookie.vue";
+import { watch } from "vue";
 
 @Options({
 	components: {
@@ -28,6 +29,20 @@ import TheCookie from "./components/TheCookie.vue";
 		TheMobileNav,
 		ThePaymentsBlock,
 		TheCookie,
+	},
+	data() {
+		return {
+			page: String,
+		};
+	},
+	watch: {
+		$route: {
+			deep: true,
+			handler(to, from) {
+				this.show = false;
+				this.page = to.name.toString();
+			},
+		},
 	},
 })
 export default class App extends Vue {

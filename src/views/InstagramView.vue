@@ -416,15 +416,6 @@
 						</BasePrompt>
 					</div>
 				</div>
-				<div class="rate">
-					<div class="rate__item">
-						<!--					{{{ rate-box count="3" text="Комиссия за успешный платёж <br class='br br--show-xs' /><b>от ArsenalPay</b>" }}}-->
-						<!--					{{{ rate-box count="2" prefix="+" text="Комиссия за успешный платёж <br class='br br--show-xs' /><b>от Visa, Mastercard, Мир, Apple Pay</b>" }}}-->
-					</div>
-					<div class="rate__item">
-						<!--					{{{ note text='[""]' mods="no-mgt, w-full" textMods="sm-center, lg" }}}-->
-					</div>
-				</div>
 			</div>
 		</section>
 
@@ -478,14 +469,6 @@
 			</div>
 		</section>
 		<FiscalReceiptModal :opened="isOpened" @on-close="isOpened = false" />
-		<!--	<article id="kassa" class="modal modal--new-check" data-close>-->
-		<!--		<div class="modal__body">-->
-		<!--			<button type="button" class="modal__close" data-close>-->
-		<!--				&lt;!&ndash;				{{{ icon name="cross" width="12" height="12" }}}&ndash;&gt;-->
-		<!--			</button>-->
-		<!--			&lt;!&ndash;			{{{ img name="new-check" mods="new-check" breakpoints='{"md": true}'}}}&ndash;&gt;-->
-		<!--		</div>-->
-		<!--	</article>-->
 	</div>
 </template>
 
