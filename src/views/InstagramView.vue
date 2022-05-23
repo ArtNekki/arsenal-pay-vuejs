@@ -558,7 +558,7 @@ export default class InstagramView extends Vue {
 <style scoped lang="scss">
 @mixin row-top-widget() {
 	position: relative;
-	margin-top: 80px;
+	margin-top: 68px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -654,6 +654,10 @@ export default class InstagramView extends Vue {
 
 	.page-section__row {
 		@include row-top-widget();
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 80px;
+		}
 	}
 
 	.page-section__col {
