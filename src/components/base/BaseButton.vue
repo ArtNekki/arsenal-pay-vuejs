@@ -129,9 +129,10 @@ export default class BaseButton extends Vue {}
 	}
 
 	&_icon_left {
-		.icon {
-			margin-right: auto;
-			margin-left: -2px;
+		:deep(svg.icon) {
+			//margin-right: auto;
+			//margin-left: -2px;
+			margin-left: 2px;
 		}
 	}
 

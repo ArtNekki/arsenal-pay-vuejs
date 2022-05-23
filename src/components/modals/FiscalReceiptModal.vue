@@ -7,7 +7,7 @@
 	>
 		<div class="modal__body">
 			<button type="button" class="modal__close" @click="$emit('onClose')">
-				<BaseIcon name="cross" width="12" height="12" color="blue" />
+				<BaseIcon name="cross" width="12" height="12" color="black" />
 			</button>
 			<BaseImage src="modals/fiscal-receipt" :breakpoints="{ md: true }"></BaseImage>
 		</div>

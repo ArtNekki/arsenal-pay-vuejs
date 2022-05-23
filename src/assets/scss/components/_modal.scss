@@ -71,17 +71,6 @@
       padding: var(--body-padding-xl);
     }
 
-    //&--partnership {
-    //  padding: 22px 0 80px;
-    //
-    //  @include media-breakpoint-up(sm) {
-    //    padding-bottom: 90px;
-    //    --modal-height: initial;
-    //    max-width: 940px;
-    //    width: calc(100% - 40px);
-    //  }
-    //}
-
     .modal--check & {
       --modal-height: 658px;
       --modal-width: 320px;
@@ -99,6 +88,10 @@
         --modal-height: 1310px;
         --modal-width: 636px;
       }
+    }
+
+    :deep(picture.img) img {
+      width: 100%;
     }
   }
 
