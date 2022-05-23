@@ -87,6 +87,7 @@
 				require('@/assets/images/' + src + '--xs@3x.' + ext) +
 				' 3x'
 			"
+			:sizes="sizes"
 			:width="width"
 			:height="height"
 			:style="{ maxWidth: maxWidth + 'px' }"
@@ -117,15 +118,15 @@
 	</picture>
 </template>
 
-<script lang="ts">
-interface Breakpoints {
-	xs?: boolean;
-	sm?: boolean;
-	md?: boolean;
-	lg?: boolean;
-	xl?: boolean;
-	xxl?: boolean;
-	xxxl?: boolean;
+<script lang="js">
+
+const Media = {
+	xs: '(min-width: 360px)',
+	sm: '(min-width: 600px)',
+	md: '(min-width: 768px)',
+	lg: '(min-width: 900px)',
+	xl: '(min-width: 1280px)',
+	xxl: '(min-width: 1440px)',
 }
 
 import { Options, Vue } from "vue-class-component";
@@ -150,20 +151,25 @@ import { Options, Vue } from "vue-class-component";
 			default: "png",
 		},
 		alt: String,
-		breakpoints: {
-			xs: Boolean,
-			sm: Boolean,
-			md: Boolean,
-			lg: Boolean,
-			xl: Boolean,
-			xxl: Boolean,
-			xxxl: Boolean,
-		},
+		breakpoints: Object,
 		shadow: String,
 		radius: String,
 	},
 })
-export default class BaseImage extends Vue {}
+export default class BaseImage extends Vue {
+	sizes = [];
+
+	mounted() {
+		if (this.breakpoints) {
+			this.sizes = Object.entries(this.breakpoints)
+				.map(([key, value]) => {
+					console.log("key", key, "value:", value );
+					return `${Media[key]} ${value}px`
+				})
+				.join(',');
+		}
+	}
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
