@@ -95,9 +95,7 @@
 
 	<section class="page-section page-section_order_3 page-section_skew_inverse">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="test-big" width="116" height="116" color="green" />
-			</div>
+			<BaseIcon name="test-big" width="116" height="116" color="green" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">Тестирование оплаты и&nbsp;кассы</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Все параметры для тестирования виджета доступны <br class="br br--show-md" />после регистрации
@@ -145,9 +143,7 @@
 
 	<section class="page-section page-section_order_4 page-section_skew_inverse page-section_skew_no-bottom">
 		<div id="integratsiya-vidzheta" class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="settings-big" width="126" height="92" color="blue" />
-			</div>
+			<BaseIcon name="settings-big" width="126" height="92" color="blue" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">Интеграция виджета</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Посмотрите
@@ -194,9 +190,7 @@
 
 	<section class="page-section page-section_order_5 page-section_skew_no">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="cms-big" width="116" height="116" color="cyan" />
-			</div>
+			<BaseIcon name="cms-big" width="116" height="116" color="cyan" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">Готовые CMS плагины</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Скачайте и&nbsp;установите готовый модуль под вашу платформу.<br class="br br--show-md" />
@@ -229,9 +223,7 @@
 
 	<section class="page-section page-section_order_6 page-section_skew_no">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="http-big" width="116" height="116" color="purple" />
-			</div>
+			<BaseIcon name="http-big" width="116" height="116" color="purple" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">HTTP-уведомления</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Обновляйте статус заказа на&nbsp;своем сайте. <br class="br br--show-md" />Передавайте данные
@@ -278,9 +270,7 @@
 	</section>
 	<section class="page-section page-section_order_7 page-section_skew_no">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="email-big" width="116" height="116" color="green" />
-			</div>
+			<BaseIcon name="email-big" width="116" height="116" color="green" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">Email-уведомления</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Email-уведомления удобно применять на&nbsp;лендингах <br class="br br--show-md" />или на&nbsp;сайтах без
@@ -323,9 +313,7 @@
 
 	<section class="page-section page-section_order_8 page-section_skew_no-top page-section_skew_inverse">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="kassa-big" width="122" height="120" color="blue" />
-			</div>
+			<BaseIcon name="kassa-big" width="122" height="120" color="blue" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">Настройки кассы</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Фискальный чек отправляется на&nbsp;email покупателя и&nbsp;в&nbsp;ФНС через ОФД.<br
@@ -375,9 +363,7 @@
 
 	<section class="page-section page-section_order_9 page-section_skew_no-bottom">
 		<div id="arsenalpay-api" class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="api-big" width="116" height="116" color="purple" />
-			</div>
+			<BaseIcon name="api-big" width="116" height="116" color="purple" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">ArsenalPay API</h2>
 			<p class="text text_level_1 text_mgb_50">
 				Воспользуйтесь API для гибкой интеграции платежей на&nbsp;своем сайте.
@@ -744,7 +730,7 @@ export default class DevelopersView extends Vue {
 
 				margin-bottom: 90px;
 
-				picture {
+				picture.img {
 					padding: 19px 16px 21px;
 					width: 320px;
 					height: 498px;
@@ -760,6 +746,15 @@ export default class DevelopersView extends Vue {
 					@include media-breakpoint-up(sm) {
 						width: 348px;
 						height: 502px;
+					}
+
+					:deep(img) {
+						width: 280px;
+						height: 458px;
+
+						@include media-breakpoint-up(sm) {
+							width: 304px;
+						}
 					}
 				}
 			}
