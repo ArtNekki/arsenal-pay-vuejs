@@ -2,7 +2,7 @@
 	<section class="page-section page-section_order_1 page-section_skew_inverse page-section_skew_no-top">
 		<div class="page-section__container">
 			<h1 class="text text_type_title.level_1">Интернет-провайдерам</h1>
-			<div class="u-max-width.on_screen_md u-max-width.on_screen_lg">
+			<div class="u-max-width_688.on_screen_md u-max-width_840.on_screen_lg">
 				<p class="text text_level_1 text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
 					Полный пакет платежных сервисов для интернет и ТВ провайдеров. <br class="br br--show-lg" />
 					<BaseLink href="https://arsenalpay.ru/tariffs.html" link-in="text" color="blue"
@@ -18,7 +18,7 @@
 					Visa, MasterCard, Мир, Apple Pay.
 				</p>
 			</div>
-			<div class="page-section__button">
+			<div class="page-section__button page-section__button_type_top">
 				<BaseButton href="https://arsenalpay.ru/dashboard/register?step=1">Подключить</BaseButton>
 			</div>
 		</div>
@@ -26,14 +26,12 @@
 
 	<section class="page-section page-section_order_2">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="kassa-big" width="122" height="120" color="blue" />
-			</div>
+			<BaseIcon name="kassa-big" width="122" height="120" color="blue" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
 				Онлайн-касса включена.<br />
 				Свою кассу покупать не нужно.
 			</h2>
-			<div class="u-max-width.on_screen_md u-max-width.on_screen_lg">
+			<div class="u-max-width_688.on_screen_md u-max-width_840.on_screen_lg">
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Вы сразу получаете готовую к работе
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" link-in="text" color="blue"
@@ -127,9 +125,7 @@
 	<section class="page-section page-section_order_4 page-section_type_cut">
 		<div class="page-section__container">
 			<div class="page-section__shift">
-				<div class="page-section__icon">
-					<BaseIcon name="widget-big" width="84" height="106" color="purple" />
-				</div>
+				<BaseIcon name="widget-big" width="84" height="106" color="purple" bottom-space="xl" />
 				<h2 class="text text_type_title.level_1">
 					Функциональный виджет<br class="br br--show-sm" />
 					с простой интеграцией
@@ -466,12 +462,11 @@ export default class ProvidersView extends Vue {
 
 	.page-section__button {
 		@include media-breakpoint-up(sm) {
-			margin-top: 36px;
+			//margin-top: 36px;
 		}
 
 		@include media-breakpoint-up(md) {
-			margin-left: -20px;
-			max-width: 304px;
+			left: -10px;
 		}
 
 		@include media-breakpoint-up(xl) {
@@ -494,12 +489,10 @@ export default class ProvidersView extends Vue {
 
 	.page-section__button {
 		@include media-breakpoint-up(sm) {
-			margin-top: 36px;
 			max-width: 430px;
 		}
 
 		@include media-breakpoint-up(xl) {
-			margin-top: 36px;
 			max-width: 480px;
 		}
 	}
@@ -577,6 +570,8 @@ export default class ProvidersView extends Vue {
 		}
 
 		&:first-child {
+			@include content-center();
+
 			margin-bottom: 90px;
 
 			@include media-breakpoint-up(sm) {
@@ -608,7 +603,7 @@ export default class ProvidersView extends Vue {
 			}
 		}
 
-		picture {
+		picture.img {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -621,6 +616,15 @@ export default class ProvidersView extends Vue {
 
 			@include media-breakpoint-up(sm) {
 				height: 502px;
+			}
+
+			:deep(img) {
+				width: 280px;
+				height: 458px;
+
+				@include media-breakpoint-up(sm) {
+					width: 304px;
+				}
 			}
 		}
 	}
@@ -680,9 +684,7 @@ export default class ProvidersView extends Vue {
 	.page-section__col {
 		--image-width: 338px;
 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include content-center();
 
 		&:first-child {
 			position: relative;
@@ -720,21 +722,29 @@ export default class ProvidersView extends Vue {
 			}
 		}
 
-		picture {
+		picture.img {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			width: var(--image-width);
 			height: 658px;
-			background-color: (var(--color-bg-white));
+			background-color: var(--color-bg-white);
 			box-shadow: var(--box-shadow-purple-xl);
 			border-radius: 54px;
 
 			@include media-breakpoint-up(lg) {
-				width: 338px;
 				height: 496px;
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
+			}
+
+			:deep(img) {
+				width: 320px;
+				height: 640px;
+
+				@include media-breakpoint-up(lg) {
+					height: 480px;
+				}
 			}
 		}
 	}

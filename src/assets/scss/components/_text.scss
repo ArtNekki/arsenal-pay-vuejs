@@ -718,13 +718,13 @@
   }
 }
 
-[class~="u-max-width.on_screen_md"] {
+[class~="u-max-width_688.on_screen_md"] {
   @include media-breakpoint-up(md) {
     width: 688px;
   }
 }
 
-[class~="u-max-width.on_screen_lg"] {
+[class~="u-max-width_840.on_screen_lg"] {
   @include media-breakpoint-up(lg) {
     width: 840px;
   }

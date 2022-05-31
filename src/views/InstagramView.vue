@@ -121,9 +121,14 @@
 		<section class="page-section page-section_order_4 page-section_type_cut page-section_skew_inverse">
 			<div class="page-section__container">
 				<div class="page-section__shift">
-					<div class="page-section__icon">
-						<BaseIcon name="cashbox-size-lg" width="122" height="120" color="blue" size="lg" />
-					</div>
+					<BaseIcon
+						name="cashbox-size-lg"
+						width="122"
+						height="120"
+						color="blue"
+						size="lg"
+						bottom-space="xl"
+					/>
 					<h2 class="text text_type_title.level_1">
 						Онлайн касса бесплатно. <br class="br br--show-xs" />Свою кассу покупать не&nbsp;нужно.
 					</h2>
@@ -153,7 +158,7 @@
 				</div>
 				<div class="page-section__row">
 					<div class="page-section__col">
-						<BaseImage src="instagram-page/widget-dashboard" width="338" height="724"></BaseImage>
+						<BaseImage src="instagram-page/widget-dashboard" width="350" height="724"></BaseImage>
 					</div>
 					<div class="page-section__col">
 						<h3 class="text text_type_title.level_3">Каждая оплата проходит через&nbsp;кассу</h3>
@@ -684,6 +689,12 @@ export default class InstagramView extends Vue {
 			}
 		}
 	}
+
+	.page-section__button {
+		@include media-breakpoint-up(sm) {
+			margin-top: 20px;
+		}
+	}
 }
 
 .page-section_order_2 {
@@ -783,7 +794,7 @@ export default class InstagramView extends Vue {
 
 		&:first-child {
 			margin-top: 26px;
-			margin-bottom: 5px;
+			margin-bottom: 7px;
 
 			@include media-breakpoint-up(sm) {
 				margin-top: 41px;
@@ -794,9 +805,17 @@ export default class InstagramView extends Vue {
 				margin-top: 0;
 			}
 
-			picture {
+			picture.img {
 				position: relative;
 				align-self: center;
+
+				width: 313px;
+				height: 191px;
+
+				@include media-breakpoint-up(lg) {
+					width: 287px;
+					height: 579px;
+				}
 			}
 		}
 
@@ -832,7 +851,7 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 64px;
-			padding-bottom: 100px;
+			padding-bottom: 91px;
 		}
 
 		@include media-breakpoint-up(xl) {
@@ -862,7 +881,8 @@ export default class InstagramView extends Vue {
 	}
 
 	.page-section__button {
-		margin-top: -2px;
+		top: -2px;
+		margin-top: 0;
 
 		@include media-breakpoint-up(sm) {
 			width: 100%;
@@ -870,8 +890,13 @@ export default class InstagramView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
+			top: -11px;
 			margin-right: 0;
 			margin-left: 0;
+		}
+
+		@include media-breakpoint-up(xl) {
+			top: 0;
 		}
 	}
 
@@ -901,6 +926,11 @@ export default class InstagramView extends Vue {
 
 			@include media-breakpoint-up(lg) {
 				display: block;
+			}
+
+			picture.img {
+				width: 350px;
+				height: 724px;
 			}
 		}
 
@@ -1044,6 +1074,15 @@ export default class InstagramView extends Vue {
 			@include media-breakpoint-up(xl) {
 				margin-top: 0;
 			}
+
+			picture.img {
+				width: 320px;
+				height: 272px;
+
+				@include media-breakpoint-up(md) {
+					width: 360px;
+				}
+			}
 		}
 
 		&:last-child {
@@ -1076,6 +1115,17 @@ export default class InstagramView extends Vue {
 	}
 
 	.page-section__col {
+		&:first-child {
+			picture.img {
+				width: 320px;
+				height: 332px;
+
+				@include media-breakpoint-up(md) {
+					width: 360px;
+				}
+			}
+		}
+
 		&:last-child {
 			@include media-breakpoint-up(xl) {
 				margin-top: 25px;
@@ -1151,6 +1201,11 @@ export default class InstagramView extends Vue {
 			@include media-breakpoint-up(lg) {
 				margin-bottom: 90px;
 				order: 2;
+			}
+
+			picture.img {
+				width: 376px;
+				height: 305px;
 			}
 		}
 

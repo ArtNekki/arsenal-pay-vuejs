@@ -189,13 +189,17 @@
 
   &__button {
     position: relative;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 320px;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 36px;
+    }
 
     &_type_top {
-      margin-top: 20px;
       margin-right: auto;
       margin-left: auto;
-      max-width: 320px;
-      width: 100%;
 
       @include media-breakpoint-up(md) {
         max-width: 304px;
