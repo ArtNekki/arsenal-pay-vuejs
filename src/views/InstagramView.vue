@@ -5,12 +5,12 @@
 				<div class="page-section__notice">
 					<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
 				</div>
-				<div class="page-section__shift">
-					<h1 class="text text_type_title.level_1">Приём платежей в&nbsp;Instagram*</h1>
-					<p class="text text_level_1 text_before_button">
-						Без сайта. Без покупки онлайн кассы.<br class="br br--show-sm br--hide-md" />
-						Без потери клиентов.<br class="br br--show-xs" />Visa, MasterCard, Мир, Apple Pay.
-					</p>
+				<h1 class="text text_type_title.level_1 u-shift-left.on_screen_xl">Приём платежей в&nbsp;Instagram*</h1>
+				<p class="text text_level_1 text_ls_sm u-shift-left.on_screen_xl">
+					Без сайта. Без покупки онлайн кассы.<br class="br br--show-sm br--hide-md" />
+					Без потери клиентов.<br class="br br--show-xs" />Visa, MasterCard, Мир, Apple Pay.
+				</p>
+				<div class="page-section__button page-section__button_type_top">
 					<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1" align="center"
 						>Подключить</BaseButton
 					>
@@ -566,22 +566,21 @@ export default class InstagramView extends Vue {
 
 	@include media-breakpoint-up(lg) {
 		display: grid;
-		grid-template-columns: 385px minmax(340px, 400px);
-		grid-column-gap: 25px;
-		width: 100%;
+		grid-template-columns: 388px 400px;
+		grid-column-gap: 22px;
+		width: auto;
 		align-items: start;
-		justify-items: start;
 		text-align: left;
 	}
 
 	@include media-breakpoint-up(xl) {
-		grid-template-columns: 583px auto;
+		grid-template-columns: 617px 400px;
 		grid-column-gap: 42px;
 	}
 
-	@include media-breakpoint-up(xxl) {
-		grid-template-columns: 513px auto;
-	}
+	//@include media-breakpoint-up(xxl) {
+	//	grid-template-columns: 513px auto;
+	//}
 }
 
 @mixin col-top-widget() {
@@ -591,25 +590,35 @@ export default class InstagramView extends Vue {
 		@include media-breakpoint-up(lg) {
 			position: absolute;
 			top: 0;
-			left: -4px;
+			left: -9px;
 			z-index: var(--layer-2);
 			margin-left: 0;
 		}
 
 		@include media-breakpoint-up(xl) {
-			left: -63px;
+			left: -35px;
 		}
 
 		@include media-breakpoint-up(xxl) {
-			left: -163px;
+			left: -134px;
 		}
 	}
 
 	&:last-child {
 		@include media-breakpoint-up(lg) {
+			position: relative;
+			left: -5px;
 			padding-top: 68px;
 			grid-column: 2 / 3;
 			align-items: start;
+		}
+
+		@include media-breakpoint-up(xl) {
+			left: -5px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			left: -76px;
 		}
 	}
 }
@@ -662,6 +671,18 @@ export default class InstagramView extends Vue {
 
 	.page-section__col {
 		@include col-top-widget();
+
+		margin-bottom: 2px;
+
+		picture.img {
+			width: 388px;
+			height: 1170px;
+
+			@include media-breakpoint-up(xl) {
+				width: 617px;
+				height: 996px;
+			}
+		}
 	}
 }
 
@@ -681,7 +702,7 @@ export default class InstagramView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			top: -50px;
-			padding-bottom: 120px;
+			padding-bottom: 118px;
 		}
 	}
 
@@ -693,6 +714,12 @@ export default class InstagramView extends Vue {
 
 	.page-section__col {
 		@include col-top-widget();
+
+		&:last-child {
+			@include media-breakpoint-up(lg) {
+				padding-top: 66px;
+			}
+		}
 	}
 }
 
@@ -840,6 +867,11 @@ export default class InstagramView extends Vue {
 		@include media-breakpoint-up(sm) {
 			width: 100%;
 			max-width: 430px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-right: 0;
+			margin-left: 0;
 		}
 	}
 

@@ -188,5 +188,10 @@ export default class BaseImage extends Vue {
 	&_radius_md {
 		border-radius: 32px;
 	}
+
+	img {
+		width: inherit;
+		height: inherit;
+	}
 }
 </style>
