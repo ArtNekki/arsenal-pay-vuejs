@@ -18,7 +18,7 @@
 					картами: Visa, MasterCard, Мир, Apple Pay.
 				</p>
 			</div>
-			<div class="page-section__button">
+			<div class="page-section__button page-section__button_type_top">
 				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
 			</div>
 		</div>
@@ -26,9 +26,7 @@
 
 	<section class="page-section page-section_order_2">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="kassa-big" width="122" height="120" color="blue" />
-			</div>
+			<BaseIcon name="kassa-big" width="122" height="120" color="blue" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
 				Онлайн-касса включена.<br />
 				Свою кассу покупать не нужно.
@@ -60,9 +58,7 @@
 
 	<section class="page-section page-section_order_3">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="kassa-big" width="122" height="120" color="pink" />
-			</div>
+			<BaseIcon name="kassa-big" width="122" height="120" color="pink" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
 				Бесплатная Web-касса ArsenalPay<br class="br br--show-md" />
 				для туров оплаченных наличными
@@ -164,9 +160,7 @@
 	<section class="page-section page-section_order_5 page-section_type_cut">
 		<div class="page-section__container">
 			<div class="page-section__shift">
-				<div class="page-section__icon">
-					<BaseIcon name="widget-big" width="84" height="106" color="purple"></BaseIcon>
-				</div>
+				<BaseIcon name="widget-big" width="84" height="106" color="purple" bottom-space="xl" />
 				<h2 class="text text_type_title.level_1">
 					Красивый платёжный виджет<br class="br br--show-sm" />
 					с простой интеграцией
@@ -188,7 +182,7 @@
 						/>
 						будут вводить и оплачивать сумму тура.
 					</p>
-					<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm">
+					<p class="text text_level_1 text_display_inline.on_screen_sm text_ls_sm text_mgb_no">
 						Если на вашем сайте нет корзины,<br class="br br--show-lg" />
 						вы можете разместить виджет на каждой странице с туром.
 					</p>
@@ -228,9 +222,7 @@
 
 	<section class="page-section page-section_order_6">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="rub-big" width="120" height="120" color="green" />
-			</div>
+			<BaseIcon name="rub-big" width="120" height="120" color="green" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
 				Платежи перечисляются<br class="br br--show-xs" />
 				на расчётный счёт фирмы каждый день
@@ -482,16 +474,6 @@ export default class TravelView extends Vue {
 			padding-top: 167px;
 		}
 	}
-
-	.page-section__button {
-		@include media-breakpoint-up(sm) {
-			margin-top: 36px;
-		}
-
-		@include media-breakpoint-up(md) {
-			max-width: 304px;
-		}
-	}
 }
 
 .page-section_order_2 {
@@ -507,13 +489,11 @@ export default class TravelView extends Vue {
 	}
 
 	.page-section__button {
-		@include media-breakpoint-up(sm) {
-			margin-top: 36px;
-			max-width: 430px;
-		}
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 430px;
 
 		@include media-breakpoint-up(xl) {
-			margin-top: 36px;
 			max-width: 480px;
 		}
 	}
@@ -566,19 +546,19 @@ export default class TravelView extends Vue {
 		flex-direction: column;
 
 		@include media-breakpoint-up(lg) {
-			padding-left: 20px;
+			margin-left: -6px;
+			width: auto;
 			display: grid;
 			grid-template-columns: 348px 1fr;
 			grid-column-gap: 72px;
 		}
 
 		@include media-breakpoint-up(xl) {
-			padding-left: 153px;
+			margin-left: -25px;
 			grid-column-gap: 100px;
 		}
 
 		@include media-breakpoint-up(xxl) {
-			padding-left: 113px;
 			grid-column-gap: 140px;
 		}
 	}
@@ -604,7 +584,7 @@ export default class TravelView extends Vue {
 			}
 		}
 
-		picture {
+		picture.img {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -613,6 +593,15 @@ export default class TravelView extends Vue {
 			background-color: (var(--color-bg-white));
 			box-shadow: var(--box-shadow-md);
 			border-radius: 54px;
+
+			:deep(img) {
+				width: 280px;
+				height: 604px;
+
+				@include media-breakpoint-up(sm) {
+					width: 304px;
+				}
+			}
 		}
 	}
 }
