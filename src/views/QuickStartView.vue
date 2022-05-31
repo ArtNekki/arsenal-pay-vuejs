@@ -18,7 +18,7 @@
 					<br class="br br--show-xs br--hide-sm" />Visa, MasterCard, Мир, Apple Pay.
 				</p>
 			</div>
-			<div class="page-section__button">
+			<div class="page-section__button page-section__button_type_top">
 				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
 			</div>
 		</div>
@@ -26,9 +26,7 @@
 
 	<section class="page-section page-section_order_2">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="rub-big" width="120" height="120" color="green" />
-			</div>
+			<BaseIcon name="rub-big" width="120" height="120" color="green" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">Никаких расходов на&nbsp;сайт и&nbsp;кассу</h2>
 			<div>
 				<p class="text text_level_1 text_display_inline.on_screen_lg text_mgb_no">
@@ -158,9 +156,7 @@
 	<section class="page-section page-section_order_4 page-section_type_cut">
 		<div class="page-section__container">
 			<div class="page-section__shift">
-				<div class="page-section__icon">
-					<BaseIcon name="pay-big" width="80" height="100" color="purple" />
-				</div>
+				<BaseIcon name="pay-big" width="80" height="100" color="purple" bottom-space="xl" />
 				<h2 class="text text_type_title.level_1">Ваша страница оплаты</h2>
 				<div>
 					<p class="text text_level_1">
@@ -308,9 +304,7 @@
 
 	<section class="page-section page-section_order_7">
 		<div class="page-section__container">
-			<div class="page-section__icon">
-				<BaseIcon name="rub-big" width="120" height="120" color="green" />
-			</div>
+			<BaseIcon name="rub-big" width="120" height="120" color="green" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">Никакой абонентской платы</h2>
 			<p class="text text_level_1">
 				Вы&nbsp;платите только за&nbsp;успешные платежи и&nbsp;экономите 50&nbsp;000&nbsp;₽ в&nbsp;год.
@@ -516,18 +510,6 @@ export default class QuickstartView extends Vue {
 		}
 	}
 
-	.page-section__button {
-		margin-top: 20px;
-
-		@include media-breakpoint-up(sm) {
-			margin-top: 36px;
-		}
-
-		@include media-breakpoint-up(md) {
-			max-width: 304px;
-		}
-	}
-
 	.page-section__notice {
 		@include media-breakpoint-up(md) {
 			margin-top: 43px;
@@ -632,6 +614,8 @@ export default class QuickstartView extends Vue {
 
 	.page-section__row {
 		margin-top: 22px;
+		display: flex;
+		flex-direction: column;
 
 		@include media-breakpoint-up(sm) {
 			margin-top: 35px;
@@ -642,21 +626,29 @@ export default class QuickstartView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
-			left: -20px;
+			left: -10px;
+			width: auto;
 			display: grid;
-			grid-template-columns: 360px 1fr;
+			grid-template-columns: 360px 420px;
 			grid-column-gap: 60px;
 		}
 
 		@include media-breakpoint-up(xl) {
-			left: -16px;
+			left: -83px;
+			grid-template-columns: 360px 1fr;
 			grid-column-gap: 94px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			left: -29px;
+			grid-column-gap: 112px;
 		}
 	}
 
 	.page-section__col {
 		&:first-child {
 			margin-bottom: 50px;
+			align-self: center;
 
 			@include media-breakpoint-up(sm) {
 				margin-bottom: 58px;
@@ -670,6 +662,7 @@ export default class QuickstartView extends Vue {
 				--border-radius-top: 50px;
 				--border-radius-bottom: 36px;
 
+				width: 320px;
 				height: 850px;
 				border-radius: var(--border-radius-top) var(--border-radius-top) var(--border-radius-bottom)
 					var(--border-radius-bottom);
@@ -677,6 +670,7 @@ export default class QuickstartView extends Vue {
 				background-color: var(--color-bg-white);
 
 				@include media-breakpoint-up(sm) {
+					width: 360px;
 					height: 928px;
 				}
 			}
