@@ -1,7 +1,7 @@
 <template>
 	<article class="review-card">
 		<div class="review-card__header">
-			<BaseImage :src="data?.src" width="80" height="80" :alt="data?.name" />
+			<BaseImage v-if="data?.src" :src="data?.src" width="80" height="80" :alt="data?.name" />
 			<span>{{ data?.name }}</span>
 		</div>
 		<b class="text text_level_3 text_increase_no.on_screen_md text_weight_bold text_mgb_14" v-html="data.title"></b>

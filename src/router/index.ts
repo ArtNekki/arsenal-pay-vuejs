@@ -55,6 +55,11 @@ const routes: Array<RouteRecordRaw> = [
 		name: "travel",
 		component: () => import("../views/TravelView.vue"),
 	},
+	{
+		path: "/vkontakte",
+		name: "vkontakte",
+		component: () => import("../views/VkontakteView.vue"),
+	},
 ];
 
 const router = createRouter({
