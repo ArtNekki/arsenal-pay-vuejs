@@ -1,25 +1,38 @@
 <template>
-	<section class="page-section page-section_order_1"></section>
+	<section class="page-section page-section_order_1">
+		<div class="page-section__container">
+			<div class="page-section__notice">
+				<BaseNotice state="success">Теперь приём платежей доступен и самозанятым</BaseNotice>
+			</div>
+			<h1 class="text text_type_title.level_1 u-shift-left.on_screen_xl">Приём платежей Вконтакте</h1>
+			<p class="text text_level_1 text_ls_sm u-shift-left.on_screen_xl">
+				Оплата товаров и услуг на любой странице в VK. Бесплатная онлайн-касса. Деньги поступают на ваш
+				расчётный счёт ежедневно и без комиссий. Свой сайт не нужен. Visa, MasterCard, Мир, Apple Pay.
+			</p>
+			<div class="page-section__button page-section__button_type_top">
+				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
+			</div>
+		</div>
+	</section>
 
 	<section class="page-section page-section_order_2">
 		<div class="page-section__container">
 			<BaseIcon name="kassa-big" width="122" height="120" color="blue" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
-				Онлайн-касса включена.<br />
+				Онлайн касса бесплатно.<br />
 				Свою кассу покупать не нужно.
 			</h2>
 			<div class="u-max-width.on_screen_md">
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Вы сразу получаете готовую к работе
+					Вам не нужно покупать или брать в аренду свою онлайн-кассу. Все платежи проходят через
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text" color="blue"
-						>кассу ArsenalPay.</BaseLink
+						>онлайн-кассу ArsenalPay</BaseLink
 					>
-					<br class="br br--show-sm" />
-					Никаких расходов на кассу — вы платите только за чеки успешных покупок.
+					бесплатно.
 				</p>
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Все чеки отправляются через ОФД в налоговую автоматически.<br class="br br--show-lg" />
-					Чек отправляется на email клиента сразу после оплаты.
+					Чеки отправляются через ОФД в налоговую автоматически. Клиент получает чек на свой email сразу после
+					оплаты. Чеки сохраняются в личном кабинете и всегда доступны.
 				</p>
 			</div>
 			<div class="page-section__button">
@@ -37,15 +50,22 @@
 			<BaseIcon name="rub-big" width="120" height="120" color="green" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
 				Платежи перечисляются<br class="br br--show-xs" />
-				на расчётный счёт фирмы каждый день
+				на ваш расчётный счёт ежедневно и без комиссий
 			</h2>
-
+			<p class="text text_level_1">
+				Деньги поступают автоматически на расчётный счёт юрлица, ИП или самозанятого. Доступно и <BaseLink
+					href="#"
+					link-in="text"
+					color="blue"
+					>мгновенное зачисление средств</BaseLink
+				>.
+			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseIcon name="check-circle-medium" width="48" height="38" color="pink" />
 					<h3 class="text text_type_title.level_3">Без комиссий</h3>
 					<p class="text text_level_3 text_mgb_48.on_screen_sm text_mgb_42.on_screen_md">
-						Никаких скрытых комиссий <br class="br br--show-xl" />за&nbsp;вывод на&nbsp;расчётный счёт.
+						Никаких комиссий за вывод на расчётный счёт.
 					</p>
 				</div>
 				<div class="page-section__col">
@@ -65,20 +85,49 @@
 			</div>
 		</div>
 	</section>
-	<section class="page-section page-section_order_6 page-section_skew_no">
+	<section class="page-section page-section_order_4 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
 			<h2 class="text text_type_title.level_1">
-				Мультиссылка.<br class="br br--show-sm" />
-				Соберите все важные ссылки&nbsp;вместе.
+				Принимайте оплату <br class="br br--show-sm" />
+				через ссылку в товаре.
 			</h2>
+			<p class="text text_level_1 text_display_inline.on_screen_sm">
+				Добавьте ссылку на страницу оплаты в каждый товар. Клиент сможет перейти по ней и оплатить нужную сумму.
+			</p>
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage
+						src="vkontakte-page/messengers"
+						shadow="md"
+						radius="md"
+						:breakpoints="{ xs: true }"
+					></BaseImage>
+				</div>
+				<div class="page-section__col">
+					<BaseImage
+						src="vkontakte-page/messengers"
+						shadow="md"
+						radius="md"
+						:breakpoints="{ xs: true }"
+					></BaseImage>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section page-section_order_5 page-section_skew_no">
+		<div class="page-section__container">
+			<BaseChip view="pink">Бесплатно</BaseChip>
+			<h2 class="text text_type_title.level_1">Выставляйте счета в 2 клика</h2>
 			<div>
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Рассказывайте больше о&nbsp;вашем бизнесе, привлекайте новых&nbsp;клиентов.
+					В счёте указывается полная номенклатура и информация о клиенте, все по 54‑ФЗ.
 				</p>
-				<br class="br br--show-lg" />
 				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
-					Отвечайте на&nbsp;часто задаваемые вопросы.
+					Отправляйте счёт любым удобным способом: WhatsApp, Telegram, Viber, VK.
+				</p>
+				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
+					Клиент оплачивает счёт по ссылке и получает чек об оплате.
 				</p>
 			</div>
 			<div class="page-section__row">
@@ -91,15 +140,39 @@
 					></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<h3 class="text text_type_title.level_3">Создавайте много ссылок</h3>
+					<BaseImage
+						src="vkontakte-page/messengers"
+						shadow="md"
+						radius="md"
+						:breakpoints="{ xs: true }"
+					></BaseImage>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section page-section_order_6 page-section_skew_no">
+		<div class="page-section__container">
+			<BaseChip view="pink">Бесплатно</BaseChip>
+			<h2 class="text text_type_title.level_1">Принимайте оплату в любых соцсетях и мессенджерах</h2>
+			<div class="page-section__row">
+				<div class="page-section__col">
+					<BaseImage
+						src="vkontakte-page/messengers"
+						shadow="md"
+						radius="md"
+						:breakpoints="{ xs: true }"
+					></BaseImage>
+				</div>
+				<div class="page-section__col">
+					<h3 class="text text_type_title.level_3">Размещайте ссылку на оплату где угодно</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						В&nbsp;профиле Instagram* можно добавить только одну ссылку, но&nbsp;одной ссылки часто
-						недостаточно, чтобы подробно рассказать о&nbsp;своем бизнесе и&nbsp;увеличить продажи.
+						Вы можете размещать ссылку на вашу страницу оплаты в любых соцсетях. Указывать ее в описании
+						группы, магазина или личной страницы.
 					</p>
-					<h3 class="text text_type_title.level_3">Привлекайте больше клиентов</h3>
+					<h3 class="text text_type_title.level_3">Отправляйте ссылку на оплату любыми способами</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						Ваши клиенты смогут не&nbsp;только оплачивать заказы, но&nbsp;и&nbsp;узнавать об&nbsp;акциях,
-						новых предложениях, подробности о&nbsp;товарах, услугах и&nbsp;доставке.
+						Используте любой удобный мессенджер WhatsApp, Telegram, Viber, VK . Отправляйте ссылку на оплату
+						во время общения с клиентами.
 					</p>
 				</div>
 			</div>
@@ -108,18 +181,8 @@
 	<section class="page-section page-section_order_7 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_type_title.level_1">
-				Автоматическая email <br class="br br--show-sm br--hide-md" />рассылка
-			</h2>
-			<div>
-				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Без затрат на&nbsp;сервисы рассылок. Никаких настроек и&nbsp;интеграций.
-				</p>
-				<br class="br br--show-md" />
-				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
-					Клиент&nbsp;получает письмо с&nbsp;доступом к&nbsp;контенту после оплаты.
-				</p>
-			</div>
+			<h2 class="text text_type_title.level_1">Автоматизируйте продажу цифрового контента</h2>
+			<p class="text text_level_1 text_display_inline.on_screen_sm">Автоматизируйте продажу цифрового контента</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage src="vkontakte-page/widget-email" :breakpoints="{ xs: true, sm: true }"></BaseImage>
@@ -145,7 +208,7 @@
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
 			<h2 class="text text_type_title.level_1 text_mgb_42 text_mgb_60.on_screen_md">
-				Кнопки быстрой связи <br class="br br--show-sm" />WhatsApp, Telegram, Viber
+				Оставайтесь на связи с клиентами. Кнопки WhatsApp, Telegram, Viber.
 			</h2>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -157,10 +220,10 @@
 					></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<h3 class="text text_type_title.level_3">Удобное общение</h3>
+					<h3 class="text text_type_title.level_3">Общение сразу после оплаты</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						Удобный способ общения обеспечит больше обращений. Поможет увеличить продажи
-						и&nbsp;не&nbsp;терять клиентов.
+						Клиент сможет написать вам сразу как оплатил заказ. Не нужно куда-то переходить и искать другие
+						способы связи.
 					</p>
 					<h3 class="text text_type_title.level_3">Легко начать диалог</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
@@ -175,19 +238,7 @@
 	<section class="page-section page-section_order_9 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_type_title.level_1">
-				Мультиссылка.<br class="br br--show-sm" />
-				Соберите все важные ссылки&nbsp;вместе.
-			</h2>
-			<div>
-				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Рассказывайте больше о&nbsp;вашем бизнесе, привлекайте новых&nbsp;клиентов.
-				</p>
-				<br class="br br--show-lg" />
-				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
-					Отвечайте на&nbsp;часто задаваемые вопросы.
-				</p>
-			</div>
+			<h2 class="text text_type_title.level_1">Соберите все важные ссылки вместе.</h2>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage
@@ -198,15 +249,15 @@
 					></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<h3 class="text text_type_title.level_3">Создавайте много ссылок</h3>
+					<h3 class="text text_type_title.level_3">Расскажите все о вашем бизнесе</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						В&nbsp;профиле Instagram* можно добавить только одну ссылку, но&nbsp;одной ссылки часто
-						недостаточно, чтобы подробно рассказать о&nbsp;своем бизнесе и&nbsp;увеличить продажи.
+						В профиле Instagram можно добавить только одну ссылку, но одной ссылки часто недостаточно, чтобы
+						подробно рассказать о своем бизнесе и увеличить продажи.
 					</p>
 					<h3 class="text text_type_title.level_3">Привлекайте больше клиентов</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						Ваши клиенты смогут не&nbsp;только оплачивать заказы, но&nbsp;и&nbsp;узнавать об&nbsp;акциях,
-						новых предложениях, подробности о&nbsp;товарах, услугах и&nbsp;доставке.
+						Ваши клиенты смогут не только оплачивать заказы, но и узнавать об акциях, новых предложениях,
+						подробности о товарах, услугах.
 					</p>
 				</div>
 			</div>
@@ -215,18 +266,17 @@
 	<section class="page-section page-section_order_10">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатные чеки по всем заказам</BaseChip>
-			<h2 class="text text_type_title.level_1">Web-касса ArsenalPay</h2>
+			<h2 class="text text_type_title.level_1">
+				Бесплатная Web-касса ArsenalPay для заказов оплаченных наличными
+			</h2>
 			<p class="text text_level_1">
-				Если клиент оплатил заказ наличными, переводом на&nbsp;карту, или перечислил деньги на&nbsp;расчётный
-				счёт, вы&nbsp;легко и&nbsp;быстро пробьёте чек в&nbsp;личном кабинете. Чеки пробиваются с&nbsp;полной
-				номенклатурой, в&nbsp;соответствии с&nbsp;последними изменениями 54‑ФЗ.
+				Пробивайте чеки для заказов, оплаченных наличными, переводом на карту, или перечислением
+				на расчётный счёт. Чеки легко пробиваются в личном кабинете и отправляются на email клиента
+				автоматически. Полная номенклатура в чеках заполняется в соответствии с 54‑ФЗ.
 				<br class="br br--show-md br--hide-lg" /><b
 					class="text text_color_pink text_weight_bold text_display_inline.on_screen_sm"
 					>Чеки&nbsp;бесплатны и&nbsp;без комиссии.</b
-				>
-				<br class="br br--show-md" />
-				Мгновенно отправляются через ОФД в&nbsp;налоговую и&nbsp;на&nbsp;email вашего клиента. Теперь у&nbsp;вас
-				будут чеки по&nbsp;всем&nbsp;заказам.
+				>. Чеки по всем заказам сохраняются в личном кабинете.
 			</p>
 		</div>
 	</section>
@@ -238,9 +288,8 @@
 				<BaseIcon name="check-medium" width="52" height="46" color="pink" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Выставление счёта</h3>
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
-					Счет выставляется в&nbsp;2&nbsp;клика. Просто укажите сумму и полную номенклатуру&nbsp;заказа.
-					Отправьте клиенту ссылку на&nbsp;оплату счета. Сразу после оплаты клиенту придёт чек, а&nbsp;вам
-					уведомление об&nbsp;успешном платеже.
+					Счёт выставляется в личном кабинете в 2 клика. Просто укажите сумму и полную номенклатуру заказа,
+					затем отправьте клиенту созданную ссылку. Сразу после оплаты клиенту придёт чек, а вам уведомление об успешном платеже.
 				</p>
 				<BaseIcon name="apple-pay-medium" width="68" height="45" color="black" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Apple Pay</h3>
@@ -253,18 +302,16 @@
 				<BaseIcon name="refund-medium" width="52" height="52" color="purple" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Возврат платежа</h3>
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
-					Вы&nbsp;можете вернуть деньги клиенту в&nbsp;любое время в&nbsp;личном кабинете. Возврат можно
-					сделать на&nbsp;всю сумму или на&nbsp;часть суммы. Комиссия за&nbsp;возврат платежа
-					не&nbsp;взимается.
+					Вы легко сможете вернуть деньги клиенту в любое время в личном кабинете.
+					Возврат можно сделать на всю сумму или на часть суммы. Комиссии за возврат нет.
 				</p>
 				<BaseIcon name="hold-medium" width="50" height="50" color="cyan" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Холдирование платежей</h3>
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
-					При оплате деньги на&nbsp;карте клиента временно &laquo;замораживаются&raquo;. Эта&nbsp;функция
-					позволяет вам проверить наличие товара или услуги, и&nbsp;уже после проверки списать
-					&laquo;замороженные&raquo; средства с&nbsp;карты клиента. Вы&nbsp;можете списать часть суммы,
-					комиссия за&nbsp;платёж берётся только со&nbsp;списанной суммы. При&nbsp;отмене
-					&laquo;заморозки&raquo; никакой комиссии вы&nbsp;не&nbsp;платите.
+					Холдирование платежей позволяет вам проверить наличие товара или услуги. Деньги с карты клиента
+					не списываются сразу, а временно «замораживаются». После проверки наличия, вы подтверждаете
+					списание суммы. Можно списать как всю сумму так и ее часть. Комиссия за платёж берётся только со списанной суммы.
+					Комиссия за отмену «заморозки» не взимается.
 				</p>
 			</div>
 		</div>
@@ -364,6 +411,7 @@ import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
 		BaseChip,
 		BasePrompt,
 		BaseRateBox,
+		BaseNotice,
 	},
 })
 export default class VkontakteView extends Vue {
@@ -413,6 +461,32 @@ export default class VkontakteView extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .page-section_order_1 {
+	background-color: var(--color-bg-pink-light);
+
+	&::before {
+		top: -90px;
+		transform: unset;
+	}
+
+	.page-section__container {
+		padding-top: 50px;
+		padding-bottom: 150px;
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 157px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 60px;
+			padding-bottom: 150px;
+		}
+	}
+
+	.page-section__button {
+		@include media-breakpoint-up(sm) {
+			margin-top: 20px;
+		}
+	}
 }
 
 .page-section_order_2 {
