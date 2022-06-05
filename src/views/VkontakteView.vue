@@ -12,6 +12,9 @@
 			<div class="page-section__button page-section__button_type_top">
 				<BaseButton href="https://arsenalpay.ru/dashboard/quickstart?step=1">Подключить</BaseButton>
 			</div>
+			<div class="page-section__video">
+				<BaseVideo />
+			</div>
 		</div>
 	</section>
 
@@ -24,7 +27,8 @@
 			</h2>
 			<div class="u-max-width.on_screen_md">
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Вам не нужно покупать или брать в аренду свою онлайн-кассу. Все платежи проходят через
+					Вам не нужно покупать или брать в аренду свою онлайн-кассу.<br class="br br--show-xs" />
+					Все платежи проходят через
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text" color="blue"
 						>онлайн-кассу ArsenalPay</BaseLink
 					>
@@ -53,12 +57,10 @@
 				на ваш расчётный счёт ежедневно и без комиссий
 			</h2>
 			<p class="text text_level_1">
-				Деньги поступают автоматически на расчётный счёт юрлица, ИП или самозанятого. Доступно и <BaseLink
-					href="#"
-					link-in="text"
-					color="blue"
-					>мгновенное зачисление средств</BaseLink
-				>.
+				Деньги поступают автоматически на расчётный счёт юрлица, ИП или самозанятого. Доступно<br
+					class="br br--show-xs"
+				/>
+				и <BaseLink href="#" link-in="text" color="blue">мгновенное зачисление средств</BaseLink>.
 			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -85,32 +87,28 @@
 			</div>
 		</div>
 	</section>
-	<section class="page-section page-section_order_4 page-section_skew_no">
+	<section class="page-section page-section_order_4 page-section_skew_no-bottom">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
 			<h2 class="text text_type_title.level_1">
 				Принимайте оплату <br class="br br--show-sm" />
 				через ссылку в товаре.
 			</h2>
-			<p class="text text_level_1 text_display_inline.on_screen_sm">
+			<p class="text text_level_1 text_mgb_60">
 				Добавьте ссылку на страницу оплаты в каждый товар. Клиент сможет перейти по ней и оплатить нужную сумму.
 			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage
-						src="vkontakte-page/messengers"
+						src="vkontakte-page/vk-items"
 						shadow="md"
 						radius="md"
-						:breakpoints="{ xs: true }"
+						width="320"
+						height="598"
 					></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<BaseImage
-						src="vkontakte-page/messengers"
-						shadow="md"
-						radius="md"
-						:breakpoints="{ xs: true }"
-					></BaseImage>
+					<BaseImage src="vkontakte-page/payment" shadow="md" radius="md"></BaseImage>
 				</div>
 			</div>
 		</div>
@@ -289,7 +287,8 @@
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Выставление счёта</h3>
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
 					Счёт выставляется в личном кабинете в 2 клика. Просто укажите сумму и полную номенклатуру заказа,
-					затем отправьте клиенту созданную ссылку. Сразу после оплаты клиенту придёт чек, а вам уведомление об успешном платеже.
+					затем отправьте клиенту созданную ссылку. Сразу после оплаты клиенту придёт чек, а вам уведомление
+					об успешном платеже.
 				</p>
 				<BaseIcon name="apple-pay-medium" width="68" height="45" color="black" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Apple Pay</h3>
@@ -302,16 +301,16 @@
 				<BaseIcon name="refund-medium" width="52" height="52" color="purple" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Возврат платежа</h3>
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md text_mgb_80.on_screen_md">
-					Вы легко сможете вернуть деньги клиенту в любое время в личном кабинете.
-					Возврат можно сделать на всю сумму или на часть суммы. Комиссии за возврат нет.
+					Вы легко сможете вернуть деньги клиенту в любое время в личном кабинете. Возврат можно сделать
+					на всю сумму или на часть суммы. Комиссии за возврат нет.
 				</p>
 				<BaseIcon name="hold-medium" width="50" height="50" color="cyan" bottom-space="md" />
 				<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Холдирование платежей</h3>
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 					Холдирование платежей позволяет вам проверить наличие товара или услуги. Деньги с карты клиента
-					не списываются сразу, а временно «замораживаются». После проверки наличия, вы подтверждаете
-					списание суммы. Можно списать как всю сумму так и ее часть. Комиссия за платёж берётся только со списанной суммы.
-					Комиссия за отмену «заморозки» не взимается.
+					не списываются сразу, а временно «замораживаются». После проверки наличия, вы подтверждаете списание
+					суммы. Можно списать как всю сумму так и ее часть. Комиссия за платёж берётся только со списанной
+					суммы. Комиссия за отмену «заморозки» не взимается.
 				</p>
 			</div>
 		</div>
@@ -399,6 +398,7 @@ import BasePrompt from "@/components/base/BasePrompt.vue";
 import TheReviewsSlider from "@/components/TheReviewsSlider.vue";
 import { SwiperSlide } from "swiper/vue/swiper-vue";
 import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
+import BaseVideo from "@/components/base/BaseVideo.vue";
 
 @Options({
 	components: {
@@ -412,6 +412,7 @@ import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
 		BasePrompt,
 		BaseRateBox,
 		BaseNotice,
+		BaseVideo,
 	},
 })
 export default class VkontakteView extends Vue {
@@ -494,7 +495,7 @@ export default class VkontakteView extends Vue {
 
 	.page-section__container {
 		padding-top: 61px;
-		padding-bottom: 247px;
+		padding-bottom: 251px;
 
 		//@include media-breakpoint-up(md) {
 		//	padding-bottom: 146px;
@@ -527,7 +528,7 @@ export default class VkontakteView extends Vue {
 
 	.page-section__row {
 		position: relative;
-		margin-top: 45px;
+		margin-top: 21px;
 		margin-left: -12px;
 		max-width: 940px;
 
@@ -637,6 +638,32 @@ export default class VkontakteView extends Vue {
 
 			@include media-breakpoint-up(md) {
 				margin-top: 50px;
+			}
+		}
+	}
+}
+
+.page-section_order_4 {
+	.page-section__container {
+		padding-top: 48px;
+	}
+
+	.page-section__row {
+	}
+
+	.page-section__col {
+		&:first-child {
+			position: relative;
+			margin-bottom: 70px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				right: 20px;
+				width: 55px;
+				height: 98px;
+				//background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-down-left");
 			}
 		}
 	}
