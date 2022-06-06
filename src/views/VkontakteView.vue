@@ -108,7 +108,13 @@
 					></BaseImage>
 				</div>
 				<div class="page-section__col">
-					<BaseImage src="vkontakte-page/payment" shadow="md" radius="md"></BaseImage>
+					<BaseImage
+						src="vkontakte-page/payment"
+						shadow="md"
+						radius="md"
+						width="320"
+						height="810"
+					></BaseImage>
 				</div>
 			</div>
 		</div>
@@ -121,28 +127,30 @@
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					В счёте указывается полная номенклатура и информация о клиенте, все по 54‑ФЗ.
 				</p>
-				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Отправляйте счёт любым удобным способом: WhatsApp, Telegram, Viber, VK.
 				</p>
-				<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
+				<p class="text text_level_1 text_display_inline.on_screen_sm">
 					Клиент оплачивает счёт по ссылке и получает чек об оплате.
 				</p>
 			</div>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage
-						src="vkontakte-page/messengers"
+						src="vkontakte-page/invoice"
 						shadow="md"
 						radius="md"
-						:breakpoints="{ xs: true }"
+						width="320"
+						height="588"
 					></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<BaseImage
-						src="vkontakte-page/messengers"
+						src="vkontakte-page/whatsapp"
 						shadow="md"
-						radius="md"
-						:breakpoints="{ xs: true }"
+						radius="lg"
+						width="320"
+						height="588"
 					></BaseImage>
 				</div>
 			</div>
@@ -151,15 +159,10 @@
 	<section class="page-section page-section_order_6 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_type_title.level_1">Принимайте оплату в любых соцсетях и мессенджерах</h2>
+			<h2 class="text text_type_title.level_1 text_mgb_42">Принимайте оплату в любых соцсетях и мессенджерах</h2>
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseImage
-						src="vkontakte-page/messengers"
-						shadow="md"
-						radius="md"
-						:breakpoints="{ xs: true }"
-					></BaseImage>
+					<BaseImage src="vkontakte-page/messengers" width="360" height="308"></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Размещайте ссылку на оплату где угодно</h3>
@@ -180,10 +183,12 @@
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
 			<h2 class="text text_type_title.level_1">Автоматизируйте продажу цифрового контента</h2>
-			<p class="text text_level_1 text_display_inline.on_screen_sm">Автоматизируйте продажу цифрового контента</p>
+			<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
+				Бесплатная email рассылка. Никаких настроек и интеграций.
+			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
-					<BaseImage src="vkontakte-page/widget-email" :breakpoints="{ xs: true, sm: true }"></BaseImage>
+					<BaseImage src="vkontakte-page/widget-email" width="376" height="305"></BaseImage>
 				</div>
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Автоматизируйте работу с&nbsp;клиентами</h3>
@@ -205,7 +210,7 @@
 	<section class="page-section page-section_order_8 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_type_title.level_1 text_mgb_42 text_mgb_60.on_screen_md">
+			<h2 class="text text_type_title.level_1">
 				Оставайтесь на связи с клиентами. Кнопки WhatsApp, Telegram, Viber.
 			</h2>
 			<div class="page-section__row">
@@ -263,16 +268,16 @@
 	</section>
 	<section class="page-section page-section_order_10">
 		<div class="page-section__container">
-			<BaseChip view="pink">Бесплатные чеки по всем заказам</BaseChip>
+			<BaseIcon name="kassa-big" width="122" height="120" color="pink" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
-				Бесплатная Web-касса ArsenalPay для заказов оплаченных наличными
+				Бесплатная Web-касса ArsenalPay для заказов оплаченных наличными
 			</h2>
 			<p class="text text_level_1">
 				Пробивайте чеки для заказов, оплаченных наличными, переводом на карту, или перечислением
 				на расчётный счёт. Чеки легко пробиваются в личном кабинете и отправляются на email клиента
 				автоматически. Полная номенклатура в чеках заполняется в соответствии с 54‑ФЗ.
 				<br class="br br--show-md br--hide-lg" /><b
-					class="text text_color_pink text_weight_bold text_display_inline.on_screen_sm"
+					class="text text_color_pink text_weight_bold text_display_inline"
 					>Чеки&nbsp;бесплатны и&nbsp;без комиссии.</b
 				>. Чеки по всем заказам сохраняются в личном кабинете.
 			</p>
@@ -330,12 +335,10 @@
 					>Сниженная комиссия 1%</BaseLink
 				>
 				при продаже одежды, еды, техники, косметики и др.<br class="br br--show-lg" />
-				Вы&nbsp;платите только за&nbsp;успешные платежи и&nbsp;экономите 50&nbsp;000&nbsp;₽ в&nbsp;год.<br
-					class="br br--show-lg"
-				/>
-				<b class="text text_weight_bold text_color_pink text_display_inline"> Бесплатные опции</b>&nbsp;&mdash;
-				онлайн касса, выставление счёта, возврат платежа, холдирование платежей, кнопки WhatsApp, Telegram,
-				Viber, мультиссылка, автоматическая email&nbsp;рассылка.
+				Вы платите только за успешные платежи и экономите от 50 000 ₽ в год.<br class="br br--show-lg" />
+				<b class="text text_weight_bold text_color_pink text_display_inline"> Бесплатные опции</b>&nbsp;&mdash;
+				онлайн-касса, перевод средств на расчётный счёт, выставление счёта, возврат платежа, холдирование
+				платежей, кнопки WhatsApp, Telegram, Viber, важные ссылки, автоматическая email рассылка.
 			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -471,7 +474,7 @@ export default class VkontakteView extends Vue {
 
 	.page-section__container {
 		padding-top: 50px;
-		padding-bottom: 150px;
+		padding-bottom: 182px;
 
 		@include media-breakpoint-up(md) {
 			padding-bottom: 157px;
@@ -650,6 +653,7 @@ export default class VkontakteView extends Vue {
 .page-section_order_4 {
 	.page-section__container {
 		padding-top: 48px;
+		padding-bottom: 70px;
 	}
 
 	.page-section__row {
@@ -658,16 +662,60 @@ export default class VkontakteView extends Vue {
 	.page-section__col {
 		&:first-child {
 			position: relative;
-			margin-bottom: 70px;
+			//margin-bottom: 70px;
+			margin-bottom: 68px;
 
 			&::before {
 				content: "";
 				position: absolute;
-				bottom: 0;
-				right: 20px;
+				bottom: -85px;
+				right: 34px;
 				width: 55px;
 				height: 98px;
-				//background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-down-left");
+				background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-down-left.svg");
+				background-repeat: no-repeat;
+			}
+		}
+
+		&:last-child {
+			:deep(img) {
+				width: 320px;
+			}
+		}
+	}
+}
+
+.page-section_order_5 {
+	.page-section__container {
+		padding-top: 48px;
+		padding-bottom: 117px;
+	}
+
+	.page-section__row {
+		margin-top: 43px;
+	}
+
+	.page-section__col {
+		&:first-child {
+			position: relative;
+			//margin-bottom: 70px;
+			margin-bottom: 68px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: -85px;
+				left: 52px;
+				width: 55px;
+				height: 98px;
+				background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-down-right.svg");
+				background-repeat: no-repeat;
+			}
+		}
+
+		&:last-child {
+			:deep(img) {
+				width: 320px;
 			}
 		}
 	}
@@ -675,6 +723,8 @@ export default class VkontakteView extends Vue {
 
 .page-section_order_6 {
 	.page-section__container {
+		padding-bottom: 95px;
+
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 101px;
 		}
@@ -692,14 +742,10 @@ export default class VkontakteView extends Vue {
 
 	.page-section__col {
 		&:first-child {
-			picture.img {
-				width: 320px;
-				height: 332px;
-
-				@include media-breakpoint-up(md) {
-					width: 360px;
-				}
-			}
+			position: relative;
+			left: -19px;
+			margin-top: 7px;
+			margin-bottom: 35px;
 		}
 
 		&:last-child {
@@ -713,7 +759,7 @@ export default class VkontakteView extends Vue {
 .page-section_order_7 {
 	.page-section__container {
 		padding-top: 0;
-		padding-bottom: 185px;
+		padding-bottom: 96px;
 
 		@include media-breakpoint-up(sm) {
 			padding-bottom: 132px;
@@ -763,7 +809,7 @@ export default class VkontakteView extends Vue {
 	.page-section__col {
 		&:first-child {
 			position: relative;
-			margin-bottom: 42px;
+			margin-bottom: 40px;
 			margin-left: -28px;
 
 			@include media-breakpoint-up(sm) {
@@ -799,59 +845,11 @@ export default class VkontakteView extends Vue {
 	}
 }
 
-.page-section_order_8,
-.page-section_order_9 {
-	.page-section__container {
-		padding-top: 0;
-		padding-bottom: 96px;
-
-		@include media-breakpoint-up(md) {
-			padding-bottom: 120px;
-		}
-
-		@include media-breakpoint-up(lg) {
-			padding-bottom: 115px;
-		}
-
-		@include media-breakpoint-up(xl) {
-			padding-bottom: 97px;
-		}
-
-		@include media-breakpoint-up(xxl) {
-			padding-right: 20px;
-			padding-left: 20px;
-		}
-	}
-
-	.page-section__row {
-		@include media-breakpoint-up(sm) {
-			margin-top: 42px;
-		}
-
-		@include media-breakpoint-up(md) {
-			margin-top: 60px;
-		}
-	}
-
-	.page-section__col {
-		&:first-child {
-			margin-bottom: 42px;
-
-			@include media-breakpoint-up(md) {
-				margin-bottom: 60px;
-			}
-		}
-
-		&:last-child {
-			@include media-breakpoint-up(lg) {
-				align-items: start;
-				text-align: left;
-			}
-		}
-	}
-}
-
 .page-section_order_8 {
+	.page-section__container {
+		padding-bottom: 96px;
+	}
+
 	.page-section__row {
 		@include media-breakpoint-up(sm) {
 			margin-top: 0;
@@ -868,6 +866,9 @@ export default class VkontakteView extends Vue {
 
 	.page-section__col {
 		&:first-child {
+			margin-top: 32px;
+			margin-bottom: 60px;
+
 			@include media-breakpoint-up(lg) {
 				margin-top: 19px;
 				order: 2;
@@ -901,6 +902,8 @@ export default class VkontakteView extends Vue {
 
 .page-section_order_9 {
 	.page-section__container {
+		padding-bottom: 205px;
+
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 101px;
 		}
@@ -918,6 +921,9 @@ export default class VkontakteView extends Vue {
 
 	.page-section__col {
 		&:first-child {
+			margin-top: 32px;
+			margin-bottom: 60px;
+
 			picture.img {
 				width: 320px;
 				height: 332px;
@@ -940,8 +946,8 @@ export default class VkontakteView extends Vue {
 	background-color: var(--color-bg-pink-light);
 
 	.page-section__container {
-		padding-top: 11px;
-		padding-bottom: 177px;
+		padding-top: 60px;
+		padding-bottom: 245px;
 
 		@include media-breakpoint-up(sm) {
 			padding-bottom: 174px;
@@ -968,8 +974,8 @@ export default class VkontakteView extends Vue {
 
 .page-section_order_11 {
 	.page-section__container {
-		padding-top: 36px;
-		padding-bottom: 60px;
+		padding-top: 48px;
+		padding-bottom: 210px;
 
 		@include media-breakpoint-up(sm) {
 			padding-top: 39px;
@@ -986,8 +992,8 @@ export default class VkontakteView extends Vue {
 	background-color: var(--color-bg-green-light);
 
 	.page-section__container {
-		padding-top: 10px;
-		padding-bottom: 197px;
+		padding-top: 60px;
+		padding-bottom: 265px;
 
 		@include media-breakpoint-up(md) {
 			padding-top: 14px;

@@ -215,7 +215,8 @@ export default {
 	&__nav {
 		@include list-clear();
 
-		display: grid;
+		//display: grid;
+		display: none;
 		grid-template-columns: repeat(4, 270px);
 		grid-column-gap: 26px;
 		width: 100%;
