@@ -1,26 +1,43 @@
 <template>
 	<article class="video">
+		currentTimeStamp: {{ currentTimeStamp }}
 		<el-scrollbar>
 			<ul class="video__nav">
-				<li class="video__item" @click="setCurrentTime(5.25)">
+				<li
+					class="video__item"
+					:class="{ video__item_is_active: currentTimeStamp === 'one' }"
+					@click="setCurrentTime(5.25)"
+				>
 					<span
 						>Клиент выбирает товар<br class="br br--show-xs" />
 						и переходит к оплате</span
 					>
 				</li>
-				<li class="video__item" @click="setCurrentTime(7)">
+				<li
+					class="video__item"
+					:class="{ video__item_is_active: currentTimeStamp === 'two' }"
+					@click="setCurrentTime(7)"
+				>
 					<span
 						>Клиент вводит данные карты<br class="br br--show-xs" />
 						и получает чек на email</span
 					>
 				</li>
-				<li class="video__item" @click="setCurrentTime(25)">
+				<li
+					class="video__item"
+					:class="{ video__item_is_active: currentTimeStamp === 'three' }"
+					@click="setCurrentTime(25)"
+				>
 					<span
 						>Клиент может сразу сообщить<br class="br br--show-xs" />
 						о покупке через кнопки связи</span
 					>
 				</li>
-				<li class="video__item" @click="setCurrentTime(31)">
+				<li
+					class="video__item"
+					:class="{ video__item_is_active: currentTimeStamp === 'four' }"
+					@click="setCurrentTime(31)"
+				>
 					<span
 						>Вам приходит уведомление<br class="br br--show-xs" />
 						на email и в личный кабинет</span
@@ -45,6 +62,10 @@
 import {reactive, ref, watch} from "vue";
 import Plyr from "plyr";
 
+// const timeRange = {
+//
+// }
+
 export default {
 	props: {
 		options: {
@@ -58,8 +79,8 @@ export default {
 		return {
 			player: null,
 			isMobileScreen: false,
-			videoWidth: 0,
-			videoHeight: 0
+			currentTime: 0,
+			currentTimeStamp: ''
 		}
 	},
 	created()  {
@@ -105,11 +126,12 @@ export default {
 	},
 	mounted() {
 		this.player = new Plyr(`#${this.$refs.player.id}`, {
-			controls: ['play-large', 'progress', 'current-time']
+			controls: ['play-large']
 		});
 
-		this.player.on('load', (event) => {
-			console.log('canplay!!!');
+		this.player.on('timeupdate', (event) => {
+			this.currentTime = this.player.currentTime;
+			console.log('playing', this.player.currentTime);
 		});
 
 		this.isMobileScreen = window.matchMedia(`(max-width: 1280px)`).matches;
@@ -118,7 +140,7 @@ export default {
 	watch: {
 		player: {
 			handler(val, oldVal) {
-				console.log('watch player', val.currentTime);
+				// console.log('watch player', val.currentTime);
 			},
 			deep: true
 		},
@@ -127,6 +149,22 @@ export default {
 				this.loadVideo(isMobile);
 			}
 		},
+		currentTime: {
+			handler(time) {
+
+				if (time >= 5.2 && time < 7) {
+					this.currentTimeStamp = 'one';
+				} else if (time >= 7 && time < 25) {
+					this.currentTimeStamp = 'two';
+				} else if (time >= 25 && time < 31) {
+					this.currentTimeStamp = 'three';
+				} else if (time >= 31) {
+					this.currentTimeStamp = 'four';
+				 }
+
+				console.log('time', time);
+			}
+		}
 	},
 	beforeUnmount() {
 		if (this.player) {
@@ -224,6 +262,7 @@ export default {
 	}
 
 	&__content {
+		position: relative;
 		margin: 84px auto 0;
 
 		width: 320px;

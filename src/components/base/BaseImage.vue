@@ -163,7 +163,6 @@ export default class BaseImage extends Vue {
 		if (this.breakpoints) {
 			this.sizes = Object.entries(this.breakpoints)
 				.map(([key, value]) => {
-					console.log("key", key, "value:", value );
 					return `${Media[key]} ${value}px`
 				})
 				.join(',');

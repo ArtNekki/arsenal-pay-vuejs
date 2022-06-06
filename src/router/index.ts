@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import VkontakteView from "@/views/VkontakteView.vue";
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -58,7 +59,7 @@ const routes: Array<RouteRecordRaw> = [
 	{
 		path: "/vkontakte",
 		name: "vkontakte",
-		component: () => import("../views/VkontakteView.vue"),
+		component: VkontakteView,
 	},
 ];
 
