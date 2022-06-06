@@ -41,6 +41,8 @@ module.exports = defineConfig({
 				  @import "@/assets/scss/_settings.scss";
 				  @import "@/assets/scss/components/_index.scss";
 				  @import "~plyr/dist/plyr.css";
+				  @import "element-plus/dist/index.css";
+
 				`,
 			},
 		},

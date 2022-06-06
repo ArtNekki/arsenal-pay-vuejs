@@ -481,6 +481,10 @@ export default class VkontakteView extends Vue {
 			padding-top: 60px;
 			padding-bottom: 150px;
 		}
+
+		@include media-breakpoint-up(xl) {
+			max-width: 1238px;
+		}
 	}
 
 	.page-section__button {
