@@ -44,7 +44,7 @@
 				</li>
 			</ul>
 		</el-scrollbar>
-		<div class="video__content">
+		<div v-loading="isTimeStampLoading" class="video__content">
 			<video
 				id="player"
 				ref="player"
@@ -89,6 +89,7 @@ export default {
 				StepSix: 41.36,
 			},
 			player: null,
+			isTimeStampLoading: false,
 			isMobileScreen: false,
 			currentTime: 0,
 			currentTimeStamp: ''
@@ -141,12 +142,22 @@ export default {
 			controls: ['play-large']
 		});
 
-		this.player.on('timeupdate', (event) => {
+		this.player.on('timeupdate', () => {
 			this.currentTime = this.player.currentTime;
 		});
 
-		this.player.on('ended', (event) => {
+		this.player.on('ended', () => {
 			this.currentTimeStamp = '';
+		});
+
+		this.player.on('seeking', () => {
+			this.isTimeStampLoading = true;
+			console.log('seeking');
+		});
+
+		this.player.on('seeked', () => {
+			this.isTimeStampLoading = false;
+			console.log('seeked');
 		});
 
 		this.isMobileScreen = window.matchMedia(`(max-width: 1280px)`).matches;
