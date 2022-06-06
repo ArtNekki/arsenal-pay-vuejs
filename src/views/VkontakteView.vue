@@ -34,7 +34,7 @@
 					бесплатно.
 				</p>
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Чеки отправляются через ОФД в налоговую автоматически. Клиент получает чек на свой email сразу после
+					Чеки отправляются через ОФД в налоговую автоматически. Клиент получает чек на свой email сразу после
 					оплаты. Чеки сохраняются в личном кабинете и всегда доступны.
 				</p>
 			</div>
@@ -176,8 +176,8 @@
 					</p>
 					<h3 class="text text_type_title.level_3">Отправляйте ссылку на оплату любыми способами</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						Используте любой удобный мессенджер WhatsApp, Telegram, Viber, VK . Отправляйте ссылку на оплату
-						во время общения с клиентами.
+						Используте любой удобный мессенджер WhatsApp,<br class="br br--show-md" />
+						Telegram, Viber, VK . Отправляйте ссылку на оплату во время общения с клиентами.
 					</p>
 				</div>
 			</div>
@@ -280,10 +280,9 @@
 				Пробивайте чеки для заказов, оплаченных наличными, переводом на карту, или перечислением
 				на расчётный счёт. Чеки легко пробиваются в личном кабинете и отправляются на email клиента
 				автоматически. Полная номенклатура в чеках заполняется в соответствии с 54‑ФЗ.
-				<br class="br br--show-md br--hide-lg" /><b
-					class="text text_color_pink text_weight_bold text_display_inline"
-					>Чеки&nbsp;бесплатны&nbsp;и&nbsp;без комиссии.</b
-				>. Чеки по всем заказам сохраняются в личном кабинете.
+				<b class="text text_color_pink text_weight_bold text_display_inline"
+					>Чеки&nbsp;бесплатны&nbsp;и&nbsp;без комиссии</b
+				>. Чеки&nbsp;по всем заказам сохраняются в личном кабинете.
 			</p>
 		</div>
 	</section>
@@ -318,7 +317,7 @@
 				<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 					Холдирование платежей позволяет вам проверить наличие товара или услуги. Деньги с карты клиента
 					не списываются сразу, а временно «замораживаются». После проверки наличия, вы подтверждаете списание
-					суммы. Можно списать как всю сумму так и ее часть. Комиссия за платёж берётся только со списанной
+					суммы. Можно списать как всю сумму так и ее часть. Комиссия за платёж берётся только со списанной
 					суммы. Комиссия за отмену «заморозки» не взимается.
 				</p>
 			</div>
@@ -479,10 +478,6 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-top: 50px;
 		padding-bottom: 182px;
-
-		@include media-breakpoint-up(md) {
-			padding-bottom: 157px;
-		}
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 60px;
@@ -658,6 +653,10 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-top: 48px;
 		padding-bottom: 70px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 95px;
+		}
 	}
 
 	.page-section__row {
@@ -736,6 +735,10 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-bottom: 95px;
 
+		@include media-breakpoint-up(md) {
+			padding-bottom: 120px;
+		}
+
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 101px;
 		}
@@ -772,9 +775,10 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-top: 0;
 		padding-bottom: 96px;
+		overflow: hidden;
 
 		@include media-breakpoint-up(md) {
-			padding-bottom: 240px;
+			padding-bottom: 120px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -793,10 +797,6 @@ export default class VkontakteView extends Vue {
 	}
 
 	.page-section__row {
-		@include media-breakpoint-up(md) {
-			margin-top: 60px;
-		}
-
 		@include media-breakpoint-up(lg) {
 			margin-top: 90px;
 			display: grid;
@@ -819,10 +819,6 @@ export default class VkontakteView extends Vue {
 
 			@include media-breakpoint-up(sm) {
 				margin-left: 0;
-			}
-
-			@include media-breakpoint-up(md) {
-				margin-bottom: 60px;
 			}
 
 			@include media-breakpoint-up(lg) {
@@ -853,6 +849,10 @@ export default class VkontakteView extends Vue {
 .page-section_order_8 {
 	.page-section__container {
 		padding-bottom: 96px;
+
+		@include media-breakpoint-up(md) {
+			padding-bottom: 120px;
+		}
 	}
 
 	.page-section__row {
@@ -915,6 +915,10 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-bottom: 205px;
 
+		@include media-breakpoint-up(md) {
+			padding-bottom: 230px;
+		}
+
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 101px;
 		}
@@ -966,10 +970,6 @@ export default class VkontakteView extends Vue {
 		padding-top: 60px;
 		padding-bottom: 245px;
 
-		@include media-breakpoint-up(md) {
-			padding-top: 52px;
-		}
-
 		@include media-breakpoint-up(lg) {
 			margin-top: -33px;
 		}
@@ -990,8 +990,8 @@ export default class VkontakteView extends Vue {
 		padding-bottom: 210px;
 
 		@include media-breakpoint-up(md) {
-			padding-top: 80px;
-			padding-bottom: 160px;
+			padding-top: 90px;
+			padding-bottom: 310px;
 		}
 	}
 }
@@ -1004,7 +1004,6 @@ export default class VkontakteView extends Vue {
 		padding-bottom: 265px;
 
 		@include media-breakpoint-up(md) {
-			padding-top: 14px;
 			padding-bottom: 300px;
 		}
 
