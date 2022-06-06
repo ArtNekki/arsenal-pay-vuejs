@@ -1,12 +1,11 @@
 <template>
 	<article class="video">
-		currentTimeStamp: {{ currentTimeStamp }}
 		<el-scrollbar>
 			<ul class="video__nav">
 				<li
 					class="video__item"
-					:class="{ video__item_is_active: currentTimeStamp === 'one' }"
-					@click="setCurrentTime(5.25)"
+					:class="{ video__item_is_active: currentTimeStamp === TimeStampOrder.StepOne }"
+					@click="setCurrentTime(TimeStampValue.StepOne)"
 				>
 					<span
 						>Клиент выбирает товар<br class="br br--show-xs" />
@@ -15,8 +14,8 @@
 				</li>
 				<li
 					class="video__item"
-					:class="{ video__item_is_active: currentTimeStamp === 'two' }"
-					@click="setCurrentTime(7)"
+					:class="{ video__item_is_active: currentTimeStamp === TimeStampOrder.StepTwo }"
+					@click="setCurrentTime(TimeStampValue.StepTwo)"
 				>
 					<span
 						>Клиент вводит данные карты<br class="br br--show-xs" />
@@ -25,8 +24,8 @@
 				</li>
 				<li
 					class="video__item"
-					:class="{ video__item_is_active: currentTimeStamp === 'three' }"
-					@click="setCurrentTime(25)"
+					:class="{ video__item_is_active: currentTimeStamp === TimeStampOrder.StepThree }"
+					@click="setCurrentTime(TimeStampValue.StepThree)"
 				>
 					<span
 						>Клиент может сразу сообщить<br class="br br--show-xs" />
@@ -35,8 +34,8 @@
 				</li>
 				<li
 					class="video__item"
-					:class="{ video__item_is_active: currentTimeStamp === 'four' }"
-					@click="setCurrentTime(31)"
+					:class="{ video__item_is_active: currentTimeStamp === TimeStampOrder.StepFour }"
+					@click="setCurrentTime(TimeStampValue.StepFour)"
 				>
 					<span
 						>Вам приходит уведомление<br class="br br--show-xs" />
@@ -62,10 +61,6 @@
 import {reactive, ref, watch} from "vue";
 import Plyr from "plyr";
 
-// const timeRange = {
-//
-// }
-
 export default {
 	props: {
 		options: {
@@ -77,6 +72,22 @@ export default {
 	},
 	data() {
 		return {
+			TimeStampOrder: {
+				StepOne: 1,
+				StepTwo: 2,
+				StepThree: 3,
+				StepFour: 4,
+				StepFive: 5,
+				StepSix: 6,
+			},
+			TimeStampValue: {
+				StepOne: 5.30,
+				StepTwo: 7.28,
+				StepThree: 25.10,
+				StepFour: 31.09,
+				StepFive: 33.20,
+				StepSix: 41.36,
+			},
 			player: null,
 			isMobileScreen: false,
 			currentTime: 0,
@@ -92,6 +103,7 @@ export default {
 	methods: {
 		setCurrentTime(time) {
 			this.player.currentTime = time;
+			this.player.play();
 		},
 		resizeHandler(e)  {
 			this.isMobileScreen = window.matchMedia(`(max-width: 1280px)`).matches;
@@ -131,7 +143,10 @@ export default {
 
 		this.player.on('timeupdate', (event) => {
 			this.currentTime = this.player.currentTime;
-			console.log('playing', this.player.currentTime);
+		});
+
+		this.player.on('ended', (event) => {
+			this.currentTimeStamp = '';
 		});
 
 		this.isMobileScreen = window.matchMedia(`(max-width: 1280px)`).matches;
@@ -152,17 +167,17 @@ export default {
 		currentTime: {
 			handler(time) {
 
-				if (time >= 5.2 && time < 7) {
-					this.currentTimeStamp = 'one';
-				} else if (time >= 7 && time < 25) {
-					this.currentTimeStamp = 'two';
-				} else if (time >= 25 && time < 31) {
-					this.currentTimeStamp = 'three';
-				} else if (time >= 31) {
-					this.currentTimeStamp = 'four';
+				if (time >= this.TimeStampValue.StepOne && time < this.TimeStampValue.StepTwo) {
+					this.currentTimeStamp = this.TimeStampOrder.StepOne;
+				} else if (time >= this.TimeStampValue.StepTwo && time < this.TimeStampValue.StepThree) {
+					this.currentTimeStamp = this.TimeStampOrder.StepTwo;
+				} else if (time >= this.TimeStampValue.StepThree && time < this.TimeStampValue.StepFour) {
+					this.currentTimeStamp = this.TimeStampOrder.StepThree;
+				} else if (time >= this.TimeStampValue.StepFour) {
+					this.currentTimeStamp = this.TimeStampOrder.StepFour;
 				 }
 
-				console.log('time', time);
+				// console.log('time', time);
 			}
 		}
 	},
@@ -264,13 +279,16 @@ export default {
 	&__content {
 		position: relative;
 		margin: 84px auto 0;
-
 		width: 320px;
 		height: 612px;
+		background-image: url("~@/assets/images/vkontakte-page/bg-video-mobile.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
 
 		@include media-breakpoint-up(xl) {
 			width: 1100px;
 			height: 600px;
+			background-image: url("~@/assets/images/vkontakte-page/bg-video-desktop.jpg");
 		}
 	}
 }
