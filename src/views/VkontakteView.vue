@@ -27,8 +27,7 @@
 			</h2>
 			<div class="u-max-width.on_screen_md">
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Вам не нужно покупать или брать в аренду свою онлайн-кассу.<br class="br br--show-xs" />
-					Все платежи проходят через
+					Вам не нужно покупать или брать в аренду свою онлайн-кассу. Все платежи проходят через
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text" color="blue"
 						>онлайн-кассу ArsenalPay</BaseLink
 					>
@@ -57,10 +56,12 @@
 				на ваш расчётный счёт ежедневно и без комиссий
 			</h2>
 			<p class="text text_level_1">
-				Деньги поступают автоматически на расчётный счёт юрлица, ИП или самозанятого. Доступно<br
-					class="br br--show-xs"
-				/>
-				и <BaseLink href="#" link-in="text" color="blue">мгновенное зачисление средств</BaseLink>.
+				Деньги поступают автоматически на расчётный счёт юрлица, ИП или самозанятого. Доступно и <BaseLink
+					href="#"
+					link-in="text"
+					color="blue"
+					> мгновенное зачисление средств</BaseLink
+				>.
 			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -92,7 +93,7 @@
 			<BaseChip view="pink">Бесплатно</BaseChip>
 			<h2 class="text text_type_title.level_1">
 				Принимайте оплату <br class="br br--show-sm" />
-				через ссылку в товаре.
+				через ссылку в товаре
 			</h2>
 			<p class="text text_level_1 text_mgb_60">
 				Добавьте ссылку на страницу оплаты в каждый товар. Клиент сможет перейти по ней и оплатить нужную сумму.
@@ -159,7 +160,10 @@
 	<section class="page-section page-section_order_6 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_type_title.level_1 text_mgb_42">Принимайте оплату в любых соцсетях и мессенджерах</h2>
+			<h2 class="text text_type_title.level_1 text_mgb_42">
+				Принимайте оплату<br class="br br--show-sm" />
+				в любых соцсетях и мессенджерах
+			</h2>
 			<div class="page-section__row">
 				<div class="page-section__col">
 					<BaseImage src="vkontakte-page/messengers" width="360" height="308"></BaseImage>
@@ -278,7 +282,7 @@
 				автоматически. Полная номенклатура в чеках заполняется в соответствии с 54‑ФЗ.
 				<br class="br br--show-md br--hide-lg" /><b
 					class="text text_color_pink text_weight_bold text_display_inline"
-					>Чеки&nbsp;бесплатны и&nbsp;без комиссии.</b
+					>Чеки&nbsp;бесплатны&nbsp;и&nbsp;без комиссии.</b
 				>. Чеки по всем заказам сохраняются в личном кабинете.
 			</p>
 		</div>
@@ -657,6 +661,7 @@ export default class VkontakteView extends Vue {
 	}
 
 	.page-section__row {
+		@include content-center();
 	}
 
 	.page-section__col {
@@ -669,7 +674,7 @@ export default class VkontakteView extends Vue {
 				content: "";
 				position: absolute;
 				bottom: -85px;
-				right: 34px;
+				left: 230px;
 				width: 55px;
 				height: 98px;
 				background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-down-left.svg");
@@ -692,7 +697,13 @@ export default class VkontakteView extends Vue {
 	}
 
 	.page-section__row {
-		margin-top: 43px;
+		@include content-center();
+
+		margin-top: 45px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 60px;
+		}
 	}
 
 	.page-section__col {
@@ -742,9 +753,10 @@ export default class VkontakteView extends Vue {
 
 	.page-section__col {
 		&:first-child {
+			@include content-center();
+
 			position: relative;
-			left: -19px;
-			margin-top: 7px;
+			margin-top: 8px;
 			margin-bottom: 35px;
 		}
 
@@ -760,10 +772,6 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-top: 0;
 		padding-bottom: 96px;
-
-		@include media-breakpoint-up(sm) {
-			padding-bottom: 132px;
-		}
 
 		@include media-breakpoint-up(md) {
 			padding-bottom: 240px;
@@ -785,10 +793,6 @@ export default class VkontakteView extends Vue {
 	}
 
 	.page-section__row {
-		@include media-breakpoint-up(sm) {
-			margin-top: 42px;
-		}
-
 		@include media-breakpoint-up(md) {
 			margin-top: 60px;
 		}
@@ -808,9 +812,10 @@ export default class VkontakteView extends Vue {
 
 	.page-section__col {
 		&:first-child {
+			@include content-center();
+
 			position: relative;
 			margin-bottom: 40px;
-			margin-left: -28px;
 
 			@include media-breakpoint-up(sm) {
 				margin-left: 0;
@@ -866,8 +871,14 @@ export default class VkontakteView extends Vue {
 
 	.page-section__col {
 		&:first-child {
+			@include content-center();
+
 			margin-top: 32px;
 			margin-bottom: 60px;
+
+			@include media-breakpoint-up(sm) {
+				margin-top: 45px;
+			}
 
 			@include media-breakpoint-up(lg) {
 				margin-top: 19px;
@@ -921,8 +932,14 @@ export default class VkontakteView extends Vue {
 
 	.page-section__col {
 		&:first-child {
+			@include content-center();
+
 			margin-top: 32px;
 			margin-bottom: 60px;
+
+			@include media-breakpoint-up(sm) {
+				margin-top: 45px;
+			}
 
 			picture.img {
 				width: 320px;
@@ -949,13 +966,8 @@ export default class VkontakteView extends Vue {
 		padding-top: 60px;
 		padding-bottom: 245px;
 
-		@include media-breakpoint-up(sm) {
-			padding-bottom: 174px;
-		}
-
 		@include media-breakpoint-up(md) {
 			padding-top: 52px;
-			padding-bottom: 210px;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -976,10 +988,6 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-top: 48px;
 		padding-bottom: 210px;
-
-		@include media-breakpoint-up(sm) {
-			padding-top: 39px;
-		}
 
 		@include media-breakpoint-up(md) {
 			padding-top: 80px;
@@ -1060,7 +1068,7 @@ export default class VkontakteView extends Vue {
 
 .page-section_order_13 {
 	.page-section__container {
-		padding-top: 31px;
+		padding-top: 51px;
 		padding-bottom: 58px;
 
 		@include media-breakpoint-up(md) {
