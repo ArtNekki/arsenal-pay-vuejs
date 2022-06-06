@@ -152,12 +152,10 @@ export default {
 
 		this.player.on('seeking', () => {
 			this.isTimeStampLoading = true;
-			console.log('seeking');
 		});
 
 		this.player.on('seeked', () => {
 			this.isTimeStampLoading = false;
-			console.log('seeked');
 		});
 
 		this.isMobileScreen = window.matchMedia(`(max-width: 1280px)`).matches;
@@ -221,7 +219,6 @@ export default {
 		grid-template-columns: repeat(4, 270px);
 		grid-column-gap: 26px;
 		width: 100%;
-		max-width: 1158px;
 		height: 115px;
 		flex-shrink: 0;
 	}
@@ -305,10 +302,7 @@ export default {
 }
 
 .el-scrollbar {
-	//position: absolute;
-	//bottom: 0;
-	//left: 0;
 	width: 100%;
-	max-width: 1158px;
+	max-width: 1100px;
 }
 </style>
