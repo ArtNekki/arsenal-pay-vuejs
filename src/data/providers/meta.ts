@@ -1,4 +1,4 @@
-export const meta = {
+export const providersMeta = {
 	title: "Приём платежей для интернет и ТВ провайдеров",
 	meta: [
 		{
