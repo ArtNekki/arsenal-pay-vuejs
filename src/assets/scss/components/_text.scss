@@ -224,6 +224,12 @@
     }
   }
 
+  &[class~="text_display_block.on_screen_lg"] {
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+
   //-------------------- Max width ---------------------
 
   &[class~="text_max-width_520.on_screen_md"] {
@@ -727,6 +733,12 @@
 [class~="u-max-width_840.on_screen_lg"] {
   @include media-breakpoint-up(lg) {
     max-width: 840px;
+  }
+}
+
+[class~="u-max-width_820.on_screen_lg"] {
+  @include media-breakpoint-up(lg) {
+    max-width: 820px;
   }
 }
 

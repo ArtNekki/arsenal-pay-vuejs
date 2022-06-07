@@ -25,17 +25,19 @@
 				Онлайн касса бесплатно.<br />
 				Свою кассу покупать не нужно.
 			</h2>
-			<div class="u-max-width.on_screen_md">
+			<div class="u-max-width_820.on_screen_lg">
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Вам не нужно покупать или брать в аренду свою онлайн-кассу. Все платежи проходят через
+					Вам не нужно покупать или брать в аренду свою онлайн-кассу.<br class="br br--show-lg" />
+					Все платежи проходят через
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" :blank="true" link-in="text" color="blue"
 						>онлайн-кассу ArsenalPay</BaseLink
 					>
 					бесплатно.
 				</p>
 				<p class="text text_level_1 text_display_inline.on_screen_sm">
-					Чеки отправляются через ОФД в налоговую автоматически. Клиент получает чек на свой email сразу после
-					оплаты. Чеки сохраняются в личном кабинете и всегда доступны.
+					Чеки отправляются через ОФД в налоговую автоматически.<br class="br br--show-lg" />
+					Клиент получает чек на свой email сразу после оплаты.<br class="br br--show-lg" />
+					Чеки сохраняются в личном кабинете и всегда доступны.
 				</p>
 			</div>
 			<div class="page-section__button">
@@ -96,7 +98,8 @@
 				через ссылку в товаре
 			</h2>
 			<p class="text text_level_1 text_mgb_60">
-				Добавьте ссылку на страницу оплаты в каждый товар. Клиент сможет перейти по ней и оплатить нужную сумму.
+				Добавьте ссылку на страницу оплаты в каждый товар.<br class="br br--show-lg" />
+				Клиент сможет перейти по ней и оплатить нужную сумму.
 			</p>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -176,7 +179,7 @@
 					</p>
 					<h3 class="text text_type_title.level_3">Отправляйте ссылку на оплату любыми способами</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						Используте любой удобный мессенджер WhatsApp,<br class="br br--show-md" />
+						Используте любой удобный мессенджер WhatsApp,<br class="br br--show-md br--hide-lg" />
 						Telegram, Viber, VK . Отправляйте ссылку на оплату во время общения с клиентами.
 					</p>
 				</div>
@@ -186,7 +189,10 @@
 	<section class="page-section page-section_order_7 page-section_skew_no">
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
-			<h2 class="text text_type_title.level_1">Автоматизируйте продажу цифрового контента</h2>
+			<h2 class="text text_type_title.level_1">
+				Автоматизируйте продажу<br class="br br--show-sm" />
+				цифрового контента
+			</h2>
 			<p class="text text_level_1 text_mgb_42 text_display_inline.on_screen_sm">
 				Бесплатная email рассылка. Никаких настроек и интеграций.
 			</p>
@@ -215,7 +221,8 @@
 		<div class="page-section__container">
 			<BaseChip view="pink">Бесплатно</BaseChip>
 			<h2 class="text text_type_title.level_1">
-				Оставайтесь на связи с клиентами. Кнопки WhatsApp, Telegram, Viber.
+				Оставайтесь на связи с клиентами.<br class="br br--show-sm" />
+				Кнопки WhatsApp, Telegram, Viber.
 			</h2>
 			<div class="page-section__row">
 				<div class="page-section__col">
@@ -258,8 +265,7 @@
 				<div class="page-section__col">
 					<h3 class="text text_type_title.level_3">Расскажите все о вашем бизнесе</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						В профиле Instagram можно добавить только одну ссылку, но одной ссылки часто недостаточно, чтобы
-						подробно рассказать о своем бизнесе и увеличить продажи.
+						Разместите ссылки на ваши соцсети, на частые вопросы, на отзывы, видео, информацию о доставке.
 					</p>
 					<h3 class="text text_type_title.level_3">Привлекайте больше клиентов</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
@@ -280,7 +286,7 @@
 				Пробивайте чеки для заказов, оплаченных наличными, переводом на карту, или перечислением
 				на расчётный счёт. Чеки легко пробиваются в личном кабинете и отправляются на email клиента
 				автоматически. Полная номенклатура в чеках заполняется в соответствии с 54‑ФЗ.
-				<b class="text text_color_pink text_weight_bold text_display_inline"
+				<b class="text text_color_pink text_weight_bold text_display_inline text_display_block.on_screen_lg"
 					>Чеки&nbsp;бесплатны&nbsp;и&nbsp;без комиссии</b
 				>. Чеки&nbsp;по всем заказам сохраняются в личном кабинете.
 			</p>
@@ -481,7 +487,7 @@ export default class VkontakteView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			padding-top: 60px;
-			padding-bottom: 150px;
+			padding-bottom: 190px;
 		}
 
 		@include media-breakpoint-up(xl) {
@@ -500,8 +506,8 @@ export default class VkontakteView extends Vue {
 	background-color: var(--color-bg-blue-light);
 
 	.page-section__container {
-		padding-top: 61px;
-		padding-bottom: 251px;
+		padding-top: 60px;
+		padding-bottom: 250px;
 
 		//@include media-breakpoint-up(md) {
 		//	padding-bottom: 146px;
@@ -523,12 +529,15 @@ export default class VkontakteView extends Vue {
 	background-color: var(--color-bg-green-light);
 
 	.page-section__container {
-		padding-top: 59px;
+		padding-top: 60px;
 		padding-bottom: 238px;
 
 		@include media-breakpoint-up(sm) {
-			padding-top: 62px;
-			padding-bottom: 214px;
+			padding-bottom: 215px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 240px;
 		}
 	}
 
@@ -657,10 +666,23 @@ export default class VkontakteView extends Vue {
 		@include media-breakpoint-up(md) {
 			padding-top: 95px;
 		}
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 110px;
+		}
 	}
 
 	.page-section__row {
 		@include content-center();
+
+		@include media-breakpoint-up(lg) {
+			margin-top: 30px;
+			display: grid;
+			grid-template-columns: repeat(2, 320px);
+			grid-column-gap: 120px;
+			justify-content: center;
+			align-items: start;
+		}
 	}
 
 	.page-section__col {
@@ -678,12 +700,21 @@ export default class VkontakteView extends Vue {
 				height: 98px;
 				background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-down-left.svg");
 				background-repeat: no-repeat;
+
+				@include media-breakpoint-up(lg) {
+					bottom: 75px;
+					left: 296px;
+					width: 132px;
+					height: 58px;
+					background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-right.svg");
+				}
 			}
 		}
 
 		&:last-child {
 			:deep(img) {
 				width: 320px;
+				height: 810px;
 			}
 		}
 	}
@@ -693,6 +724,10 @@ export default class VkontakteView extends Vue {
 	.page-section__container {
 		padding-top: 48px;
 		padding-bottom: 117px;
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 92px;
+		}
 	}
 
 	.page-section__row {
@@ -702,6 +737,15 @@ export default class VkontakteView extends Vue {
 
 		@include media-breakpoint-up(sm) {
 			margin-top: 60px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			margin-top: 90px;
+			display: grid;
+			grid-template-columns: repeat(2, 320px);
+			grid-column-gap: 120px;
+			justify-content: center;
+			align-items: start;
 		}
 	}
 
@@ -720,6 +764,14 @@ export default class VkontakteView extends Vue {
 				height: 98px;
 				background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-down-right.svg");
 				background-repeat: no-repeat;
+
+				@include media-breakpoint-up(lg) {
+					bottom: 68px;
+					left: 298px;
+					width: 132px;
+					height: 58px;
+					background-image: url("~@/assets/images/vkontakte-page/arrow-dotted-right.svg");
+				}
 			}
 		}
 
@@ -739,6 +791,10 @@ export default class VkontakteView extends Vue {
 			padding-bottom: 120px;
 		}
 
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 135px;
+		}
+
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 101px;
 		}
@@ -746,11 +802,12 @@ export default class VkontakteView extends Vue {
 
 	.page-section__row {
 		@include media-breakpoint-up(lg) {
-			margin-top: 90px;
+			margin-top: 48px;
 			display: grid;
-			grid-template-columns: 360px 1fr;
-			grid-column-gap: 81px;
+			grid-template-columns: 360px 400px;
+			grid-column-gap: 60px;
 			align-content: center;
+			justify-content: center;
 		}
 	}
 
@@ -761,9 +818,18 @@ export default class VkontakteView extends Vue {
 			position: relative;
 			margin-top: 8px;
 			margin-bottom: 35px;
+
+			@include media-breakpoint-up(lg) {
+				margin-top: 55px;
+			}
 		}
 
 		&:last-child {
+			@include media-breakpoint-up(lg) {
+				text-align: left;
+				align-items: unset;
+			}
+
 			@include media-breakpoint-up(xl) {
 				margin-top: 25px;
 			}
@@ -783,7 +849,7 @@ export default class VkontakteView extends Vue {
 
 		@include media-breakpoint-up(lg) {
 			margin-top: -15px;
-			padding-bottom: 159px;
+			padding-bottom: 120px;
 		}
 
 		@include media-breakpoint-up(xl) {
@@ -798,15 +864,16 @@ export default class VkontakteView extends Vue {
 
 	.page-section__row {
 		@include media-breakpoint-up(lg) {
-			margin-top: 90px;
+			margin-top: 48px;
 			display: grid;
-			grid-template-columns: 1fr 376px;
+			grid-template-columns: 400px 376px;
 			grid-column-gap: 44px;
 			align-content: center;
+			justify-content: center;
 		}
 
 		@include media-breakpoint-up(xl) {
-			margin-top: 69px;
+			margin-top: 70px;
 		}
 	}
 
@@ -822,7 +889,8 @@ export default class VkontakteView extends Vue {
 			}
 
 			@include media-breakpoint-up(lg) {
-				margin-bottom: 90px;
+				padding-top: 2px;
+				//margin-bottom: 90px;
 				order: 2;
 			}
 
@@ -834,7 +902,7 @@ export default class VkontakteView extends Vue {
 
 		&:last-child {
 			@include media-breakpoint-up(lg) {
-				align-items: start;
+				align-items: unset;
 				text-align: left;
 				order: 1;
 			}
@@ -861,11 +929,12 @@ export default class VkontakteView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
-			margin-top: 29px;
+			margin-top: 75px;
 			display: grid;
-			grid-template-columns: 1fr 360px;
+			grid-template-columns: 400px 360px;
 			grid-column-gap: 60px;
 			align-content: center;
+			justify-content: center;
 		}
 	}
 
@@ -902,6 +971,8 @@ export default class VkontakteView extends Vue {
 		&:last-child {
 			@include media-breakpoint-up(lg) {
 				order: 1;
+				text-align: left;
+				align-items: unset;
 			}
 
 			@include media-breakpoint-up(xl) {
@@ -919,6 +990,10 @@ export default class VkontakteView extends Vue {
 			padding-bottom: 230px;
 		}
 
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 245px;
+		}
+
 		@include media-breakpoint-up(xl) {
 			padding-bottom: 101px;
 		}
@@ -926,11 +1001,12 @@ export default class VkontakteView extends Vue {
 
 	.page-section__row {
 		@include media-breakpoint-up(lg) {
-			margin-top: 90px;
+			margin-top: 30px;
 			display: grid;
-			grid-template-columns: 360px 1fr;
-			grid-column-gap: 81px;
-			align-content: center;
+			grid-template-columns: 360px 400px;
+			grid-column-gap: 60px;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
@@ -956,6 +1032,12 @@ export default class VkontakteView extends Vue {
 		}
 
 		&:last-child {
+			@include media-breakpoint-up(lg) {
+				padding-top: 25px;
+				text-align: left;
+				align-items: unset;
+			}
+
 			@include media-breakpoint-up(xl) {
 				margin-top: 25px;
 			}
@@ -1008,7 +1090,6 @@ export default class VkontakteView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
-			padding-top: 45px;
 			padding-bottom: 258px;
 		}
 	}
@@ -1075,11 +1156,7 @@ export default class VkontakteView extends Vue {
 		}
 
 		@include media-breakpoint-up(lg) {
-			padding-top: 67px;
-		}
-
-		@include media-breakpoint-up(xl) {
-			padding-top: 63px;
+			padding-top: 95px;
 		}
 	}
 }
