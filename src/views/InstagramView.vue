@@ -491,6 +491,8 @@ import BasePrompt from "@/components/base/BasePrompt.vue";
 import BaseRateBox from "@/components/base/BaseRateBox.vue";
 import BaseLink from "@/components/base/BaseLink.vue";
 import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
+import { useHead } from "@vueuse/head";
+import { computed } from "vue";
 
 @Options({
 	components: {

@@ -1,9 +1,9 @@
 <template>
-	<metainfo>
-		<template v-slot:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
-		<template v-slot:description="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
-		<template v-slot:twitter:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>
-	</metainfo>
+	<!--	<metainfo>-->
+	<!--		<template v-slot:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>-->
+	<!--		<template v-slot:description="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>-->
+	<!--		<template v-slot:twitter:title="{ content }">{{ content ? `${content}` : `Arsenalpay` }}</template>-->
+	<!--	</metainfo>-->
 	<ThePageHeader />
 	<router-view />
 	<ThePaymentsBlock :page="page.toString()" />
@@ -46,12 +46,12 @@ import { watch } from "vue";
 	},
 })
 export default class App extends Vue {
-	meta = setup(() =>
-		useMeta({
-			title: "Hello",
-			htmlAttrs: { lang: "en", amp: true },
-		})
-	);
+	// meta = setup(() =>
+	// 	useMeta({
+	// 		title: "Arsenal pay",
+	// 		htmlAttrs: { lang: "en", amp: true },
+	// 	})
+	// );
 }
 </script>
 

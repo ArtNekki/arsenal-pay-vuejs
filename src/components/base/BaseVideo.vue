@@ -107,7 +107,7 @@ export default {
 			this.player.play();
 		},
 		resizeHandler(e)  {
-			this.isMobileScreen = window.matchMedia(`(max-width: 1199px)`).matches;
+			this.isMobileScreen = window.matchMedia(`(max-width: 1279px)`).matches;
 		},
 		loadVideo(isMobile) {
 			if (isMobile) {
@@ -158,7 +158,7 @@ export default {
 			this.isTimeStampLoading = false;
 		});
 
-		this.isMobileScreen = window.matchMedia(`(max-width: 1199px)`).matches;
+		this.isMobileScreen = window.matchMedia(`(max-width: 1279px)`).matches;
 		this.loadVideo(this.isMobileScreen);
 	},
 	watch: {
@@ -215,8 +215,8 @@ export default {
 	&__nav {
 		@include list-clear();
 
-		//display: grid;
-		display: none;
+		display: grid;
+		//display: none;
 		grid-template-columns: repeat(4, 270px);
 		grid-column-gap: 26px;
 		width: 100%;
@@ -304,6 +304,6 @@ export default {
 
 .el-scrollbar {
 	width: 100%;
-	max-width: 1100px;
+	//max-width: 1100px;
 }
 </style>
