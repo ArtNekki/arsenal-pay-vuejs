@@ -328,6 +328,8 @@
   }
 
   &__col {
+    position: relative;
+
     @include media-breakpoint-up(sm) {
       display: flex;
       flex-direction: column;

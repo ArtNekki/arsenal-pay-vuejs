@@ -107,7 +107,7 @@ export default {
 			this.player.play();
 		},
 		resizeHandler(e)  {
-			this.isMobileScreen = window.matchMedia(`(max-width: 1280px)`).matches;
+			this.isMobileScreen = window.matchMedia(`(max-width: 1199px)`).matches;
 		},
 		loadVideo(isMobile) {
 			if (isMobile) {
@@ -158,7 +158,7 @@ export default {
 			this.isTimeStampLoading = false;
 		});
 
-		this.isMobileScreen = window.matchMedia(`(max-width: 1280px)`).matches;
+		this.isMobileScreen = window.matchMedia(`(max-width: 1199px)`).matches;
 		this.loadVideo(this.isMobileScreen);
 	},
 	watch: {

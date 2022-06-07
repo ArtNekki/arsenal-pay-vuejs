@@ -289,7 +289,8 @@
 				Пробивайте чеки для заказов, оплаченных наличными, переводом на карту, или перечислением
 				на расчётный счёт. Чеки легко пробиваются в личном кабинете и отправляются на email клиента
 				автоматически. Полная номенклатура в чеках заполняется в соответствии с 54‑ФЗ.
-				<b class="text text_color_pink text_weight_bold text_display_inline text_display_block.on_screen_lg"
+				<b
+					class="text text_color_pink text_weight_bold text_display_inline text_display_block.on_screen_lg text_display_inline.on_screen_xl"
 					>Чеки&nbsp;бесплатны&nbsp;и&nbsp;без комиссии</b
 				>. Чеки&nbsp;по всем заказам сохраняются в личном кабинете.
 			</p>
@@ -818,6 +819,11 @@ export default class VkontakteView extends Vue {
 			grid-column-gap: 82px;
 			grid-template-columns: 360px 1fr;
 		}
+
+		@include media-breakpoint-up(xxl) {
+			grid-column-gap: 120px;
+			grid-template-columns: 360px 520px;
+		}
 	}
 
 	.page-section__col {
@@ -980,6 +986,10 @@ export default class VkontakteView extends Vue {
 				margin-top: 0;
 			}
 
+			@include media-breakpoint-up(xxl) {
+				right: -20px;
+			}
+
 			picture.img {
 				width: 320px;
 				height: 272px;
@@ -999,6 +1009,10 @@ export default class VkontakteView extends Vue {
 
 			@include media-breakpoint-up(xl) {
 				margin-top: 8px;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				left: -20px;
 			}
 		}
 	}
@@ -1048,6 +1062,10 @@ export default class VkontakteView extends Vue {
 				margin-top: 45px;
 			}
 
+			@include media-breakpoint-up(xxl) {
+				left: -20px;
+			}
+
 			picture.img {
 				width: 320px;
 				height: 332px;
@@ -1063,6 +1081,10 @@ export default class VkontakteView extends Vue {
 				padding-top: 25px;
 				text-align: left;
 				align-items: unset;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				right: -20px;
 			}
 		}
 	}
@@ -1084,7 +1106,7 @@ export default class VkontakteView extends Vue {
 		}
 
 		@include media-breakpoint-up(xxl) {
-			padding-top: 42px;
+			padding-top: 60px;
 		}
 	}
 }
@@ -1097,6 +1119,12 @@ export default class VkontakteView extends Vue {
 		@include media-breakpoint-up(md) {
 			padding-top: 90px;
 			padding-bottom: 310px;
+		}
+	}
+
+	.page-section__box {
+		@include media-breakpoint-up(xl) {
+			max-width: 860px;
 		}
 	}
 }
