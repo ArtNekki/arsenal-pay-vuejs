@@ -415,11 +415,8 @@
 	<FiscalReceiptModal :opened="isOpened" @on-close="isOpened = false" />
 </template>
 
-<script lang="ts">
-import { useMeta } from "vue-meta";
-import { Options, Vue } from "vue-class-component";
+<script lang="js">
 import TheReviewsSlider from "@/components/TheReviewsSlider.vue";
-import BaseReviewCard from "@/components/base/BaseReviewCard.vue";
 import BaseNotice from "@/components/base/BaseNotice.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
 import BaseImage from "@/components/base/BaseImage.vue";
@@ -427,14 +424,16 @@ import BaseChip from "@/components/base/BaseChip.vue";
 import BaseIcon from "@/components/base/BaseIcon.vue";
 import BasePrompt from "@/components/base/BasePrompt.vue";
 import BaseRateBox from "@/components/base/BaseRateBox.vue";
+import {useHead} from "@vueuse/head";
+import {quickstartMeta} from "@/data/quickstart/meta";
+import {quickstartReviews} from "@/data/quickstart/reviews";
 import BaseLink from "@/components/base/BaseLink.vue";
 import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
 
-@Options({
+export default {
 	components: {
 		TheReviewsSlider,
 		FiscalReceiptModal,
-		BaseReviewCard,
 		BaseNotice,
 		BaseButton,
 		BaseImage,
@@ -444,56 +443,24 @@ import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
 		BaseRateBox,
 		BaseLink,
 	},
-})
-export default class QuickstartView extends Vue {
-	isOpened = false;
-
-	showModal() {
-		this.isOpened = true;
+	setup() {
+		useHead(quickstartMeta);
+	},
+	data() {
+		return {
+			isOpened: false,
+			reviews: []
+		}
+	},
+	methods: {
+		showModal() {
+			this.isOpened = true;
+		}
+	},
+	mounted() {
+		this.reviews = quickstartReviews;
 	}
 
-	reviews = [
-		{
-			src: "logo-clo-store",
-			name: "@5clo_store",
-			title: "<span style='display: inline-block;margin-right: 12px;'>🌳</span> Магазин экологичных игрушек для детей. Вязаные и деревянные игрушки.",
-			text:
-				"Спасибо ArsenalPay за удобный сервис, который можно использовать где угодно.\n" +
-				"У меня несколько аккаунтов в разных соцсетях и нет сайта. Все время уходит на развитие брэнда, на сайт времени совсем не остается.\n" +
-				'Вопрос о кассе стоял очень остро. Пришлось перерыть горы информации пока не нашла вашу кассу. Теперь я спокойно принимаю оплату от клиентов."',
-			link: {
-				href: "https://arsenalpay.ru/pay/5clo_store",
-				text: "Страница оплаты",
-			},
-		},
-		{
-			src: "logo-toko",
-			name: "@tokoshopdecor",
-			title: "<span style='display: inline-block;margin-right: 12px;'>🌿</span> Магазин декора — уютные вещи ручной работы, рождённые на островах Индонезии.",
-			text:
-				"Нашим клиентам не всегда удобно переводить на карту, тем более с комиссией. Проще пользоваться кредитной картой,\n" +
-				"          а теперь ещё есть возможность получать ОФД чек, для подтверждения покупки и предъявления в бухгалтерию (иногда у нас поступали\n" +
-				"          такие просьбы)!!! Если необходимо отложить покупку, мы формируем ссылку для оплаты и высылаем ее клиентам в мессенджеры, откуда они могут оплатить счёт в любое время.\n" +
-				"          Наш магазин в Instagram* стал удобнее и мы этим гордимся.",
-			link: {
-				href: "https://arsenalpay.ru/pay/tokoshopdecor",
-				text: "Страница оплаты",
-			},
-		},
-		{
-			src: "logo-marussia",
-			name: "@marussia_italia",
-			title: "<span style='display: inline-block;margin-right: 12px;'>🇮🇹</span> Обувь и аксессуары из Италии.",
-			text:
-				"Мы продаём итальянскую обувь высокого качества в Инстаграм*, наш магазин популярен и мы хотим соответсвовать ожиданиям наших клиентов.\n" +
-				"          Онлайн оплата с чеками — это то, что нам было нужно, но в итоге мы получили даже больше. На странице с оплатой можно разместить свои ссылки и кнопку перехода в WhatsApp, очень удобно для клиентов.\n" +
-				"          Про кассу и говорить нечего — это выгодно для нас.",
-			link: {
-				href: "https://arsenalpay.ru/pay/marussia_italia",
-				text: "Страница оплаты",
-			},
-		},
-	];
 }
 </script>
 

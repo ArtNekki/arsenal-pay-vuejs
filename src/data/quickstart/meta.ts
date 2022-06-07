@@ -1,4 +1,4 @@
-export const meta = {
+export const quickstartMeta = {
 	title: "Приём платежей без сайта с бесплатной онлайн кассой теперь и для самозанятых",
 	meta: [
 		{
