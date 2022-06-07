@@ -1,4 +1,4 @@
-export const meta = {
+export const contactsMeta = {
 	title: "",
 	meta: [
 		{

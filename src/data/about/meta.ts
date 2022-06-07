@@ -1,34 +1,39 @@
-export const meta = {
-	title: "",
+export const aboutMeta = {
+	title: "О компании",
 	meta: [
 		{
 			name: "description",
-			content: "",
+			content:
+				"Принимайте платежи с бесплатной онлайн кассой на любых площадках — на сайте, без сайта, в Instagram*,\n" +
+				"на лендингах, в соцсетях, в мессенджерах. Подключаем бизнес любого размера. * Instagram, признанна в России экстремистской.",
 		},
 		{
 			name: "twitter:title",
-			content: "",
+			content: "ArsenalPay | Приём платежей без покупки онлайн кассы теперь и для самозанятых",
 		},
 		{
 			name: "twitter:description",
-			content: "",
+			content:
+				"Принимайте платежи с бесплатной онлайн кассой на любых площадках — на сайте, без сайта,\n" +
+				"в Instagram*, на лендингах, в соцсетях, в мессенджерах. Подключаем бизнес любого размера." +
+				" * Instagram, признанна в России экстремистской.",
 		},
 		{
 			property: "twitter:image",
-			content: "",
+			content: "priem-platezhej-bez-pokupki-onlajn-kassy-tw.png",
 		},
 		{
 			property: "vk:image",
-			content: "",
+			content: "https://arsenalpay.ru/priem-platezhej-bez-pokupki-onlajn-kassy-vk.png",
 		},
 		{
 			property: "og:image",
-			content: "",
+			content: "priem-platezhej-bez-pokupki-onlajn-kassy-fb.png",
 			key: "fb",
 		},
 		{
 			property: "og:image:secure_url",
-			content: "",
+			content: "https://arsenalpay.ru/priem-platezhej-bez-pokupki-onlajn-kassy-fb.png",
 		},
 		{
 			property: "og:image:width",
@@ -42,7 +47,7 @@ export const meta = {
 		},
 		{
 			property: "og:image",
-			content: "",
+			content: "https://arsenalpay.ru/priem-platezhej-bez-pokupki-onlajn-kassy-square.png",
 			key: "square",
 		},
 		{
@@ -69,25 +74,27 @@ export const meta = {
 		},
 		{
 			property: "og:url",
-			content: "",
+			content: "https://arsenalpay.ru/about.html",
 		},
 		{
 			property: "og:title",
-			content: "",
+			content: "ArsenalPay | Приём платежей без покупки онлайн кассы теперь и для самозанятых",
 		},
 		{
 			property: "og:description",
-			content: "",
+			content:
+				"Принимайте платежи с бесплатной онлайн кассой на любых площадках — на сайте, без сайта,\n" +
+				"в Instagram*, на лендингах, в соцсетях, в мессенджерах. Подключаем бизнес любого размера. * Instagram, признанна в России экстремистской.",
 		},
 	],
 	link: [
 		{
 			rel: "image_src",
-			href: "",
+			href: "https://arsenalpay.ru/priem-platezhej-bez-pokupki-onlajn-kassy-fb.png",
 		},
 		{
 			rel: "canonical",
-			href: "",
+			href: "https://arsenalpay.ru/about.html",
 		},
 	],
 };

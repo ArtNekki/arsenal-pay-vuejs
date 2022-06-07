@@ -79,6 +79,7 @@
 <script lang="ts">
 import BaseIcon from "@/components/base/BaseIcon.vue";
 import BaseLink from "@/components/base/BaseLink.vue";
+import { contactsMeta } from "@/data/contacts/meta";
 import { useHead } from "@vueuse/head";
 
 export default {
@@ -87,7 +88,7 @@ export default {
 		BaseLink,
 	},
 	setup() {
-		useHead({});
+		useHead(contactsMeta);
 	},
 };
 </script>
