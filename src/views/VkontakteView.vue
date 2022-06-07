@@ -179,7 +179,9 @@
 					</p>
 					<h3 class="text text_type_title.level_3">Отправляйте ссылку на оплату любыми способами</h3>
 					<p class="text text_level_3 text_max-width_520.on_screen_md text_mgb_40.on_screen_md">
-						Используте любой удобный мессенджер WhatsApp,<br class="br br--show-md br--hide-lg" />
+						Используте любой удобный мессенджер WhatsApp,<br
+							class="br br--show-md br--hide-lg br--show-xl"
+						/>
 						Telegram, Viber, VK . Отправляйте ссылку на оплату во время общения с клиентами.
 					</p>
 				</div>
@@ -280,7 +282,8 @@
 		<div class="page-section__container">
 			<BaseIcon name="kassa-big" width="122" height="120" color="pink" bottom-space="xl" />
 			<h2 class="text text_type_title.level_1">
-				Бесплатная Web-касса ArsenalPay для заказов оплаченных наличными
+				Бесплатная Web-касса ArsenalPay<br class="br br--show-sm" />
+				для заказов оплаченных наличными
 			</h2>
 			<p class="text text_level_1">
 				Пробивайте чеки для заказов, оплаченных наличными, переводом на карту, или перечислением
@@ -796,7 +799,7 @@ export default class VkontakteView extends Vue {
 		}
 
 		@include media-breakpoint-up(xl) {
-			padding-bottom: 101px;
+			padding-bottom: 85px;
 		}
 	}
 
@@ -808,6 +811,12 @@ export default class VkontakteView extends Vue {
 			grid-column-gap: 60px;
 			align-content: center;
 			justify-content: center;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin-top: 23px;
+			grid-column-gap: 82px;
+			grid-template-columns: 360px 1fr;
 		}
 	}
 
@@ -821,6 +830,11 @@ export default class VkontakteView extends Vue {
 
 			@include media-breakpoint-up(lg) {
 				margin-top: 55px;
+			}
+
+			@include media-breakpoint-up(xl) {
+				margin-top: 47px;
+				margin-left: 2px;
 			}
 		}
 
@@ -873,7 +887,7 @@ export default class VkontakteView extends Vue {
 		}
 
 		@include media-breakpoint-up(xl) {
-			margin-top: 70px;
+			grid-template-columns: 1fr 376px;
 		}
 	}
 
@@ -921,6 +935,10 @@ export default class VkontakteView extends Vue {
 		@include media-breakpoint-up(md) {
 			padding-bottom: 120px;
 		}
+
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 100px;
+		}
 	}
 
 	.page-section__row {
@@ -935,6 +953,10 @@ export default class VkontakteView extends Vue {
 			grid-column-gap: 60px;
 			align-content: center;
 			justify-content: center;
+		}
+
+		@include media-breakpoint-up(xl) {
+			grid-template-columns: 1fr 360px;
 		}
 	}
 
@@ -995,7 +1017,7 @@ export default class VkontakteView extends Vue {
 		}
 
 		@include media-breakpoint-up(xl) {
-			padding-bottom: 101px;
+			padding-bottom: 270px;
 		}
 	}
 
@@ -1007,6 +1029,11 @@ export default class VkontakteView extends Vue {
 			grid-column-gap: 60px;
 			justify-content: center;
 			align-items: center;
+		}
+
+		@include media-breakpoint-up(xl) {
+			grid-template-columns: 360px 1fr;
+			grid-column-gap: 80px;
 		}
 	}
 
@@ -1036,10 +1063,6 @@ export default class VkontakteView extends Vue {
 				padding-top: 25px;
 				text-align: left;
 				align-items: unset;
-			}
-
-			@include media-breakpoint-up(xl) {
-				margin-top: 25px;
 			}
 		}
 	}
