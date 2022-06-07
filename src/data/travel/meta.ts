@@ -1,4 +1,4 @@
-export const meta = {
+export const travelMeta = {
 	title: "Приём платежей для турфирм",
 	meta: [
 		{

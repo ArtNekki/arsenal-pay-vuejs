@@ -389,75 +389,45 @@
 	<FiscalReceiptModal :opened="isOpened" @on-close="isOpened = false" />
 </template>
 
-<script lang="ts">
-import { useMeta } from "vue-meta";
-import { Options, Vue } from "vue-class-component";
+<script lang="js">
 import TheReviewsSlider from "@/components/TheReviewsSlider.vue";
-import BaseReviewCard from "@/components/base/BaseReviewCard.vue";
-import BaseNotice from "@/components/base/BaseNotice.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
 import BaseImage from "@/components/base/BaseImage.vue";
-import BaseChip from "@/components/base/BaseChip.vue";
 import BaseIcon from "@/components/base/BaseIcon.vue";
-import BasePrompt from "@/components/base/BasePrompt.vue";
 import BaseRateBox from "@/components/base/BaseRateBox.vue";
 import BaseLink from "@/components/base/BaseLink.vue";
 import FiscalReceiptModal from "@/components/modals/FiscalReceiptModal.vue";
+import {useHead} from "@vueuse/head";
+import {travelReviews} from "@/data/travel/reviews";
+import {travelMeta} from "@/data/travel/meta";
 
-@Options({
+export default {
 	components: {
 		TheReviewsSlider,
-		BaseReviewCard,
-		BaseNotice,
 		BaseButton,
 		BaseImage,
-		BaseChip,
 		BaseIcon,
-		BasePrompt,
 		BaseRateBox,
 		BaseLink,
 		FiscalReceiptModal,
 	},
-})
-export default class TravelView extends Vue {
-	isOpened = false;
-
-	showModal() {
-		this.isOpened = true;
+	setup() {
+		useHead(travelMeta);
+	},
+	data() {
+		return {
+			isOpened: false,
+			reviews: []
+		}
+	},
+	methods: {
+		showModal() {
+			this.isOpened = true;
+		}
+	},
+	mounted() {
+		this.reviews = travelReviews;
 	}
-
-	reviews = [
-		{
-			src: "logo-reviews-holiday",
-			name: "Holidaygo",
-			title: "<span style='display: inline-block;margin-right: 8px;'><i>✈️</i></span> Туристический портал с горящими турами",
-			text:
-				"Мы продаём туры от ведущих 130 туроператоров онлайн, поэтому нам необходима надежная система оплаты на сайте.\n" +
-				"Наши клиенты сами выбирают себе тур и сразу оплачивают его. Интеграция с ArsenalPay позволила нам безопасно принимать\n" +
-				"оплату, так как сумма на карте клиента замораживается до подтверждения бронирования. После оплаты клиенты получают чек, что\n" +
-				"свидетельствует о нашей надежности и исполнении законов.",
-		},
-		{
-			src: "logo-reviews-adven",
-			name: "ADVEN2R",
-			title: "<span style='display: inline-block;margin-right: 8px;'><i>🌴</i></span> Клуб путешественников",
-			text:
-				"Нам очень понравилась возможность не покупать онлайн кассу, а пользоваться готовой кассой ArsenalPay.\n" +
-				"Получается хорошо экономить. Тарифы на платежи тоже порадовали. Спасибо за качественный личный кабинет.\n" +
-				"Можно посмотреть платёж, имя клиента и полный чек. Мы часто выставляем счета клиентам, у вас это очень удобно сделано.\n" +
-				"Мы довольны, что наши клиенты могут купить тур не выходя из дома!",
-		},
-		{
-			src: "logo-reviews-baikal",
-			name: "BaikalExpress",
-			title: "<span style='display: inline-block;margin-right: 4px;'><i>🏖</i></span> Туры из Иркутска",
-			text:
-				"После подключения платежей от ArsenalPay наша продажа туров упростилась и стала более организованной.\n" +
-				"Мы пользуемся функцией заморозки средств, проверяем тур на доступность и только потом подтверждаем списание у клиента.\n" +
-				"Это очень удобно, так как можно сделать быстрый возврат и не волноваться. Решение с кассой нас больше чем устраивает,\n" +
-				"не надо платить лишнего и подключать дополнительные сервисы.",
-		},
-	];
 }
 </script>
 
