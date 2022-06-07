@@ -32,22 +32,20 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import BaseNotice from "@/components/base/BaseNotice.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
-import BaseImage from "@/components/base/BaseImage.vue";
 import BaseIcon from "@/components/base/BaseIcon.vue";
-import BaseLink from "@/components/base/BaseLink.vue";
-import BasePluginBox from "@/components/base/BasePluginBox.vue";
+import { useHead } from "@vueuse/head";
+import { partnershipMeta } from "@/data/partnership/meta";
 
-@Options({
+export default {
 	components: {
 		BaseButton,
 		BaseIcon,
-		BaseLink,
 	},
-})
-export default class PartnershipView extends Vue {}
+	setup() {
+		useHead(partnershipMeta);
+	},
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
