@@ -1,4 +1,4 @@
-export const meta = {
+export const instagramMeta = {
 	title: "Прием платежей в Instagram* без покупки онлайн кассы теперь и для самозанятых",
 	meta: [
 		{
