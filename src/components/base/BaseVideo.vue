@@ -1,4 +1,5 @@
 <template>
+	currenttime: {{ currentTime }}
 	<article class="video">
 		<el-scrollbar>
 			<ul class="video__nav">
@@ -77,22 +78,25 @@ export default {
 				StepTwo: 2,
 				StepThree: 3,
 				StepFour: 4,
-				StepFive: 5,
-				StepSix: 6,
 			},
-			TimeStampValue: {
-				StepOne: 5.30,
-				StepTwo: 7.28,
+			TimeStampValue: {},
+			TimeStampValueMobile: {
+				StepOne: 0,
+				Steptwo: 5.30,
 				StepThree: 25.10,
-				StepFour: 31.09,
-				StepFive: 33.20,
-				StepSix: 41.36,
+				StepFour: 33.20,
+			},
+			TimeStampValueDesktop: {
+				StepOne: 0,
+				StepTwo: 7.28,
+				StepThree: 31.09,
+				StepFour: 41.36,
 			},
 			player: null,
 			isTimeStampLoading: false,
 			isMobileScreen: false,
 			currentTime: 0,
-			currentTimeStamp: ''
+			currentTimeStamp: 0
 		}
 	},
 	created()  {
@@ -135,6 +139,13 @@ export default {
 					]
 				}
 			}
+		},
+		setTimeStampValue(isMobile) {
+			if (isMobile) {
+				this.TimeStampValue = this.TimeStampValueMobile;
+			} else {
+				this.TimeStampValue = this.TimeStampValueDesktop;
+			}
 		}
 	},
 	mounted() {
@@ -159,23 +170,20 @@ export default {
 		});
 
 		this.isMobileScreen = window.matchMedia(`(max-width: 1279px)`).matches;
+
+		this.setTimeStampValue(this.isMobileScreen);
 		this.loadVideo(this.isMobileScreen);
 	},
 	watch: {
-		player: {
-			handler(val, oldVal) {
-				// console.log('watch player', val.currentTime);
-			},
-			deep: true
-		},
 		isMobileScreen: {
 			handler(isMobile) {
+				this.currentTimeStamp = 0;
+				this.setTimeStampValue(isMobile);
 				this.loadVideo(isMobile);
 			}
 		},
 		currentTime: {
 			handler(time) {
-
 				if (time >= this.TimeStampValue.StepOne && time < this.TimeStampValue.StepTwo) {
 					this.currentTimeStamp = this.TimeStampOrder.StepOne;
 				} else if (time >= this.TimeStampValue.StepTwo && time < this.TimeStampValue.StepThree) {
@@ -299,6 +307,20 @@ export default {
 			height: 600px;
 			background-image: url("~@/assets/images/vkontakte-page/bg-video-desktop.jpg");
 		}
+
+		// &::before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	z-index: var(--layer-3);
+		// 	width: 100%;
+		// 	height: inherit;
+
+		// 	@include media-breakpoint-up(xl) {
+		// 		background-image: url("~@/assets/images/vkontakte-page/mask-desktop.svg");
+		// 	}
+		// }
 	}
 }
 
