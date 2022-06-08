@@ -5,12 +5,14 @@
 			['modal_is_opened']: opened,
 		}"
 	>
-		<div class="modal__body">
-			<button type="button" class="modal__close" @click="$emit('onClose')">
-				<BaseIcon name="cross" width="12" height="12" color="black" />
-			</button>
-			<BaseImage src="modals/fiscal-receipt" :breakpoints="{ md: true }"></BaseImage>
-		</div>
+		<transition name="fade">
+			<div v-if="opened" class="modal__body">
+				<button type="button" class="modal__close" @click="$emit('onClose')">
+					<BaseIcon name="cross" width="12" height="12" color="black" />
+				</button>
+				<BaseImage src="modals/fiscal-receipt" :breakpoints="{ md: true }"></BaseImage>
+			</div>
+		</transition>
 	</article>
 </template>
 
