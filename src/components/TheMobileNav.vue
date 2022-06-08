@@ -21,28 +21,53 @@
 					</router-link>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
+					<router-link to="/priem-platezhej-vkontakte" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							Платежи в VK
+						</BaseLink>
+					</router-link>
+				</li>
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/priem-platezhej-na-sajte.html" size="sm" color="black"
 						>Платежи на сайте</BaseLink
 					>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
-					<BaseLink href="https://arsenalpay.ru/quickstart.html" size="sm" color="black"
-						>Платежи без сайта</BaseLink
-					>
+					<router-link to="/quickstart" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							Платежи без сайта
+						</BaseLink>
+					</router-link>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
-					<BaseLink href="https://arsenalpay.ru/travel.html" size="sm" color="black">Турфирмам</BaseLink>
+					<router-link to="/travel" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							Турфирмам
+						</BaseLink>
+					</router-link>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
-					<BaseLink href="https://arsenalpay.ru/providers.html" size="sm" color="black">Провайдерам</BaseLink>
+					<router-link to="/providers" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							Провайдерам
+						</BaseLink>
+					</router-link>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
 				<li class="mobile-nav__item" @click="$emit('onClose')">
-					<BaseLink href="https://arsenalpay.ru/about.html" size="sm" color="black">О компании</BaseLink>
+					<router-link to="/about" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							О компании
+						</BaseLink>
+					</router-link>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
-					<BaseLink href="https://arsenalpay.ru/contacts.html" size="sm" color="black">Контакты</BaseLink>
+					<router-link to="/contacts" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							Контакты
+						</BaseLink>
+					</router-link>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/blog/" blank="true" size="sm" color="black">Блог</BaseLink>
@@ -60,14 +85,18 @@
 					>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
-					<BaseLink href="https://arsenalpay.ru/developers.html" blank="true" size="sm" color="black"
-						>Разработчикам</BaseLink
-					>
+					<router-link to="/developers" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							Разработчикам
+						</BaseLink>
+					</router-link>
 				</li>
 				<li class="mobile-nav__item" @click="$emit('onClose')">
-					<BaseLink href="https://arsenalpay.ru/partnership.html" blank="true" size="sm" color="black"
-						>Агентам</BaseLink
-					>
+					<router-link to="/partnership" custom v-slot="{ href, navigate, isActive }">
+						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+							Агентам
+						</BaseLink>
+					</router-link>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
