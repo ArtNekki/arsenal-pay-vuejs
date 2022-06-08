@@ -1,32 +1,37 @@
 <template>
-	<div class="cookie">
-		<div class="cookie__wrapper">
-			<div class="cookie__main">
-				<div class="cookie__icon">
-					<BaseIcon name="cookie" width="20" height="20" />
+	<transition name="fade">
+		<div v-if="isActive" class="cookie">
+			<div class="cookie__wrapper">
+				<div class="cookie__main">
+					<div class="cookie__icon">
+						<BaseIcon name="cookie" width="20" height="20" />
+					</div>
+					<p class="cookie__text">
+						Сохраняем cookie по
+						<a
+							class="cookie__link"
+							href="https://arsenalpay.ru/documentation/#politika-obrabotki-personal-nyh-dannyh-i-konfidencial-nosti"
+							target="_blank"
+							rel="noopener noreferrer"
+							>правилам конфиденциальности.</a
+						>
+					</p>
+					<BaseButton size="xs" view="purple" @click="applyAgreement()">Хорошо</BaseButton>
 				</div>
-				<p class="cookie__text">
-					Сохраняем cookie по
-					<a
-						class="cookie__link"
-						href="https://arsenalpay.ru/documentation/#politika-obrabotki-personal-nyh-dannyh-i-konfidencial-nosti"
-						target="_blank"
-						rel="noopener noreferrer"
-						>правилам конфиденциальности.</a
-					>
-				</p>
-				<BaseButton size="xs" view="purple">Хорошо</BaseButton>
 			</div>
 		</div>
-	</div>
+	</transition>
 </template>
 
 <script>
-import { Options, Vue } from "vue-class-component";
 import BaseIcon from "./base/BaseIcon.vue";
 import BaseButton from "./base/BaseButton.vue";
 
-@Options({
+const STORAGE_KEY = "cookiesAgreement";
+const STORAGE_TOKEN = "ok";
+const STORAGE_ERROR = "LocalStorage does not available";
+
+export default {
 	components: {
 		BaseIcon,
 		BaseButton,
@@ -34,8 +39,46 @@ import BaseButton from "./base/BaseButton.vue";
 	props: {
 		type: String,
 	},
-})
-export default class TheCookie extends Vue {}
+	data() {
+		return {
+			storage: "",
+			isActive: false,
+		};
+	},
+	mounted() {
+		this.storage = window.localStorage;
+		this.showIfNeeded();
+	},
+	methods: {
+		showIfNeeded() {
+			let cookiesAgreement;
+
+			try {
+				cookiesAgreement = this.storage.getItem(STORAGE_KEY);
+			} catch (error) {
+				console.error(STORAGE_ERROR);
+				console.error(error);
+			}
+
+			if (STORAGE_TOKEN !== cookiesAgreement) {
+				this.isActive = true;
+			}
+		},
+
+		applyAgreement() {
+			try {
+				this.storage.setItem(STORAGE_KEY, STORAGE_TOKEN);
+			} catch (error) {
+				console.error(STORAGE_ERROR);
+				console.error(error);
+
+				return;
+			}
+
+			this.isActive = false;
+		},
+	},
+};
 </script>
 
 <style scoped lang="scss">
@@ -53,13 +96,6 @@ export default class TheCookie extends Vue {}
 		content: "";
 		display: table;
 	}
-
-	//&.js-hide {
-	//	display: none;
-	//	opacity: 0;
-	//	position: absolute;
-	//	left: -9999px
-	//}
 
 	@media screen and (max-width: 599px) {
 		height: auto;
