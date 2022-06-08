@@ -81,7 +81,7 @@
 						<BaseLink :icon="true" color="purple" @click="showModal()">
 							Посмотреть виджет
 							<template v-slot:icon>
-								<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+								<BaseIcon name="arrow-new-page" width="48" height="38"></BaseIcon>
 							</template>
 						</BaseLink>
 					</div>
@@ -134,7 +134,7 @@
 				>
 					Подробнее
 					<template v-slot:icon>
-						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+						<BaseIcon name="arrow-new-page" width="48" height="38"></BaseIcon>
 					</template>
 				</BaseLink>
 			</div>
@@ -181,7 +181,7 @@
 				>
 					Подробнее
 					<template v-slot:icon>
-						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+						<BaseIcon name="arrow-new-page" width="48" height="38"></BaseIcon>
 					</template>
 				</BaseLink>
 			</div>
@@ -262,7 +262,7 @@
 				>
 					Подробнее
 					<template v-slot:icon>
-						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+						<BaseIcon name="arrow-new-page" width="48" height="38"></BaseIcon>
 					</template>
 				</BaseLink>
 			</div>
@@ -304,7 +304,7 @@
 				>
 					Подробнее
 					<template v-slot:icon>
-						<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+						<BaseIcon name="arrow-new-page" width="48" height="38"></BaseIcon>
 					</template>
 				</BaseLink>
 			</div>
@@ -425,7 +425,7 @@
 						color="blue"
 						>Все функции
 						<template v-slot:icon>
-							<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+							<BaseIcon name="arrow-new-page" width="48" height="38"></BaseIcon>
 						</template>
 					</BaseLink>
 				</div>

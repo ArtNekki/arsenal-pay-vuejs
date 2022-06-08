@@ -156,12 +156,14 @@ export default {
 	top: 45px;
 	width: 48px;
 	height: 38px;
-	background-color: var(--color-bg-blue);
 
 	&::after {
 		content: "";
 		width: inherit;
 		height: inherit;
+		background-repeat: no-repeat;
+		background-color: var(--color-bg-blue);
+		// background-color: red;
 	}
 }
 
@@ -170,7 +172,7 @@ export default {
 
 	&::after {
 		content: "";
-		background-image: url("~@/assets/icons/arrow-right.svg");
+		mask-image: url("~@/assets/images/arrow-left.svg");
 	}
 
 	@include media-breakpoint-up(sm) {
@@ -182,7 +184,7 @@ export default {
 	right: var(--container-padding-x);
 
 	&::after {
-		background-image: url("~@/assets/icons/arrow-right.svg");
+		mask-image: url("~@/assets/images/arrow-right.svg");
 	}
 
 	@include media-breakpoint-up(sm) {

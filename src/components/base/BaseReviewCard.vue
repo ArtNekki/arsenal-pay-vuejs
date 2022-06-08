@@ -10,7 +10,7 @@
 			<BaseLink :href="data?.link?.href" :blank="true" :icon="true" color="blue">
 				{{ data?.link?.text }}
 				<template v-slot:icon>
-					<BaseIcon name="arrow-right" width="48" height="38"></BaseIcon>
+					<BaseIcon name="arrow-new-page" width="48" height="38"></BaseIcon>
 				</template>
 			</BaseLink>
 		</div>
