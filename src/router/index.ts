@@ -1,6 +1,15 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import VkontakteView from "@/views/VkontakteView.vue";
+import TravelView from "@/views/TravelView.vue";
+import AboutView from "@/views/AboutView.vue";
+import DevelopersView from "@/views/DevelopersView.vue";
+import ContactsView from "@/views/ContactsView.vue";
+import InstagramView from "@/views/InstagramView.vue";
+import PartnershipView from "@/views/PartnershipView.vue";
+import ProvidersView from "@/views/ProvidersView.vue";
+import QuickStartView from "@/views/QuickStartView.vue";
+import SupportView from "@/views/SupportView.vue";
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -14,47 +23,47 @@ const routes: Array<RouteRecordRaw> = [
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+		component: AboutView,
 	},
 	{
 		path: "/contacts",
 		name: "contacts",
-		component: () => import("../views/ContactsView.vue"),
+		component: ContactsView,
 	},
 	{
 		path: "/developers",
 		name: "developers",
-		component: () => import("../views/DevelopersView.vue"),
+		component: DevelopersView,
 	},
 	{
 		path: "/priem-platezhej-v-instagram",
 		name: "instagram",
-		component: () => import("../views/InstagramView.vue"),
+		component: InstagramView,
 	},
 	{
 		path: "/partnership",
 		name: "partnership",
-		component: () => import("../views/PartnershipView.vue"),
+		component: PartnershipView,
 	},
 	{
 		path: "/providers",
 		name: "providers",
-		component: () => import("../views/ProvidersView.vue"),
+		component: ProvidersView,
 	},
 	{
 		path: "/quickstart",
 		name: "quickstart",
-		component: () => import("../views/QuickStartView.vue"),
+		component: QuickStartView,
 	},
 	{
 		path: "/support",
 		name: "support",
-		component: () => import("../views/SupportView.vue"),
+		component: SupportView,
 	},
 	{
 		path: "/travel",
 		name: "travel",
-		component: () => import("../views/TravelView.vue"),
+		component: TravelView,
 	},
 	{
 		path: "/vkontakte",
