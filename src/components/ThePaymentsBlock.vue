@@ -95,15 +95,14 @@ export default class ThePaymentsBlock extends Vue {
 	}
 
 	&__notice {
-		margin-top: 28px;
-		margin-bottom: 16px;
+		margin: 28px auto 16px;
 		width: 100%;
+		max-width: 400px;
 		align-self: center;
 		z-index: 1;
 
 		@include media-breakpoint-up(sm) {
-			margin-left: -4px;
-			max-width: 400px;
+			left: -4px;
 		}
 	}
 

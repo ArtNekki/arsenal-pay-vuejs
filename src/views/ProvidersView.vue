@@ -461,9 +461,9 @@ export default {
 	}
 
 	.page-section__button {
-		@include media-breakpoint-up(sm) {
-			max-width: 430px;
-		}
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 430px;
 
 		@include media-breakpoint-up(xl) {
 			max-width: 480px;

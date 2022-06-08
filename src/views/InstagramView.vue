@@ -270,7 +270,7 @@
 					Кнопки быстрой связи <br class="br br--show-sm" />WhatsApp, Telegram, Viber
 				</h2>
 				<div class="page-section__row">
-					<div class="page-section__col">
+					<div class="page-section__col page-section__col_with_media">
 						<BaseImage
 							src="instagram-page/widget-buttons"
 							shadow="md"
@@ -312,7 +312,7 @@
 					</p>
 				</div>
 				<div class="page-section__row">
-					<div class="page-section__col">
+					<div class="page-section__col page-section__col_with_media">
 						<BaseImage
 							src="instagram-page/widget-multilink"
 							shadow="md"
@@ -352,7 +352,7 @@
 					</p>
 				</div>
 				<div class="page-section__row">
-					<div class="page-section__col">
+					<div class="page-section__col page-section__col_with_media">
 						<BaseImage src="instagram-page/widget-email" :breakpoints="{ xs: true, sm: true }"></BaseImage>
 					</div>
 					<div class="page-section__col">
@@ -413,7 +413,7 @@
 							</BaseRateBox>
 						</div>
 					</div>
-					<div class="page-section__col">
+					<div class="page-section__col page-section__col_with_media">
 						<BasePrompt color="green">
 							<p class="text text_in_prompt text_size_lg text_align_center.on_screen_sm">
 								У нас нет дополнительных комиссий и звездочек в договоре.

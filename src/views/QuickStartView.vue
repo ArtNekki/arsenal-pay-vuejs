@@ -332,7 +332,7 @@
 						</BaseRateBox>
 					</div>
 				</div>
-				<div class="page-section__col">
+				<div class="page-section__col page-section__col_with_media">
 					<BasePrompt color="green">
 						<p class="text text_in_prompt text_size_lg text_align_center.on_screen_sm">
 							У нас нет дополнительных комиссий и звездочек в договоре.
@@ -751,6 +751,10 @@ export default {
 				background-image: url("~@/assets/images/quickstart-page/social-right-xl.svg");
 			}
 		}
+	}
+
+	.page-section__image {
+		@include content-center();
 	}
 }
 

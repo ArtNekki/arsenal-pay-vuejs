@@ -64,8 +64,7 @@ export default {
 	}
 
 	.page-section__button {
-		margin-top: 18px;
-		margin-bottom: 50px;
+		margin: 18px auto 50px;
 
 		@include media-breakpoint-up(md) {
 			max-width: 304px;
