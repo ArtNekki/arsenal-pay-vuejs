@@ -5,84 +5,86 @@
 				<BaseIcon name="cross" width="11" height="11" color="black" />
 			</button>
 			<ul class="mobile-nav__list">
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/cashbox.html" size="sm" color="black">Онлайн касса</BaseLink>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/tariffs.html" size="sm" color="black">Тарифы</BaseLink>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<router-link to="/priem-platezhej-v-instagram" custom v-slot="{ href, navigate, isActive }">
 						<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
 							Платежи в Instagram*
 						</BaseLink>
 					</router-link>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/priem-platezhej-na-sajte.html" size="sm" color="black"
 						>Платежи на сайте</BaseLink
 					>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/quickstart.html" size="sm" color="black"
 						>Платежи без сайта</BaseLink
 					>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/travel.html" size="sm" color="black">Турфирмам</BaseLink>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/providers.html" size="sm" color="black">Провайдерам</BaseLink>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/about.html" size="sm" color="black">О компании</BaseLink>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/contacts.html" size="sm" color="black">Контакты</BaseLink>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/blog/" blank="true" size="sm" color="black">Блог</BaseLink>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/documentation/index.html" blank="true" size="sm" color="black"
 						>Документация</BaseLink
 					>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/support.html" blank="true" size="sm" color="black"
 						>Поддержка</BaseLink
 					>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/developers.html" blank="true" size="sm" color="black"
 						>Разработчикам</BaseLink
 					>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/partnership.html" blank="true" size="sm" color="black"
 						>Агентам</BaseLink
 					>
 				</li>
 			</ul>
 			<ul class="mobile-nav__list">
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/demo.html" blank="true" size="sm" color="black"
 						>Демо магазин</BaseLink
 					>
 				</li>
-				<li class="mobile-nav__item">
+				<li class="mobile-nav__item" @click="$emit('onClose')">
 					<BaseLink href="https://arsenalpay.ru/pay/" blank="true" size="sm" color="black"
 						>Оплата услуг</BaseLink
 					>
 				</li>
 			</ul>
-			<a href="https://arsenalpay.ru/dashboard/login" class="mobile-nav__login">Войти</a>
+			<a href="https://arsenalpay.ru/dashboard/login" class="mobile-nav__login" @click="$emit('onClose')"
+				>Войти</a
+			>
 			<BaseSocial />
 			<!--    {{> lang}}-->
 		</div>
@@ -90,12 +92,11 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
 import BaseLink from "@/components/base/BaseLink.vue";
 import BaseIcon from "./base/BaseIcon.vue";
 import BaseSocial from "./base/BaseSocial.vue";
 
-@Options({
+export default {
 	components: {
 		BaseLink,
 		BaseIcon,
@@ -104,8 +105,7 @@ import BaseSocial from "./base/BaseSocial.vue";
 	props: {
 		opened: Boolean,
 	},
-})
-export default class TheMobileNav extends Vue {}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

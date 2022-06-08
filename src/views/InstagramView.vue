@@ -250,7 +250,7 @@
 						сделать на&nbsp;всю сумму или на&nbsp;часть суммы. Комиссия за&nbsp;возврат платежа
 						не&nbsp;взимается.
 					</p>
-					<BaseIcon name="hold-medium" width="50" height="50" color="blue" bottom-space="md" />
+					<BaseIcon name="hold-medium" width="50" height="50" color="cyan" bottom-space="md" />
 					<h3 class="text text_type_title.level_3 text_lh_32.on_screen_md">Холдирование платежей</h3>
 					<p class="text text_level_3 text_mgb_60 text_lh_28.on_screen_md">
 						При оплате деньги на&nbsp;карте клиента временно &laquo;замораживаются&raquo;. Эта&nbsp;функция
