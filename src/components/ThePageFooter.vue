@@ -4,14 +4,32 @@
 			<div class="footer__links">
 				<ul class="footer__list">
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/about.html" size="sm" color="black" link-in="footer"
-							>О компании</BaseLink
-						>
+						<router-link to="/about" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								О компании
+							</BaseLink>
+						</router-link>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/contacts.html" size="sm" color="black" link-in="footer"
-							>Контакты</BaseLink
-						>
+						<router-link to="/contacts" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Контакты
+							</BaseLink>
+						</router-link>
 					</li>
 					<li class="footer__item">
 						<BaseLink
@@ -38,13 +56,32 @@
 				</ul>
 				<ul class="footer__list">
 					<li class="footer__item">
-						<BaseLink
-							href="https://arsenalpay.ru/priem-platezhej-v-instagram.html"
-							size="sm"
-							color="black"
-							link-in="footer"
-							>Платежи в Instagram*</BaseLink
-						>
+						<router-link to="/priem-platezhej-v-instagram" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Платежи в Instagram*
+							</BaseLink>
+						</router-link>
+					</li>
+					<li class="footer__item">
+						<router-link to="/priem-platezhej-vkontakte" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Платежи в VK
+							</BaseLink>
+						</router-link>
 					</li>
 					<li class="footer__item">
 						<BaseLink
@@ -56,19 +93,46 @@
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/quickstart.html" size="sm" color="black" link-in="footer"
-							>Платежи без сайта</BaseLink
-						>
+						<router-link to="/quickstart" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Платежи без сайта
+							</BaseLink>
+						</router-link>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/travel.html" size="sm" color="black" link-in="footer"
-							>Турфирмам</BaseLink
-						>
+						<router-link to="/travel" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Турфирмам
+							</BaseLink>
+						</router-link>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/providers.html" size="sm" color="black" link-in="footer"
-							>Провайдерам</BaseLink
-						>
+						<router-link to="/providers" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Провайдерам
+							</BaseLink>
+						</router-link>
 					</li>
 				</ul>
 				<ul class="footer__list">
@@ -87,14 +151,32 @@
 						>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/developers.html" size="sm" color="black" link-in="footer"
-							>Разработчикам</BaseLink
-						>
+						<router-link to="/developers" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Разработчикам
+							</BaseLink>
+						</router-link>
 					</li>
 					<li class="footer__item">
-						<BaseLink href="https://arsenalpay.ru/partnership.html" size="sm" color="black" link-in="footer"
-							>Агентам</BaseLink
-						>
+						<router-link to="/partnership" custom v-slot="{ href, navigate, isActive }">
+							<BaseLink
+								:active="isActive"
+								:href="href"
+								size="sm"
+								color="black"
+								link-in="footer"
+								@click="navigate"
+							>
+								Агентам
+							</BaseLink>
+						</router-link>
 					</li>
 				</ul>
 				<ul class="footer__list">

@@ -75,6 +75,16 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
 	history: createWebHashHistory(),
 	routes,
+	scrollBehavior(to, from, savedPosition) {
+		if (savedPosition) {
+			return savedPosition;
+		}
+		if (to.hash) {
+			return { el: to.hash, behavior: "smooth" };
+		} else {
+			window.scrollTo(0, 0);
+		}
+	},
 });
 
 export default router;
