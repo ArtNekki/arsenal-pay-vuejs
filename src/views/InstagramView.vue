@@ -86,7 +86,7 @@
 					</p>
 				</div>
 				<div class="page-section__row">
-					<div class="page-section__col">
+					<div class="page-section__col page-section__col_with_media">
 						<BaseImage src="instagram-page/messengers" :breakpoints="{ xs: true, lg: true }" />
 					</div>
 					<div class="page-section__col">
@@ -745,14 +745,6 @@ export default {
 	}
 
 	.page-section__col {
-		display: flex;
-		flex-direction: column;
-
-		@include media-breakpoint-up(sm) {
-			align-items: center;
-			text-align: center;
-		}
-
 		@include media-breakpoint-up(lg) {
 			align-items: start;
 			text-align: left;
@@ -832,8 +824,6 @@ export default {
 	.page-section__prompt {
 		margin-top: 30px;
 		margin-bottom: 58px;
-		margin-right: auto;
-		margin-left: auto;
 		max-width: 320px;
 
 		@include media-breakpoint-up(sm) {
@@ -849,11 +839,10 @@ export default {
 	.page-section__button {
 		top: -2px;
 		margin-top: 0;
-
-		@include media-breakpoint-up(sm) {
-			width: 100%;
-			max-width: 430px;
-		}
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+		max-width: 430px;
 
 		@include media-breakpoint-up(lg) {
 			top: -11px;
