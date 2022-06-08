@@ -14,6 +14,13 @@
 			</router-link>
 		</li>
 		<li class="main-nav__item">
+			<router-link to="/priem-platezhej-vkontakte" custom v-slot="{ href, navigate, isActive }">
+				<BaseLink :active="isActive" :href="href" size="sm" color="black" @click="navigate">
+					Платежи в VK
+				</BaseLink>
+			</router-link>
+		</li>
+		<li class="main-nav__item">
 			<BaseLink href="https://arsenalpay.ru/priem-platezhej-na-sajte.html" size="sm" color="black"
 				>Платежи на сайте</BaseLink
 			>
@@ -52,7 +59,7 @@ export default class TheMainNav extends Vue {}
 	top: -1px;
 	display: none;
 
-	@include media-breakpoint-up(lg) {
+	@media (min-width: 980px) {
 		display: flex;
 	}
 

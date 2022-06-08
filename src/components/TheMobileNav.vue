@@ -162,7 +162,7 @@ export default {
 		z-index: 1000;
 		opacity: 1;
 
-		@include media-breakpoint-up(lg) {
+		@media (min-width: 980px) {
 			opacity: 0;
 			z-index: -10;
 		}
@@ -187,7 +187,7 @@ export default {
 		.mobile-nav_state_opened & {
 			transform: translate3d(0, 0, 0);
 
-			@include media-breakpoint-up(lg) {
+			@media (min-width: 980px) {
 				transform: translate3d(var(--mobile-nav-width), 0, 0);
 			}
 		}

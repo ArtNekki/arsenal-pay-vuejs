@@ -13,26 +13,47 @@
 	<TheMobileNav :opened="isOpened" @on-close="isOpened = false" />
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
+<script lang="js">
 import TheMainNav from "@/components/TheMainNav.vue";
 import BaseIcon from "@/components/base/BaseIcon.vue";
 import TheMobileNav from "@/components/TheMobileNav.vue";
 
-@Options({
+export default {
 	components: {
 		TheMainNav,
 		BaseIcon,
 		TheMobileNav,
 	},
-})
-export default class ThePageHeader extends Vue {
-	isOpened = false;
-
-	showMobile() {
-		this.isOpened = true;
-	}
-}
+	data() {
+		return {
+			isOpened: false,
+			isMobileScreen: false,
+		};
+	},
+	methods: {
+		showMobile() {
+			this.isOpened = true;
+		},
+		resizeHandler() {
+			this.isMobileScreen = window.matchMedia(`(max-width: 980px)`).matches;
+		},
+	},
+	created() {
+		window.addEventListener("resize", this.resizeHandler);
+	},
+	unmounted() {
+		window.removeEventListener("resize", this.resizeHandler);
+	},
+	watch: {
+		isMobileScreen: {
+			handler(isMobile) {
+				if (!isMobile) {
+					this.isOpened = false;
+				}
+			},
+		},
+	},
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -91,7 +112,7 @@ export default class ThePageHeader extends Vue {
 		height: 18px;
 		display: block;
 
-		@include media-breakpoint-up(lg) {
+		@media (min-width: 980px) {
 			display: none;
 		}
 
